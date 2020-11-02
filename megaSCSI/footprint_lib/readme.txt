@@ -1,0 +1,1 @@
+footprint for SCSI connector
