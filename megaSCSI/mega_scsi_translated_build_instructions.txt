@@ -1,0 +1,242 @@
+﻿--- Documentation for the production of MEGA-SCSI ---
+1995/06/27 K. Tsujikawa.
+
+
+□ Files included in this archive
+
+SCSI-MK .HED reprint header file
+SCSI-MK .TXT This file
+SCSI-AP .TXT Pin layout data for each chip
+SCSI-C0 .SR7 MEGA-SCSI circuit diagram (1/3)
+SCSI-C1 .SR7 MEGA-SCSI circuit diagram (2/3)
+SCSI-C2 .SR7 MEGA-SCSI circuit diagram (3/3)
+
+
+□ Introduction
+
+MEGA-SCSI is a SCSI interface for MSX proposed by Tsujikawa.
+-SCSI-1 (CCS), 2 standard HDD, MO, CD-ROM, etc. can be used with MSX.
+-MEGA-SCSI can be created by modifying a mega ROM game.
+
+For people who can't make it, we also distribute the finished product, but it is better to make it yourself
+It's cheap, fun and attractive, so I recommend making it yourself.
+
+The circuit of this production article focuses on improving reproducibility.
+The circuit is made simple by using parts that are easily available.
+
+However, I couldn't write it in a way that was easy to understand.
+I think it is difficult to understand unless you have some experience in making hardware.
+
+If you are a beginner of hardware, experience with electronic work kits and my similar non-RAM disk etc.
+We recommend that you try it after you have accumulated it.
+
+There are many points that should be improved in this circuit, and each person has their own taste.
+I will.
+
+Please try making your own original hardware.
+And if you think it's a good idea, please let me know.
+
+The treasure report from everyone is my treasure.
+Thank you for your completion report and ideas.
+
+
+□ Anyway, let's prepare the materials
+
+The materials are as follows.
+
+Item name Quantity Remarks
+
+1x MB89352A Somewhat difficult to obtain
+2x 628128 The slowest thing (about 120nS) is enough for speed
+   Low power consumption type is good (628128LP-12L etc.)
+1x 74HC139  LS139 etc. may be used
+1x EXO-3 16MHz 18MHz Oscillator Any
+1x 220/330 collective resistance of 29 elements. 36 ordinary resistors can be substituted
+2x 10k ohm resistance   4.7k-100k ohm. Appropriate
+3x 0.1uF Ceramic capacitor
+1x 100uF Aluminum electrolysis capacitor, etc. are suitable
+2x 1S1588 Appropriate switching diode may be used
+1x 11DQ04 Schottky barrier diode
+1x 1.0A fuse Lucky if you can buy a small one lead type
+1x 1.0F Electric double layer capacitor  is safe
+1x Mega ROM Game 1 This may be the most difficult to obtain
+1x DX10GM-50S (Hirose) half pitch SCSI connector. Please choose
+1x ICB-288G (Sun Hayato) Small universal board
+1x Junflon wire A proper amount A suitable vinyl wire is enough. Thin things are convenient
+
+―― Tinned wire A little bit of resistance may be enough
+――A proper amount of solder with varnish and a thickness of about 0.8mm is easy to use
+∙ For soldering wire 15cm? GND wiring. Recycle after removing ROM?
+Screw 2 diameter 3 mm * length 10 mm
+Nuts that fit two screws
+Spring washers 6 Spacer replacements. What suits the screw
+
+For reference, here is an example of where you can buy it in Akihabara.
+≪Mega ROM games are almost no longer found in Akihabara.
+Prepare from your own collection.
+
+MB89352A Wakamatsu Tsusho, Kamwa Denki (Radio Department Store 1F, near the entrance)
+628128 Shinwa Denki, Wakamatsu Tsusho
+220/330 Suzusho, Tansei
+DX10GM-50S Sengoku Densho
+
+Other parts are radio department stores, under guard, Akizuki Denshi, Suzusho
+You can find it at Sengoku Densho.
+
+Small parts such as resistors, capacitors and screws are easy to lose and the price is low
+I think it's good to buy more because it is not expensive.
+
+For those who can't come to Akihabara so easily, mail-order sales of magazine advertisements such as transistor technology
+It is also handy to use. You can buy something like MB89352.
+
+
+□ Selection of mega ROM
+
+━ In this production article, a mega ROM controller called LZ93A13 is used.
+Detailed explanation about the Mega ROM controller is separately provided.
+Please refer to the analysis data.
+
+According to the analysis data, LZ93A13 is ASC1 type.
+ASC2 and ASC3 type mega ROM controllers can also be used as MEGA-SCSI,
+I think it will be difficult unless you can understand the analysis data properly.
+
+In this production, the original ROM is removed and SRAM is installed there.
+The original ROM is a mega ROM cartridge that uses a 28-pin or 32-pin ROM
+It will be easy to make.
+
+That is,
+・ LZ93A13 is used
+28/32 pin ROM is used
+Items that meet the two conditions are suitable for production.
+
+If you can't get a proper mega ROM board, please contact me by email.
+Please try. In some cases, you may be able to transfer it at a reasonable price.
+But I can't prepare so much, so prepare by yourself as much as possible
+ Please.
+
+
+□ Outline of production
+
+Remove the ROM from the mega ROM game.
+The removed ROM may be thrown away, so the legs of the ROM should be cracked with a nipper.
+It is relatively easy to remove one by one.
+
+SRAM is mounted on the extracted ROM.
+There are pins that can use the original ROM wiring and pins that do not.
+Please cut the pattern properly depending on the tester and the circuit diagram.
+
+The lower part of the address bus and the wiring of the data bus are almost the same in ROM and SRAM, so
+It should save you time and effort. I think SCSI-AP.TXT will be helpful.
+
+HC139 and EXO-3 are short-circuited with other signal lines in the empty space of the mega ROM board.
+Pay attention not to have it, fix it with double-sided tape, and wire in the air.
+
+↑ The work up to this point is the same as for a non-RAM disk.
+It may be good to refer to the article on making a non-RAM disk.
+
+MB89352, Terminator (220/330) and SCSI connector are mounted on ICB-288G,
+Connect with the mega ROM controller side with a vinyl wire.
+Cut off unnecessary parts of ICB-288G in advance.
+
+When wiring the MB89352 and the SCSI connector, first wire the GND firmly
+Let's go.
+If the GND wiring is thin, the operation will become unstable.
+I wired the GND using a desoldering wire with a width of about 4 mm.
+
+If possible, use a terminator such as an IC socket so that it can be removed.
+It is good to put it in, but if it is troublesome, you can attach it directly.
+
+The wiring around MB89352 is a lot and it will be difficult, but please wire the gun battery.
+
+For ICB-288G, it is good to bite the spacer properly and screw it to the case.
+Uh.
+It is also necessary to make holes in the case accordingly.
+
+
+□ Circuit diagram supplement
+
+11DQ04 and 1.0A fuse is for supplying power to TERMPWR (38).
+
+According to the SCSI standard, the initiator (in this case MEGA-SCSI) powers TERMPWR
+It is supposed to be supplied, but in reality the target (hard
+It is a disk etc.).
+
+According to MSX standard, it cannot supply enough current to TERMPWR to meet SCSI standard.
+If you are worried about MSX standard, please omit 11DQ04 and fuse.
+
+If you omit this, the target is not connected, the power is not on
+In such cases, the SCSI bus becomes unstable, so try accessing SCSI at this time.
+Then you will almost certainly hang up.
+
+About the power supply area, it will be long to write, so round up here.
+11DQ04 and fuse ... Please make your own judgment.
+
+
+□ Completed? Recommended for operation check
+
+First, check if the power supply is short-circuited.
+There are three power supply systems for MEGA-SCSI, so please check each.
+
+・ Around normal power supply
+・ SRAM backup power supply area
+・ Around TERMPER
+
+Please check other signal lines carefully.
+In case of poor soldering, press the stick of the tester to improve the contact and properly
+▽ You may mistakenly think that it is connected.
+
+ Should be fine! If you are sure, plug it into the MSX and turn it on.
+If MSX does not start normally, immediately turn off the power and check again.
+
+After the startup is complete, install the product.
+Please refer to the installer documentation for details.
+If the installation is successful and it is recognized as a system, this time SCSI connection
+Connect HDD etc. to the computer.
+
+Look at Inquiries on INQ.COM (made by Mr. Taro).
+Is the HDD properly recognized?
+
+After that, start the setup tool etc. and try various operations.
+It will be almost safe if you reach here.
+Enjoy a comfortable MEGA-SCSI life.
+
+
+□ Troubleshooting is important.
+
+It didn't work, Check was dead.
+Maybe it's a bug in the schematic or software ...
+
+Most people are not working well in one shot.
+Some people suddenly give completion reports, but most of the time they repeat questions on the Internet
+Then, I checked, fixed it, and finally moved.
+
+If it doesn't work well, ask a question on the internet or send an email attack to Tsujikawa.
+Let's do it.
+
+However, if you have any questions, please explain the situation and ask specifically.
+
+How do I answer the panicking question that "it doesn't work, what should I do?"
+I don't know if it's good.
+
+Please be as calm as possible and write as much detail as possible.
+If you write a lot, you may wonder how hard you understand.
+I think you can give an answer that suits your level.
+
+Also, even if you think that it is not a big deal for yourself, if you report it, it is actually a solution
+Sometimes it is connected to the clue of the decision.
+▽ Please judge it arbitrarily and do not summarize it, but explain the situation in detail.
+Please explain the facts and your own thoughts.
+▽ Even if you hurry to ask a question, the solution will be delayed.
+
+
+Bad example: It seems that the power supply is shorted and it does not start (; _;)
+
+Reply example: Please check around the power supply again :-(
+
+
+Good example: MSX body is GT. Nothing is connected to the SCSI connector.
+I inserted MEGA-SCSI in slot 1 and nothing in slot 2.
+Even when the power of MSX is turned on, the black screen remains and even the title characters are displayed.
+	 not.
+It was similar when I made a mapper RAM and shorted the power supply before.
+Similarly this time the power supply is short
