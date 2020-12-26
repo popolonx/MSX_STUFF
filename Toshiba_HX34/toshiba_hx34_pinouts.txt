@@ -1,4 +1,21 @@
 toshiba
+keyboard pins:
+1  X0/Y0 IC24 (74LS245) - PIN 2
+2  X1/Y1 IC24 (74LS245) - PIN 3
+3  X2/Y2 IC24 (74LS245) - PIN 4
+4  X3/Y3 IC24 (74LS245) - PIN 5
+5  X4/Y4 IC24 (74LS245) - PIN 6
+6  X5/Y5 IC24 (74LS245) - PIN 7
+7  X6/Y6 IC24 (74LS245) - PIN 8
+8  X7/Y7 IC24 (74LS245) - PIN 9
+9  Y8 ?  IC20 - PIN 13 (to keyboard)
+10  Y9 ? IC20 - PIN 11  (to keyboard)
+11  IC20 - PIN 10 ( from keyboard , to TCX2002)
+12  KANA IC27 (74LS08) - PIN 11  (input comes from YM2149F - PIN 6 )
+13  CAPS IC25 (74LS367)- PIN 11  (input from tcx2001 PIN 77)
+14  GND
+15  +5V
+
 tcx-2001:
 1 IC25 (74LS367) - PIN 4 
 2 IC25 (74LS367) - PIN 2 
@@ -65,21 +82,21 @@ tcx-2001:
 63 WAIT_ (Module port PIN 7 + Z80 PIN 24 )
 64 TCX2002 - PIN 48 + R12 10kohm to +5V
 65 GND
-66 IC24 (74LS245) - PIN 18  Joystick or keyboard?
-67 IC24 (74LS245) - PIN 17  Joystick or keyboard?
-68 IC24 (74LS245) - PIN 16  Joystick or keyboard?
-69 IC24 (74LS245) - PIN 15  Joystick or keyboard?
-70 IC24 (74LS245) - PIN 14  Joystick or keyboard?
-71 IC24 (74LS245) - PIN 13  Joystick or keyboard?
-72 IC24 (74LS245) - PIN 12  Joystick or keyboard?
-73 IC24 (74LS245) - PIN 11  Joystick or keyboard?
-74 IC24 (74LS245) - PIN  1  Joystick or keyboard?
-75 IC24 (74LS245) - PIN 19  Joystick or keyboard?
-76 IC20 (74LS367) - PIN 14 
-77 IC20 (74LS367) - PIN 12
+66 IC24 (74LS245) - PIN 18  keyboard  X0/Y0
+67 IC24 (74LS245) - PIN 17  keyboard  X1/Y1
+68 IC24 (74LS245) - PIN 16  keyboard  X2/Y2
+69 IC24 (74LS245) - PIN 15  keyboard  X3/Y3
+70 IC24 (74LS245) - PIN 14  keyboard  X4/Y4
+71 IC24 (74LS245) - PIN 13  keyboard  X5/Y5
+72 IC24 (74LS245) - PIN 12  keyboard  X6/Y6
+73 IC24 (74LS245) - PIN 11  keyboard  X7/Y7
+74 IC24 (74LS245) - PIN  1  keyboard  DIR
+75 IC24 (74LS245) - PIN 19  keyboard  ENABLE
+76 IC20 (74LS367) - PIN 14  keyboard Y8?
+77 IC20 (74LS367) - PIN 12  keyboard Y9?
 78 CASETTE? printer port?
 79 CASETTE? printer port?
-80 IC25 (74LS367) - pin 12
+80 IC25 (74LS367) - pin 12  keyboard CAPS/KANA
 81 CASETTE? printer port?
 82 IC18 (74LS367) - PIN 2
 83 IC18 (74LS367) - PIN 4
@@ -118,7 +135,7 @@ TCX-2002:
 14  GND
 15  TCX2001 - PIN 94 + IC28 (74HCU04) - PIN 6
 16  IC13/14 (74LS367) - PIN 1
-17  IC13 (74LS367) - PIN 12
+17  RESET? IC13 (74LS367) - PIN 12
 18  IC20 (74LS367) - PIN  2
 19  IC20 (74LS367) - PIN  4
 20  IC16 (74LS367) - PIN 12
@@ -151,7 +168,7 @@ TCX-2002:
 47  TCX2001 - PIN 58
 48  TCX2001 - PIN 64  + R12 10kohm to +5V
 49  TCX2001 - PIN 27
-50  IC20 (74LS367) - PIN 9
+50  IC20 (74LS367) - PIN 9 ( from keyboard )
 51  IC11 (SRAM TC5516APL-2) - PIN 21
 52  GND
 53  GND
