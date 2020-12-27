@@ -113,8 +113,8 @@ tcx-2001:
 94 TCX2002 - PIN 15  + IC28 (74HCU04) - PIN 6 
 95 IC16 (74LS367) - PIN 2
 96 IC49 (74ALS133) - PIN 15
-97 R11 10k to +5V ( can be changed to GND ?)
-98 IC25 (74LS367) - PIN 13
+97 R11 10k to +5V ( can be changed to GND)
+98 IC25 (74LS367) - PIN 13 (INPUT pin 14 , R13 1.5k ohm connected to GND. This can be changed to +5V)
 99 IC25 (74LS367) - PIN 10
 100 IC25 (74LS367) - PIN 6
 
