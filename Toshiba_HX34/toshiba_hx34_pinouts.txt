@@ -10,7 +10,7 @@ keyboard pins:
 8  X7
 9  PC2 (to keyboard)  IC20 - PIN 13
 10  PC3 (to keyboard) IC20 - PIN 11
-11  COPY ( from keyboard , to TCX2002 PIN 50)
+11  COPY ( from keyboard , to TCX2002 PIN 50 via 74LS367), connects to GND when pressed
 12  KANA ( IC27 (74LS08) - PIN 11, input comes from YM2149F - PIN 6 )
 13  CAPS ( IC25 (74LS367)- PIN 11, input from tcx2001 PIN 77 )
 14  GND
@@ -168,7 +168,7 @@ TCX-2002:
 47  TCX2001 - PIN 58
 48  TCX2001 - PIN 64  + R12 10kohm to +5V
 49  TCX2001 - PIN 27
-50  COPY key from keyboard ( IC20 (74LS367) - PIN 9 )
+50  COPY key from keyboard ( IC20 (74LS367) - PIN 9 ), connects to ground when key pressed
 51  IC11 (SRAM TC5516APL-2) - PIN 21
 52  GND
 53  GND
