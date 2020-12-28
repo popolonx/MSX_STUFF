@@ -75,12 +75,12 @@ tcx-2001:
 56 CAS0  IC3/4 (41464) - PIN 16
 57 CAS1  IC5/6 (41464) - PIN 16
 58 TCX2002 - PIN 47
-59 TS53000P (in socket) ROM- PIN 22
-60 TS53000P (in socket) ROM- PIN 1
-61 TS53000P (in socket) ROM- PIN 27
+59 TS531000P (in socket) ROM- PIN 22 (A16)
+60 TS531000P (in socket) ROM- PIN 1  (A15)
+61 TS531000P (in socket) ROM- PIN 27 (A14)
 62 IC41 (74LS00) - PIN 5
 63 WAIT_ (Module port PIN 7 + Z80 PIN 24 )
-64 TCX2002 - PIN 48 + R12 10kohm to +5V
+64 TCX2002 - PIN 48 + R12 10kohm to +5V (can be changed to GND)
 65 GND
 66 IC24 (74LS245) - PIN 18  keyboard  X0/Ya
 67 IC24 (74LS245) - PIN 17  keyboard  X1/Yb
@@ -166,7 +166,7 @@ TCX-2002:
 45  +5V
 46  TCX2001 - PIN 29
 47  TCX2001 - PIN 58
-48  TCX2001 - PIN 64  + R12 10kohm to +5V
+48  TCX2001 - PIN 64  + R12 10kohm to +5V (can be changed to GND)
 49  TCX2001 - PIN 27
 50  COPY key from keyboard ( IC20 (74LS367) - PIN 9 ), connects to ground when key pressed
 51  IC11 (SRAM TC5516APL-2) - PIN 21
