@@ -3,3 +3,4 @@ folder to contain toshiba hx34 related stuff
 -HX34_FIRMWARE.ROM, dump using hx3xdump util ( https://github.com/openMSX/openMSX/files/5740062/hx3xdump.zip )
 -toshiba_hx34_pinouts.txt
 -hx34_128k_mod.jpg, resistor places to activate 128k ram
+-kanji.rom, dumped kanji rom from hx34
