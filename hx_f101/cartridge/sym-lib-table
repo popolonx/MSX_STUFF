@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name hx_f101_cart-rescue)(type Legacy)(uri ${KIPRJMOD}/hx_f101_cart-rescue.lib)(options "")(descr ""))
+)
