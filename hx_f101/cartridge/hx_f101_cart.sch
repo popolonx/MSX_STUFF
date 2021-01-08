@@ -15,72 +15,6 @@ Comment4 ""
 $EndDescr
 $Comp
 L 74xx:74LS07 U6
-U 1 1 5FEBE875
-P 8500 3400
-F 0 "U6" H 8500 3717 50  0000 C CNN
-F 1 "74LS07" H 8500 3626 50  0000 C CNN
-F 2 "" H 8500 3400 50  0001 C CNN
-F 3 "www.ti.com/lit/ds/symlink/sn74ls07.pdf" H 8500 3400 50  0001 C CNN
-	1    8500 3400
-	1    0    0    -1  
-$EndComp
-$Comp
-L 74xx:74LS07 U6
-U 2 1 5FEBF345
-P 8500 3850
-F 0 "U6" H 8500 4167 50  0000 C CNN
-F 1 "74LS07" H 8500 4076 50  0000 C CNN
-F 2 "" H 8500 3850 50  0001 C CNN
-F 3 "www.ti.com/lit/ds/symlink/sn74ls07.pdf" H 8500 3850 50  0001 C CNN
-	2    8500 3850
-	1    0    0    -1  
-$EndComp
-$Comp
-L 74xx:74LS07 U6
-U 3 1 5FEC0345
-P 8500 4300
-F 0 "U6" H 8500 4617 50  0000 C CNN
-F 1 "74LS07" H 8500 4526 50  0000 C CNN
-F 2 "" H 8500 4300 50  0001 C CNN
-F 3 "www.ti.com/lit/ds/symlink/sn74ls07.pdf" H 8500 4300 50  0001 C CNN
-	3    8500 4300
-	1    0    0    -1  
-$EndComp
-$Comp
-L 74xx:74LS07 U6
-U 4 1 5FEC10F5
-P 8500 4750
-F 0 "U6" H 8500 5067 50  0000 C CNN
-F 1 "74LS07" H 8500 4976 50  0000 C CNN
-F 2 "" H 8500 4750 50  0001 C CNN
-F 3 "www.ti.com/lit/ds/symlink/sn74ls07.pdf" H 8500 4750 50  0001 C CNN
-	4    8500 4750
-	1    0    0    -1  
-$EndComp
-$Comp
-L 74xx:74LS07 U6
-U 5 1 5FEC206D
-P 8500 5200
-F 0 "U6" H 8500 5517 50  0000 C CNN
-F 1 "74LS07" H 8500 5426 50  0000 C CNN
-F 2 "" H 8500 5200 50  0001 C CNN
-F 3 "www.ti.com/lit/ds/symlink/sn74ls07.pdf" H 8500 5200 50  0001 C CNN
-	5    8500 5200
-	1    0    0    -1  
-$EndComp
-$Comp
-L 74xx:74LS07 U6
-U 6 1 5FEC308B
-P 8500 5650
-F 0 "U6" H 8500 5967 50  0000 C CNN
-F 1 "74LS07" H 8500 5876 50  0000 C CNN
-F 2 "" H 8500 5650 50  0001 C CNN
-F 3 "www.ti.com/lit/ds/symlink/sn74ls07.pdf" H 8500 5650 50  0001 C CNN
-	6    8500 5650
-	1    0    0    -1  
-$EndComp
-$Comp
-L 74xx:74LS07 U6
 U 7 1 5FEC4F6C
 P 7050 1100
 F 0 "U6" H 7280 1146 50  0000 L CNN
@@ -88,72 +22,6 @@ F 1 "74LS07" H 7280 1055 50  0000 L CNN
 F 2 "Package_DIP:DIP-14_W7.62mm" H 7050 1100 50  0001 C CNN
 F 3 "www.ti.com/lit/ds/symlink/sn74ls07.pdf" H 7050 1100 50  0001 C CNN
 	7    7050 1100
-	1    0    0    -1  
-$EndComp
-$Comp
-L 74xx:74LS07 U7
-U 1 1 5FED93B3
-P 9800 3400
-F 0 "U7" H 9800 3717 50  0000 C CNN
-F 1 "74LS07" H 9800 3626 50  0000 C CNN
-F 2 "" H 9800 3400 50  0001 C CNN
-F 3 "www.ti.com/lit/ds/symlink/sn74ls07.pdf" H 9800 3400 50  0001 C CNN
-	1    9800 3400
-	1    0    0    -1  
-$EndComp
-$Comp
-L 74xx:74LS07 U7
-U 2 1 5FED93B9
-P 9800 3850
-F 0 "U7" H 9800 4167 50  0000 C CNN
-F 1 "74LS07" H 9800 4076 50  0000 C CNN
-F 2 "" H 9800 3850 50  0001 C CNN
-F 3 "www.ti.com/lit/ds/symlink/sn74ls07.pdf" H 9800 3850 50  0001 C CNN
-	2    9800 3850
-	1    0    0    -1  
-$EndComp
-$Comp
-L 74xx:74LS07 U7
-U 3 1 5FED93BF
-P 9800 4300
-F 0 "U7" H 9800 4617 50  0000 C CNN
-F 1 "74LS07" H 9800 4526 50  0000 C CNN
-F 2 "" H 9800 4300 50  0001 C CNN
-F 3 "www.ti.com/lit/ds/symlink/sn74ls07.pdf" H 9800 4300 50  0001 C CNN
-	3    9800 4300
-	1    0    0    -1  
-$EndComp
-$Comp
-L 74xx:74LS07 U7
-U 4 1 5FED93C5
-P 9800 4750
-F 0 "U7" H 9800 5067 50  0000 C CNN
-F 1 "74LS07" H 9800 4976 50  0000 C CNN
-F 2 "" H 9800 4750 50  0001 C CNN
-F 3 "www.ti.com/lit/ds/symlink/sn74ls07.pdf" H 9800 4750 50  0001 C CNN
-	4    9800 4750
-	1    0    0    -1  
-$EndComp
-$Comp
-L 74xx:74LS07 U7
-U 5 1 5FED93CB
-P 9800 5200
-F 0 "U7" H 9800 5517 50  0000 C CNN
-F 1 "74LS07" H 9800 5426 50  0000 C CNN
-F 2 "" H 9800 5200 50  0001 C CNN
-F 3 "www.ti.com/lit/ds/symlink/sn74ls07.pdf" H 9800 5200 50  0001 C CNN
-	5    9800 5200
-	1    0    0    -1  
-$EndComp
-$Comp
-L 74xx:74LS07 U7
-U 6 1 5FED93D1
-P 9800 5650
-F 0 "U7" H 9800 5967 50  0000 C CNN
-F 1 "74LS07" H 9800 5876 50  0000 C CNN
-F 2 "" H 9800 5650 50  0001 C CNN
-F 3 "www.ti.com/lit/ds/symlink/sn74ls07.pdf" H 9800 5650 50  0001 C CNN
-	6    9800 5650
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -179,61 +47,6 @@ F 3 "http://www.ti.com/lit/gpn/sn74LS245" H 3150 5050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 74xx:74LS133 U3
-U 1 1 5FEDE3AB
-P 4850 6550
-F 0 "U3" H 4850 7375 50  0000 C CNN
-F 1 "74LS133" H 4850 7284 50  0000 C CNN
-F 2 "Package_DIP:DIP-16_W7.62mm" H 4850 6550 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS133" H 4850 6550 50  0001 C CNN
-	1    4850 6550
-	1    0    0    -1  
-$EndComp
-$Comp
-L 74xx:74LS00 U8
-U 1 1 5FEE1D7C
-P 7150 2500
-F 0 "U8" H 7150 2825 50  0000 C CNN
-F 1 "74LS00" H 7150 2734 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm" H 7150 2500 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74ls00" H 7150 2500 50  0001 C CNN
-	1    7150 2500
-	1    0    0    -1  
-$EndComp
-$Comp
-L 74xx:74LS00 U8
-U 2 1 5FEE9436
-P 6250 2550
-F 0 "U8" H 6250 2875 50  0000 C CNN
-F 1 "74LS00" H 6250 2784 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm" H 6250 2550 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74ls00" H 6250 2550 50  0001 C CNN
-	2    6250 2550
-	1    0    0    -1  
-$EndComp
-$Comp
-L 74xx:74LS00 U8
-U 3 1 5FEEC332
-P 4750 2550
-F 0 "U8" H 4750 2875 50  0000 C CNN
-F 1 "74LS00" H 4750 2784 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm" H 4750 2550 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74ls00" H 4750 2550 50  0001 C CNN
-	3    4750 2550
-	1    0    0    -1  
-$EndComp
-$Comp
-L 74xx:74LS00 U8
-U 4 1 5FEEE483
-P 5650 7100
-F 0 "U8" H 5650 7425 50  0000 C CNN
-F 1 "74LS00" H 5650 7334 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm" H 5650 7100 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74ls00" H 5650 7100 50  0001 C CNN
-	4    5650 7100
-	1    0    0    -1  
-$EndComp
-$Comp
 L 74xx:74LS00 U8
 U 5 1 5FEF00B7
 P 8650 1100
@@ -246,39 +59,6 @@ F 3 "http://www.ti.com/lit/gpn/sn74ls00" H 8650 1100 50  0001 C CNN
 $EndComp
 $Comp
 L 74xx:74LS04 U5
-U 2 1 5FEF67E3
-P 3650 7350
-F 0 "U5" H 3650 7667 50  0000 C CNN
-F 1 "74LS04" H 3650 7576 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm" H 3650 7350 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS04" H 3650 7350 50  0001 C CNN
-	2    3650 7350
-	1    0    0    -1  
-$EndComp
-$Comp
-L 74xx:74LS04 U5
-U 3 1 5FEF84A2
-P 3650 6850
-F 0 "U5" H 3650 7167 50  0000 C CNN
-F 1 "74LS04" H 3650 7076 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm" H 3650 6850 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS04" H 3650 6850 50  0001 C CNN
-	3    3650 6850
-	1    0    0    -1  
-$EndComp
-$Comp
-L 74xx:74LS04 U5
-U 5 1 5FEFB49D
-P 3800 2450
-F 0 "U5" H 3800 2767 50  0000 C CNN
-F 1 "74LS04" H 3800 2676 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm" H 3800 2450 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS04" H 3800 2450 50  0001 C CNN
-	5    3800 2450
-	1    0    0    -1  
-$EndComp
-$Comp
-L 74xx:74LS04 U5
 U 7 1 5FEFDCFD
 P 6200 1100
 F 0 "U5" H 6430 1146 50  0000 L CNN
@@ -286,50 +66,6 @@ F 1 "74LS04" H 6430 1055 50  0000 L CNN
 F 2 "Package_DIP:DIP-14_W7.62mm" H 6200 1100 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74LS04" H 6200 1100 50  0001 C CNN
 	7    6200 1100
-	1    0    0    -1  
-$EndComp
-$Comp
-L 74xx:74LS32 U4
-U 1 1 5FF04D15
-P 3500 1150
-F 0 "U4" H 3500 1475 50  0000 C CNN
-F 1 "74LS32" H 3500 1384 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm" H 3500 1150 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS32" H 3500 1150 50  0001 C CNN
-	1    3500 1150
-	1    0    0    -1  
-$EndComp
-$Comp
-L 74xx:74LS32 U4
-U 2 1 5FF09430
-P 3250 1800
-F 0 "U4" H 3250 2125 50  0000 C CNN
-F 1 "74LS32" H 3250 2034 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm" H 3250 1800 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS32" H 3250 1800 50  0001 C CNN
-	2    3250 1800
-	1    0    0    -1  
-$EndComp
-$Comp
-L 74xx:74LS32 U4
-U 3 1 5FF0B598
-P 5700 4850
-F 0 "U4" H 5700 5175 50  0000 C CNN
-F 1 "74LS32" H 5700 5084 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm" H 5700 4850 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS32" H 5700 4850 50  0001 C CNN
-	3    5700 4850
-	1    0    0    -1  
-$EndComp
-$Comp
-L 74xx:74LS32 U4
-U 4 1 5FF0D95B
-P 3550 3000
-F 0 "U4" H 3550 3325 50  0000 C CNN
-F 1 "74LS32" H 3550 3234 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm" H 3550 3000 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS32" H 3550 3000 50  0001 C CNN
-	4    3550 3000
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -346,12 +82,12 @@ $EndComp
 $Comp
 L agg-kicad:CONN_02x17 J2
 U 1 1 5FF156A8
-P 10500 1050
-F 0 "J2" H 10450 1265 50  0000 C CNN
-F 1 "CONN_02x17" H 10450 1174 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x17_P2.54mm_Vertical" H 10500 1050 50  0001 C CNN
-F 3 "" H 10500 1050 50  0001 C CNN
-	1    10500 1050
+P 7850 3150
+F 0 "J2" H 7800 3365 50  0000 C CNN
+F 1 "CONN_02x17" H 7800 3274 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x17_P2.54mm_Vertical" H 7850 3150 50  0001 C CNN
+F 3 "" H 7850 3150 50  0001 C CNN
+	1    7850 3150
 	1    0    0    -1  
 $EndComp
 Text GLabel 1600 1100 2    50   Input ~ 0
@@ -543,73 +279,73 @@ Text GLabel 1250 6400 0    50   Input ~ 0
 _CS1
 Text GLabel 1250 6200 0    50   Input ~ 0
 5V
-Text GLabel 10600 1050 2    50   Input ~ 0
+Text GLabel 7950 3150 2    50   Input ~ 0
 PB2
-Text GLabel 10600 1150 2    50   Input ~ 0
+Text GLabel 7950 3250 2    50   Input ~ 0
 PB4
-Text GLabel 10600 1250 2    50   Input ~ 0
+Text GLabel 7950 3350 2    50   Input ~ 0
 PB6
-Text GLabel 10600 1350 2    50   Input ~ 0
+Text GLabel 7950 3450 2    50   Input ~ 0
 PB8
-Text GLabel 10600 1450 2    50   Input ~ 0
+Text GLabel 7950 3550 2    50   Input ~ 0
 PB10
-Text GLabel 10600 1550 2    50   Input ~ 0
+Text GLabel 7950 3650 2    50   Input ~ 0
 PB12
-Text GLabel 10600 1650 2    50   Input ~ 0
+Text GLabel 7950 3750 2    50   Input ~ 0
 PB14
-Text GLabel 10600 1750 2    50   Input ~ 0
+Text GLabel 7950 3850 2    50   Input ~ 0
 PB16
-Text GLabel 10600 1850 2    50   Input ~ 0
+Text GLabel 7950 3950 2    50   Input ~ 0
 PB18
-Text GLabel 10600 1950 2    50   Input ~ 0
+Text GLabel 7950 4050 2    50   Input ~ 0
 PB20
-Text GLabel 10600 2050 2    50   Input ~ 0
+Text GLabel 7950 4150 2    50   Input ~ 0
 PB22
-Text GLabel 10600 2150 2    50   Input ~ 0
+Text GLabel 7950 4250 2    50   Input ~ 0
 PB24
-Text GLabel 10600 2250 2    50   Input ~ 0
+Text GLabel 7950 4350 2    50   Input ~ 0
 PB26
-Text GLabel 10600 2350 2    50   Input ~ 0
+Text GLabel 7950 4450 2    50   Input ~ 0
 PB28
-Text GLabel 10600 2450 2    50   Input ~ 0
+Text GLabel 7950 4550 2    50   Input ~ 0
 PB30
-Text GLabel 10600 2550 2    50   Input ~ 0
+Text GLabel 7950 4650 2    50   Input ~ 0
 PB32
-Text GLabel 10600 2650 2    50   Input ~ 0
+Text GLabel 7950 4750 2    50   Input ~ 0
 PB34
-Text GLabel 10300 1050 0    50   Input ~ 0
+Text GLabel 7650 3150 0    50   Input ~ 0
 PB1
-Text GLabel 10300 1150 0    50   Input ~ 0
+Text GLabel 7650 3250 0    50   Input ~ 0
 PB3
-Text GLabel 10300 1250 0    50   Input ~ 0
+Text GLabel 7650 3350 0    50   Input ~ 0
 PB5
-Text GLabel 10300 1450 0    50   Input ~ 0
+Text GLabel 7650 3550 0    50   Input ~ 0
 PB9
-Text GLabel 10300 1550 0    50   Input ~ 0
+Text GLabel 7650 3650 0    50   Input ~ 0
 PB11
-Text GLabel 10300 1650 0    50   Input ~ 0
+Text GLabel 7650 3750 0    50   Input ~ 0
 PB13
-Text GLabel 10300 1750 0    50   Input ~ 0
+Text GLabel 7650 3850 0    50   Input ~ 0
 PB15
-Text GLabel 10300 1850 0    50   Input ~ 0
+Text GLabel 7650 3950 0    50   Input ~ 0
 PB17
-Text GLabel 10300 1950 0    50   Input ~ 0
+Text GLabel 7650 4050 0    50   Input ~ 0
 PB19
-Text GLabel 10300 2050 0    50   Input ~ 0
+Text GLabel 7650 4150 0    50   Input ~ 0
 PB21
-Text GLabel 10300 2150 0    50   Input ~ 0
+Text GLabel 7650 4250 0    50   Input ~ 0
 PB23
-Text GLabel 10300 2250 0    50   Input ~ 0
+Text GLabel 7650 4350 0    50   Input ~ 0
 PB25
-Text GLabel 10300 2350 0    50   Input ~ 0
+Text GLabel 7650 4450 0    50   Input ~ 0
 PB27
-Text GLabel 10300 2450 0    50   Input ~ 0
+Text GLabel 7650 4550 0    50   Input ~ 0
 PB29
-Text GLabel 10300 2550 0    50   Input ~ 0
+Text GLabel 7650 4650 0    50   Input ~ 0
 PB31
-Text GLabel 10300 2650 0    50   Input ~ 0
+Text GLabel 7650 4750 0    50   Input ~ 0
 PB33
-Text GLabel 10300 1350 0    50   Input ~ 0
+Text GLabel 7650 3450 0    50   Input ~ 0
 PB7
 Text GLabel 3650 5250 2    50   Input ~ 0
 PB18
@@ -627,17 +363,13 @@ Text GLabel 3650 4650 2    50   Input ~ 0
 PB30
 Text GLabel 3650 4550 2    50   Input ~ 0
 PB32
-Text GLabel 10100 5200 2    50   Input ~ 0
-PB14
-Text GLabel 10100 5650 2    50   Input ~ 0
-PB16
 $Comp
 L agg-kicad:R R1
 U 1 1 5FECBF2C
 P 850 6050
 F 0 "R1" H 900 6231 50  0000 C CNN
 F 1 "10K" H 900 6140 50  0000 C CNN
-F 2 "" H 850 6050 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" H 850 6050 50  0001 C CNN
 F 3 "" H 850 6050 50  0001 C CNN
 	1    850  6050
 	1    0    0    -1  
@@ -648,161 +380,13 @@ Wire Wire Line
 	1250 6050 1250 6100
 Text GLabel 850  6050 0    50   Input ~ 0
 5V
-Text GLabel 4550 6050 0    50   Input ~ 0
-A13
-Text GLabel 4550 6150 0    50   Input ~ 0
-A12
-Text GLabel 4550 6250 0    50   Input ~ 0
-A11
-Text GLabel 4550 6350 0    50   Input ~ 0
-A10
-Text GLabel 4550 6450 0    50   Input ~ 0
-A9
-Text GLabel 4550 6550 0    50   Input ~ 0
-A8
-Text GLabel 4550 6650 0    50   Input ~ 0
-A7
-Text GLabel 4550 6750 0    50   Input ~ 0
-A6
-Text GLabel 4550 6950 0    50   Input ~ 0
-A4
 Text GLabel 2650 5450 0    50   Input ~ 0
-P10
-Text GLabel 8200 3400 0    50   Input ~ 0
-P6
-Text GLabel 8800 3400 2    50   Input ~ 0
-PB6
-Text GLabel 8800 4300 2    50   Input ~ 0
-PB2
-Text GLabel 8200 4300 0    50   Input ~ 0
-P2_ENABLE
-Text GLabel 8800 4750 2    50   Input ~ 0
-PB8
-Text GLabel 8800 5200 2    50   Input ~ 0
-PB4
-Text GLabel 8800 5650 2    50   Input ~ 0
-PB10
-Text GLabel 10100 3400 2    50   Input ~ 0
-PB12
-NoConn ~ 10100 4300
-NoConn ~ 10100 4750
-NoConn ~ 9500 4750
-NoConn ~ 9500 4300
-Text GLabel 8200 4750 0    50   Input ~ 0
-P8
-Text GLabel 8200 5650 0    50   Input ~ 0
-P10
-Text GLabel 9500 5650 0    50   Input ~ 0
-A2
-Text GLabel 3500 2450 0    50   Input ~ 0
-A15
-Text GLabel 4450 2650 0    50   Input ~ 0
-A14
-Wire Wire Line
-	5050 2550 5050 2750
-Wire Wire Line
-	3250 2750 3250 2900
-Wire Wire Line
-	3250 2750 4600 2750
-Text GLabel 3850 3000 2    50   Input ~ 0
-P2_ENABLE
-Wire Wire Line
-	4100 2450 4450 2450
-Wire Wire Line
-	3250 3100 3050 3100
-Text GLabel 3050 3100 0    50   Input ~ 0
-_SLTSL
-Text GLabel 8200 5200 0    50   Input ~ 0
-_RD
-Text GLabel 9500 3400 0    50   Input ~ 0
-A0
-Text GLabel 9500 5200 0    50   Input ~ 0
-A1
-Text GLabel 3550 1800 2    50   Input ~ 0
-P10
-Text GLabel 2950 1700 0    50   Input ~ 0
-_RD
-Text GLabel 2950 1900 0    50   Input ~ 0
-_SLTSL
-Text GLabel 9500 3850 0    50   Input ~ 0
-_RESET
-Text GLabel 10100 3850 2    50   Input ~ 0
-PB34
-NoConn ~ 8800 3850
-NoConn ~ 8200 3850
-Wire Wire Line
-	5900 4850 6000 4850
-Text GLabel 3800 1150 2    50   Input ~ 0
-P8
-Text GLabel 3200 1050 0    50   Input ~ 0
-_WR
-Text GLabel 3200 1250 0    50   Input ~ 0
-_SLTSL
-Text GLabel 5150 6550 2    50   Input ~ 0
-P6
+_RE
 Text GLabel 2650 5550 0    50   Input ~ 0
-P2_ENABLE
-Text GLabel 4550 6850 0    50   Input ~ 0
-A5
-Wire Wire Line
-	3950 7050 4550 7050
-Text GLabel 3350 6850 0    50   Input ~ 0
-A3
-Text GLabel 3350 7350 0    50   Input ~ 0
-_SLTSL
-Wire Wire Line
-	4550 7150 4000 7150
-Wire Wire Line
-	4000 7150 4000 7350
-Wire Wire Line
-	4000 7350 3950 7350
-Wire Wire Line
-	3950 7050 3950 6850
-$Comp
-L power:+5V #PWR?
-U 1 1 5FF18C50
-P 4550 5750
-F 0 "#PWR?" H 4550 5600 50  0001 C CNN
-F 1 "+5V" H 4565 5923 50  0000 C CNN
-F 2 "" H 4550 5750 50  0001 C CNN
-F 3 "" H 4550 5750 50  0001 C CNN
-	1    4550 5750
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4550 5750 4550 5950
-Wire Wire Line
-	4000 7350 5300 7350
-Wire Wire Line
-	5300 7350 5300 7200
-Wire Wire Line
-	5300 7200 5350 7200
-Connection ~ 4000 7350
-Wire Wire Line
-	5050 6550 5050 7000
-Wire Wire Line
-	5050 7000 5350 7000
-Wire Wire Line
-	4600 2750 4600 4750
-Wire Wire Line
-	4600 4750 5400 4750
-Connection ~ 4600 2750
-Wire Wire Line
-	4600 2750 5050 2750
-Wire Wire Line
-	5950 7100 5950 5300
-Wire Wire Line
-	5950 5300 5200 5300
-Wire Wire Line
-	5200 5300 5200 4950
-Wire Wire Line
-	5200 4950 5400 4950
-Text GLabel 5900 4850 2    50   Input ~ 0
-_ROM_CE
+_CS
 Text GLabel 1250 6300 0    50   Input ~ 0
 _ROM_CE
 NoConn ~ 1600 1000
-NoConn ~ 1600 1200
 NoConn ~ 1600 1300
 NoConn ~ 1600 1400
 NoConn ~ 1600 1500
@@ -813,6 +397,371 @@ NoConn ~ 1100 1500
 NoConn ~ 1100 1400
 NoConn ~ 1100 1300
 NoConn ~ 1100 1100
-NoConn ~ 6650 4100
 NoConn ~ 2600 4550
+Text GLabel 2350 2350 0    50   Input ~ 0
+A3
+$Comp
+L 74xx:74LS04 U5
+U 3 1 5FEF84A2
+P 2650 2350
+F 0 "U5" H 2650 2667 50  0000 C CNN
+F 1 "74LS04" H 2650 2576 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H 2650 2350 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS04" H 2650 2350 50  0001 C CNN
+	3    2650 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS04 U5
+U 2 1 5FEF67E3
+P 2700 1150
+F 0 "U5" H 2700 1467 50  0000 C CNN
+F 1 "74LS04" H 2700 1376 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H 2700 1150 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS04" H 2700 1150 50  0001 C CNN
+	2    2700 1150
+	1    0    0    -1  
+$EndComp
+Text GLabel 3300 2150 0    50   Input ~ 0
+A5
+Text GLabel 3300 2250 0    50   Input ~ 0
+A4
+Text GLabel 3300 2050 0    50   Input ~ 0
+A6
+Text GLabel 3300 1950 0    50   Input ~ 0
+A7
+Text GLabel 3300 1850 0    50   Input ~ 0
+A8
+Text GLabel 3300 1750 0    50   Input ~ 0
+A9
+Text GLabel 3300 1650 0    50   Input ~ 0
+A10
+Text GLabel 3300 1550 0    50   Input ~ 0
+A11
+Text GLabel 3300 1450 0    50   Input ~ 0
+A12
+Text GLabel 3300 1350 0    50   Input ~ 0
+A13
+$Comp
+L 74xx:74LS133 U3
+U 1 1 5FEDE3AB
+P 3600 1750
+F 0 "U3" H 3600 2575 50  0000 C CNN
+F 1 "74LS133" H 3600 2484 50  0000 C CNN
+F 2 "Package_DIP:DIP-16_W7.62mm" H 3600 1750 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS133" H 3600 1750 50  0001 C CNN
+	1    3600 1750
+	1    0    0    -1  
+$EndComp
+Text GLabel 4800 3350 0    50   Input ~ 0
+_WR
+Text GLabel 4800 2800 0    50   Input ~ 0
+_RD
+$Comp
+L 74xx:74LS32 U4
+U 2 1 5FF09430
+P 5100 2900
+F 0 "U4" H 5100 3225 50  0000 C CNN
+F 1 "74LS32" H 5100 3134 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H 5100 2900 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS32" H 5100 2900 50  0001 C CNN
+	2    5100 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS32 U4
+U 1 1 5FF04D15
+P 5100 2350
+F 0 "U4" H 5100 2675 50  0000 C CNN
+F 1 "74LS32" H 5100 2584 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H 5100 2350 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS32" H 5100 2350 50  0001 C CNN
+	1    5100 2350
+	1    0    0    -1  
+$EndComp
+Text GLabel 4250 3000 0    50   Input ~ 0
+_SLTSL
+Text GLabel 3300 1250 0    50   Input ~ 0
+A14
+Text GLabel 2400 1150 0    50   Input ~ 0
+A15
+$Comp
+L 74xx:74LS04 U5
+U 5 1 5FEFB49D
+P 4350 1750
+F 0 "U5" H 4350 2067 50  0000 C CNN
+F 1 "74LS04" H 4350 1976 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H 4350 1750 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS04" H 4350 1750 50  0001 C CNN
+	5    4350 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS00 U8
+U 4 1 5FEE1D7C
+P 5250 1650
+F 0 "U8" H 5250 1975 50  0000 C CNN
+F 1 "74LS00" H 5250 1884 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H 5250 1650 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74ls00" H 5250 1650 50  0001 C CNN
+	4    5250 1650
+	1    0    0    -1  
+$EndComp
+Text GLabel 5400 2350 2    50   Input ~ 0
+_ROM_CE
+$Comp
+L 74xx:74LS32 U4
+U 3 1 5FF0B598
+P 5100 3450
+F 0 "U4" H 5100 3775 50  0000 C CNN
+F 1 "74LS32" H 5100 3684 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H 5100 3450 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS32" H 5100 3450 50  0001 C CNN
+	3    5100 3450
+	1    0    0    -1  
+$EndComp
+Text GLabel 6950 5650 2    50   Input ~ 0
+PB34
+Text GLabel 5650 5650 0    50   Input ~ 0
+_RESET
+Text GLabel 6350 4750 0    50   Input ~ 0
+A1
+Text GLabel 6350 4300 0    50   Input ~ 0
+A0
+Text GLabel 6350 5200 0    50   Input ~ 0
+A2
+Text GLabel 6350 3850 0    50   Input ~ 0
+_RE
+Text GLabel 6350 3400 0    50   Input ~ 0
+_WE
+Text GLabel 6950 4300 2    50   Input ~ 0
+PB12
+Text GLabel 6950 3850 2    50   Input ~ 0
+PB10
+Text GLabel 6950 2500 2    50   Input ~ 0
+PB4
+Text GLabel 6950 3400 2    50   Input ~ 0
+PB8
+Text GLabel 6350 2050 0    50   Input ~ 0
+_CS
+Text GLabel 6950 2050 2    50   Input ~ 0
+PB2
+Text GLabel 6950 2950 2    50   Input ~ 0
+PB6
+Text GLabel 6350 2950 0    50   Input ~ 0
+_CS
+Text GLabel 6950 5200 2    50   Input ~ 0
+PB16
+Text GLabel 6950 4750 2    50   Input ~ 0
+PB14
+$Comp
+L 74xx:74LS07 U7
+U 6 1 5FED93D1
+P 6650 5200
+F 0 "U7" H 6650 5517 50  0000 C CNN
+F 1 "74LS07" H 6650 5426 50  0000 C CNN
+F 2 "" H 6650 5200 50  0001 C CNN
+F 3 "www.ti.com/lit/ds/symlink/sn74ls07.pdf" H 6650 5200 50  0001 C CNN
+	6    6650 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS07 U7
+U 5 1 5FED93CB
+P 6650 4750
+F 0 "U7" H 6650 5067 50  0000 C CNN
+F 1 "74LS07" H 6650 4976 50  0000 C CNN
+F 2 "" H 6650 4750 50  0001 C CNN
+F 3 "www.ti.com/lit/ds/symlink/sn74ls07.pdf" H 6650 4750 50  0001 C CNN
+	5    6650 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS07 U7
+U 1 1 5FED93B9
+P 6650 5650
+F 0 "U7" H 6650 5967 50  0000 C CNN
+F 1 "74LS07" H 6650 5876 50  0000 C CNN
+F 2 "" H 6650 5650 50  0001 C CNN
+F 3 "www.ti.com/lit/ds/symlink/sn74ls07.pdf" H 6650 5650 50  0001 C CNN
+	1    6650 5650
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS07 U7
+U 4 1 5FED93B3
+P 6650 4300
+F 0 "U7" H 6650 4617 50  0000 C CNN
+F 1 "74LS07" H 6650 4526 50  0000 C CNN
+F 2 "" H 6650 4300 50  0001 C CNN
+F 3 "www.ti.com/lit/ds/symlink/sn74ls07.pdf" H 6650 4300 50  0001 C CNN
+	4    6650 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS07 U6
+U 1 1 5FEC308B
+P 6650 3850
+F 0 "U6" H 6650 4167 50  0000 C CNN
+F 1 "74LS07" H 6650 4076 50  0000 C CNN
+F 2 "" H 6650 3850 50  0001 C CNN
+F 3 "www.ti.com/lit/ds/symlink/sn74ls07.pdf" H 6650 3850 50  0001 C CNN
+	1    6650 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS07 U6
+U 5 1 5FEC206D
+P 6650 2500
+F 0 "U6" H 6650 2817 50  0000 C CNN
+F 1 "74LS07" H 6650 2726 50  0000 C CNN
+F 2 "" H 6650 2500 50  0001 C CNN
+F 3 "www.ti.com/lit/ds/symlink/sn74ls07.pdf" H 6650 2500 50  0001 C CNN
+	5    6650 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS07 U6
+U 2 1 5FEC10F5
+P 6650 3400
+F 0 "U6" H 6650 3717 50  0000 C CNN
+F 1 "74LS07" H 6650 3626 50  0000 C CNN
+F 2 "" H 6650 3400 50  0001 C CNN
+F 3 "www.ti.com/lit/ds/symlink/sn74ls07.pdf" H 6650 3400 50  0001 C CNN
+	2    6650 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS07 U6
+U 4 1 5FEC0345
+P 6650 2050
+F 0 "U6" H 6650 2367 50  0000 C CNN
+F 1 "74LS07" H 6650 2276 50  0000 C CNN
+F 2 "" H 6650 2050 50  0001 C CNN
+F 3 "www.ti.com/lit/ds/symlink/sn74ls07.pdf" H 6650 2050 50  0001 C CNN
+	4    6650 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS07 U6
+U 6 1 5FEBE875
+P 6650 2950
+F 0 "U6" H 6650 3267 50  0000 C CNN
+F 1 "74LS07" H 6650 3176 50  0000 C CNN
+F 2 "" H 6650 2950 50  0001 C CNN
+F 3 "www.ti.com/lit/ds/symlink/sn74ls07.pdf" H 6650 2950 50  0001 C CNN
+	6    6650 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 2350 2950 2350
+Wire Wire Line
+	3000 1150 3300 1150
+Wire Wire Line
+	4650 1750 4650 2250
+Wire Wire Line
+	4650 2250 4800 2250
+Wire Wire Line
+	4650 1750 4950 1750
+Connection ~ 4650 1750
+Text GLabel 5400 2900 2    50   Input ~ 0
+_RE
+Text GLabel 5400 3450 2    50   Input ~ 0
+_WE
+Wire Wire Line
+	4250 3000 4350 3000
+Wire Wire Line
+	4350 3550 4350 3000
+Wire Wire Line
+	4350 3550 4800 3550
+Connection ~ 4350 3000
+Wire Wire Line
+	4350 3000 4800 3000
+Wire Wire Line
+	4350 3000 4350 2450
+Wire Wire Line
+	4350 2450 4800 2450
+Text GLabel 4400 1150 0    50   Input ~ 0
+_RFSH
+Text GLabel 5550 1650 2    50   Input ~ 0
+_CS
+Text GLabel 6350 2500 0    50   Input ~ 0
+_RE
+Wire Wire Line
+	7650 3150 7650 1600
+Wire Wire Line
+	7650 1600 7850 1600
+Wire Wire Line
+	3900 1750 4050 1750
+Text GLabel 1600 1200 2    50   Input ~ 0
+_RFSH
+$Comp
+L Device:Jumper JP3
+U 1 1 5FFF0D6F
+P 6000 5650
+F 0 "JP3" H 6000 5914 50  0000 C CNN
+F 1 "Jumper" H 6000 5823 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 6000 5650 50  0001 C CNN
+F 3 "~" H 6000 5650 50  0001 C CNN
+	1    6000 5650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6350 5650 6300 5650
+Wire Wire Line
+	5700 5650 5650 5650
+$Comp
+L Device:Jumper_NC_Dual JP1
+U 1 1 5FFF504E
+P 4650 1150
+F 0 "JP1" H 4650 1389 50  0000 C CNN
+F 1 "Jumper_NC_Dual" H 4650 1298 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 4650 1150 50  0001 C CNN
+F 3 "~" H 4650 1150 50  0001 C CNN
+	1    4650 1150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4900 1150 5450 1150
+Wire Wire Line
+	5450 1150 5450 700 
+Wire Wire Line
+	5450 700  5650 700 
+Wire Wire Line
+	6200 700  6200 600 
+Wire Wire Line
+	4650 1250 4650 1550
+Wire Wire Line
+	4650 1550 4950 1550
+$Comp
+L Device:Jumper JP2
+U 1 1 5FFF87C9
+P 5650 1000
+F 0 "JP2" V 5604 1127 50  0000 L CNN
+F 1 "Jumper" V 5695 1127 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 5650 1000 50  0001 C CNN
+F 3 "~" H 5650 1000 50  0001 C CNN
+	1    5650 1000
+	0    1    1    0   
+$EndComp
+Connection ~ 5650 700 
+Wire Wire Line
+	5650 700  6200 700 
+$Comp
+L agg-kicad:R R2
+U 1 1 5FFFBB1A
+P 5650 1300
+F 0 "R2" V 5654 1344 50  0000 L CNN
+F 1 "330R" V 5745 1344 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" H 5650 1300 50  0001 C CNN
+F 3 "" H 5650 1300 50  0001 C CNN
+	1    5650 1300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5650 1400 5650 1500
+Wire Wire Line
+	5650 1500 5550 1500
+Wire Wire Line
+	5550 1500 5550 1650
 $EndSCHEMATC
