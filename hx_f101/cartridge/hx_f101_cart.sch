@@ -498,13 +498,13 @@ F 3 "http://www.ti.com/lit/gpn/sn74LS04" H 4350 1750 50  0001 C CNN
 $EndComp
 $Comp
 L 74xx:74LS00 U8
-U 4 1 5FEE1D7C
+U 1 1 5FEE1D7C
 P 5250 1650
 F 0 "U8" H 5250 1975 50  0000 C CNN
 F 1 "74LS00" H 5250 1884 50  0000 C CNN
 F 2 "Package_DIP:DIP-14_W7.62mm" H 5250 1650 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74ls00" H 5250 1650 50  0001 C CNN
-	4    5250 1650
+	1    5250 1650
 	1    0    0    -1  
 $EndComp
 Text GLabel 5400 2350 2    50   Input ~ 0
@@ -764,4 +764,226 @@ Wire Wire Line
 	5650 1500 5550 1500
 Wire Wire Line
 	5550 1500 5550 1650
+$Comp
+L Device:C C2
+U 1 1 5FFACDD1
+P 2850 6850
+F 0 "C2" H 2965 6896 50  0000 L CNN
+F 1 "100nF" H 2965 6805 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm" H 2888 6700 50  0001 C CNN
+F 3 "~" H 2850 6850 50  0001 C CNN
+	1    2850 6850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C3
+U 1 1 5FFADF1A
+P 3300 6850
+F 0 "C3" H 3415 6896 50  0000 L CNN
+F 1 "100nF" H 3415 6805 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm" H 3338 6700 50  0001 C CNN
+F 3 "~" H 3300 6850 50  0001 C CNN
+	1    3300 6850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C4
+U 1 1 5FFAEE5B
+P 3750 6850
+F 0 "C4" H 3865 6896 50  0000 L CNN
+F 1 "100nF" H 3865 6805 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm" H 3788 6700 50  0001 C CNN
+F 3 "~" H 3750 6850 50  0001 C CNN
+	1    3750 6850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C9
+U 1 1 5FFAFFE7
+P 6500 6850
+F 0 "C9" H 6618 6896 50  0000 L CNN
+F 1 "100uF" H 6618 6805 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_Tantal_D7.0mm_P5.00mm" H 6538 6700 50  0001 C CNN
+F 3 "~" H 6500 6850 50  0001 C CNN
+	1    6500 6850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C5
+U 1 1 5FFB0B83
+P 4200 6850
+F 0 "C5" H 4315 6896 50  0000 L CNN
+F 1 "100nF" H 4315 6805 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm" H 4238 6700 50  0001 C CNN
+F 3 "~" H 4200 6850 50  0001 C CNN
+	1    4200 6850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C6
+U 1 1 5FFB1330
+P 4650 6850
+F 0 "C6" H 4765 6896 50  0000 L CNN
+F 1 "100nF" H 4765 6805 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm" H 4688 6700 50  0001 C CNN
+F 3 "~" H 4650 6850 50  0001 C CNN
+	1    4650 6850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 5FFB1959
+P 2400 6850
+F 0 "C1" H 2515 6896 50  0000 L CNN
+F 1 "100nF" H 2515 6805 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm" H 2438 6700 50  0001 C CNN
+F 3 "~" H 2400 6850 50  0001 C CNN
+	1    2400 6850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C7
+U 1 1 5FFB1D63
+P 5100 6850
+F 0 "C7" H 5215 6896 50  0000 L CNN
+F 1 "100nF" H 5215 6805 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm" H 5138 6700 50  0001 C CNN
+F 3 "~" H 5100 6850 50  0001 C CNN
+	1    5100 6850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C8
+U 1 1 5FFB21C9
+P 5550 6850
+F 0 "C8" H 5665 6896 50  0000 L CNN
+F 1 "100nF" H 5665 6805 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm" H 5588 6700 50  0001 C CNN
+F 3 "~" H 5550 6850 50  0001 C CNN
+	1    5550 6850
+	1    0    0    -1  
+$EndComp
+Text GLabel 3850 7150 3    50   Input ~ 0
+GND
+Text GLabel 3850 6550 1    50   Input ~ 0
+5V
+Wire Wire Line
+	2400 6700 2850 6700
+Connection ~ 2850 6700
+Wire Wire Line
+	2850 6700 3300 6700
+Connection ~ 3300 6700
+Wire Wire Line
+	3300 6700 3750 6700
+Connection ~ 3750 6700
+Wire Wire Line
+	3750 6700 3850 6700
+Connection ~ 4200 6700
+Wire Wire Line
+	4200 6700 4650 6700
+Connection ~ 4650 6700
+Wire Wire Line
+	4650 6700 5100 6700
+Connection ~ 5100 6700
+Wire Wire Line
+	5100 6700 5550 6700
+Connection ~ 5550 6700
+Connection ~ 2850 7000
+Wire Wire Line
+	2850 7000 2400 7000
+Connection ~ 3300 7000
+Wire Wire Line
+	3300 7000 2850 7000
+Connection ~ 3750 7000
+Wire Wire Line
+	3750 7000 3300 7000
+Connection ~ 4200 7000
+Wire Wire Line
+	4200 7000 3850 7000
+Connection ~ 4650 7000
+Wire Wire Line
+	4650 7000 4200 7000
+Connection ~ 5100 7000
+Wire Wire Line
+	5100 7000 4650 7000
+Connection ~ 5550 7000
+Wire Wire Line
+	5550 7000 5100 7000
+Wire Wire Line
+	3850 7000 3850 7150
+Connection ~ 3850 7000
+Wire Wire Line
+	3850 7000 3750 7000
+Wire Wire Line
+	3850 6550 3850 6700
+Connection ~ 3850 6700
+Wire Wire Line
+	3850 6700 4200 6700
+$Comp
+L 74xx:74LS133 U3
+U 2 1 5FFCAE61
+P 10150 1100
+F 0 "U3" H 10380 1146 50  0000 L CNN
+F 1 "74LS133" H 10380 1055 50  0000 L CNN
+F 2 "" H 10150 1100 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS133" H 10150 1100 50  0001 C CNN
+	2    10150 1100
+	1    0    0    -1  
+$EndComp
+Text GLabel 10150 1600 3    50   Input ~ 0
+GND
+Text GLabel 10150 600  1    50   Input ~ 0
+5V
+Wire Wire Line
+	5550 6700 6500 6700
+Wire Wire Line
+	5550 7000 6500 7000
+Wire Wire Line
+	7650 3150 7650 3250
+Connection ~ 7650 3150
+Connection ~ 7650 3250
+Wire Wire Line
+	7650 3250 7650 3350
+Connection ~ 7650 3350
+Wire Wire Line
+	7650 3350 7650 3450
+Connection ~ 7650 3450
+Wire Wire Line
+	7650 3450 7650 3550
+Connection ~ 7650 3550
+Wire Wire Line
+	7650 3550 7650 3650
+Connection ~ 7650 3650
+Wire Wire Line
+	7650 3650 7650 3750
+Connection ~ 7650 3750
+Wire Wire Line
+	7650 3750 7650 3850
+Connection ~ 7650 3850
+Wire Wire Line
+	7650 3850 7650 3950
+Connection ~ 7650 3950
+Wire Wire Line
+	7650 3950 7650 4050
+Connection ~ 7650 4050
+Wire Wire Line
+	7650 4050 7650 4150
+Connection ~ 7650 4150
+Wire Wire Line
+	7650 4150 7650 4250
+Connection ~ 7650 4250
+Wire Wire Line
+	7650 4250 7650 4350
+Connection ~ 7650 4350
+Wire Wire Line
+	7650 4350 7650 4450
+Connection ~ 7650 4450
+Wire Wire Line
+	7650 4450 7650 4550
+Connection ~ 7650 4550
+Wire Wire Line
+	7650 4550 7650 4650
+Connection ~ 7650 4650
+Wire Wire Line
+	7650 4650 7650 4750
 $EndSCHEMATC

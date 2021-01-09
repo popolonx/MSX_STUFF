@@ -58,41 +58,96 @@
     )
   )
   (placement
+    (component Capacitor_THT:CP_Radial_Tantal_D7.0mm_P5.00mm
+      (place C9 136186 -123604 front 0 (PN 100uF))
+    )
+    (component Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm
+      (place C8 212026 -79121 front 180 (PN 100nF))
+      (place C7 152464 -79756 front 270 (PN 100nF))
+      (place C6 175958 -80010 front 270 (PN 100nF))
+      (place C5 167894 -92583 front 270 (PN 100nF))
+      (place C4 215265 -103696 front 180 (PN 100nF))
+      (place C3 165672 -109474 front 270 (PN 100nF))
+      (place C2 121476 -76073 front 270 (PN 100nF))
+      (place C1 120968 -97472.5 front 270 (PN 100nF))
+    )
     (component Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal
-      (place R2 216598 -72961.5 front 270 (PN 330R))
-      (place R1 121222 -92456 front 90 (PN 10K))
+      (place R2 216662 -78359 front 270 (PN 330R))
+      (place R1 120968 -93853 front 90 (PN 10K))
     )
     (component Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical
-      (place JP3 157480 -81407 front 180 (PN Jumper))
-      (place JP2 217234 -66865.5 front 0 (PN Jumper))
+      (place JP3 187579 -125666 front 180 (PN Jumper))
+      (place JP2 212408 -71945.5 front 90 (PN Jumper))
     )
     (component Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical
-      (place JP1 200470 -70739 front 90 (PN Jumper_NC_Dual))
+      (place JP1 199962 -71691.5 front 90 (PN Jumper_NC_Dual))
     )
     (component "Package_DIP:DIP-14_W7.62mm"
-      (place U8 202756 -75565 front 0 (PN 74LS00))
-      (place U7 157544 -75692 front 90 (PN 74LS07))
-      (place U6 179260 -75501.5 front 90 (PN 74LS07))
+      (place U8 205867 -82232.5 front 0 (PN 74LS00))
+      (place U7 156908 -86614 front 90 (PN 74LS07))
+      (place U6 180086 -86614 front 90 (PN 74LS07))
       (place U5 172720 -98933 front 90 (PN 74LS04))
-      (place U4 206184 -99441 front 0 (PN 74LS32))
+      (place U4 208216 -107252 front 0 (PN 74LS32))
     )
     (component "Package_DIP:DIP-16_W7.62mm"
-      (place U3 171260 -114300 front 90 (PN 74LS133))
+      (place U3 171196 -117538 front 90 (PN 74LS133))
     )
     (component "Package_DIP:DIP-28_W15.24mm"
-      (place U1 124904 -107950 front 90 (PN 27C128))
+      (place U1 125222 -110744 front 90 (PN 27C128))
     )
     (component "msx cartridge:msx_cartridge"
       (place J1 174942 -136208 front 0 (PN Conn_02x25_Odd_Even))
     )
     (component Connector_PinHeader_2.54mm:PinHeader_2x17_P2.54mm_Vertical
-      (place J2 190436 -59055 front 270 (PN CONN_02x17))
+      (place J2 178118 -62992 front 270 (PN CONN_02x17))
     )
     (component "Package_DIP:DIP-20_W7.62mm"
-      (place U2 126556 -75311 front 90 (PN 74LS245))
+      (place U2 125095 -86487 front 90 (PN 74LS245))
     )
   )
   (library
+    (image Capacitor_THT:CP_Radial_Tantal_D7.0mm_P5.00mm
+      (outline (path signal 120  -1024.72 2385  -1024.72 1685))
+      (outline (path signal 120  -1374.72 2035  -674.723 2035))
+      (outline (path signal 100  -145.708 1877.5  -145.708 1177.5))
+      (outline (path signal 100  -495.708 1527.5  204.292 1527.5))
+      (outline (path signal 50  6250 0  6168.05 -779.669  5925.8 -1525.26  5533.81 -2204.2
+            5009.24 -2786.79  4375 -3247.59  3658.81 -3566.46  2891.98 -3729.46
+            2108.02 -3729.46  1341.19 -3566.46  625 -3247.59  -9.24 -2786.79
+            -533.814 -2204.2  -925.795 -1525.26  -1168.05 -779.669  -1250 0
+            -1168.05 779.669  -925.795 1525.26  -533.814 2204.2  -9.24 2786.79
+            625 3247.59  1341.19 3566.46  2108.02 3729.46  2891.98 3729.46
+            3658.81 3566.46  4375 3247.59  5009.24 2786.79  5533.81 2204.2
+            5925.8 1525.26  6168.05 779.669  6250 0))
+      (outline (path signal 100  6000 0  5918.17 -752.397  5676.51 -1469.61  5286.33 -2118.11
+            4765.85 -2667.57  4139.43 -3092.29  3436.35 -3372.43  2689.49 -3494.87
+            1933.76 -3453.89  1204.52 -3251.42  535.845 -2896.91  -40.984 -2406.95
+            -499 -1804.44  -816.786 -1117.56  -979.483 -378.417  -979.483 378.417
+            -816.786 1117.56  -499 1804.44  -40.984 2406.95  535.845 2896.91
+            1204.52 3251.42  1933.76 3453.89  2689.49 3494.87  3436.35 3372.43
+            4139.43 3092.29  4765.85 2667.57  5286.33 2118.11  5676.51 1469.61
+            5918.17 752.397  6000 0))
+      (pin Round[A]Pad_1600_um 2 5000 0)
+      (pin Rect[A]Pad_1600x1600_um 1 0 0)
+    )
+    (image Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm
+      (outline (path signal 50  6050 1200  -1050 1200))
+      (outline (path signal 50  6050 -1200  6050 1200))
+      (outline (path signal 50  -1050 -1200  6050 -1200))
+      (outline (path signal 50  -1050 1200  -1050 -1200))
+      (outline (path signal 120  4770 -1055  4770 -1070))
+      (outline (path signal 120  4770 1070  4770 1055))
+      (outline (path signal 120  230 -1055  230 -1070))
+      (outline (path signal 120  230 1070  230 1055))
+      (outline (path signal 120  230 -1070  4770 -1070))
+      (outline (path signal 120  230 1070  4770 1070))
+      (outline (path signal 100  4650 950  350 950))
+      (outline (path signal 100  4650 -950  4650 950))
+      (outline (path signal 100  350 -950  4650 -950))
+      (outline (path signal 100  350 950  350 -950))
+      (pin Round[A]Pad_1600_um 2 5000 0)
+      (pin Round[A]Pad_1600_um 1 0 0)
+    )
     (image Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal
       (outline (path signal 50  11210 1500  -1050 1500))
       (outline (path signal 50  11210 -1500  11210 1500))
@@ -484,11 +539,13 @@
       (pins J1-44 J1-46)
     )
     (net 5V
-      (pins R1-1 JP2-1 JP1-3 U8-14 U7-14 U6-14 U5-14 U4-14 U1-28 U1-1 J1-47 J1-45
-        U2-20)
+      (pins C9-1 C8-1 C7-1 C6-1 C5-1 C4-1 C3-1 C2-1 C1-1 R1-1 JP2-1 JP1-3 U8-14 U7-14
+        U6-14 U5-14 U4-14 U3-16 U1-28 U1-1 J1-47 J1-45 U2-20)
     )
     (net GND
-      (pins U8-7 U7-7 U6-7 U5-7 U4-7 U1-14 J1-43 J1-41 J2-1 U2-10)
+      (pins C9-2 C8-2 C7-2 C6-2 C5-2 C4-2 C3-2 C2-2 C1-2 U8-7 U7-7 U6-7 U5-7 U4-7
+        U3-8 U1-14 J1-43 J1-41 J2-33 J2-31 J2-29 J2-27 J2-25 J2-23 J2-21 J2-19 J2-17
+        J2-15 J2-13 J2-11 J2-9 J2-7 J2-5 J2-3 J2-1 U2-10)
     )
     (net D7
       (pins U1-19 J1-39 U2-2)
@@ -599,7 +656,7 @@
       (pins U4-3 U1-20)
     )
     (net _CS
-      (pins R2-2 U8-11 U6-13 U6-9 U2-19)
+      (pins R2-2 U8-3 U6-13 U6-9 U2-19)
     )
     (net _RE
       (pins U6-11 U6-1 U4-6 U2-1)
@@ -617,10 +674,10 @@
       (pins U6-3 U4-8)
     )
     (net "Net-(U4-Pad1)"
-      (pins U8-13 U5-10 U4-1)
+      (pins U8-2 U5-10 U4-1)
     )
     (net "Net-(JP1-Pad2)"
-      (pins JP1-2 U8-12)
+      (pins JP1-2 U8-1)
     )
     (net "Net-(JP2-Pad2)"
       (pins R2-1 JP2-2)
