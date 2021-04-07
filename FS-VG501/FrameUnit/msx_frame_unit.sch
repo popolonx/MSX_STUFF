@@ -841,34 +841,34 @@ $EndComp
 $Comp
 L Memory_RAM:DRAM_4164 IC67
 U 1 1 60741AB0
-P 18700 12350
-F 0 "IC67" H 18575 13631 50  0000 C CNN
-F 1 "DRAM_4164" H 18575 13540 50  0000 C CNN
-F 2 "Package_DIP:DIP-16_W7.62mm" H 18700 12050 50  0001 C CNN
-F 3 "https://www.alliancememory.com/wp-content/uploads/pdf/AS6C4008.pdf" H 18700 12450 50  0001 C CNN
-	1    18700 12350
+P 17800 12350
+F 0 "IC67" H 17675 13631 50  0000 C CNN
+F 1 "DRAM_4164" H 17675 13540 50  0000 C CNN
+F 2 "Package_DIP:DIP-16_W7.62mm" H 17800 12050 50  0001 C CNN
+F 3 "https://www.alliancememory.com/wp-content/uploads/pdf/AS6C4008.pdf" H 17800 12450 50  0001 C CNN
+	1    17800 12350
 	1    0    0    -1  
 $EndComp
 $Comp
 L Memory_RAM:DRAM_4164 IC68
 U 1 1 60742C60
-P 19850 12350
-F 0 "IC68" H 19725 13631 50  0000 C CNN
-F 1 "DRAM_4164" H 19725 13540 50  0000 C CNN
-F 2 "Package_DIP:DIP-16_W7.62mm" H 19850 12050 50  0001 C CNN
-F 3 "https://www.alliancememory.com/wp-content/uploads/pdf/AS6C4008.pdf" H 19850 12450 50  0001 C CNN
-	1    19850 12350
+P 19400 12350
+F 0 "IC68" H 19275 13631 50  0000 C CNN
+F 1 "DRAM_4164" H 19275 13540 50  0000 C CNN
+F 2 "Package_DIP:DIP-16_W7.62mm" H 19400 12050 50  0001 C CNN
+F 3 "https://www.alliancememory.com/wp-content/uploads/pdf/AS6C4008.pdf" H 19400 12450 50  0001 C CNN
+	1    19400 12350
 	1    0    0    -1  
 $EndComp
 $Comp
 L Memory_RAM:DRAM_4164 IC69
 U 1 1 60743DA8
-P 21050 12300
-F 0 "IC69" H 20925 13581 50  0000 C CNN
-F 1 "DRAM_4164" H 20925 13490 50  0000 C CNN
-F 2 "Package_DIP:DIP-16_W7.62mm" H 21050 12000 50  0001 C CNN
-F 3 "https://www.alliancememory.com/wp-content/uploads/pdf/AS6C4008.pdf" H 21050 12400 50  0001 C CNN
-	1    21050 12300
+P 20900 12350
+F 0 "IC69" H 20775 13631 50  0000 C CNN
+F 1 "DRAM_4164" H 20775 13540 50  0000 C CNN
+F 2 "Package_DIP:DIP-16_W7.62mm" H 20900 12050 50  0001 C CNN
+F 3 "https://www.alliancememory.com/wp-content/uploads/pdf/AS6C4008.pdf" H 20900 12450 50  0001 C CNN
+	1    20900 12350
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -929,12 +929,12 @@ $EndComp
 $Comp
 L Memory_RAM:DRAM_4464 IC47
 U 1 1 60759081
-P 17650 13700
-F 0 "IC47" H 17650 14981 50  0000 C CNN
-F 1 "DRAM_4464" H 17650 14890 50  0000 C CNN
-F 2 "Package_DIP:DIP-18_W7.62mm" H 17700 13600 50  0001 C CNN
-F 3 "https://www.alliancememory.com/wp-content/uploads/pdf/AS6C4008.pdf" H 17650 13800 50  0001 C CNN
-	1    17650 13700
+P 17400 13700
+F 0 "IC47" H 17400 14981 50  0000 C CNN
+F 1 "DRAM_4464" H 17400 14890 50  0000 C CNN
+F 2 "Package_DIP:DIP-18_W7.62mm" H 17450 13600 50  0001 C CNN
+F 3 "https://www.alliancememory.com/wp-content/uploads/pdf/AS6C4008.pdf" H 17400 13800 50  0001 C CNN
+	1    17400 13700
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -951,23 +951,23 @@ $EndComp
 $Comp
 L Memory_RAM:DRAM_4464 IC49
 U 1 1 6075A556
-P 20400 13700
-F 0 "IC49" H 20400 14981 50  0000 C CNN
-F 1 "DRAM_4464" H 20400 14890 50  0000 C CNN
-F 2 "Package_DIP:DIP-18_W7.62mm" H 20450 13600 50  0001 C CNN
-F 3 "https://www.alliancememory.com/wp-content/uploads/pdf/AS6C4008.pdf" H 20400 13800 50  0001 C CNN
-	1    20400 13700
+P 20550 13700
+F 0 "IC49" H 20550 14981 50  0000 C CNN
+F 1 "DRAM_4464" H 20550 14890 50  0000 C CNN
+F 2 "Package_DIP:DIP-18_W7.62mm" H 20600 13600 50  0001 C CNN
+F 3 "https://www.alliancememory.com/wp-content/uploads/pdf/AS6C4008.pdf" H 20550 13800 50  0001 C CNN
+	1    20550 13700
 	1    0    0    -1  
 $EndComp
 $Comp
 L Memory_RAM:DRAM_4464 IC50
 U 1 1 6075B117
-P 21850 13650
-F 0 "IC50" H 21850 14931 50  0000 C CNN
-F 1 "DRAM_4464" H 21850 14840 50  0000 C CNN
-F 2 "Package_DIP:DIP-18_W7.62mm" H 21900 13550 50  0001 C CNN
-F 3 "https://www.alliancememory.com/wp-content/uploads/pdf/AS6C4008.pdf" H 21850 13750 50  0001 C CNN
-	1    21850 13650
+P 22150 13700
+F 0 "IC50" H 22150 14981 50  0000 C CNN
+F 1 "DRAM_4464" H 22150 14890 50  0000 C CNN
+F 2 "Package_DIP:DIP-18_W7.62mm" H 22200 13600 50  0001 C CNN
+F 3 "https://www.alliancememory.com/wp-content/uploads/pdf/AS6C4008.pdf" H 22150 13800 50  0001 C CNN
+	1    22150 13700
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -2040,9 +2040,7 @@ Wire Wire Line
 Wire Wire Line
 	18550 5300 18950 5300
 Wire Wire Line
-	18950 5300 18950 9400
-Wire Wire Line
-	18950 9400 13400 9400
+	18950 5300 18950 7400
 $Comp
 L power:GND #PWR?
 U 1 1 60ED7ED2
@@ -4069,7 +4067,7 @@ L power:GND #PWR?
 U 1 1 64217017
 P 15200 6200
 F 0 "#PWR?" H 15200 5950 50  0001 C CNN
-F 1 "GND" H 15205 6027 50  0000 C CNN
+F 1 "GND" H 15050 6250 50  0000 C CNN
 F 2 "" H 15200 6200 50  0001 C CNN
 F 3 "" H 15200 6200 50  0001 C CNN
 	1    15200 6200
@@ -4086,21 +4084,13 @@ Wire Wire Line
 	15450 6050 15450 5950
 Connection ~ 15450 6050
 Text GLabel 15500 3000 0    50   Input ~ 0
-2_DRAM_DOUT
+2_Q
 Text GLabel 15500 4300 0    50   Input ~ 0
-1_DRAM_DOUT
+1_Q
 Text GLabel 15450 5550 0    50   Input ~ 0
-3_DRAM_DOUT
+3_Q
 Text GLabel 15450 6800 0    50   Input ~ 0
-4_DRAM_DOUT
-Text GLabel 15350 5650 0    50   Input ~ 0
-IC30_39
-Text GLabel 15350 6900 0    50   Input ~ 0
-IC30_45
-Text GLabel 15350 3100 0    50   Input ~ 0
-IC30_16
-Text GLabel 15350 4400 0    50   Input ~ 0
-IC30_22
+4_Q
 Wire Wire Line
 	15450 3950 15350 3950
 Wire Wire Line
@@ -4194,7 +4184,7 @@ L power:GND #PWR?
 U 1 1 64FD71FF
 P 15200 3650
 F 0 "#PWR?" H 15200 3400 50  0001 C CNN
-F 1 "GND" H 15205 3477 50  0000 C CNN
+F 1 "GND" H 15050 3700 50  0000 C CNN
 F 2 "" H 15200 3650 50  0001 C CNN
 F 3 "" H 15200 3650 50  0001 C CNN
 	1    15200 3650
@@ -4205,7 +4195,7 @@ L power:GND #PWR?
 U 1 1 64FD923A
 P 15200 4950
 F 0 "#PWR?" H 15200 4700 50  0001 C CNN
-F 1 "GND" H 15205 4777 50  0000 C CNN
+F 1 "GND" H 15050 5000 50  0000 C CNN
 F 2 "" H 15200 4950 50  0001 C CNN
 F 3 "" H 15200 4950 50  0001 C CNN
 	1    15200 4950
@@ -4224,7 +4214,7 @@ L power:GND #PWR?
 U 1 1 6518C7D7
 P 15200 7400
 F 0 "#PWR?" H 15200 7150 50  0001 C CNN
-F 1 "GND" H 15205 7227 50  0000 C CNN
+F 1 "GND" H 15050 7500 50  0000 C CNN
 F 2 "" H 15200 7400 50  0001 C CNN
 F 3 "" H 15200 7400 50  0001 C CNN
 	1    15200 7400
@@ -4315,4 +4305,384 @@ Text GLabel 10800 12850 2    50   Input ~ 0
 G008_37
 Text GLabel 8850 12850 2    50   Input ~ 0
 G008_37
+Text GLabel 18050 11550 2    50   Input ~ 0
+1_Q
+Text GLabel 19650 11550 2    50   Input ~ 0
+2_Q
+Text GLabel 21150 11550 2    50   Input ~ 0
+3_Q
+Text GLabel 22600 11550 2    50   Input ~ 0
+4_Q
+$Comp
+L 74xx:74LS32 IC29
+U 1 1 6074042F
+P 17750 8700
+F 0 "IC29" H 17750 9025 50  0000 C CNN
+F 1 "74LS32" H 17750 8934 50  0000 C CNN
+F 2 "" H 17750 8700 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS32" H 17750 8700 50  0001 C CNN
+	1    17750 8700
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS32 IC29
+U 2 1 60748447
+P 17750 10350
+F 0 "IC29" H 17750 10675 50  0000 C CNN
+F 1 "74LS32" H 17750 10584 50  0000 C CNN
+F 2 "" H 17750 10350 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS32" H 17750 10350 50  0001 C CNN
+	2    17750 10350
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS32 IC29
+U 3 1 6074B315
+P 17750 9800
+F 0 "IC29" H 17750 10125 50  0000 C CNN
+F 1 "74LS32" H 17750 10034 50  0000 C CNN
+F 2 "" H 17750 9800 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS32" H 17750 9800 50  0001 C CNN
+	3    17750 9800
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS32 IC29
+U 4 1 6074E042
+P 17750 9250
+F 0 "IC29" H 17750 9575 50  0000 C CNN
+F 1 "74LS32" H 17750 9484 50  0000 C CNN
+F 2 "" H 17750 9250 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS32" H 17750 9250 50  0001 C CNN
+	4    17750 9250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	16600 9400 16600 7400
+Wire Wire Line
+	16600 7400 18950 7400
+Wire Wire Line
+	16600 9400 13400 9400
+Text GLabel 17450 8600 0    50   Input ~ 0
+PB_RD_
+Text GLabel 9800 8850 3    50   Input ~ 0
+SLA6430_41
+Text GLabel 17150 8800 0    50   Input ~ 0
+SLA6430_41
+Wire Wire Line
+	17450 9350 17150 9350
+Wire Wire Line
+	17150 10450 17150 9900
+Wire Wire Line
+	17150 10450 17450 10450
+Wire Wire Line
+	17450 9900 17150 9900
+Wire Wire Line
+	17450 8800 17150 8800
+Text GLabel 17450 10250 0    50   Input ~ 0
+5_G008_21
+Text GLabel 17450 9700 0    50   Input ~ 0
+5_G008_38
+Text GLabel 17450 9150 0    50   Input ~ 0
+5_G008_15
+Wire Wire Line
+	21850 11650 21600 11650
+Wire Wire Line
+	21600 11650 21600 10850
+Wire Wire Line
+	21600 10850 19100 10850
+Wire Wire Line
+	19100 10850 19100 8700
+Wire Wire Line
+	19100 8700 18050 8700
+Wire Wire Line
+	16950 10850 16950 11650
+Wire Wire Line
+	16950 11650 17300 11650
+Connection ~ 17150 9900
+Connection ~ 17150 9350
+Wire Wire Line
+	17150 9350 17150 9900
+Wire Wire Line
+	17150 8800 17150 9350
+Wire Wire Line
+	18050 10350 18100 10350
+Wire Wire Line
+	18100 10350 18100 10850
+Wire Wire Line
+	20200 11650 20400 11650
+Wire Wire Line
+	18050 9800 18750 9800
+Wire Wire Line
+	18750 11650 18900 11650
+Wire Wire Line
+	17300 11550 17100 11550
+Wire Wire Line
+	17100 11550 17100 12400
+Wire Wire Line
+	18000 12800 17900 12800
+Wire Wire Line
+	18900 11550 18800 11550
+Wire Wire Line
+	18800 11550 18800 12400
+Wire Wire Line
+	19650 12800 19550 12800
+Wire Wire Line
+	20400 11550 20300 11550
+Wire Wire Line
+	20300 11550 20300 12400
+Wire Wire Line
+	21850 11550 21750 11550
+Wire Wire Line
+	21750 11550 21750 12400
+Wire Wire Line
+	20000 12900 20050 12900
+Wire Wire Line
+	21600 12900 21650 12900
+Text GLabel 20400 11750 0    50   Input ~ 0
+5G_RAS
+Text GLabel 21850 11750 0    50   Input ~ 0
+5G_RAS
+Text GLabel 18900 11750 0    50   Input ~ 0
+5G_RAS
+Text GLabel 17300 11750 0    50   Input ~ 0
+5G_RAS
+Text GLabel 18550 13200 0    50   Input ~ 0
+5G_RAS
+Text GLabel 20050 13200 0    50   Input ~ 0
+5G_RAS
+Text GLabel 21650 13200 0    50   Input ~ 0
+5G_RAS
+Text GLabel 16900 13200 0    50   Input ~ 0
+5G_RAS
+Text GLabel 21000 10250 0    50   Input ~ 0
+5G_RAS
+Text GLabel 21000 10350 0    50   Input ~ 0
+5G_CAS
+Text GLabel 22650 12900 2    50   Input ~ 0
+5G_CAS
+Text GLabel 21050 12900 2    50   Input ~ 0
+5G_CAS
+Text GLabel 19550 12900 2    50   Input ~ 0
+5G_CAS
+Text GLabel 17900 12900 2    50   Input ~ 0
+5G_CAS
+Text GLabel 18050 11450 2    50   Input ~ 0
+5G_CAS
+Text GLabel 19650 11450 2    50   Input ~ 0
+5G_CAS
+Text GLabel 21150 11450 2    50   Input ~ 0
+5G_CAS
+Text GLabel 22600 11450 2    50   Input ~ 0
+5G_CAS
+Text GLabel 19550 13100 2    50   Input ~ 0
+A0_
+Text GLabel 21050 13100 2    50   Input ~ 0
+A0_
+Text GLabel 22650 13100 2    50   Input ~ 0
+A0_
+Text GLabel 17900 13100 2    50   Input ~ 0
+A0_
+Text GLabel 22600 11650 2    50   Input ~ 0
+A0_
+Text GLabel 21150 11650 2    50   Input ~ 0
+A0_
+Text GLabel 19650 11650 2    50   Input ~ 0
+A0_
+Text GLabel 18050 11650 2    50   Input ~ 0
+A0_
+Text GLabel 19550 13200 2    50   Input ~ 0
+A1_
+Text GLabel 17900 13200 2    50   Input ~ 0
+A1_
+Text GLabel 21050 13200 2    50   Input ~ 0
+A1_
+Text GLabel 22650 13200 2    50   Input ~ 0
+A1_
+Text GLabel 22600 11750 2    50   Input ~ 0
+A1_
+Text GLabel 21150 11750 2    50   Input ~ 0
+A1_
+Text GLabel 19650 11750 2    50   Input ~ 0
+A1_
+Text GLabel 18050 11750 2    50   Input ~ 0
+A1_
+Text GLabel 19550 13300 2    50   Input ~ 0
+A2_
+Text GLabel 21050 13300 2    50   Input ~ 0
+A2_
+Text GLabel 22650 13300 2    50   Input ~ 0
+A2_
+Text GLabel 22600 11850 2    50   Input ~ 0
+A2_
+Text GLabel 21150 11850 2    50   Input ~ 0
+A2_
+Text GLabel 19650 11850 2    50   Input ~ 0
+A2_
+Text GLabel 18050 11850 2    50   Input ~ 0
+A2_
+Text GLabel 17900 13300 2    50   Input ~ 0
+A2_
+Text GLabel 17900 13400 2    50   Input ~ 0
+A3_
+Text GLabel 19550 13400 2    50   Input ~ 0
+A3_
+Text GLabel 21050 13400 2    50   Input ~ 0
+A3_
+Text GLabel 22650 13400 2    50   Input ~ 0
+A3_
+Text GLabel 22600 11950 2    50   Input ~ 0
+A3_
+Text GLabel 21150 11950 2    50   Input ~ 0
+A3_
+Text GLabel 19650 11950 2    50   Input ~ 0
+A3_
+Text GLabel 18050 11950 2    50   Input ~ 0
+A3_
+Text GLabel 17900 13500 2    50   Input ~ 0
+A7_
+Text GLabel 19550 13500 2    50   Input ~ 0
+A7_
+Text GLabel 21050 13500 2    50   Input ~ 0
+A7_
+Text GLabel 22650 13500 2    50   Input ~ 0
+A7_
+Text GLabel 22600 12050 2    50   Input ~ 0
+A7_
+Text GLabel 21150 12050 2    50   Input ~ 0
+A7_
+Text GLabel 19650 12050 2    50   Input ~ 0
+A7_
+Text GLabel 18050 12050 2    50   Input ~ 0
+A7_
+Text GLabel 18550 13300 0    50   Input ~ 0
+A6_
+Text GLabel 20050 13300 0    50   Input ~ 0
+A6_
+Text GLabel 21650 13300 0    50   Input ~ 0
+A6_
+Text GLabel 21850 11850 0    50   Input ~ 0
+A6_
+Text GLabel 20400 11850 0    50   Input ~ 0
+A6_
+Text GLabel 18900 11850 0    50   Input ~ 0
+A6_
+Text GLabel 17300 11850 0    50   Input ~ 0
+A6_
+Text GLabel 16900 13300 0    50   Input ~ 0
+A6_
+Text GLabel 16900 13400 0    50   Input ~ 0
+A5_
+Text GLabel 18550 13400 0    50   Input ~ 0
+A5_
+Text GLabel 20050 13400 0    50   Input ~ 0
+A5_
+Text GLabel 18900 11950 0    50   Input ~ 0
+A5_
+Text GLabel 17300 11950 0    50   Input ~ 0
+A5_
+Text GLabel 20400 11950 0    50   Input ~ 0
+A5_
+Text GLabel 21850 11950 0    50   Input ~ 0
+A5_
+Text GLabel 21650 13400 0    50   Input ~ 0
+A5_
+Text GLabel 20050 13500 0    50   Input ~ 0
+A4_
+Text GLabel 21650 13500 0    50   Input ~ 0
+A4_
+Text GLabel 18550 13500 0    50   Input ~ 0
+A4_
+Text GLabel 16900 13500 0    50   Input ~ 0
+A4_
+Text GLabel 17300 12050 0    50   Input ~ 0
+A4_
+Text GLabel 18900 12050 0    50   Input ~ 0
+A4_
+Text GLabel 20400 12050 0    50   Input ~ 0
+A4_
+Text GLabel 21850 12050 0    50   Input ~ 0
+A4_
+Wire Wire Line
+	17100 12400 18000 12400
+Wire Wire Line
+	18000 12400 18000 12800
+Wire Wire Line
+	16950 10850 18100 10850
+Wire Wire Line
+	20450 12500 20450 12550
+Wire Wire Line
+	18800 12400 19650 12400
+Wire Wire Line
+	19650 12400 19650 12800
+Wire Wire Line
+	20300 12400 20000 12400
+Wire Wire Line
+	20000 12400 20000 12900
+Wire Wire Line
+	21750 12400 21600 12400
+Wire Wire Line
+	21600 12400 21600 12900
+Wire Wire Line
+	18750 9800 18750 11650
+Wire Wire Line
+	18050 9250 18950 9250
+Wire Wire Line
+	18950 11000 20200 11000
+Wire Wire Line
+	18950 9250 18950 11000
+Wire Wire Line
+	20200 11000 20200 11650
+Text GLabel 16900 12900 0    50   Input ~ 0
+5G_24
+Text GLabel 16900 13000 0    50   Input ~ 0
+5G_25
+Text GLabel 16900 13100 0    50   Input ~ 0
+5G_21
+Text GLabel 18550 12900 0    50   Input ~ 0
+5G_18
+Text GLabel 18550 13000 0    50   Input ~ 0
+5G_19
+Text GLabel 18550 13100 0    50   Input ~ 0
+5G_15
+Text GLabel 21050 12800 2    50   Input ~ 0
+5G_41
+Text GLabel 21050 13000 2    50   Input ~ 0
+5G_42
+Text GLabel 22650 12800 2    50   Input ~ 0
+5G_47
+Text GLabel 22650 13000 2    50   Input ~ 0
+5G_48
+Text GLabel 21650 13100 0    50   Input ~ 0
+PB_RD_
+Text GLabel 20050 13100 0    50   Input ~ 0
+5G_38
+Text GLabel 22150 9550 2    50   Input ~ 0
+PB_RD_
+Text GLabel 14550 3850 0    50   Input ~ 0
+15_6
+Text GLabel 17900 13000 2    50   Input ~ 0
+1DQ3
+Text GLabel 19550 13000 2    50   Input ~ 0
+2DQ3
+Text GLabel 20050 13000 0    50   Input ~ 0
+3DQ2
+Text GLabel 21650 13000 0    50   Input ~ 0
+4DQ2
+Text GLabel 15350 4400 0    50   Input ~ 0
+1DQ3
+Text GLabel 15350 3100 0    50   Input ~ 0
+2DQ3
+Text GLabel 21000 9050 0    50   Input ~ 0
+2DQ3
+Text GLabel 15350 5650 0    50   Input ~ 0
+3DQ2
+Text GLabel 22150 10050 2    50   Input ~ 0
+3DQ2
+Text GLabel 21000 9650 0    50   Input ~ 0
+1DQ3
+Text GLabel 15350 6900 0    50   Input ~ 0
+4DQ2
+Text GLabel 22150 9450 2    50   Input ~ 0
+4DQ2
 $EndSCHEMATC
