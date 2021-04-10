@@ -2306,7 +2306,7 @@ Text GLabel 9850 14650 0    50   Input ~ 0
 2_G008_3
 Text GLabel 7750 13950 0    50   Input ~ 0
 3_G008_4
-Text GLabel 7750 14250 0    50   Input ~ 0
+Text GLabel 7800 14650 0    50   Input ~ 0
 3_G008_5
 Text GLabel 7750 11600 0    50   Input ~ 0
 2_G008_4
@@ -9993,7 +9993,7 @@ Text Notes 19900 9950 0    50   ~ 0
 IC69 (4164): 3_Q
 Text Notes 19900 11200 0    50   ~ 0
 IC70 (4164): 4_Q
-Text Notes 19300 7550 0    50   ~ 0
+Text Notes 19400 7550 0    50   ~ 0
 IC48 (4464): 5G_2DQ3
 Text Notes 19400 8850 0    50   ~ 0
 IC47 (4464): 5G_1DQ3
@@ -10001,4 +10001,40 @@ Text Notes 19350 10100 0    50   ~ 0
 IC49 (4464): 5G_3DQ2
 Text Notes 19350 11350 0    50   ~ 0
 IC50 (4464): 5G_4DQ2
+Text Notes 11450 16500 0    50   ~ 0
+"1DAQ2"
+Text Notes 11450 11650 0    50   ~ 0
+"2DAQ2"
+Text Notes 9750 9250 0    50   ~ 0
+"3DAQ2"
+Text Notes 7850 9250 0    50   ~ 0
+"3DAQ0"
+Text Notes 9000 11750 0    50   ~ 0
+"2DAQ0"
+Text Notes 11100 14100 0    50   ~ 0
+"1DAQ0"
+Text Notes 9050 14100 0    50   ~ 0
+"2DAQ4"
+Text Notes 9150 16600 0    50   ~ 0
+"1DAQ4"
+Text Notes 11500 9250 0    50   ~ 0
+"3DAQ4"
+Text Notes 7850 10050 0    50   ~ 0
+"3DAQ1"
+Text Notes 9050 12450 0    50   ~ 0
+"2DAQ1"
+Text Notes 11050 14800 0    50   ~ 0
+"1DAQ1"
+Text Notes 11100 17300 0    50   ~ 0
+"1DAQ3"
+Text Notes 11100 12450 0    50   ~ 0
+"2DAQ3"
+Text Notes 9750 9950 0    50   ~ 0
+"3DAQ3"
+Text Notes 11500 10000 0    50   ~ 0
+"3DAQ5"
+Text Notes 9050 14800 0    50   ~ 0
+"2DAQ5"
+Text Notes 9050 17300 0    50   ~ 0
+"1DAQ5"
 $EndSCHEMATC
