@@ -1910,8 +1910,6 @@ Wire Wire Line
 Wire Wire Line
 	14200 14250 14200 15950
 Wire Wire Line
-	11800 14250 11800 15950
-Wire Wire Line
 	24400 9800 24400 11900
 $Comp
 L power:GND #PWR0118
@@ -3789,46 +3787,14 @@ Text GLabel 26000 12350 0    50   Input ~ 0
 5_G008_4
 Text GLabel 26000 12450 0    50   Input ~ 0
 5_G008_5
-Text Notes 11800 15000 0    50   ~ 0
-"1AD0"
-Text Notes 11800 15100 0    50   ~ 0
-"1AD5"
-Text Notes 11800 14800 0    50   ~ 0
-"1AD4"
-Text Notes 11800 14900 0    50   ~ 0
-"1AD1"
-Text Notes 14250 14800 0    50   ~ 0
-"1AD3"
-Text Notes 14250 14900 0    50   ~ 0
-"1AD2"
-Text Notes 14250 15000 0    50   ~ 0
-"2AD3"
-Text Notes 14250 15100 0    50   ~ 0
-"2AD2"
-Text Notes 16800 15000 0    50   ~ 0
-"2DA0"
-Text Notes 16800 15100 0    50   ~ 0
-"2DA5"
-Text Notes 16800 14800 0    50   ~ 0
-"2DA4"
-Text Notes 16800 14900 0    50   ~ 0
-"2DA1"
+Text Notes 16800 15050 0    50   ~ 0
+"2DAQ2\n2DAQ3\n2DAQ4"\n2DAQ5"
 Wire Wire Line
 	19200 15950 19950 15950
 Wire Wire Line
 	19200 14250 19200 15950
-Text Notes 19250 14800 0    50   ~ 0
-"3DA4"
-Text Notes 19250 14900 0    50   ~ 0
-"3DA1"
-Text Notes 19250 15000 0    50   ~ 0
-"3DA3"
-Text Notes 19250 15100 0    50   ~ 0
-"3DA2"
-Text Notes 25300 12400 0    50   ~ 0
-"3DA0"
-Text Notes 25300 12500 0    50   ~ 0
-"3DA5"
+Text Notes 25300 12450 0    50   ~ 0
+"3DAQ4\n3DAQ5"
 $Comp
 L 74xx:74LS54 IC46
 U 1 1 63FD9700
@@ -9625,11 +9591,11 @@ Wire Wire Line
 Wire Wire Line
 	25150 11550 27650 11550
 $Comp
-L agg-kicad:R R?
+L agg-kicad:R R99
 U 1 1 889B4BA4
 P 25400 19300
-F 0 "R?" V 25404 19344 50  0000 L CNN
-F 1 "R" V 25495 19344 50  0000 L CNN
+F 0 "R99" V 25404 19344 50  0000 L CNN
+F 1 "150R" V 25495 19344 50  0000 L CNN
 F 2 "" H 25400 19300 50  0001 C CNN
 F 3 "" H 25400 19300 50  0001 C CNN
 	1    25400 19300
@@ -10005,4 +9971,18 @@ F 3 "" H 9800 3600 50  0001 C CNN
 	1    9800 3600
 	1    0    0    -1  
 $EndComp
+Text Notes 11800 15050 0    50   ~ 0
+"1DAQ2\n1DAQ3\n1DAQ4\n1DAQ5"
+Wire Wire Line
+	11800 14250 11800 15950
+Text Notes 14250 15050 0    50   ~ 0
+"1DAQ0\n1DAQ1\n2DAQ0\n2DAQ1"
+Text Notes 2900 12200 0    50   ~ 0
+Q0...Q5 = "3DAQ0...5"
+Text Notes 2850 14300 0    50   ~ 0
+Q0...Q5 = "2DAQ0...5"
+Text Notes 2750 16200 0    50   ~ 0
+Q0...Q5 = "1DAQ0...5"
+Text Notes 19250 15050 0    50   ~ 0
+"3DAQ2\n3DAQ3\n3DAQ0\n3DAQ1"
 $EndSCHEMATC
