@@ -3793,14 +3793,6 @@ Wire Wire Line
 	19200 15950 19950 15950
 Wire Wire Line
 	19200 14250 19200 15950
-Text Notes 19250 14800 0    50   ~ 0
-"3DAQ2"
-Text Notes 19250 14900 0    50   ~ 0
-"3DAQ3"
-Text Notes 19250 15000 0    50   ~ 0
-"3DAQ1"
-Text Notes 19250 15100 0    50   ~ 0
-"3DAQ2"
 Text Notes 25300 12450 0    50   ~ 0
 "3DAQ4\n3DAQ5"
 $Comp
@@ -4420,19 +4412,19 @@ Text GLabel 25500 17500 0    50   Input ~ 0
 Text GLabel 27300 17500 0    50   Input ~ 0
 5G_4DQ2
 Text GLabel 20350 8900 0    50   Input ~ 0
-1DQ3
+5G_1DQ3
 Text GLabel 20350 7600 0    50   Input ~ 0
-2DQ3
+5G_2DQ3
 Text GLabel 26000 13550 0    50   Input ~ 0
 5G_2DQ3
 Text GLabel 20350 10150 0    50   Input ~ 0
-3DQ2
+5G_3DQ2
 Text GLabel 27150 14550 2    50   Input ~ 0
 5G_3DQ2
 Text GLabel 26000 14150 0    50   Input ~ 0
 5G_1DQ3
 Text GLabel 20350 11400 0    50   Input ~ 0
-4DQ2
+5G_4DQ2
 Text GLabel 27150 13950 2    50   Input ~ 0
 5G_4DQ2
 Text GLabel 8350 19350 0    50   Input ~ 0
@@ -9991,4 +9983,22 @@ Text Notes 2850 14300 0    50   ~ 0
 Q0...Q5 = "2DAQ0...5"
 Text Notes 2750 16200 0    50   ~ 0
 Q0...Q5 = "1DAQ0...5"
+Text Notes 19250 15050 0    50   ~ 0
+"3DAQ2\n3DAQ3\n3DAQ0\n3DAQ1"
+Text Notes 20000 7400 0    50   ~ 0
+IC68 (4164): 2_Q
+Text Notes 20000 8700 0    50   ~ 0
+IC67 (4164): 1_Q
+Text Notes 19900 9950 0    50   ~ 0
+IC69 (4164): 3_Q
+Text Notes 19900 11200 0    50   ~ 0
+IC70 (4164): 4_Q
+Text Notes 19300 7550 0    50   ~ 0
+IC48 (4464): 5G_2DQ3
+Text Notes 19400 8850 0    50   ~ 0
+IC47 (4464): 5G_1DQ3
+Text Notes 19350 10100 0    50   ~ 0
+IC49 (4464): 5G_3DQ2
+Text Notes 19350 11350 0    50   ~ 0
+IC50 (4464): 5G_4DQ2
 $EndSCHEMATC
