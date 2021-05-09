@@ -5300,17 +5300,6 @@ F 3 "" H 27850 11550 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L power:GND #PWR0201
-U 1 1 64192FA9
-P 28600 10850
-F 0 "#PWR0201" H 28600 10600 50  0001 C CNN
-F 1 "GND" V 28605 10677 50  0000 C CNN
-F 2 "" H 28600 10850 50  0001 C CNN
-F 3 "" H 28600 10850 50  0001 C CNN
-	1    28600 10850
-	0    1    1    0   
-$EndComp
-$Comp
 L power:GND #PWR0202
 U 1 1 641D9717
 P 28600 11350
@@ -6110,7 +6099,7 @@ Connection ~ 17650 20000
 Wire Wire Line
 	17650 20000 16750 20000
 Text GLabel 25950 11400 0    50   Input ~ 0
-SLA6170_27
+CN5_5
 Wire Wire Line
 	25950 11400 25950 11000
 Text GLabel 27150 9200 0    50   Input ~ 0
@@ -6165,7 +6154,7 @@ SLA6170_22
 Text GLabel 25900 10450 2    50   Input ~ 0
 PB_RD_
 Text GLabel 22400 10700 0    50   Input ~ 0
-SLA6170_27
+CN5_5
 Wire Wire Line
 	27150 11100 27650 11100
 NoConn ~ 27150 10700
@@ -6493,7 +6482,7 @@ Connection ~ 27150 8600
 Wire Wire Line
 	27150 8600 27150 8800
 Text GLabel 28600 11150 0    50   Input ~ 0
-SLA6170_27
+CN5_5
 Text GLabel 22400 11000 0    50   Input ~ 0
 SLA6170_30
 $Comp
@@ -6510,9 +6499,9 @@ $EndComp
 Text GLabel 28600 11250 0    50   Input ~ 0
 SLA6170_30
 Text GLabel 22400 10600 0    50   Input ~ 0
-SLA6170_26
+CN5_4
 Text GLabel 28600 11050 0    50   Input ~ 0
-SLA6170_26
+CN5_4
 Wire Wire Line
 	21800 11200 22400 11200
 Wire Wire Line
@@ -6600,7 +6589,7 @@ OUT
 Text Notes 28150 11600 0    50   ~ 0
 OUT
 Text Notes 28400 11000 0    50   ~ 0
-OUT
+IN\n
 Text Notes 6100 7300 0    50   ~ 0
 OUT
 Text Notes 6100 7400 0    50   ~ 0
@@ -10038,4 +10027,29 @@ U 60A03B99
 F0 "analog_pcb" 50
 F1 "analog_pcb.sch" 50
 $EndSheet
+$Comp
+L power:GND #PWR?
+U 1 1 691195A6
+P 28600 10850
+F 0 "#PWR?" H 28600 10600 50  0001 C CNN
+F 1 "GND" V 28605 10677 50  0000 C CNN
+F 2 "" H 28600 10850 50  0001 C CNN
+F 3 "" H 28600 10850 50  0001 C CNN
+	1    28600 10850
+	0    1    1    0   
+$EndComp
+Text Notes 28200 11100 0    50   ~ 0
+IN\n
+Text Notes 28200 11200 0    50   ~ 0
+IN\n
+Text Notes 27900 11300 0    50   ~ 0
+OUT\n
+Text Notes 27950 11500 0    50   ~ 0
+OUT\n
+Text Notes 22050 10650 2    50   ~ 0
+IN
+Text Notes 22050 10750 2    50   ~ 0
+IN
+Text Notes 23950 10450 2    50   ~ 0
+IN
 $EndSCHEMATC
