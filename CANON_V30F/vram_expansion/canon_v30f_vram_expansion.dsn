@@ -21,10 +21,11 @@
       )
     )
     (boundary
-      (path pcb 0  155321 -91884.5  152336 -91884.5  152336 -105982  120650 -106108
-            120777 -91376.5  118745 -91440  118745 -57150  155258 -57086.5
-            155321 -91884.5)
+      (path pcb 0  159500 -93600  152935 -93600  152935 -105600  120115 -105600
+            120115 -93600  116000 -93600  116000 -64000  159500 -64000  159500 -93600)
     )
+    (plane GND (polygon B.Cu 0  155004 -91503.5  119126 -91186  119062 -57594.5  154876 -57531
+            155004 -91503.5))
     (via "Via[0-1]_800:400_um" "Via[0-1]_2000:1000_um")
     (rule
       (width 250)
@@ -34,22 +35,40 @@
     )
   )
   (placement
-    (component Capacitor_THT:CP_Radial_D8.0mm_P5.00mm
-      (place C3 134810 -61976 front 0 (PN 47uf/16V))
+    (component Capacitor_THT:C_Disc_D4.7mm_W2.5mm_P5.00mm
+      (place C2 149733 -78486 front 270 (PN 100nF))
+      (place C1 149670 -66548 front 270 (PN 100nF))
     )
-    (component Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P7.50mm
-      (place C2 150241 -88519 front 90 (PN 100nF))
-      (place C1 150304 -77660.5 front 90 (PN 100nF))
+    (component Capacitor_THT:CP_Radial_D8.0mm_P5.00mm
+      (place C3 155067 -86360 front 270 (PN 47uf/16V))
     )
     (component "msx cartridge:msx_vram_expansion"
-      (place J1 136307 -99947.2 front 0 (PN Conn_02x12_edgeconn_vram))
+      (place J1 136451 -99895.7 front 0 (PN Conn_02x12_edgeconn_vram))
     )
     (component "Package_DIP:DIP-18_W7.62mm"
-      (place IC2 144590 -80827 front 270 (PN DRAM_4464))
-      (place IC1 144590 -69977 front 270 (PN DRAM_4464))
+      (place IC2 142176 -82042 front 270 (PN DRAM_4464))
+      (place IC1 142304 -66484.5 front 270 (PN DRAM_4464))
     )
   )
   (library
+    (image Capacitor_THT:C_Disc_D4.7mm_W2.5mm_P5.00mm
+      (outline (path signal 50  6050 1500  -1050 1500))
+      (outline (path signal 50  6050 -1500  6050 1500))
+      (outline (path signal 50  -1050 -1500  6050 -1500))
+      (outline (path signal 50  -1050 1500  -1050 -1500))
+      (outline (path signal 120  4970 -1055  4970 -1370))
+      (outline (path signal 120  4970 1370  4970 1055))
+      (outline (path signal 120  30 -1055  30 -1370))
+      (outline (path signal 120  30 1370  30 1055))
+      (outline (path signal 120  30 -1370  4970 -1370))
+      (outline (path signal 120  30 1370  4970 1370))
+      (outline (path signal 100  4850 1250  150 1250))
+      (outline (path signal 100  4850 -1250  4850 1250))
+      (outline (path signal 100  150 -1250  4850 -1250))
+      (outline (path signal 100  150 1250  150 -1250))
+      (pin Round[A]Pad_1600_um 2 5000 0)
+      (pin Round[A]Pad_1600_um 1 0 0)
+    )
     (image Capacitor_THT:CP_Radial_D8.0mm_P5.00mm
       (outline (path signal 120  -1509.7 2715  -1509.7 1915))
       (outline (path signal 120  -1909.7 2315  -1109.7 2315))
@@ -239,24 +258,6 @@
       (pin Round[A]Pad_1600_um 2 5000 0)
       (pin Rect[A]Pad_1600x1600_um 1 0 0)
     )
-    (image Capacitor_THT:C_Disc_D7.5mm_W5.0mm_P7.50mm
-      (outline (path signal 50  8750 2750  -1250 2750))
-      (outline (path signal 50  8750 -2750  8750 2750))
-      (outline (path signal 50  -1250 -2750  8750 -2750))
-      (outline (path signal 50  -1250 2750  -1250 -2750))
-      (outline (path signal 120  7620 -1256  7620 -2620))
-      (outline (path signal 120  7620 2620  7620 1256))
-      (outline (path signal 120  -120 -1256  -120 -2620))
-      (outline (path signal 120  -120 2620  -120 1256))
-      (outline (path signal 120  -120 -2620  7620 -2620))
-      (outline (path signal 120  -120 2620  7620 2620))
-      (outline (path signal 100  7500 2500  0 2500))
-      (outline (path signal 100  7500 -2500  7500 2500))
-      (outline (path signal 100  0 -2500  7500 -2500))
-      (outline (path signal 100  0 2500  0 -2500))
-      (pin Round[A]Pad_2000_um 2 7500 0)
-      (pin Round[A]Pad_2000_um 1 0 0)
-    )
     (image "msx cartridge:msx_vram_expansion"
       (pin Rect[T]Pad_1500x11000_um B9 6423.66 73.66)
       (pin Rect[T]Pad_1500x11000_um B10 8963.66 73.66)
@@ -322,11 +323,6 @@
       (shape (circle B.Cu 1600))
       (attach off)
     )
-    (padstack Round[A]Pad_2000_um
-      (shape (circle F.Cu 2000))
-      (shape (circle B.Cu 2000))
-      (attach off)
-    )
     (padstack Oval[A]Pad_1600x1600_um
       (shape (path F.Cu 1600  0 0  0 0))
       (shape (path B.Cu 1600  0 0  0 0))
@@ -358,10 +354,10 @@
   )
   (network
     (net GND
-      (pins C3-2 C2-2 C1-2 J1-B12 J1-A12 IC2-18 IC2-1 IC1-18 IC1-1)
+      (pins C2-2 C1-2 C3-2 J1-B12 J1-A12 IC2-18 IC2-1 IC1-18 IC1-1)
     )
     (net +5V
-      (pins C3-1 C2-1 C1-1 J1-B11 J1-A11 IC2-9 IC1-9)
+      (pins C2-1 C1-1 C3-1 J1-B11 J1-A11 IC2-9 IC1-9)
     )
     (net 1_DQ4
       (pins J1-A7 IC1-17)
