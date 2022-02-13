@@ -1,0 +1,225 @@
+(pcb E:\msx\mitsubishig30_keyboard_connector\mitsubishig30_keyboard_connector.dsn
+  (parser
+    (string_quote ")
+    (space_in_quoted_tokens on)
+    (host_cad "KiCad's Pcbnew")
+    (host_version "(5.1.5)-3")
+  )
+  (resolution um 10)
+  (unit um)
+  (structure
+    (layer F.Cu
+      (type signal)
+      (property
+        (index 0)
+      )
+    )
+    (layer B.Cu
+      (type signal)
+      (property
+        (index 1)
+      )
+    )
+    (boundary
+      (path pcb 0  162916 -102489  170116 -102489  170116 -113728  132842 -113728
+            132842 -102489  139216 -102489  139216 -91186  162916 -91186
+            162916 -102489)
+    )
+    (via "Via[0-1]_800:400_um")
+    (rule
+      (width 250)
+      (clearance 200.1)
+      (clearance 200.1 (type default_smd))
+      (clearance 50 (type smd_smd))
+    )
+  )
+  (placement
+    (component Connector:26hirosi
+      (place J1 152464 -97028 front 0 (PN "MITSUBISHI GL30 KBD"))
+    )
+    (component Connector_PinHeader_2.54mm:PinHeader_2x13_P2.54mm_Vertical
+      (place J2 136271 -109855 front 90 (PN "PHILIPS/SANYO KBD"))
+    )
+  )
+  (library
+    (image Connector:26hirosi
+      (pin Rect[T]Pad_1000x11000_um 25 9360 71.12)
+      (pin Rect[B]Pad_1000x11000_um 26 9360 73.66)
+      (pin Rect[T]Pad_1000x11000_um 17 2240 73.66)
+      (pin Rect[T]Pad_1000x11000_um 19 4020 73.66)
+      (pin Rect[T]Pad_1000x11000_um 21 5800 73.66)
+      (pin Rect[T]Pad_1000x11000_um 23 7580 73.66)
+      (pin Rect[T]Pad_1000x11000_um 15 460 73.66)
+      (pin Rect[T]Pad_1000x11000_um 13 -1320 73.66)
+      (pin Rect[T]Pad_1000x11000_um 11 -3100 73.66)
+      (pin Rect[T]Pad_1000x11000_um 9 -4880 73.66)
+      (pin Rect[T]Pad_1000x11000_um 7 -6660 73.66)
+      (pin Rect[T]Pad_1000x11000_um 5 -8440 73.66)
+      (pin Rect[T]Pad_1000x11000_um 3 -10220 73.66)
+      (pin Rect[T]Pad_1000x11000_um 1 -12000 73.66)
+      (pin Rect[B]Pad_1000x11000_um 2 -12000 73.66)
+      (pin Rect[B]Pad_1000x11000_um 4 -10220 73.66)
+      (pin Rect[B]Pad_1000x11000_um 6 -8440 73.66)
+      (pin Rect[B]Pad_1000x11000_um 8 -6660 73.66)
+      (pin Rect[B]Pad_1000x11000_um 10 -4880 73.66)
+      (pin Rect[B]Pad_1000x11000_um 12 -3100 73.66)
+      (pin Rect[B]Pad_1000x11000_um 14 -1320 73.66)
+      (pin Rect[B]Pad_1000x11000_um 16 460 73.66)
+      (pin Rect[B]Pad_1000x11000_um 18 2240 73.66)
+      (pin Rect[B]Pad_1000x11000_um 20 4020 73.66)
+      (pin Rect[B]Pad_1000x11000_um 22 5800 73.66)
+      (pin Rect[B]Pad_1000x11000_um 24 7580 73.66)
+    )
+    (image Connector_PinHeader_2.54mm:PinHeader_2x13_P2.54mm_Vertical
+      (outline (path signal 50  4350 1800  -1800 1800))
+      (outline (path signal 50  4350 -32250  4350 1800))
+      (outline (path signal 50  -1800 -32250  4350 -32250))
+      (outline (path signal 50  -1800 1800  -1800 -32250))
+      (outline (path signal 120  -1330 1330  0 1330))
+      (outline (path signal 120  -1330 0  -1330 1330))
+      (outline (path signal 120  1270 1330  3870 1330))
+      (outline (path signal 120  1270 -1270  1270 1330))
+      (outline (path signal 120  -1330 -1270  1270 -1270))
+      (outline (path signal 120  3870 1330  3870 -31810))
+      (outline (path signal 120  -1330 -1270  -1330 -31810))
+      (outline (path signal 120  -1330 -31810  3870 -31810))
+      (outline (path signal 100  -1270 0  0 1270))
+      (outline (path signal 100  -1270 -31750  -1270 0))
+      (outline (path signal 100  3810 -31750  -1270 -31750))
+      (outline (path signal 100  3810 1270  3810 -31750))
+      (outline (path signal 100  0 1270  3810 1270))
+      (pin Oval[A]Pad_1700x1700_um 26 2540 -30480)
+      (pin Oval[A]Pad_1700x1700_um 25 0 -30480)
+      (pin Oval[A]Pad_1700x1700_um 24 2540 -27940)
+      (pin Oval[A]Pad_1700x1700_um 23 0 -27940)
+      (pin Oval[A]Pad_1700x1700_um 22 2540 -25400)
+      (pin Oval[A]Pad_1700x1700_um 21 0 -25400)
+      (pin Oval[A]Pad_1700x1700_um 20 2540 -22860)
+      (pin Oval[A]Pad_1700x1700_um 19 0 -22860)
+      (pin Oval[A]Pad_1700x1700_um 18 2540 -20320)
+      (pin Oval[A]Pad_1700x1700_um 17 0 -20320)
+      (pin Oval[A]Pad_1700x1700_um 16 2540 -17780)
+      (pin Oval[A]Pad_1700x1700_um 15 0 -17780)
+      (pin Oval[A]Pad_1700x1700_um 14 2540 -15240)
+      (pin Oval[A]Pad_1700x1700_um 13 0 -15240)
+      (pin Oval[A]Pad_1700x1700_um 12 2540 -12700)
+      (pin Oval[A]Pad_1700x1700_um 11 0 -12700)
+      (pin Oval[A]Pad_1700x1700_um 10 2540 -10160)
+      (pin Oval[A]Pad_1700x1700_um 9 0 -10160)
+      (pin Oval[A]Pad_1700x1700_um 8 2540 -7620)
+      (pin Oval[A]Pad_1700x1700_um 7 0 -7620)
+      (pin Oval[A]Pad_1700x1700_um 6 2540 -5080)
+      (pin Oval[A]Pad_1700x1700_um 5 0 -5080)
+      (pin Oval[A]Pad_1700x1700_um 4 2540 -2540)
+      (pin Oval[A]Pad_1700x1700_um 3 0 -2540)
+      (pin Oval[A]Pad_1700x1700_um 2 2540 0)
+      (pin Rect[A]Pad_1700x1700_um 1 0 0)
+    )
+    (padstack Oval[A]Pad_1700x1700_um
+      (shape (path F.Cu 1700  0 0  0 0))
+      (shape (path B.Cu 1700  0 0  0 0))
+      (attach off)
+    )
+    (padstack Rect[B]Pad_1000x11000_um
+      (shape (rect B.Cu -500 -5500 500 5500))
+      (attach off)
+    )
+    (padstack Rect[T]Pad_1000x11000_um
+      (shape (rect F.Cu -500 -5500 500 5500))
+      (attach off)
+    )
+    (padstack Rect[A]Pad_1700x1700_um
+      (shape (rect F.Cu -850 -850 850 850))
+      (shape (rect B.Cu -850 -850 850 850))
+      (attach off)
+    )
+    (padstack "Via[0-1]_800:400_um"
+      (shape (circle F.Cu 800))
+      (shape (circle B.Cu 800))
+      (attach off)
+    )
+  )
+  (network
+    (net GND
+      (pins J1-3 J1-1 J1-2 J1-4 J2-26 J2-25 J2-24)
+    )
+    (net X1
+      (pins J1-25 J2-18)
+    )
+    (net X0
+      (pins J1-26 J2-19)
+    )
+    (net Y1
+      (pins J1-17 J2-10)
+    )
+    (net X7
+      (pins J1-19 J2-12)
+    )
+    (net X5
+      (pins J1-21 J2-14)
+    )
+    (net X3
+      (pins J1-23 J2-16)
+    )
+    (net Y3
+      (pins J1-15 J2-8)
+    )
+    (net Y5
+      (pins J1-13 J2-6)
+    )
+    (net Y7
+      (pins J1-11 J2-4)
+    )
+    (net Y9
+      (pins J1-9 J2-2)
+    )
+    (net CAPS
+      (pins J1-7 J2-21)
+    )
+    (net LEDPOWER
+      (pins J1-5 J2-23)
+    )
+    (net KANA
+      (pins J1-6 J2-20)
+    )
+    (net Y10
+      (pins J1-8 J2-1)
+    )
+    (net Y8
+      (pins J1-10 J2-3)
+    )
+    (net Y6
+      (pins J1-12 J2-5)
+    )
+    (net Y4
+      (pins J1-14 J2-7)
+    )
+    (net Y2
+      (pins J1-16 J2-9)
+    )
+    (net Y0
+      (pins J1-18 J2-11)
+    )
+    (net X6
+      (pins J1-20 J2-13)
+    )
+    (net X4
+      (pins J1-22 J2-15)
+    )
+    (net X2
+      (pins J1-24 J2-17)
+    )
+    (class kicad_default "" CAPS GND KANA LEDPOWER "Net-(J2-Pad22)" X0 X1
+      X2 X3 X4 X5 X6 X7 Y0 Y1 Y10 Y2 Y3 Y4 Y5 Y6 Y7 Y8 Y9
+      (circuit
+        (use_via Via[0-1]_800:400_um)
+      )
+      (rule
+        (width 250)
+        (clearance 200.1)
+      )
+    )
+  )
+  (wiring
+  )
+)
