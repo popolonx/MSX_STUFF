@@ -24,42 +24,31 @@ F 3 "" H 3500 2100 50  0001 C CNN
 	1    3500 2100
 	1    0    0    -1  
 $EndComp
-$Comp
-L agg-kicad:CONN_02x13 J1
-U 1 1 62095F01
-P 4400 2200
-F 0 "J1" H 4350 2415 50  0000 C CNN
-F 1 "CONN_02x13" H 4350 2324 50  0000 C CNN
-F 2 "Connector:26hirosi" H 4400 2200 50  0001 C CNN
-F 3 "" H 4400 2200 50  0001 C CNN
-	1    4400 2200
-	0    -1   -1   0   
-$EndComp
-Text GLabel 5600 2100 1    50   Input ~ 0
+Text GLabel 5600 1900 1    50   Input ~ 0
 X0
-Text GLabel 5500 2100 1    50   Input ~ 0
+Text GLabel 5500 1900 1    50   Input ~ 0
 X2
-Text GLabel 5400 2100 1    50   Input ~ 0
+Text GLabel 5400 1900 1    50   Input ~ 0
 X4
-Text GLabel 5300 2100 1    50   Input ~ 0
+Text GLabel 5300 1900 1    50   Input ~ 0
 X6
-Text GLabel 5200 2100 1    50   Input ~ 0
+Text GLabel 5200 1900 1    50   Input ~ 0
 Y0
-Text GLabel 5100 2100 1    50   Input ~ 0
+Text GLabel 5100 1900 1    50   Input ~ 0
 Y2
-Text GLabel 5000 2100 1    50   Input ~ 0
+Text GLabel 5000 1900 1    50   Input ~ 0
 Y4
-Text GLabel 4900 2100 1    50   Input ~ 0
+Text GLabel 4900 1900 1    50   Input ~ 0
 Y6
-Text GLabel 4800 2100 1    50   Input ~ 0
+Text GLabel 4800 1900 1    50   Input ~ 0
 Y8
-Text GLabel 4700 2100 1    50   Input ~ 0
+Text GLabel 4700 1900 1    50   Input ~ 0
 Y10
-Text GLabel 4600 2100 1    50   Input ~ 0
+Text GLabel 4600 1900 1    50   Input ~ 0
 KANA
-Text GLabel 4500 2100 1    50   Input ~ 0
+Text GLabel 4500 1900 1    50   Input ~ 0
 GND
-Text GLabel 4400 2100 1    50   Input ~ 0
+Text GLabel 4400 1900 1    50   Input ~ 0
 GND
 Text GLabel 5600 2400 3    50   Input ~ 0
 X1
@@ -138,4 +127,15 @@ LEDPOWER
 Text GLabel 3300 3300 0    50   Input ~ 0
 GND
 NoConn ~ 3600 3100
+$Comp
+L Connector_Generic:Conn_02x13_Odd_Even_mirrored J1
+U 1 1 6223D473
+P 5050 2150
+F 0 "J1" V 5096 1512 50  0000 R CNN
+F 1 "Conn_02x13_Odd_Even_mirrored" V 5005 1512 50  0000 R CNN
+F 2 "Connector:26hirosi" H 5100 2200 50  0001 C CNN
+F 3 "~" H 5100 2200 50  0001 C CNN
+	1    5050 2150
+	0    -1   -1   0   
+$EndComp
 $EndSCHEMATC
