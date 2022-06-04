@@ -49,12 +49,12 @@ $EndComp
 $Comp
 L 74xx:74HC04 IC12
 U 4 1 629B3A20
-P 13950 1750
-F 0 "IC12" H 13950 2067 50  0000 C CNN
-F 1 "74HC04" H 13950 1976 50  0000 C CNN
-F 2 "" H 13950 1750 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 13950 1750 50  0001 C CNN
-	4    13950 1750
+P 6550 5800
+F 0 "IC12" H 6550 6117 50  0000 C CNN
+F 1 "74HC04" H 6550 6026 50  0000 C CNN
+F 2 "" H 6550 5800 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 6550 5800 50  0001 C CNN
+	4    6550 5800
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1871,6 +1871,47 @@ Text GLabel 12700 7900 2    50   Input ~ 0
 B24
 Text GLabel 6650 10050 0    50   Input ~ 0
 CLK
-Text GLabel 7400 4300 0    50   Input ~ 0
-CLK
+Wire Wire Line
+	7050 4300 7050 5800
+Wire Wire Line
+	7050 5800 6850 5800
+Wire Wire Line
+	7050 4300 7400 4300
+$Comp
+L power:+5V #PWR?
+U 1 1 63A26042
+P 5800 5650
+F 0 "#PWR?" H 5800 5500 50  0001 C CNN
+F 1 "+5V" H 5815 5823 50  0000 C CNN
+F 2 "" H 5800 5650 50  0001 C CNN
+F 3 "" H 5800 5650 50  0001 C CNN
+	1    5800 5650
+	1    0    0    -1  
+$EndComp
+$Comp
+L agg-kicad:R R?
+U 1 1 63A274B2
+P 5900 5800
+F 0 "R?" H 5950 5981 50  0000 C CNN
+F 1 "47K" H 5950 5890 50  0000 C CNN
+F 2 "" H 5900 5800 50  0001 C CNN
+F 3 "" H 5900 5800 50  0001 C CNN
+	1    5900 5800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6250 5800 6100 5800
+Wire Wire Line
+	5900 5800 5800 5800
+Wire Wire Line
+	5800 5800 5800 5650
+Wire Wire Line
+	6100 5800 6100 6750
+Wire Wire Line
+	6100 6750 4400 6750
+Wire Wire Line
+	4400 6750 4400 8300
+Connection ~ 6100 5800
+Wire Wire Line
+	6100 5800 6000 5800
 $EndSCHEMATC
