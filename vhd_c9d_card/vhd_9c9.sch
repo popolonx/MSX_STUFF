@@ -4,7 +4,7 @@ EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
 Sheet 1 1
-Title ""
+Title "Victor VHD IF-C9D"
 Date ""
 Rev ""
 Comp ""
@@ -840,30 +840,14 @@ F 3 " ~" H 4950 1400 50  0001 C CNN
 	1    4950 1400
 	1    0    0    -1  
 $EndComp
-Text GLabel 4650 700  0    50   Input ~ 0
-VHD1
-Text GLabel 4650 800  0    50   Input ~ 0
-VHD9
-Text GLabel 4650 900  0    50   Input ~ 0
-VHD2
 Text GLabel 4650 1000 0    50   Input ~ 0
 VHD10
 Text GLabel 4650 1100 0    50   Input ~ 0
 VHD3
-Text GLabel 4650 1200 0    50   Input ~ 0
-VHD11
 Text GLabel 4650 1300 0    50   Input ~ 0
 VHD4
 Text GLabel 4650 1400 0    50   Input ~ 0
 VHD12
-Text GLabel 4650 1500 0    50   Input ~ 0
-VHD5
-Text GLabel 4650 1600 0    50   Input ~ 0
-VHD13
-Text GLabel 4650 1700 0    50   Input ~ 0
-VHD6
-Text GLabel 3750 1900 0    50   Input ~ 0
-VHD7
 Text GLabel 4650 2100 0    50   Input ~ 0
 VHD8
 $Comp
@@ -897,9 +881,9 @@ F 3 " ~" H 2850 1000 50  0001 C CNN
 	1    2850 1000
 	1    0    0    -1  
 $EndComp
-Text GLabel 2550 800  0    50   Input ~ 0
+Text GLabel 2400 800  1    50   Input ~ 0
 S2
-Text GLabel 2550 1000 0    50   Input ~ 0
+Text GLabel 2300 1200 3    50   Input ~ 0
 S3
 Wire Wire Line
 	2550 900  2200 900 
@@ -1751,7 +1735,7 @@ F 3 "" H 2050 1100 50  0001 C CNN
 	1    2050 1100
 	0    1    1    0   
 $EndComp
-Text Notes 1400 450  0    50   ~ 0
+Text Notes 750  1750 0    50   ~ 0
 +12V from C1 pin (96 pin connector)
 Text GLabel 7400 5200 0    50   Input ~ 0
 B12
@@ -2026,7 +2010,7 @@ TXAI
 Text Notes 1000 1150 2    50   ~ 0
 RXAI
 Wire Wire Line
-	750  900  1200 900 
+	750  900  1050 900 
 Wire Wire Line
 	750  1250 1200 1250
 Connection ~ 7300 10500
@@ -2182,4 +2166,34 @@ F 3 "" H 10050 500 50  0001 C CNN
 	1    10050 500 
 	1    0    0    -1  
 $EndComp
+Text Notes 750  1850 0    50   ~ 0
+-12V from C2 pin (96 pin connector)
+$Comp
+L power:-12V #PWR?
+U 1 1 63FBF804
+P 1050 900
+F 0 "#PWR?" H 1050 1000 50  0001 C CNN
+F 1 "-12V" H 1065 1073 50  0000 C CNN
+F 2 "" H 1050 900 50  0001 C CNN
+F 3 "" H 1050 900 50  0001 C CNN
+	1    1050 900 
+	1    0    0    -1  
+$EndComp
+Connection ~ 1050 900 
+Wire Wire Line
+	1050 900  1200 900 
+NoConn ~ 2550 700 
+NoConn ~ 2550 1100
+NoConn ~ 2550 1200
+NoConn ~ 2550 1300
+NoConn ~ 2550 1400
+NoConn ~ 4650 700 
+NoConn ~ 4650 900 
+NoConn ~ 4650 1500
+NoConn ~ 4650 1600
+NoConn ~ 4650 1200
+NoConn ~ 4650 1700
+NoConn ~ 4650 800 
+Text Notes 4250 1400 2    50   ~ 0
+VHD pins 6,7,9 \nconnected to logic\nonly in C9C pcb\n(go to 4069 ic)
 $EndSCHEMATC
