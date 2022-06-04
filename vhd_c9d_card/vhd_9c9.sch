@@ -431,41 +431,37 @@ F 3 "" H 2730 8620 50  0001 C CNN
 	1    2600 8600
 	-1   0    0    -1  
 $EndComp
-Text Notes 9450 7800 0    50   ~ 0
-B8
-Text Notes 10050 2450 0    50   ~ 0
-E -> A26
 $Comp
-L connector2:DIN41612_01x32_A J?
+L connector2:DIN41612_01x32_A J1.2
 U 1 1 62B504FE
-P 1550 4350
-F 0 "J?" H 1630 4342 50  0000 L CNN
-F 1 "DIN41612_01x32_A" H 1630 4251 50  0000 L CNN
-F 2 "" H 1550 4350 50  0001 C CNN
-F 3 "" H 1550 4350 50  0001 C CNN
-	1    1550 4350
+P 1400 4200
+F 0 "J1.2" H 1300 5950 50  0000 L CNN
+F 1 "DIN41612_01x32_A" H 1050 5850 50  0000 L CNN
+F 2 "" H 1400 4200 50  0001 C CNN
+F 3 "" H 1400 4200 50  0001 C CNN
+	1    1400 4200
 	1    0    0    -1  
 $EndComp
 $Comp
-L connector2:DIN41612_01x32_B J?
+L connector2:DIN41612_01x32_B J1.3
 U 1 1 62B58CF5
-P 3050 4400
-F 0 "J?" H 3130 4392 50  0000 L CNN
-F 1 "DIN41612_01x32_B" H 3130 4301 50  0000 L CNN
-F 2 "" H 3050 4400 50  0001 C CNN
-F 3 "" H 3050 4400 50  0001 C CNN
-	1    3050 4400
+P 2200 4200
+F 0 "J1.3" H 2100 5950 50  0000 L CNN
+F 1 "DIN41612_01x32_B" H 1850 5850 50  0000 L CNN
+F 2 "" H 2200 4200 50  0001 C CNN
+F 3 "" H 2200 4200 50  0001 C CNN
+	1    2200 4200
 	1    0    0    -1  
 $EndComp
 $Comp
-L connector2:DIN41612_01x32_C J?
+L connector2:DIN41612_01x32_C J1.1
 U 1 1 62B5C196
-P 850 2850
-F 0 "J?" H 930 2842 50  0000 L CNN
-F 1 "DIN41612_01x32_C" H 930 2751 50  0000 L CNN
-F 2 "" H 850 2850 50  0001 C CNN
-F 3 "" H 850 2850 50  0001 C CNN
-	1    850  2850
+P 3000 4200
+F 0 "J1.1" H 2900 5950 50  0000 L CNN
+F 1 "DIN41612_01x32_C" H 2650 5850 50  0000 L CNN
+F 2 "" H 3000 4200 50  0001 C CNN
+F 3 "" H 3000 4200 50  0001 C CNN
+	1    3000 4200
 	1    0    0    -1  
 $EndComp
 Text GLabel 7700 2200 0    50   Input ~ 0
@@ -643,7 +639,7 @@ Wire Wire Line
 Wire Wire Line
 	11900 8900 11450 8900
 Text GLabel 10850 8800 0    50   Input ~ 0
-C1
+C6
 Text GLabel 10850 9000 0    50   Input ~ 0
 B19
 Text GLabel 6250 4800 0    50   Input ~ 0
@@ -754,29 +750,29 @@ Wire Wire Line
 $Comp
 L power:GND #PWR?
 U 1 1 63352153
-P 7350 10800
-F 0 "#PWR?" H 7350 10550 50  0001 C CNN
-F 1 "GND" H 7355 10627 50  0000 C CNN
-F 2 "" H 7350 10800 50  0001 C CNN
-F 3 "" H 7350 10800 50  0001 C CNN
-	1    7350 10800
+P 7300 10800
+F 0 "#PWR?" H 7300 10550 50  0001 C CNN
+F 1 "GND" H 7305 10627 50  0000 C CNN
+F 2 "" H 7300 10800 50  0001 C CNN
+F 3 "" H 7300 10800 50  0001 C CNN
+	1    7300 10800
 	1    0    0    -1  
 $EndComp
 $Comp
 L agg-kicad:C C?
 U 1 1 63352A5D
-P 7350 10600
-F 0 "C?" V 7354 10658 50  0000 L CNN
-F 1 "C" V 7445 10658 50  0000 L CNN
-F 2 "" H 7350 10600 50  0001 C CNN
-F 3 "" H 7350 10600 50  0001 C CNN
-	1    7350 10600
+P 7300 10600
+F 0 "C?" V 7304 10658 50  0000 L CNN
+F 1 "27pF" V 7395 10658 50  0000 L CNN
+F 2 "" H 7300 10600 50  0001 C CNN
+F 3 "" H 7300 10600 50  0001 C CNN
+	1    7300 10600
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	7350 10800 7350 10700
+	7300 10800 7300 10700
 Wire Wire Line
-	7350 10600 7350 10500
+	7300 10600 7300 10500
 Wire Wire Line
 	7350 10500 7300 10500
 $Comp
@@ -784,18 +780,18 @@ L agg-kicad:R R?
 U 1 1 63355BB2
 P 7000 10250
 F 0 "R?" H 7050 10300 50  0000 C CNN
-F 1 "R" H 7050 10200 50  0000 C CNN
+F 1 "750K" H 7050 10200 50  0000 C CNN
 F 2 "" H 7000 10250 50  0001 C CNN
 F 3 "" H 7000 10250 50  0001 C CNN
 	1    7000 10250
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:Crystal Y?
+L Device:Crystal Y1
 U 1 1 6335632E
 P 7050 10050
-F 0 "Y?" H 7050 10318 50  0000 C CNN
-F 1 "Crystal" H 7050 10227 50  0000 C CNN
+F 0 "Y1" H 7050 10318 50  0000 C CNN
+F 1 "6Mhz" H 7050 10227 50  0000 C CNN
 F 2 "" H 7050 10050 50  0001 C CNN
 F 3 "~" H 7050 10050 50  0001 C CNN
 	1    7050 10050
@@ -803,7 +799,6 @@ F 3 "~" H 7050 10050 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	7350 10250 7350 10500
-Connection ~ 7350 10500
 Wire Wire Line
 	7100 10250 7350 10250
 Wire Wire Line
@@ -835,10 +830,10 @@ F 3 "" H 14600 1500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:DB15_Female J?
+L Connector:DB15_Female J3
 U 1 1 63393FAF
 P 4950 1400
-F 0 "J?" H 5104 1446 50  0000 L CNN
+F 0 "J3" H 5104 1446 50  0000 L CNN
 F 1 "DB15_Female" H 5104 1355 50  0000 L CNN
 F 2 "" H 4950 1400 50  0001 C CNN
 F 3 " ~" H 4950 1400 50  0001 C CNN
@@ -892,10 +887,10 @@ Wire Wire Line
 	4300 1800 4300 2000
 Connection ~ 4300 2000
 $Comp
-L Connector:DB9_Female J?
+L Connector:DB9_Female J2
 U 1 1 633A56DC
 P 2850 1000
-F 0 "J?" H 3030 1046 50  0000 L CNN
+F 0 "J2" H 3030 1046 50  0000 L CNN
 F 1 "DB9_Female" H 3030 955 50  0000 L CNN
 F 2 "" H 2850 1000 50  0001 C CNN
 F 3 " ~" H 2850 1000 50  0001 C CNN
@@ -931,7 +926,7 @@ L agg-kicad:R R?
 U 1 1 633E74A1
 P 2850 8600
 F 0 "R?" H 2900 8781 50  0000 C CNN
-F 1 "R" H 2900 8690 50  0000 C CNN
+F 1 "10K" H 2900 8690 50  0000 C CNN
 F 2 "" H 2850 8600 50  0001 C CNN
 F 3 "" H 2850 8600 50  0001 C CNN
 	1    2850 8600
@@ -1088,8 +1083,6 @@ $EndComp
 Connection ~ 3150 10750
 Wire Wire Line
 	3150 10750 3150 10800
-Wire Wire Line
-	3150 10750 2850 10750
 Wire Wire Line
 	3600 10750 3150 10750
 Text GLabel 2850 10750 0    50   Input ~ 0
@@ -1275,8 +1268,6 @@ Connection ~ 2450 10200
 Wire Wire Line
 	2450 10200 2450 10250
 Wire Wire Line
-	2450 10200 2150 10200
-Wire Wire Line
 	2150 10050 2150 10200
 Wire Wire Line
 	2900 10200 2450 10200
@@ -1357,8 +1348,6 @@ $EndComp
 Connection ~ 3300 9500
 Wire Wire Line
 	3300 9500 3300 9550
-Wire Wire Line
-	3300 9500 3000 9500
 Wire Wire Line
 	3000 9350 3000 9500
 Wire Wire Line
@@ -1694,25 +1683,21 @@ Wire Wire Line
 $Comp
 L agg-kicad:C C?
 U 1 1 63891DDB
-P 850 950
-F 0 "C?" V 850 750 50  0000 L CNN
-F 1 "100nF" V 950 700 50  0000 L CNN
-F 2 "" H 850 950 50  0001 C CNN
-F 3 "" H 850 950 50  0001 C CNN
-	1    850  950 
+P 750 950
+F 0 "C?" V 750 750 50  0000 L CNN
+F 1 "100nF" V 850 700 50  0000 L CNN
+F 2 "" H 750 950 50  0001 C CNN
+F 3 "" H 750 950 50  0001 C CNN
+	1    750  950 
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	850  900  850  950 
+	750  900  750  950 
 Wire Wire Line
-	850  1050 850  1250
-Wire Wire Line
-	850  1250 1200 1250
+	750  1050 750  1250
 Connection ~ 1200 1250
 Wire Wire Line
 	1200 1250 1200 1350
-Wire Wire Line
-	850  900  1200 900 
 Text GLabel 1200 1000 0    50   Input ~ 0
 A23
 Text GLabel 1200 1100 0    50   Input ~ 0
@@ -1869,8 +1854,6 @@ Text GLabel 12700 7800 2    50   Input ~ 0
 C24
 Text GLabel 12700 7900 2    50   Input ~ 0
 B24
-Text GLabel 6650 10050 0    50   Input ~ 0
-CLK
 Wire Wire Line
 	7050 4300 7050 5800
 Wire Wire Line
@@ -1914,4 +1897,289 @@ Wire Wire Line
 Connection ~ 6100 5800
 Wire Wire Line
 	6100 5800 6000 5800
+Text Notes 5800 2750 2    50   ~ 0
+JVCREQ
+Text Notes 5300 4400 2    50   ~ 0
+JVCREQ
+Text Notes 7550 2600 2    50   ~ 0
+BUSACK
+Text Notes 7850 2350 2    50   ~ 0
+BUSACK
+Text Notes 7600 1950 2    50   ~ 0
+SLOT
+Text Notes 9300 3700 2    50   ~ 0
+BUSDIR
+Text Notes 10800 8750 2    50   ~ 0
+RD
+Text Notes 6050 4850 2    50   ~ 0
+RD
+Text Notes 6050 5200 2    50   ~ 0
+WR
+Text Notes 11700 9050 2    50   ~ 0
+SLOT
+Text Notes 10800 9150 2    50   ~ 0
+A15
+Text Notes 5050 5100 2    50   ~ 0
+lOE
+Text Notes 4400 4900 2    50   ~ 0
+LlR
+Text Notes 10250 1950 2    50   ~ 0
+BUSCON
+Text Notes 3700 3550 2    50   ~ 0
+A6
+Text Notes 11700 7850 2    50   ~ 0
+A6
+Text Notes 11700 7250 2    50   ~ 0
+A0
+Text Notes 11700 7350 2    50   ~ 0
+A1
+Text Notes 11700 7450 2    50   ~ 0
+A2
+Text Notes 11700 7550 2    50   ~ 0
+A3
+Text Notes 11700 7650 2    50   ~ 0
+A4
+Text Notes 11700 7750 2    50   ~ 0
+A5
+Text Notes 11700 7950 2    50   ~ 0
+A7
+Text Notes 11700 8050 2    50   ~ 0
+A8
+Text Notes 11700 8150 2    50   ~ 0
+A9
+Text Notes 11700 8250 2    50   ~ 0
+A10
+Text Notes 11700 8350 2    50   ~ 0
+A11
+Text Notes 11700 8450 2    50   ~ 0
+A12
+Text Notes 11700 8550 2    50   ~ 0
+A13
+Text Notes 11700 8650 2    50   ~ 0
+A14
+Text Notes 13000 7250 2    50   ~ 0
+D0
+Text Notes 13000 7350 2    50   ~ 0
+D1
+Text Notes 13000 7450 2    50   ~ 0
+D2
+Text Notes 13000 7550 2    50   ~ 0
+D3
+Text Notes 13000 7650 2    50   ~ 0
+D4
+Text Notes 13000 7750 2    50   ~ 0
+D5
+Text Notes 13000 7850 2    50   ~ 0
+D6
+Text Notes 13000 7950 2    50   ~ 0
+D7
+Text Notes 4750 3650 2    50   ~ 0
+A2
+Text Notes 4750 3950 2    50   ~ 0
+A3
+Text Notes 4750 4050 2    50   ~ 0
+A4
+Text Notes 4750 4150 2    50   ~ 0
+A5
+Text Notes 4750 4250 2    50   ~ 0
+A7
+Text Notes 4750 2850 2    50   ~ 0
+A8
+Text Notes 4750 2950 2    50   ~ 0
+A9
+Text Notes 4750 3150 2    50   ~ 0
+A10
+Text Notes 4750 3050 2    50   ~ 0
+A11
+Text Notes 4750 2750 2    50   ~ 0
+A12
+Text Notes 4750 2650 2    50   ~ 0
+A13
+Text Notes 4750 3250 2    50   ~ 0
+A14
+Text Notes 4750 3350 2    50   ~ 0
+A15
+Text Notes 7200 5150 2    50   ~ 0
+A0
+Text Notes 7200 5250 2    50   ~ 0
+A1
+Text Notes 7200 5550 2    50   ~ 0
+D0
+Text Notes 7200 5650 2    50   ~ 0
+D1
+Text Notes 7200 5750 2    50   ~ 0
+D2
+Text Notes 7200 5850 2    50   ~ 0
+D3
+Text Notes 7200 5950 2    50   ~ 0
+D4
+Text Notes 7200 6050 2    50   ~ 0
+D5
+Text Notes 7200 6150 2    50   ~ 0
+D6
+Text Notes 7200 6250 2    50   ~ 0
+D7
+Text Notes 9050 7400 2    50   ~ 0
+INT01
+Text Notes 1000 1050 2    50   ~ 0
+TXAI
+Text Notes 1000 1150 2    50   ~ 0
+RXAI
+Wire Wire Line
+	750  900  1200 900 
+Wire Wire Line
+	750  1250 1200 1250
+Connection ~ 7300 10500
+$Comp
+L power:GND #PWR?
+U 1 1 63D66715
+P 6650 10700
+F 0 "#PWR?" H 6650 10450 50  0001 C CNN
+F 1 "GND" H 6655 10527 50  0000 C CNN
+F 2 "" H 6650 10700 50  0001 C CNN
+F 3 "" H 6650 10700 50  0001 C CNN
+	1    6650 10700
+	1    0    0    -1  
+$EndComp
+$Comp
+L agg-kicad:C C?
+U 1 1 63D6671B
+P 6650 10500
+F 0 "C?" V 6654 10558 50  0000 L CNN
+F 1 "27pF" V 6745 10558 50  0000 L CNN
+F 2 "" H 6650 10500 50  0001 C CNN
+F 3 "" H 6650 10500 50  0001 C CNN
+	1    6650 10500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6650 10700 6650 10600
+$Comp
+L agg-kicad:R R?
+U 1 1 63D8C888
+P 3100 9500
+F 0 "R?" H 3100 9550 50  0000 C CNN
+F 1 "220R" H 3100 9400 50  0000 C CNN
+F 2 "" H 3100 9500 50  0001 C CNN
+F 3 "" H 3100 9500 50  0001 C CNN
+	1    3100 9500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3000 9500 3100 9500
+$Comp
+L agg-kicad:R R?
+U 1 1 63D98B71
+P 2250 10200
+F 0 "R?" H 2250 10250 50  0000 C CNN
+F 1 "220R" H 2250 10100 50  0000 C CNN
+F 2 "" H 2250 10200 50  0001 C CNN
+F 3 "" H 2250 10200 50  0001 C CNN
+	1    2250 10200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2150 10200 2250 10200
+$Comp
+L agg-kicad:R R?
+U 1 1 63DA4F13
+P 2950 10750
+F 0 "R?" H 2950 10800 50  0000 C CNN
+F 1 "220R" H 2950 10650 50  0000 C CNN
+F 2 "" H 2950 10750 50  0001 C CNN
+F 3 "" H 2950 10750 50  0001 C CNN
+	1    2950 10750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2850 10750 2950 10750
+$Comp
+L agg-kicad:R R?
+U 1 1 63DB3DE0
+P 2900 10500
+F 0 "R?" V 2904 10544 50  0000 L CNN
+F 1 "4K7" V 2995 10544 50  0000 L CNN
+F 2 "" H 2900 10500 50  0001 C CNN
+F 3 "" H 2900 10500 50  0001 C CNN
+	1    2900 10500
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 63DB3DE6
+P 2900 10500
+F 0 "#PWR?" H 2900 10350 50  0001 C CNN
+F 1 "+5V" H 2915 10673 50  0000 C CNN
+F 2 "" H 2900 10500 50  0001 C CNN
+F 3 "" H 2900 10500 50  0001 C CNN
+	1    2900 10500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2900 10600 2900 10750
+$Comp
+L power:GND #PWR?
+U 1 1 63DD1A95
+P 8400 1600
+F 0 "#PWR?" H 8400 1350 50  0001 C CNN
+F 1 "GND" H 8405 1427 50  0000 C CNN
+F 2 "" H 8400 1600 50  0001 C CNN
+F 3 "" H 8400 1600 50  0001 C CNN
+	1    8400 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8400 1600 8400 1500
+Wire Wire Line
+	3200 9500 3300 9500
+Wire Wire Line
+	2350 10200 2450 10200
+Wire Wire Line
+	3050 10750 3150 10750
+Wire Wire Line
+	8400 1500 9200 1500
+Connection ~ 8400 1500
+Wire Wire Line
+	9200 1500 10050 1500
+Connection ~ 9200 1500
+Wire Wire Line
+	10050 1500 10800 1500
+Connection ~ 10050 1500
+Wire Wire Line
+	10800 1500 11550 1500
+Connection ~ 10800 1500
+Wire Wire Line
+	12300 1500 11550 1500
+Connection ~ 11550 1500
+Wire Wire Line
+	12300 1500 13100 1500
+Connection ~ 12300 1500
+Wire Wire Line
+	13100 500  12300 500 
+Wire Wire Line
+	12300 500  11550 500 
+Connection ~ 12300 500 
+Connection ~ 9200 500 
+Wire Wire Line
+	9200 500  8400 500 
+Connection ~ 10050 500 
+Wire Wire Line
+	10050 500  9200 500 
+Connection ~ 10800 500 
+Wire Wire Line
+	10800 500  10050 500 
+Connection ~ 11550 500 
+Wire Wire Line
+	11550 500  10800 500 
+$Comp
+L power:+5V #PWR?
+U 1 1 63E551C3
+P 10050 500
+F 0 "#PWR?" H 10050 350 50  0001 C CNN
+F 1 "+5V" H 10065 673 50  0000 C CNN
+F 2 "" H 10050 500 50  0001 C CNN
+F 3 "" H 10050 500 50  0001 C CNN
+	1    10050 500 
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
