@@ -52,7 +52,7 @@
       (place J3 53657.5 -88011 front 270 (PN RIGHT))
     )
     (component Connector_DIN:din8_msx
-      (place J4 136017 -104838 front 90 (PN "DIN-8"))
+      (place J4 135763 -107252 front 90 (PN "DIN-8"))
     )
     (component Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical
       (place JP11 106236 -119824 front 90 (PN B_1_x_2))
@@ -91,10 +91,6 @@
   )
   (library
     (image Connector_Audio:rca_audio
-      (outline (path signal 120  800 5000  720.775 4652.89  498.792 4374.53  178.017 4220.06
-            -178.017 4220.06  -498.792 4374.53  -720.775 4652.89  -800 5000
-            -720.775 5347.11  -498.792 5625.47  -178.017 5779.94  178.017 5779.94
-            498.792 5625.47  720.775 5347.11  800 5000))
       (outline (path signal 381  -2702.56 5798.82  -2776.06 5524.5  -2976.88 5323.68  -3251.2 5250.18
             -3525.52 5323.68  -3726.34 5524.5  -3799.84 5798.82  -3726.34 6073.14
             -3525.52 6273.96  -3251.2 6347.46  -2976.88 6273.96  -2776.06 6073.14
@@ -136,9 +132,10 @@
       (outline (path signal 381  4800.6 -5001.26  -4800.6 -5001.26))
       (outline (path signal 381  -4800.6 -4998.72  -4800.6 6802.12))
       (outline (path signal 381  4800.6 6799.58  4800.6 -5001.26))
-      (pin Oval[A]Pad_3000x4300_um (rotate 90) 1 0 0)
-      (pin Oval[A]Pad_3000x4300_um 2 4950 5000)
-      (pin Oval[A]Pad_3000x4300_um 2@1 -4950 5000)
+      (pin Oval[A]Pad_2200x3600_um (rotate 90) 1 0 5000)
+      (pin Oval[A]Pad_3000x4300_um (rotate 90) 2 0 0)
+      (pin Oval[A]Pad_3000x4300_um 2@1 4950 5000)
+      (pin Oval[A]Pad_3000x4300_um 2@2 -4950 5000)
     )
     (image Connector_DIN:din8_msx
       (outline (path signal 381  -7000 -11300  -7000 -12000))
@@ -572,6 +569,11 @@
       (shape (path B.Cu 1800  0 0  0 0))
       (attach off)
     )
+    (padstack Oval[A]Pad_2200x3600_um
+      (shape (path F.Cu 2200  0 -700  0 700))
+      (shape (path B.Cu 2200  0 -700  0 700))
+      (attach off)
+    )
     (padstack Oval[A]Pad_3000x4300_um
       (shape (path F.Cu 3000  0 -650  0 650))
       (shape (path B.Cu 3000  0 -650  0 650))
@@ -615,8 +617,9 @@
   )
   (network
     (net GND
-      (pins J6-2 J6-2@1 J5-2 J5-2@1 J3-2 J3-2@1 J4-1 U1-3 U1-5 C2-2 J2-4 J2-5 J2-9
-        J2-13 J2-17 J2-18 J1-21 J1-18 J1-17 J1-14 J1-13 J1-8 J1-7 J1-4 J1-3)
+      (pins J6-2 J6-2@1 J6-2@2 J5-2 J5-2@1 J5-2@2 J3-2 J3-2@1 J3-2@2 J4-1 U1-3 U1-5
+        C2-2 J2-4 J2-5 J2-9 J2-13 J2-17 J2-18 J1-21 J1-18 J1-17 J1-14 J1-13 J1-8 J1-7
+        J1-4 J1-3)
     )
     (net B
       (pins C5-1 J1-20)
