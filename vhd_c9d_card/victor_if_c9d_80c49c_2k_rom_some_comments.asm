@@ -21,28 +21,28 @@
 	dis	i
 	jmp	L005D
 ;
-	mov	r7,a
+	mov	r7,a    // INT=0
 	in	a,p2
 	jmp	L07D1
 ;
-	call	L0056
+	call	L0056   // timer interrupt
 L0009:
 	dis	tcnti
 	sel	rb1
 	xch	a,r3
-	jt1	L0041
+	jt1	L0041  // PC7=1
 L000E:
 	mov	r1,#03EH
 	mov	a,@r1
 	jb7	L0041
 L0013:
 	mov	r2,#00DH
-	jt1	L0041
-	orl	p2,#001H
+	jt1	L0041  // PC7=1
+	orl	p2,#001H  // set PC0 = 1
 	movx	a,@r1
 	xrl	a,r2
 	jz	L0039
-	anl	p2,#0FEH
+	anl	p2,#0FEH  // set PC0 = 0
 	xrl	a,r2
 L0020:
 	mov	r2,a
@@ -73,7 +73,7 @@ L0039:
 	mov	r1,a
 	mov	@r1,#001H
 L0041:
-	jt0	L0050
+	jt0	L0050  // PC5=1
 	mov	r1,#040H
 L0045:
 	mov	a,@r1
@@ -82,7 +82,7 @@ L0045:
 	mov	a,@r1
 	mov	r2,#009H
 L004C:
-	jnt0	L0057
+	jnt0	L0057  // PC5=0
 	djnz	r2,L004C
 L0050:
 	mov	a,#0F3H
@@ -93,7 +93,7 @@ L0050:
 L0056:
 	retr
 ;
-L0057:
+L0057:  // output data towards MSX
 	outl	bus,a
 	mov	r1,#040H
 	inc	@r1
@@ -111,7 +111,7 @@ L0061:
 	cpl	a     A=0xFF
 L0067:
 	outl	p1,a   // CPU2
-	outl	p2,a
+	outl	p2,a   // VHD lines and PC0 to A
 	djnz	r1,L0067
 	djnz	r0,L0061
 	mov	r0,#03EH
@@ -129,14 +129,14 @@ L0067:
 	mov	@r1,#080H     2F -> 80
 	call	L05F3
 L0082:
-	orl	p2,#0FCH
+	orl	p2,#0FCH    CPU2: Bit0 and Bit1 to 0
 	mov	r4,#00FH
 	mov	r1,#03FH
-	mov	a,@r1
-	rrc	a
-	anl	a,#007H
-	mov	r1,#049H
-	jz	L00D5
+	mov	a,@r1         A=@3F
+	rrc	a            00000000, c=0
+	anl	a,#007H      a=0
+	mov	r1,#049H    
+	jz	L00D5    -->
 	jb2	L00D9
 	rrc	a
 	mov	@r1,#0A8H
@@ -144,8 +144,8 @@ L0082:
 	mov	a,@r0
 	mov	r2,a
 	anl	a,#0F0H
-	jz	L00A1
-	call	L07C8
+	jz	L00A1  // if Bit4-7 is zero in A
+	call	L07C8      // OK
 	jmp	L00A5
 ;
 L00A1:
@@ -171,7 +171,7 @@ L00B8:
 	jmp	L00BE
 ;
 L00BC:
-	call	L07C8
+	call	L07C8   // OK
 L00BE:
 	mov	r0,#03DH
 	mov	a,@r0
@@ -188,10 +188,10 @@ L00C9:
 	jmp	L00E6
 ;
 	outl	p1,a   // CPU2
-	jnt0	L0020
+	jnt0	L0020  // PC5=0
 	mov	a,#029H
 L00D5:
-	jnc	L00F1
+	jnc	L00F1  // if carry=0
 	mov	a,#003H
 L00D9:
 	mov	@r1,#0A0H
@@ -218,11 +218,14 @@ L00F1:
 	jb6	L00FE
 	mov	a,r4
 	mov	r1,#033H
-	call	L05D4
+	call	L05D4  --> 33: R4
+	                   34: R4
+					   35: _R4
+					   
 L00FE:
 	mov	r0,#03BH
 L0100:
-	mov	a,@r1
+	mov	a,@r1      (from 35 )
 	rlc	a      // rotate left + carry
 	mov	@r0,a
 	dec	r0
@@ -234,21 +237,21 @@ L0100:
 	mov	r0,#033H
 	jf0	L011C
 L0110:
-	mov	r7,#00BH
+	mov	r7,#00BH  / INT=0
 	dis	tcnti
 	dis	tcnti
 L0114:
-	jni	L0138
-	mov	r4,#096H
+	jni	L0138   ->  INT=0     2 cycles
+	mov	r4,#096H  INT=1
 L0118:
-	jni	L0110
-	djnz	r4,L0118
-L011C:
+	jni	L0110  INT=0    2 cycles
+	djnz	r4,L0118    2 x 96h cycles =  300 x 2us = 600us
+L011C:   
 	jnc	L0120
-	anl	p2,#0EFH
+	anl	p2,#0EFH   BIT4=0 VHD4 set to zero when Carry=1
 L0120:
 	en	i     #enable external interrupts
-	call	L02F2
+	call	L02F2  // start 80us timer
 L0123:
 	mov	r7,#0FFH
 	mov	r4,a
@@ -268,10 +271,10 @@ L012B:
 ;
 L0138:
 	djnz	r7,L0114
-	call	L02F2
+	call	L02F2  // start 80us timer
 L013C:
 	dis	i
-	orl	p2,#0FCH
+	orl	p2,#0FCH  Bit0+Bit1  = CPU2 bits set to 0
 	mov	a,r5
 	sel	rb0
 	clr	f0
@@ -286,7 +289,9 @@ L0148:
 	call	L05E4
 	call	L05EE
 	mov	r1,#050H
-	call	L05EF
+	call	L05EF   
+	       50:  A
+		   51:  A 
 	cpl	a
 	call	L05EE
 	call	L0601
@@ -384,6 +389,8 @@ L01C0:
 	call	L05F3
 	mov	r1,#02DH
 	call	L05EF
+	      2D:  A
+		  2F:  A
 	mov	r1,#03FH
 	xch	a,@r1
 	xchd	a,@r1
@@ -604,7 +611,7 @@ L02ED:
 	add	a,#0C0H
 	ret
 ;
-L02F2:
+L02F2:  // start 80us timer
 	mov	a,#0FFH
 	mov	t,a
 	strt	t
@@ -684,9 +691,9 @@ L0344:
 L0346:
 	mov	a,@r1
 	jb3	L0351
-	in	a,p2
-	cpl	a
-	jb2	L034F
+	in	a,p2  // Read P2
+	cpl	a   // invert bits
+	jb2	L034F  // always false
 	djnz	r2,L0346
 L034F:
 	clr	a
@@ -696,9 +703,17 @@ L0351:
 	dis	tcnti
 	dis	tcnti
 	mov	r0,#048H
-	mov	@r1,#041H
+	mov	@r1,#041H     40: 41H
 L0357:
-	call	L05E0
+	call	L05E0  R0=r0+1 R1=R1+1  @R1 = @R0
+		R1+1 41 = @49h
+		R1+2 42 = @4Ah
+		R1+3 43 = @4Bh
+		R1+4 44 = @4Ch
+		R1+5 45 = @4Dh
+		R1+6 46 = @4Eh
+		R1+7 47 = @4Fh
+		R1+8 48 = @50h
 	mov	a,r0
 	jb3	L0357
 	jmp	L0009
@@ -715,7 +730,7 @@ L0364:
 ;
 	db	001H
 ;
-	ins	a,bus
+	ins	a,bus  // read from MSX
 	dec	a
 ;
 	db	006H
@@ -735,7 +750,7 @@ L0373:
 	clr	f1
 	xch	a,r0
 	mov	a,r7
-	jnt0	L0340
+	jnt0	L0340  // PC5=0
 ;
 	db	022H
 ;
@@ -1076,9 +1091,9 @@ L0520:
 L0523:
 	mov	a,psw
 	anl	a,#0F8H
-	mov	psw,a
+	mov	psw,a     // reset bits 0-2 from PSW
 	mov	a,r3
-	add	a,r3
+	add	a,r3    R3=r3*2
 	jnz	L052F
 	jnc	L0534
 	call	L05F3
@@ -1089,10 +1104,10 @@ L052F:
 ;
 L0534:
 	mov	r1,#03EH
-	mov	@r1,#06BH
-	anl	p2,#0FEH
+	mov	@r1,#06BH    3E: 6B
+	anl	p2,#0FEH  // PC0= 0
 L053A:
-	call	L02F2
+	call	L02F2  // start 80us timer
 	mov	r1,#030H
 	mov	a,@r1
 	jnz	L0571
@@ -1162,7 +1177,7 @@ L0590:
 	jmp	L05C3
 ;
 L0596:
-	call	L02F2
+	call	L02F2   // start 80us timer
 	mov	r2,a
 	call	L0344
 	jz	L05C3
@@ -1219,7 +1234,7 @@ L05D5:
 L05D6:
 	mov	@r1,a
 	cpl	a
-	jmp	L05F0
+	jmp	L05F0     R1+1: INV A
 ;
 L05DA:
 	mov	a,@r0
@@ -1233,7 +1248,7 @@ L05DE:
 L05E0:
 	inc	r0
 	mov	a,@r0
-	jmp	L05F0
+	jmp	L05F0   // R1+1: A
 ;
 L05E4:
 	mov	r1,#020H
@@ -1247,24 +1262,26 @@ L05ED:
 	mov	@r1,a
 L05EE:
 	inc	r1
-L05EF:
+L05EF:  OK
 	mov	@r1,a
-L05F0:
+L05F0:  OK
 	inc	r1
 	mov	@r1,a
 	ret
 ;
 L05F3:
 	in	a,p2    
-	jb2	L05F8
-	anl	p2,#0FDH
+	jb2	L05F8  // always zero because P2.2 line is connected to ground.
+	anl	p2,#0FDH  // CPU2 bit to zero
 L05F8:
 	mov	a,r5
-	anl	a,#0FBH
-	mov	r5,a
+	anl	a,#0FBH 
+	mov	r5,a    R5 bit2 set to zero
 L05FC:
 	clr	f1
-	mov	r1,#059H
+	mov	r1,#059H     59: 8
+	                 5A: 8
+					 5B: 8
 	jmp	L0603
 ;
 L0601:
@@ -1652,14 +1669,15 @@ L07AE:
 	mov	a,r2
 	djnz	r6,L07DC
 	mov	r2,#000H
-L07C8:
-	mov	r0,#050H
+L07C8:   OK
+	mov	r0,#050H 
 	mov	a,@r0
-L07CB:
+L07CB: OK
 	inc	r1
-	mov	@r1,#0F0H
-	xchd	a,@r1
-	jmp	L05F0
+	mov	@r1,#0F0H    // R1+1: F0h
+	xchd	a,@r1    // a=@50-bits4-7 +  0000b
+	                 // @r1 = @r1-bits4-7 + A-bits0-3  ( if from 7C8: @50-bits0-3)
+	jmp	L05F0  // @r1+1:  A     + RET
 ;
 L07D1:  // interrupt occured so here we are
   
