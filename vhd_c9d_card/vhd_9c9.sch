@@ -883,7 +883,7 @@ F 3 "" H 2150 8700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2150 8700 2150 8550
+	2150 8700 2150 8600
 Wire Wire Line
 	2150 8250 2150 8150
 $Comp
@@ -906,7 +906,7 @@ Wire Wire Line
 	1850 8250 1850 8400
 Wire Wire Line
 	2600 8400 2150 8400
-Text GLabel 1850 8400 0    50   Input ~ 0
+Text GLabel 1250 8400 0    50   Input ~ 0
 VHD4
 $Comp
 L agg-kicad:D D10
@@ -944,8 +944,6 @@ F 3 "" H 3150 11050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3150 11050 3150 10900
-Wire Wire Line
 	3150 10600 3150 10500
 $Comp
 L power:+5V #PWR021
@@ -963,7 +961,7 @@ Wire Wire Line
 	3150 10750 3150 10800
 Wire Wire Line
 	3600 10750 3150 10750
-Text GLabel 2850 10750 0    50   Input ~ 0
+Text GLabel 2250 10750 0    50   Input ~ 0
 VHD3
 Wire Wire Line
 	4200 10750 4200 10700
@@ -1034,18 +1032,18 @@ F 3 "" H 1800 9850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1800 9850 1800 9700
+	1800 9850 1800 9750
 Wire Wire Line
 	1800 9400 1800 9300
 $Comp
 L power:+5V #PWR04
 U 1 1 634E6306
-P 1800 9300
-F 0 "#PWR04" H 1800 9150 50  0001 C CNN
-F 1 "+5V" H 1815 9473 50  0000 C CNN
-F 2 "" H 1800 9300 50  0001 C CNN
-F 3 "" H 1800 9300 50  0001 C CNN
-	1    1800 9300
+P 2000 9350
+F 0 "#PWR04" H 2000 9200 50  0001 C CNN
+F 1 "+5V" H 2015 9523 50  0000 C CNN
+F 2 "" H 2000 9350 50  0001 C CNN
+F 3 "" H 2000 9350 50  0001 C CNN
+	1    2000 9350
 	1    0    0    -1  
 $EndComp
 Connection ~ 1800 9550
@@ -1055,7 +1053,7 @@ Wire Wire Line
 	1800 9550 1700 9550
 Wire Wire Line
 	1500 9400 1500 9550
-Text GLabel 1500 9550 0    50   Input ~ 0
+Text GLabel 900  9550 0    50   Input ~ 0
 VHD10
 $Comp
 L agg-kicad:R R2
@@ -1128,7 +1126,7 @@ F 3 "" H 2450 10500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2450 10500 2450 10350
+	2450 10500 2450 10450
 Wire Wire Line
 	2450 10050 2450 9950
 $Comp
@@ -1149,7 +1147,7 @@ Wire Wire Line
 	2150 10050 2150 10200
 Wire Wire Line
 	2900 10200 2450 10200
-Text GLabel 2150 10200 0    50   Input ~ 0
+Text GLabel 1550 10200 0    50   Input ~ 0
 VHD12
 $Comp
 L agg-kicad:R R7
@@ -1209,7 +1207,7 @@ F 3 "" H 3100 9700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3100 9700 3100 9550
+	3100 9700 3100 9650
 Wire Wire Line
 	3100 9250 3100 9150
 $Comp
@@ -1227,8 +1225,8 @@ Connection ~ 3100 9400
 Wire Wire Line
 	3100 9400 3100 9450
 Wire Wire Line
-	2800 9250 2800 9400
-Text GLabel 2800 9400 0    50   Input ~ 0
+	2800 9250 2800 9300
+Text GLabel 2200 9300 0    50   Input ~ 0
 VHD8
 Wire Wire Line
 	2600 10000 2600 9550
@@ -2043,8 +2041,6 @@ NoConn ~ 4650 900
 NoConn ~ 4650 1500
 NoConn ~ 4650 1600
 NoConn ~ 4650 1200
-NoConn ~ 4650 1700
-NoConn ~ 4650 800 
 $Comp
 L agg-kicad:R R18
 U 1 1 62DAFB54
@@ -2364,8 +2360,6 @@ Wire Wire Line
 Wire Wire Line
 	4300 2100 4300 2000
 Connection ~ 4300 2000
-Wire Wire Line
-	4650 1900 3750 1900
 $Comp
 L Device:Jumper_NC_Small JP2
 U 1 1 6352059E
@@ -2624,23 +2618,23 @@ $EndComp
 $Comp
 L 4xxx:4069 IC14
 U 1 1 63AA23E8
-P 13100 9450
-F 0 "IC14" H 13100 9767 50  0000 C CNN
-F 1 "4069" H 13100 9676 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 13100 9450 50  0001 C CNN
-F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4069ubms.pdf" H 13100 9450 50  0001 C CNN
-	1    13100 9450
+P 12700 8400
+F 0 "IC14" H 12700 8717 50  0000 C CNN
+F 1 "4069" H 12700 8626 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 12700 8400 50  0001 C CNN
+F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4069ubms.pdf" H 12700 8400 50  0001 C CNN
+	1    12700 8400
 	1    0    0    -1  
 $EndComp
 $Comp
 L 4xxx:4069 IC14
 U 2 1 63AA918B
-P 12850 8500
-F 0 "IC14" H 12850 8817 50  0000 C CNN
-F 1 "4069" H 12850 8726 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 12850 8500 50  0001 C CNN
-F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4069ubms.pdf" H 12850 8500 50  0001 C CNN
-	2    12850 8500
+P 12350 7500
+F 0 "IC14" H 12350 7817 50  0000 C CNN
+F 1 "4069" H 12350 7726 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 12350 7500 50  0001 C CNN
+F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4069ubms.pdf" H 12350 7500 50  0001 C CNN
+	2    12350 7500
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -2863,107 +2857,99 @@ Connection ~ 13950 500
 $Comp
 L agg-kicad:R R30
 U 1 1 6402EB6D
-P 12300 9200
-F 0 "R30" V 12300 9050 50  0000 L CNN
-F 1 "4K7" V 12400 9000 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" H 12300 9200 50  0001 C CNN
-F 3 "" H 12300 9200 50  0001 C CNN
-	1    12300 9200
+P 11900 8150
+F 0 "R30" V 11900 8000 50  0000 L CNN
+F 1 "4K7" V 12000 7950 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" H 11900 8150 50  0001 C CNN
+F 3 "" H 11900 8150 50  0001 C CNN
+	1    11900 8150
 	0    1    1    0   
 $EndComp
 $Comp
 L power:+5V #PWR056
 U 1 1 6402EB73
-P 12300 9200
-F 0 "#PWR056" H 12300 9050 50  0001 C CNN
-F 1 "+5V" H 12315 9373 50  0000 C CNN
-F 2 "" H 12300 9200 50  0001 C CNN
-F 3 "" H 12300 9200 50  0001 C CNN
-	1    12300 9200
+P 11900 8150
+F 0 "#PWR056" H 11900 8000 50  0001 C CNN
+F 1 "+5V" H 11915 8323 50  0000 C CNN
+F 2 "" H 11900 8150 50  0001 C CNN
+F 3 "" H 11900 8150 50  0001 C CNN
+	1    11900 8150
 	1    0    0    -1  
 $EndComp
 $Comp
 L agg-kicad:D D14
 U 1 1 6402EB79
-P 12600 9500
-F 0 "D14" V 12604 9558 50  0000 L CNN
-F 1 "D" V 12695 9558 50  0000 L CNN
-F 2 "Diode_THT:D_A-405_P7.62mm_Horizontal" H 12600 9500 50  0001 C CNN
-F 3 "" H 12600 9500 50  0001 C CNN
-	1    12600 9500
+P 12200 8450
+F 0 "D14" V 12204 8508 50  0000 L CNN
+F 1 "D" V 12295 8508 50  0000 L CNN
+F 2 "Diode_THT:D_A-405_P7.62mm_Horizontal" H 12200 8450 50  0001 C CNN
+F 3 "" H 12200 8450 50  0001 C CNN
+	1    12200 8450
 	0    1    1    0   
 $EndComp
 $Comp
 L agg-kicad:D D13
 U 1 1 6402EB7F
-P 12600 9300
-F 0 "D13" V 12604 9358 50  0000 L CNN
-F 1 "D" V 12695 9358 50  0000 L CNN
-F 2 "Diode_THT:D_A-405_P7.62mm_Horizontal" H 12600 9300 50  0001 C CNN
-F 3 "" H 12600 9300 50  0001 C CNN
-	1    12600 9300
+P 12200 8250
+F 0 "D13" V 12204 8308 50  0000 L CNN
+F 1 "D" V 12295 8308 50  0000 L CNN
+F 2 "Diode_THT:D_A-405_P7.62mm_Horizontal" H 12200 8250 50  0001 C CNN
+F 3 "" H 12200 8250 50  0001 C CNN
+	1    12200 8250
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	12600 9400 12600 9450
+	12200 8350 12200 8400
 $Comp
 L power:GND #PWR061
 U 1 1 6402EB86
-P 12600 9750
-F 0 "#PWR061" H 12600 9500 50  0001 C CNN
-F 1 "GND" H 12605 9577 50  0000 C CNN
-F 2 "" H 12600 9750 50  0001 C CNN
-F 3 "" H 12600 9750 50  0001 C CNN
-	1    12600 9750
+P 12200 8700
+F 0 "#PWR061" H 12200 8450 50  0001 C CNN
+F 1 "GND" H 12205 8527 50  0000 C CNN
+F 2 "" H 12200 8700 50  0001 C CNN
+F 3 "" H 12200 8700 50  0001 C CNN
+	1    12200 8700
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	12600 9750 12600 9600
+	12200 8700 12200 8600
 Wire Wire Line
-	12600 9300 12600 9200
+	12200 8250 12200 8150
 $Comp
 L power:+5V #PWR060
 U 1 1 6402EB8E
-P 12600 9200
-F 0 "#PWR060" H 12600 9050 50  0001 C CNN
-F 1 "+5V" H 12615 9373 50  0000 C CNN
-F 2 "" H 12600 9200 50  0001 C CNN
-F 3 "" H 12600 9200 50  0001 C CNN
-	1    12600 9200
+P 12200 8150
+F 0 "#PWR060" H 12200 8000 50  0001 C CNN
+F 1 "+5V" H 12215 8323 50  0000 C CNN
+F 2 "" H 12200 8150 50  0001 C CNN
+F 3 "" H 12200 8150 50  0001 C CNN
+	1    12200 8150
 	1    0    0    -1  
 $EndComp
-Connection ~ 12600 9450
+Connection ~ 12200 8400
 Wire Wire Line
-	12600 9450 12600 9500
+	12200 8400 12200 8450
 Wire Wire Line
-	12600 9450 12500 9450
+	12200 8400 12100 8400
 Wire Wire Line
-	12300 9300 12300 9450
-Text GLabel 12300 9450 0    50   Input ~ 0
+	11900 8250 11900 8400
+Text GLabel 11300 8350 0    50   Input ~ 0
 VHD9
 $Comp
 L agg-kicad:R R31
 U 1 1 6402EB99
-P 12400 9450
-F 0 "R31" H 12400 9500 50  0000 C CNN
-F 1 "220R" H 12400 9350 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" H 12400 9450 50  0001 C CNN
-F 3 "" H 12400 9450 50  0001 C CNN
-	1    12400 9450
+P 12000 8400
+F 0 "R31" H 12000 8450 50  0000 C CNN
+F 1 "220R" H 12000 8300 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" H 12000 8400 50  0001 C CNN
+F 3 "" H 12000 8400 50  0001 C CNN
+	1    12000 8400
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	12400 9450 12300 9450
+	12000 8400 11900 8400
 Wire Wire Line
-	12600 9450 12800 9450
-Wire Wire Line
-	13400 9450 13450 9450
-Wire Wire Line
-	13150 8500 13350 8500
-Wire Wire Line
-	13350 8500 13350 9250
-Wire Wire Line
-	13350 9250 14100 9250
+	12200 8400 12400 8400
 Wire Wire Line
 	14100 9250 14100 9350
 Wire Wire Line
@@ -2973,75 +2959,71 @@ Wire Wire Line
 $Comp
 L agg-kicad:D D12
 U 1 1 641EB456
-P 12350 8550
-F 0 "D12" V 12354 8608 50  0000 L CNN
-F 1 "D" V 12445 8608 50  0000 L CNN
-F 2 "Diode_THT:D_A-405_P7.62mm_Horizontal" H 12350 8550 50  0001 C CNN
-F 3 "" H 12350 8550 50  0001 C CNN
-	1    12350 8550
+P 11850 7550
+F 0 "D12" V 11854 7608 50  0000 L CNN
+F 1 "D" V 11945 7608 50  0000 L CNN
+F 2 "Diode_THT:D_A-405_P7.62mm_Horizontal" H 11850 7550 50  0001 C CNN
+F 3 "" H 11850 7550 50  0001 C CNN
+	1    11850 7550
 	0    1    1    0   
 $EndComp
 $Comp
 L agg-kicad:D D11
 U 1 1 641EB45C
-P 12350 8350
-F 0 "D11" V 12354 8408 50  0000 L CNN
-F 1 "D" V 12445 8408 50  0000 L CNN
-F 2 "Diode_THT:D_A-405_P7.62mm_Horizontal" H 12350 8350 50  0001 C CNN
-F 3 "" H 12350 8350 50  0001 C CNN
-	1    12350 8350
+P 11850 7350
+F 0 "D11" V 11854 7408 50  0000 L CNN
+F 1 "D" V 11945 7408 50  0000 L CNN
+F 2 "Diode_THT:D_A-405_P7.62mm_Horizontal" H 11850 7350 50  0001 C CNN
+F 3 "" H 11850 7350 50  0001 C CNN
+	1    11850 7350
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	12350 8450 12350 8500
+	11850 7450 11850 7500
 $Comp
 L power:GND #PWR058
 U 1 1 641EB463
-P 12350 8800
-F 0 "#PWR058" H 12350 8550 50  0001 C CNN
-F 1 "GND" H 12355 8627 50  0000 C CNN
-F 2 "" H 12350 8800 50  0001 C CNN
-F 3 "" H 12350 8800 50  0001 C CNN
-	1    12350 8800
+P 11850 7750
+F 0 "#PWR058" H 11850 7500 50  0001 C CNN
+F 1 "GND" H 11855 7577 50  0000 C CNN
+F 2 "" H 11850 7750 50  0001 C CNN
+F 3 "" H 11850 7750 50  0001 C CNN
+	1    11850 7750
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	12350 8800 12350 8650
-Wire Wire Line
-	12350 8350 12350 8250
+	11850 7350 11850 7250
 $Comp
 L power:+5V #PWR057
 U 1 1 641EB46B
-P 12350 8250
-F 0 "#PWR057" H 12350 8100 50  0001 C CNN
-F 1 "+5V" H 12365 8423 50  0000 C CNN
-F 2 "" H 12350 8250 50  0001 C CNN
-F 3 "" H 12350 8250 50  0001 C CNN
-	1    12350 8250
+P 11850 7250
+F 0 "#PWR057" H 11850 7100 50  0001 C CNN
+F 1 "+5V" H 11865 7423 50  0000 C CNN
+F 2 "" H 11850 7250 50  0001 C CNN
+F 3 "" H 11850 7250 50  0001 C CNN
+	1    11850 7250
 	1    0    0    -1  
 $EndComp
-Connection ~ 12350 8500
+Connection ~ 11850 7500
 Wire Wire Line
-	12350 8500 12350 8550
+	11850 7500 11850 7550
 Wire Wire Line
-	12350 8500 12250 8500
-Text GLabel 12050 8500 0    50   Input ~ 0
+	11850 7500 11750 7500
+Text GLabel 3750 1900 0    50   Input ~ 0
 VHD7
 $Comp
 L agg-kicad:R R28
 U 1 1 641EB476
-P 12150 8500
-F 0 "R28" H 12150 8550 50  0000 C CNN
-F 1 "220R" H 12150 8400 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" H 12150 8500 50  0001 C CNN
-F 3 "" H 12150 8500 50  0001 C CNN
-	1    12150 8500
+P 11650 7500
+F 0 "R28" H 11700 7550 50  0000 C CNN
+F 1 "220R" H 11650 7400 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" H 11650 7500 50  0001 C CNN
+F 3 "" H 11650 7500 50  0001 C CNN
+	1    11650 7500
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	12150 8500 12050 8500
-Wire Wire Line
-	12350 8500 12550 8500
+	11850 7500 12050 7500
 Text GLabel 11450 6500 0    50   Input ~ 0
 VHD6
 $Comp
@@ -3070,8 +3052,6 @@ Wire Wire Line
 	11550 6750 11550 6700
 Wire Wire Line
 	11550 6600 11550 6500
-Wire Wire Line
-	11550 6500 11450 6500
 $Comp
 L agg-kicad:C C9
 U 1 1 6432FF66
@@ -3085,7 +3065,6 @@ F 3 "" H 11650 6500 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	11650 6500 11550 6500
-Connection ~ 11550 6500
 $Comp
 L agg-kicad:R R27
 U 1 1 643810BA
@@ -3376,7 +3355,7 @@ Wire Wire Line
 Wire Wire Line
 	13150 3150 13150 3800
 NoConn ~ 14400 2950
-Text GLabel 13400 9450 3    50   Input ~ 0
+Text GLabel 13000 8400 2    50   Input ~ 0
 VHD9_INV
 Text GLabel 11250 4550 0    50   Input ~ 0
 VHD9_INV
@@ -4342,4 +4321,171 @@ F 3 "" H 2500 4200 50  0001 C CNN
 	1    2450 4200
 	1    0    0    -1  
 $EndComp
+$Comp
+L Device:EMI_Filter_LCL FL5
+U 1 1 62E94ACD
+P 2550 10850
+F 0 "FL5" H 2550 11167 50  0000 C CNN
+F 1 "EMI_Filter_LCL" H 2550 11076 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" V 2550 10850 50  0001 C CNN
+F 3 "http://www.murata.com/~/media/webrenewal/support/library/catalog/products/emc/emifil/c31e.ashx?la=en-gb" V 2550 10850 50  0001 C CNN
+	1    2550 10850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2550 10950 3150 10950
+Wire Wire Line
+	3150 10900 3150 10950
+Connection ~ 3150 10950
+Wire Wire Line
+	3150 10950 3150 11050
+$Comp
+L Device:EMI_Filter_LCL FL3
+U 1 1 62F7D5B8
+P 1850 10300
+F 0 "FL3" H 1850 10617 50  0000 C CNN
+F 1 "EMI_Filter_LCL" H 1850 10526 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" V 1850 10300 50  0001 C CNN
+F 3 "http://www.murata.com/~/media/webrenewal/support/library/catalog/products/emc/emifil/c31e.ashx?la=en-gb" V 1850 10300 50  0001 C CNN
+	1    1850 10300
+	1    0    0    -1  
+$EndComp
+Connection ~ 2150 10200
+Wire Wire Line
+	2450 10450 1850 10450
+Wire Wire Line
+	1850 10450 1850 10400
+Connection ~ 2450 10450
+Wire Wire Line
+	2450 10450 2450 10350
+$Comp
+L Device:EMI_Filter_LCL FL1
+U 1 1 63057CD6
+P 1200 9650
+F 0 "FL1" H 1200 9967 50  0000 C CNN
+F 1 "EMI_Filter_LCL" H 1200 9876 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" V 1200 9650 50  0001 C CNN
+F 3 "http://www.murata.com/~/media/webrenewal/support/library/catalog/products/emc/emifil/c31e.ashx?la=en-gb" V 1200 9650 50  0001 C CNN
+	1    1200 9650
+	1    0    0    -1  
+$EndComp
+Connection ~ 1500 9550
+Wire Wire Line
+	1200 9750 1800 9750
+Connection ~ 1800 9750
+Wire Wire Line
+	1800 9750 1800 9700
+$Comp
+L Device:EMI_Filter_LCL FL4
+U 1 1 630FA083
+P 2500 9400
+F 0 "FL4" H 2500 9717 50  0000 C CNN
+F 1 "EMI_Filter_LCL" H 2500 9626 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" V 2500 9400 50  0001 C CNN
+F 3 "http://www.murata.com/~/media/webrenewal/support/library/catalog/products/emc/emifil/c31e.ashx?la=en-gb" V 2500 9400 50  0001 C CNN
+	1    2500 9400
+	1    0    0    -1  
+$EndComp
+Connection ~ 2800 9300
+Wire Wire Line
+	2800 9300 2800 9400
+Wire Wire Line
+	2500 9500 2850 9500
+Wire Wire Line
+	2850 9500 2850 9650
+Wire Wire Line
+	2850 9650 3100 9650
+Connection ~ 3100 9650
+Wire Wire Line
+	3100 9650 3100 9550
+$Comp
+L Device:EMI_Filter_LCL FL2
+U 1 1 631AFA32
+P 1550 8500
+F 0 "FL2" H 1550 8817 50  0000 C CNN
+F 1 "EMI_Filter_LCL" H 1550 8726 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" V 1550 8500 50  0001 C CNN
+F 3 "http://www.murata.com/~/media/webrenewal/support/library/catalog/products/emc/emifil/c31e.ashx?la=en-gb" V 1550 8500 50  0001 C CNN
+	1    1550 8500
+	1    0    0    -1  
+$EndComp
+Connection ~ 1850 8400
+Wire Wire Line
+	1550 8600 2150 8600
+Connection ~ 2150 8600
+Wire Wire Line
+	2150 8600 2150 8550
+$Comp
+L agg-kicad:L L2
+U 1 1 633458D7
+P 4150 1900
+F 0 "L2" H 4246 1856 50  0000 R CNN
+F 1 "L" H 4200 2000 50  0000 R CNN
+F 2 "Inductor_THT:L_Axial_L5.0mm_D3.6mm_P10.00mm_Horizontal_Murata_BL01RN1A2A2" H 4150 1900 50  0001 C CNN
+F 3 "" H 4150 1900 50  0001 C CNN
+	1    4150 1900
+	-1   0    0    1   
+$EndComp
+$Comp
+L agg-kicad:L L3
+U 1 1 6337E2AB
+P 4550 1700
+F 0 "L3" H 4646 1656 50  0000 R CNN
+F 1 "L" H 4600 1750 50  0000 R CNN
+F 2 "Inductor_THT:L_Axial_L5.0mm_D3.6mm_P10.00mm_Horizontal_Murata_BL01RN1A2A2" H 4550 1700 50  0001 C CNN
+F 3 "" H 4550 1700 50  0001 C CNN
+	1    4550 1700
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4450 1700 4350 1700
+Wire Wire Line
+	11450 6500 11550 6500
+Connection ~ 11550 6500
+Text GLabel 11450 7500 0    50   Input ~ 0
+VHD7
+Wire Wire Line
+	11450 7500 11650 7500
+Wire Wire Line
+	4650 1900 4150 1900
+Wire Wire Line
+	4050 1900 3750 1900
+Wire Wire Line
+	4650 1700 4550 1700
+Text GLabel 4350 1700 0    50   Input ~ 0
+VHD6
+Text GLabel 4650 800  0    50   Input ~ 0
+VHD9
+Wire Wire Line
+	13450 9250 13450 7500
+Wire Wire Line
+	13450 7500 12650 7500
+Wire Wire Line
+	13450 9250 14100 9250
+Wire Wire Line
+	11850 7650 11850 7750
+Wire Wire Line
+	13000 8400 13000 9450
+Wire Wire Line
+	13000 9450 13450 9450
+$Comp
+L Device:EMI_Filter_LCL FL6
+U 1 1 63C02367
+P 11600 8450
+F 0 "FL6" H 11600 8767 50  0000 C CNN
+F 1 "EMI_Filter_LCL" H 11600 8676 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" V 11600 8450 50  0001 C CNN
+F 3 "http://www.murata.com/~/media/webrenewal/support/library/catalog/products/emc/emifil/c31e.ashx?la=en-gb" V 11600 8450 50  0001 C CNN
+	1    11600 8450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11600 8550 12150 8550
+Wire Wire Line
+	12150 8550 12150 8600
+Wire Wire Line
+	12150 8600 12200 8600
+Connection ~ 12200 8600
+Wire Wire Line
+	12200 8600 12200 8550
 $EndSCHEMATC
