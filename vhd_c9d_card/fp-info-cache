@@ -1,4 +1,4 @@
-16982791869511475
+16991078625489134
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -6488,6 +6488,20 @@ THT Mini XLR 5Pin right angle
 0
 5
 5
+Connector_Audio
+rca_audio
+RCA Audio connector, yellow, Pro Signal p/n PSG01547
+rca, audio
+0
+4
+2
+Connector_Audio
+rca_yellow
+RCA Audio connector, yellow, Pro Signal p/n PSG01547
+rca, audio
+0
+3
+2
 Connector_BarrelJack
 BarrelJack_CUI_PJ-036AH-SMT_Horizontal
 Surface-mount DC Barrel Jack, http://www.cui.com/product/resource/pj-036ah-smt.pdf
@@ -6678,6 +6692,13 @@ Molex MMCX Coaxial Connector 50 ohms Female Jack Vertical THT
 5
 2
 Connector_Coaxial
+SCART
+SCART socket, Tyco P/N 1483465-1
+
+0
+21
+21
+Connector_Coaxial
 SMA_Amphenol_901-144_Vertical
 https://www.amphenolrf.com/downloads/dl/file/id/7023/product/3103/901_144_customer_drawing.pdf
 SMA THT Female Jack Vertical
@@ -6795,7 +6816,7 @@ DIN 41612 connector, family B, straight backplane part, 32 pins wide, full confi
 DIN 41512 IEC 60603 B straight backplane
 0
 96
-94
+96
 Connector_DIN
 DIN41612_B2_2x8_Horizontal
 DIN 41612 connector, type B/2, horizontal, 16 pins wide, 2 rows, even columns
@@ -6880,6 +6901,20 @@ DIN 41512 IEC 60603 B
 0
 64
 64
+Connector_DIN
+din8_msx
+RCA Audio connector, yellow, Pro Signal p/n PSG01547
+rca, audio
+0
+10
+8
+Connector_DIN
+rca_audio
+RCA Audio connector, yellow, Pro Signal p/n PSG01547
+rca, audio
+0
+3
+2
 Connector_Dsub
 DSUB-9_Female_EdgeMount_P2.77mm
 9-pin D-Sub connector, solder-cups edge-mounted, female, x-pin-pitch 2.77mm, distance of mounting holes 25mm, see https://disti-assets.s3.amazonaws.com/tonar/files/datasheets/16730.pdf

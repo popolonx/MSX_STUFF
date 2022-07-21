@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name din41612_03x32_abc)(type Legacy)(uri ${KIPRJMOD}/din41612_03x32_abc.lib)(options "")(descr ""))
+)
