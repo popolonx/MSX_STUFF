@@ -2378,10 +2378,10 @@ CPU2_P1.6
 Text GLabel 5950 10300 2    50   Input ~ 0
 CLK
 $Comp
-L MCU_Intel:8049 IC17
+L MCU_Intel:8049 #IC17
 U 1 1 63585F57
 P 15000 8350
-F 0 "IC17" H 15000 10031 50  0000 C CNN
+F 0 "#IC17" H 15000 10031 50  0000 C CNN
 F 1 "80C49C" H 15000 9940 50  0000 C CNN
 F 2 "Package_DIP:DIP-40_W25.4mm_LongPads" H 15000 8550 50  0001 C CNN
 F 3 "" H 15000 8550 50  0001 C CNN
@@ -2605,10 +2605,10 @@ F 3 "http://www.onsemi.com/pub/Collateral/MC14013B-D.PDF" H 14700 4500 50  0001 
 	1    0    0    -1  
 $EndComp
 $Comp
-L 4xxx:4013 IC16
+L 4xxx:4013 #IC16
 U 2 1 63A8AD67
 P 14700 5400
-F 0 "IC16" H 14700 5881 50  0000 C CNN
+F 0 "#IC16" H 14700 5881 50  0000 C CNN
 F 1 "4013" H 14700 5790 50  0000 C CNN
 F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 14700 5400 50  0001 C CNN
 F 3 "http://www.onsemi.com/pub/Collateral/MC14013B-D.PDF" H 14700 5400 50  0001 C CNN
@@ -3938,10 +3938,10 @@ F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4070bms-77bms
 	1    0    0    1   
 $EndComp
 $Comp
-L 4xxx:4013 IC18
+L 4xxx:4013 #IC18
 U 2 1 63A76649
 P 16050 5900
-F 0 "IC18" H 16050 6350 50  0000 C CNN
+F 0 "#IC18" H 16050 6350 50  0000 C CNN
 F 1 "4013" H 16050 6290 50  0000 C CNN
 F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 16050 5900 50  0001 C CNN
 F 3 "http://www.onsemi.com/pub/Collateral/MC14013B-D.PDF" H 16050 5900 50  0001 C CNN
@@ -3949,10 +3949,10 @@ F 3 "http://www.onsemi.com/pub/Collateral/MC14013B-D.PDF" H 16050 5900 50  0001 
 	1    0    0    -1  
 $EndComp
 $Comp
-L 4xxx:4013 IC18
+L 4xxx:4013 #IC18
 U 1 1 63A76643
 P 16050 4850
-F 0 "IC18" H 16050 5331 50  0000 C CNN
+F 0 "#IC18" H 16050 5331 50  0000 C CNN
 F 1 "4013" H 16050 5240 50  0000 C CNN
 F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 16050 4850 50  0001 C CNN
 F 3 "http://www.onsemi.com/pub/Collateral/MC14013B-D.PDF" H 16050 4850 50  0001 C CNN
@@ -4488,4 +4488,20 @@ Wire Wire Line
 Connection ~ 12200 8600
 Wire Wire Line
 	12200 8600 12200 8550
+$Comp
+L power:+5V #PWR?
+U 1 1 62E5A576
+P 5400 7950
+F 0 "#PWR?" H 5400 7800 50  0001 C CNN
+F 1 "+5V" H 5415 8123 50  0000 C CNN
+F 2 "" H 5400 7950 50  0001 C CNN
+F 3 "" H 5400 7950 50  0001 C CNN
+	1    5400 7950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 8000 5400 8000
+Wire Wire Line
+	5400 8000 5400 7950
+NoConn ~ 8800 6300
 $EndSCHEMATC

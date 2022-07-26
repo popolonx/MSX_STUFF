@@ -2378,10 +2378,10 @@ CPU2_P1.6
 Text GLabel 5950 10300 2    50   Input ~ 0
 CLK
 $Comp
-L MCU_Intel:8049 IC17
+L MCU_Intel:8049 #IC17
 U 1 1 63585F57
 P 15000 8350
-F 0 "IC17" H 15000 10031 50  0000 C CNN
+F 0 "#IC17" H 15000 10031 50  0000 C CNN
 F 1 "80C49C" H 15000 9940 50  0000 C CNN
 F 2 "Package_DIP:DIP-40_W25.4mm_LongPads" H 15000 8550 50  0001 C CNN
 F 3 "" H 15000 8550 50  0001 C CNN
@@ -2605,10 +2605,10 @@ F 3 "http://www.onsemi.com/pub/Collateral/MC14013B-D.PDF" H 14700 4500 50  0001 
 	1    0    0    -1  
 $EndComp
 $Comp
-L 4xxx:4013 IC16
+L 4xxx:4013 #IC16
 U 2 1 63A8AD67
 P 14700 5400
-F 0 "IC16" H 14700 5881 50  0000 C CNN
+F 0 "#IC16" H 14700 5881 50  0000 C CNN
 F 1 "4013" H 14700 5790 50  0000 C CNN
 F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 14700 5400 50  0001 C CNN
 F 3 "http://www.onsemi.com/pub/Collateral/MC14013B-D.PDF" H 14700 5400 50  0001 C CNN
@@ -3938,10 +3938,10 @@ F 3 "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4070bms-77bms
 	1    0    0    1   
 $EndComp
 $Comp
-L 4xxx:4013 IC18
+L 4xxx:4013 #IC18
 U 2 1 63A76649
 P 16050 5900
-F 0 "IC18" H 16050 6350 50  0000 C CNN
+F 0 "#IC18" H 16050 6350 50  0000 C CNN
 F 1 "4013" H 16050 6290 50  0000 C CNN
 F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 16050 5900 50  0001 C CNN
 F 3 "http://www.onsemi.com/pub/Collateral/MC14013B-D.PDF" H 16050 5900 50  0001 C CNN
@@ -3949,10 +3949,10 @@ F 3 "http://www.onsemi.com/pub/Collateral/MC14013B-D.PDF" H 16050 5900 50  0001 
 	1    0    0    -1  
 $EndComp
 $Comp
-L 4xxx:4013 IC18
+L 4xxx:4013 #IC18
 U 1 1 63A76643
 P 16050 4850
-F 0 "IC18" H 16050 5331 50  0000 C CNN
+F 0 "#IC18" H 16050 5331 50  0000 C CNN
 F 1 "4013" H 16050 5240 50  0000 C CNN
 F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 16050 4850 50  0001 C CNN
 F 3 "http://www.onsemi.com/pub/Collateral/MC14013B-D.PDF" H 16050 4850 50  0001 C CNN
@@ -4322,10 +4322,10 @@ F 3 "" H 2500 4200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:EMI_Filter_LCL FL?
+L Device:EMI_Filter_LCL FL5
 U 1 1 62E94ACD
 P 2550 10850
-F 0 "FL?" H 2550 11167 50  0000 C CNN
+F 0 "FL5" H 2550 11167 50  0000 C CNN
 F 1 "EMI_Filter_LCL" H 2550 11076 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" V 2550 10850 50  0001 C CNN
 F 3 "http://www.murata.com/~/media/webrenewal/support/library/catalog/products/emc/emifil/c31e.ashx?la=en-gb" V 2550 10850 50  0001 C CNN
@@ -4340,10 +4340,10 @@ Connection ~ 3150 10950
 Wire Wire Line
 	3150 10950 3150 11050
 $Comp
-L Device:EMI_Filter_LCL FL?
+L Device:EMI_Filter_LCL FL3
 U 1 1 62F7D5B8
 P 1850 10300
-F 0 "FL?" H 1850 10617 50  0000 C CNN
+F 0 "FL3" H 1850 10617 50  0000 C CNN
 F 1 "EMI_Filter_LCL" H 1850 10526 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" V 1850 10300 50  0001 C CNN
 F 3 "http://www.murata.com/~/media/webrenewal/support/library/catalog/products/emc/emifil/c31e.ashx?la=en-gb" V 1850 10300 50  0001 C CNN
@@ -4359,10 +4359,10 @@ Connection ~ 2450 10450
 Wire Wire Line
 	2450 10450 2450 10350
 $Comp
-L Device:EMI_Filter_LCL FL?
+L Device:EMI_Filter_LCL FL1
 U 1 1 63057CD6
 P 1200 9650
-F 0 "FL?" H 1200 9967 50  0000 C CNN
+F 0 "FL1" H 1200 9967 50  0000 C CNN
 F 1 "EMI_Filter_LCL" H 1200 9876 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" V 1200 9650 50  0001 C CNN
 F 3 "http://www.murata.com/~/media/webrenewal/support/library/catalog/products/emc/emifil/c31e.ashx?la=en-gb" V 1200 9650 50  0001 C CNN
@@ -4376,10 +4376,10 @@ Connection ~ 1800 9750
 Wire Wire Line
 	1800 9750 1800 9700
 $Comp
-L Device:EMI_Filter_LCL FL?
+L Device:EMI_Filter_LCL FL4
 U 1 1 630FA083
 P 2500 9400
-F 0 "FL?" H 2500 9717 50  0000 C CNN
+F 0 "FL4" H 2500 9717 50  0000 C CNN
 F 1 "EMI_Filter_LCL" H 2500 9626 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" V 2500 9400 50  0001 C CNN
 F 3 "http://www.murata.com/~/media/webrenewal/support/library/catalog/products/emc/emifil/c31e.ashx?la=en-gb" V 2500 9400 50  0001 C CNN
@@ -4399,10 +4399,10 @@ Connection ~ 3100 9650
 Wire Wire Line
 	3100 9650 3100 9550
 $Comp
-L Device:EMI_Filter_LCL FL?
+L Device:EMI_Filter_LCL FL2
 U 1 1 631AFA32
 P 1550 8500
-F 0 "FL?" H 1550 8817 50  0000 C CNN
+F 0 "FL2" H 1550 8817 50  0000 C CNN
 F 1 "EMI_Filter_LCL" H 1550 8726 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" V 1550 8500 50  0001 C CNN
 F 3 "http://www.murata.com/~/media/webrenewal/support/library/catalog/products/emc/emifil/c31e.ashx?la=en-gb" V 1550 8500 50  0001 C CNN
@@ -4416,10 +4416,10 @@ Connection ~ 2150 8600
 Wire Wire Line
 	2150 8600 2150 8550
 $Comp
-L agg-kicad:L L?
+L agg-kicad:L L2
 U 1 1 633458D7
 P 4150 1900
-F 0 "L?" H 4246 1856 50  0000 R CNN
+F 0 "L2" H 4246 1856 50  0000 R CNN
 F 1 "L" H 4200 2000 50  0000 R CNN
 F 2 "Inductor_THT:L_Axial_L5.0mm_D3.6mm_P10.00mm_Horizontal_Murata_BL01RN1A2A2" H 4150 1900 50  0001 C CNN
 F 3 "" H 4150 1900 50  0001 C CNN
@@ -4427,10 +4427,10 @@ F 3 "" H 4150 1900 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L agg-kicad:L L?
+L agg-kicad:L L3
 U 1 1 6337E2AB
 P 4550 1700
-F 0 "L?" H 4646 1656 50  0000 R CNN
+F 0 "L3" H 4646 1656 50  0000 R CNN
 F 1 "L" H 4600 1750 50  0000 R CNN
 F 2 "Inductor_THT:L_Axial_L5.0mm_D3.6mm_P10.00mm_Horizontal_Murata_BL01RN1A2A2" H 4550 1700 50  0001 C CNN
 F 3 "" H 4550 1700 50  0001 C CNN
@@ -4469,10 +4469,10 @@ Wire Wire Line
 Wire Wire Line
 	13000 9450 13450 9450
 $Comp
-L Device:EMI_Filter_LCL FL?
+L Device:EMI_Filter_LCL FL6
 U 1 1 63C02367
 P 11600 8450
-F 0 "FL?" H 11600 8767 50  0000 C CNN
+F 0 "FL6" H 11600 8767 50  0000 C CNN
 F 1 "EMI_Filter_LCL" H 11600 8676 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" V 11600 8450 50  0001 C CNN
 F 3 "http://www.murata.com/~/media/webrenewal/support/library/catalog/products/emc/emifil/c31e.ashx?la=en-gb" V 11600 8450 50  0001 C CNN
@@ -4488,4 +4488,19 @@ Wire Wire Line
 Connection ~ 12200 8600
 Wire Wire Line
 	12200 8600 12200 8550
+$Comp
+L power:+5V #PWR?
+U 1 1 62E5A576
+P 5400 7950
+F 0 "#PWR?" H 5400 7800 50  0001 C CNN
+F 1 "+5V" H 5415 8123 50  0000 C CNN
+F 2 "" H 5400 7950 50  0001 C CNN
+F 3 "" H 5400 7950 50  0001 C CNN
+	1    5400 7950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 8000 5400 8000
+Wire Wire Line
+	5400 8000 5400 7950
 $EndSCHEMATC
