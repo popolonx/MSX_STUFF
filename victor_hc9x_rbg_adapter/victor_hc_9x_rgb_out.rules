@@ -11,7 +11,7 @@
     (via_costs 50)
     (plane_via_costs 5)
     (start_ripup_costs 100)
-    (start_pass_no 1030)
+    (start_pass_no 1145)
     (layer_rule F.Cu
       (active on)
       (preferred_direction horizontal)
@@ -91,7 +91,6 @@
     )
   )
   (class "kicad_default"
-    "Net-(C1-Pad2)" "Net-(C1-Pad1)" "ASPECT_RATIO" Ys "AV_CTRL" "Net-(C2-Pad1)" "RGB_switching" SHIELD
     (clearance_class "kicad_default")
     (via_rule kicad_default)
     (rule
@@ -102,10 +101,10 @@
     )
   )
   (class signals
-    GND B G R "C_VIDEO_OUT" "R_AUDIO_OUT" "L_AUDIO_OUT" "Net-(D1-Pad2)"
-    "C_VIDEO_IN" "R_AUDIO_IN" "L_AUDIO_IN" "R_AUDIO_IN_1" "L_AUDIO_IN_1" "C_VIDEO_IN_1" "Net-(J2-Pad21)" "C_VIDEO_IN_2"
-    "Net-(C3-Pad2)" "Net-(C4-Pad2)" "Net-(C5-Pad2)" "B_1" "G_1" "R_1" "R_AUDIO_IN_2" "G_2"
-    "B_2" "R_2" "L_AUDIO_IN_2"
+    GND B G R "C_VIDEO_OUT" "R_AUDIO_OUT" "L_AUDIO_OUT" "Net-(C1-Pad2)"
+    "Net-(C1-Pad1)" "ASPECT_RATIO" "Net-(D1-Pad2)" "AV_CTRL" "C_VIDEO_IN" "R_AUDIO_IN" "L_AUDIO_IN" "R_AUDIO_IN_1"
+    "L_AUDIO_IN_1" "C_VIDEO_IN_1" "Net-(C2-Pad1)" "RGB_switching" "C_VIDEO_IN_2" "R_AUDIO_IN_2" "L_AUDIO_IN_2" SHIELD
+    "Net-(J1-Pad21)" Ys
     (clearance_class signals)
     (via_rule signals)
     (rule
