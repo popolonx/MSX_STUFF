@@ -114,11 +114,11 @@ F 3 "~" H 1300 4800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text GLabel 1700 6350 0    50   Input ~ 0
-B
+B_OUT
 Text GLabel 1700 5950 0    50   Input ~ 0
-G
+G_OUT
 Text GLabel 1700 5550 0    50   Input ~ 0
-R
+R_OUT
 Text GLabel 2900 6850 2    50   Input ~ 0
 R_AUDIO_IN_1
 Text GLabel 2900 6450 2    50   Input ~ 0
@@ -198,11 +198,11 @@ AV_CTRL
 Text GLabel 4250 4000 0    50   Input ~ 0
 C_VIDEO_OUT
 Text GLabel 4250 4200 0    50   Input ~ 0
-R
+R_OUT
 Text GLabel 4850 4200 2    50   Input ~ 0
-G
+G_OUT
 Text GLabel 4550 4400 2    50   Input ~ 0
-B
+B_OUT
 $Comp
 L Regulator_SwitchedCapacitor:ICL7660 U1
 U 1 1 62C274DE
@@ -413,4 +413,49 @@ $EndComp
 Text GLabel 1700 2050 0    50   Input ~ 0
 SHIELD
 NoConn ~ 2900 2950
+$Comp
+L Device:CP C3
+U 1 1 62EF4385
+P 4650 5250
+F 0 "C3" H 4768 5296 50  0000 L CNN
+F 1 "220uf / 6.3V - 16V" H 4768 5205 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D8.0mm_P5.00mm" H 4688 5100 50  0001 C CNN
+F 3 "~" H 4650 5250 50  0001 C CNN
+	1    4650 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C4
+U 1 1 62EF7AD2
+P 4650 5900
+F 0 "C4" H 4768 5946 50  0000 L CNN
+F 1 "220uf / 6.3V - 16V" H 4768 5855 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D8.0mm_P5.00mm" H 4688 5750 50  0001 C CNN
+F 3 "~" H 4650 5900 50  0001 C CNN
+	1    4650 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C5
+U 1 1 62EF7F53
+P 4850 6600
+F 0 "C5" H 4968 6646 50  0000 L CNN
+F 1 "220uf / 6.3V - 16V" H 4968 6555 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D8.0mm_P5.00mm" H 4888 6450 50  0001 C CNN
+F 3 "~" H 4850 6600 50  0001 C CNN
+	1    4850 6600
+	1    0    0    -1  
+$EndComp
+Text GLabel 4650 5400 0    50   Input ~ 0
+R_OUT
+Text GLabel 4650 6050 0    50   Input ~ 0
+G_OUT
+Text GLabel 4850 6750 0    50   Input ~ 0
+B_OUT
+Text GLabel 4850 6450 0    50   Input ~ 0
+R
+Text GLabel 4650 5750 0    50   Input ~ 0
+G
+Text GLabel 4650 5100 0    50   Input ~ 0
+R
 $EndSCHEMATC
