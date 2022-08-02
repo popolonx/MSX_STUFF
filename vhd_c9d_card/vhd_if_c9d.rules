@@ -1,5 +1,5 @@
 
-(rules PCB vhd_9c9
+(rules PCB vhd_if_c9d
   (snap_angle 
     fortyfive_degree
   )
@@ -11,7 +11,7 @@
     (via_costs 50)
     (plane_via_costs 5)
     (start_ripup_costs 100)
-    (start_pass_no 14061)
+    (start_pass_no 10734)
     (layer_rule F.Cu
       (active on)
       (preferred_direction horizontal)
@@ -100,10 +100,11 @@
     VHD4 "Net-(Q2-Pad1)" "Net-(Q3-Pad1)" VHD10 VHD12 VHD8 "Net-(IC1-Pad6)" VHD3
     B4 B7 B6 C7 B18 B8 A23 A24
     A26 "Net-(D3-Pad2)" "Net-(FL1-Pad3)" "Net-(FL3-Pad3)" "Net-(FL4-Pad3)" "Net-(FL5-Pad3)" VHD7 "Net-(J3-Pad14)"
-    "Net-(J3-Pad7)" "Net-(J3-Pad6)" "Net-(IC1-Pad19)" "Net-(IC1-Pad18)" "Net-(IC1-Pad17)" "Net-(IC1-Pad16)" "Net-(IC1-Pad35)" "Net-(IC1-Pad15)"
-    "Net-(IC1-Pad14)" "Net-(IC1-Pad13)" "Net-(IC1-Pad12)" "Net-(IC1-Pad25)" "Net-(IC1-Pad5)" "Net-(IC2-Pad17)" "Net-(IC2-Pad36)" "Net-(IC12-Pad8)"
-    "Net-(IC2-Pad6)" "Net-(IC2-Pad5)" "Net-(IC3-Pad20)" "Net-(IC7-Pad6)" "Net-(IC7-Pad12)" "Net-(IC7-Pad8)" "Net-(IC10-Pad11)" "Net-(IC10-Pad12)"
-    "Net-(IC12-Pad12)" "Net-(C122-Pad1)" "Net-(C121-Pad1)" S2 "Net-(IC11-Pad6)" S3
+    "Net-(IC1-Pad19)" "Net-(IC1-Pad18)" "Net-(IC1-Pad17)" "Net-(IC1-Pad16)" "Net-(IC1-Pad35)" "Net-(IC1-Pad15)" "Net-(IC1-Pad14)" "Net-(IC1-Pad13)"
+    "Net-(IC1-Pad12)" "Net-(IC1-Pad25)" "Net-(IC1-Pad5)" "Net-(IC2-Pad17)" "Net-(IC2-Pad36)" "Net-(IC12-Pad8)" "Net-(IC2-Pad6)" "Net-(IC2-Pad5)"
+    "Net-(IC3-Pad20)" "Net-(IC7-Pad6)" "Net-(IC7-Pad12)" "Net-(IC7-Pad8)" "Net-(IC10-Pad11)" "Net-(IC10-Pad12)" "Net-(IC12-Pad12)" "Net-(C122-Pad1)"
+    "Net-(C121-Pad1)" S2 "Net-(IC11-Pad6)" S3 "Net-(FL6-Pad3)" "Net-(FL7-Pad3)" "Net-(FL8-Pad3)" "Net-(FL9-Pad3)"
+    "Net-(J2-Pad1)"
     (clearance_class "kicad_default")
     (via_rule kicad_default)
     (rule

@@ -1,4 +1,4 @@
-(pcb E:\msx\vhd_9c9\vhd_9c9.dsn
+(pcb E:\msx\vhd_if_c9d\vhd_if_c9d.dsn
   (parser
     (string_quote ")
     (space_in_quoted_tokens on)
@@ -33,8 +33,23 @@
     )
   )
   (placement
+    (component Inductor_THT:L_Axial_L5.0mm_D3.6mm_P10.00mm_Horizontal_Murata_BL01RN1A2A2
+      (place L1 175832 -52705 front 180 (PN L))
+      (place L2 176974 -133414 front 90 (PN L))
+    )
+    (component Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical
+      (place FL9 169545 -60198 front 90 (PN EMI_Filter_LCL))
+      (place FL8 169736 -56705.5 front 90 (PN EMI_Filter_LCL))
+      (place FL7 165418 -126365 front 90 (PN EMI_Filter_LCL))
+      (place FL6 165290 -122682 front 90 (PN EMI_Filter_LCL))
+      (place FL5 169990 -111506 front 270 (PN EMI_Filter_LCL))
+      (place FL4 170752 -130302 front 270 (PN EMI_Filter_LCL))
+      (place FL3 170116 -118999 front 270 (PN EMI_Filter_LCL))
+      (place FL2 170116 -115252 front 270 (PN EMI_Filter_LCL))
+      (place FL1 170054 -107823 front 270 (PN EMI_Filter_LCL))
+    )
     (component Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal
-      (place R4 171450 -44767.5 front 270 (PN 10K))
+      (place R4 175324 -41402 front 270 (PN 10K))
       (place R24 121158 -129667 front 90 (PN 10K))
       (place R23 150432 -107378 front 270 (PN 10K))
       (place R22 98234.5 -42100.5 front 90 (PN 4K7))
@@ -49,7 +64,7 @@
       (place R13 160782 -77406.5 front 270 (PN 4K7))
       (place R11 161988 -111379 front 180 (PN 220R))
       (place R10 165990 -77470 front 270 (PN 4K7))
-      (place R9 162878 -123000 front 180 (PN 220R))
+      (place R9 160084 -121984 front 180 (PN 220R))
       (place R8 164719 -143764 front 90 (PN 10K))
       (place R7 157988 -77343 front 270 (PN 4K7))
       (place R6 161672 -118174 front 180 (PN 220R))
@@ -108,18 +123,6 @@
     (component "Connector_Dsub:DSUB-15_Female_Horizontal_P2.77x2.84mm_EdgePinOffset4.94mm_Housed_MountingHolesOffset7.48mm"
       (place J3 181991 -90805 front 90 (PN DB15_Female))
     )
-    (component Inductor_THT:L_Axial_L5.0mm_D3.6mm_P10.00mm_Horizontal_Murata_BL01RN1A2A2
-      (place L3 159702 -127381 front 0 (PN L))
-      (place L2 176974 -133414 front 90 (PN L))
-      (place L1 169608 -131953 front 180 (PN L))
-    )
-    (component Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical
-      (place FL5 169990 -111506 front 270 (PN EMI_Filter_LCL))
-      (place FL4 170434 -122872 front 270 (PN EMI_Filter_LCL))
-      (place FL3 170116 -118999 front 270 (PN EMI_Filter_LCL))
-      (place FL2 170116 -115252 front 270 (PN EMI_Filter_LCL))
-      (place FL1 170054 -107823 front 270 (PN EMI_Filter_LCL))
-    )
     (component "Crystal:Crystal_HC18-U_Vertical"
       (place Y1 145732 -143256 front 0 (PN 6Mhz))
     )
@@ -143,6 +146,46 @@
     )
   )
   (library
+    (image Inductor_THT:L_Axial_L5.0mm_D3.6mm_P10.00mm_Horizontal_Murata_BL01RN1A2A2
+      (outline (path signal 50  11050 2050  -1050 2050))
+      (outline (path signal 50  11050 -2050  11050 2050))
+      (outline (path signal 50  -1050 -2050  11050 -2050))
+      (outline (path signal 50  -1050 2050  -1050 -2050))
+      (outline (path signal 120  9000 0  7620 0))
+      (outline (path signal 120  1000 0  2380 0))
+      (outline (path signal 120  7620 1920  2380 1920))
+      (outline (path signal 120  7620 -1920  7620 1920))
+      (outline (path signal 120  2380 -1920  7620 -1920))
+      (outline (path signal 120  2380 1920  2380 -1920))
+      (outline (path signal 100  10000 0  7500 0))
+      (outline (path signal 100  0 0  2500 0))
+      (outline (path signal 100  7500 1800  2500 1800))
+      (outline (path signal 100  7500 -1800  7500 1800))
+      (outline (path signal 100  2500 -1800  7500 -1800))
+      (outline (path signal 100  2500 1800  2500 -1800))
+      (pin Oval[A]Pad_1600x1600_um 2 10000 0)
+      (pin Round[A]Pad_1600_um 1 0 0)
+    )
+    (image Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical
+      (outline (path signal 50  1800 1800  -1800 1800))
+      (outline (path signal 50  1800 -6850  1800 1800))
+      (outline (path signal 50  -1800 -6850  1800 -6850))
+      (outline (path signal 50  -1800 1800  -1800 -6850))
+      (outline (path signal 120  -1330 1330  0 1330))
+      (outline (path signal 120  -1330 0  -1330 1330))
+      (outline (path signal 120  -1330 -1270  1330 -1270))
+      (outline (path signal 120  1330 -1270  1330 -6410))
+      (outline (path signal 120  -1330 -1270  -1330 -6410))
+      (outline (path signal 120  -1330 -6410  1330 -6410))
+      (outline (path signal 100  -1270 635  -635 1270))
+      (outline (path signal 100  -1270 -6350  -1270 635))
+      (outline (path signal 100  1270 -6350  -1270 -6350))
+      (outline (path signal 100  1270 1270  1270 -6350))
+      (outline (path signal 100  -635 1270  1270 1270))
+      (pin Oval[A]Pad_1700x1700_um 3 0 -5080)
+      (pin Oval[A]Pad_1700x1700_um 2 0 -2540)
+      (pin Rect[A]Pad_1700x1700_um 1 0 0)
+    )
     (image Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal
       (outline (path signal 50  8570 1050  -950 1050))
       (outline (path signal 50  8570 -1050  8570 1050))
@@ -605,46 +648,6 @@
       (pin Round[A]Pad_1600_um 3 -5540 0)
       (pin Round[A]Pad_1600_um 2 -2770 0)
       (pin Rect[A]Pad_1600x1600_um 1 0 0)
-    )
-    (image Inductor_THT:L_Axial_L5.0mm_D3.6mm_P10.00mm_Horizontal_Murata_BL01RN1A2A2
-      (outline (path signal 50  11050 2050  -1050 2050))
-      (outline (path signal 50  11050 -2050  11050 2050))
-      (outline (path signal 50  -1050 -2050  11050 -2050))
-      (outline (path signal 50  -1050 2050  -1050 -2050))
-      (outline (path signal 120  9000 0  7620 0))
-      (outline (path signal 120  1000 0  2380 0))
-      (outline (path signal 120  7620 1920  2380 1920))
-      (outline (path signal 120  7620 -1920  7620 1920))
-      (outline (path signal 120  2380 -1920  7620 -1920))
-      (outline (path signal 120  2380 1920  2380 -1920))
-      (outline (path signal 100  10000 0  7500 0))
-      (outline (path signal 100  0 0  2500 0))
-      (outline (path signal 100  7500 1800  2500 1800))
-      (outline (path signal 100  7500 -1800  7500 1800))
-      (outline (path signal 100  2500 -1800  7500 -1800))
-      (outline (path signal 100  2500 1800  2500 -1800))
-      (pin Oval[A]Pad_1600x1600_um 2 10000 0)
-      (pin Round[A]Pad_1600_um 1 0 0)
-    )
-    (image Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical
-      (outline (path signal 50  1800 1800  -1800 1800))
-      (outline (path signal 50  1800 -6850  1800 1800))
-      (outline (path signal 50  -1800 -6850  1800 -6850))
-      (outline (path signal 50  -1800 1800  -1800 -6850))
-      (outline (path signal 120  -1330 1330  0 1330))
-      (outline (path signal 120  -1330 0  -1330 1330))
-      (outline (path signal 120  -1330 -1270  1330 -1270))
-      (outline (path signal 120  1330 -1270  1330 -6410))
-      (outline (path signal 120  -1330 -1270  -1330 -6410))
-      (outline (path signal 120  -1330 -6410  1330 -6410))
-      (outline (path signal 100  -1270 635  -635 1270))
-      (outline (path signal 100  -1270 -6350  -1270 635))
-      (outline (path signal 100  1270 -6350  -1270 -6350))
-      (outline (path signal 100  1270 1270  1270 -6350))
-      (outline (path signal 100  -635 1270  1270 1270))
-      (pin Oval[A]Pad_1700x1700_um 3 0 -5080)
-      (pin Oval[A]Pad_1700x1700_um 2 0 -2540)
-      (pin Rect[A]Pad_1700x1700_um 1 0 0)
     )
     (image "Crystal:Crystal_HC18-U_Vertical"
       (outline (path signal 50  8400 2800  -3500 2800))
@@ -1217,7 +1220,7 @@
       (pins IC3-26 J1-B18)
     )
     (net B8
-      (pins Q1-3 J1-B8)
+      (pins Q1-2 J1-B8)
     )
     (net A23
       (pins IC11-2 J1-A23)
@@ -1226,10 +1229,10 @@
       (pins IC11-3 J1-A24)
     )
     (net A26
-      (pins Q3-2 J1-A26)
+      (pins Q3-3 J1-A26)
     )
     (net "Net-(D3-Pad2)"
-      (pins Q2-3 FL2-3 R3-2 D4-1 D3-2)
+      (pins Q2-2 FL2-3 R3-2 D4-1 D3-2)
     )
     (net "Net-(FL1-Pad3)"
       (pins FL1-3 R2-1 R1-2)
@@ -1244,16 +1247,10 @@
       (pins FL5-3 R11-1 R10-2)
     )
     (net VHD7
-      (pins R13-2 L1-2)
+      (pins FL7-1 R13-2)
     )
     (net "Net-(J3-Pad14)"
       (pins J3-15 J3-14 L2-2)
-    )
-    (net "Net-(J3-Pad7)"
-      (pins J3-7 L1-1)
-    )
-    (net "Net-(J3-Pad6)"
-      (pins J3-6 L3-1)
     )
     (net C2
       (pins IC11-1 C100-1 J1-C2)
@@ -1262,11 +1259,11 @@
       (pins IC11-8 C101-1 J1-C1)
     )
     (net A1
-      (pins Q3-3 Q2-2 Q1-2 J2-7 J2-1 IC11-4 C101-2 C100-2 C11-2 C3-2 C2-2 C1-2 C7-2
-        C6-2 IC12-7 IC12-11 IC10-7 IC9-7 IC8-7 IC7-7 IC7-2 IC6-7 IC5-7 IC3-14 IC2-7
-        IC1-20 IC1-7 IC1-23 J1-A32 J1-B32 J1-C32 J1-A31 J1-A1 J1-B1 C8-2 L2-1 FL5-2
-        FL4-2 FL3-2 FL2-2 FL1-2 D10-2 D8-2 D6-2 D4-2 D2-2 C5-2 C10-2 C9-2 C12-2 C4-2
-        C122-2 C121-2)
+      (pins L1-2 FL9-2 FL8-2 FL7-2 FL6-2 Q3-2 Q2-3 Q1-3 IC11-4 C101-2 C100-2 C11-2
+        C3-2 C2-2 C1-2 C7-2 C6-2 IC12-7 IC12-11 IC10-7 IC9-7 IC8-7 IC7-7 IC7-2 IC6-7
+        IC5-7 IC3-14 IC2-7 IC1-20 IC1-7 IC1-23 J1-A32 J1-B32 J1-C32 J1-A31 J1-A1 J1-B1
+        C8-2 L2-1 FL5-2 FL4-2 FL3-2 FL2-2 FL1-2 D10-2 D8-2 D6-2 D4-2 D2-2 C5-2 C10-2
+        C9-2 C12-2 C4-2 C122-2 C121-2)
     )
     (net B29
       (pins R4-2 C11-1 C3-1 C2-1 C1-1 C7-1 C6-1 IC12-14 IC10-14 IC9-14 IC8-14 IC7-14
@@ -1350,13 +1347,28 @@
       (pins IC12-6 IC12-1 Y1-1 R19-1 C121-1)
     )
     (net S2
-      (pins J2-2 IC11-7)
+      (pins FL8-1 IC11-7)
     )
     (net "Net-(IC11-Pad6)"
       (pins R4-1 IC11-6)
     )
     (net S3
-      (pins J2-3 IC11-5)
+      (pins FL9-1 IC11-5)
+    )
+    (net "Net-(FL6-Pad3)"
+      (pins FL6-3 J3-6)
+    )
+    (net "Net-(FL7-Pad3)"
+      (pins FL7-3 J3-7)
+    )
+    (net "Net-(FL8-Pad3)"
+      (pins FL8-3 J2-2)
+    )
+    (net "Net-(FL9-Pad3)"
+      (pins FL9-3 J2-3)
+    )
+    (net "Net-(J2-Pad1)"
+      (pins L1-1 J2-7 J2-1)
     )
     (class kicad_default "" A10 A11 A12 A13 A14 A15 A16 A17 A18 A19 A2 A20
       A21 A22 A23 A24 A25 A26 A27 A28 A29 A3 A30 A4 A5 A6 A7 A8 A9 B10 B11
@@ -1365,6 +1377,7 @@
       C21 C22 C23 C24 C25 C26 C27 C28 C3 C31 C4 C5 C6 C7 C8 C9 CLK "Net-(C121-Pad1)"
       "Net-(C122-Pad1)" "Net-(D1-Pad2)" "Net-(D10-Pad1)" "Net-(D3-Pad2)" "Net-(D5-Pad2)"
       "Net-(D7-Pad2)" "Net-(FL1-Pad3)" "Net-(FL3-Pad3)" "Net-(FL4-Pad3)" "Net-(FL5-Pad3)"
+      "Net-(FL6-Pad3)" "Net-(FL7-Pad3)" "Net-(FL8-Pad3)" "Net-(FL9-Pad3)"
       "Net-(IC1-Pad11)" "Net-(IC1-Pad12)" "Net-(IC1-Pad13)" "Net-(IC1-Pad14)"
       "Net-(IC1-Pad15)" "Net-(IC1-Pad16)" "Net-(IC1-Pad17)" "Net-(IC1-Pad18)"
       "Net-(IC1-Pad19)" "Net-(IC1-Pad25)" "Net-(IC1-Pad3)" "Net-(IC1-Pad35)"
@@ -1377,13 +1390,14 @@
       "Net-(IC2-Pad25)" "Net-(IC2-Pad36)" "Net-(IC2-Pad5)" "Net-(IC2-Pad6)"
       "Net-(IC3-Pad20)" "Net-(IC5-Pad8)" "Net-(IC6-Pad5)" "Net-(IC6-Pad8)"
       "Net-(IC7-Pad10)" "Net-(IC7-Pad12)" "Net-(IC7-Pad6)" "Net-(IC7-Pad8)"
-      "Net-(IC9-Pad1)" "Net-(IC9-Pad10)" "Net-(J2-Pad4)" "Net-(J2-Pad5)" "Net-(J2-Pad6)"
-      "Net-(J2-Pad8)" "Net-(J2-Pad9)" "Net-(J3-Pad1)" "Net-(J3-Pad11)" "Net-(J3-Pad13)"
-      "Net-(J3-Pad14)" "Net-(J3-Pad2)" "Net-(J3-Pad5)" "Net-(J3-Pad6)" "Net-(J3-Pad7)"
-      "Net-(Q1-Pad1)" "Net-(Q2-Pad1)" "Net-(Q3-Pad1)" P1.0_CPU2_P2.0 P1.1_CPU2_P2.1
-      P1.2_CPU2_P2.2 P1.3_CPU2_P2.3 P1.4_CPU2_P2.4 P1.5_CPU2_P2.5 P1.6_CPU2_P2.6
-      P1.7_CPU2_P2.7 P2.0_PC0 P2.1_PC1 P2.3_CPU2_P1.4 RD_PC6 RESET_ S2 S3
-      T0_PC5 T1_PC7 VHD10 VHD12 VHD3 VHD4 VHD6 VHD7 VHD8 VHD9 WR_PC4
+      "Net-(IC9-Pad1)" "Net-(IC9-Pad10)" "Net-(J2-Pad1)" "Net-(J2-Pad4)" "Net-(J2-Pad5)"
+      "Net-(J2-Pad6)" "Net-(J2-Pad8)" "Net-(J2-Pad9)" "Net-(J3-Pad1)" "Net-(J3-Pad11)"
+      "Net-(J3-Pad13)" "Net-(J3-Pad14)" "Net-(J3-Pad2)" "Net-(J3-Pad5)" "Net-(J3-Pad6)"
+      "Net-(J3-Pad7)" "Net-(Q1-Pad1)" "Net-(Q2-Pad1)" "Net-(Q3-Pad1)" P1.0_CPU2_P2.0
+      P1.1_CPU2_P2.1 P1.2_CPU2_P2.2 P1.3_CPU2_P2.3 P1.4_CPU2_P2.4 P1.5_CPU2_P2.5
+      P1.6_CPU2_P2.6 P1.7_CPU2_P2.7 P2.0_PC0 P2.1_PC1 P2.3_CPU2_P1.4 RD_PC6
+      RESET_ S2 S3 T0_PC5 T1_PC7 VHD10 VHD12 VHD3 VHD4 VHD6 VHD7 VHD8 VHD9
+      WR_PC4
       (circuit
         (use_via Via[0-1]_800:400_um)
       )

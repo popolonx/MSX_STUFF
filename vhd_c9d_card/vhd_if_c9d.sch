@@ -311,17 +311,6 @@ F 3 "" H 5100 9700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Interface:8255A IC2
-U 1 1 62ABC751
-P 8100 5600
-F 0 "IC2" H 8100 7381 50  0000 C CNN
-F 1 "8255A" H 8100 7290 50  0000 C CNN
-F 2 "Package_DIP:DIP-40_W15.24mm_Socket" H 8100 5900 50  0001 C CNN
-F 3 "http://aturing.umcs.maine.edu/~meadow/courses/cos335/Intel8255A.pdf" H 8100 5900 50  0001 C CNN
-	1    8100 5600
-	1    0    0    -1  
-$EndComp
-$Comp
 L Interface_UART:SN751701P IC11
 U 1 1 62ADE806
 P 1500 1100
@@ -333,29 +322,18 @@ F 3 "http://www.ti.com/lit/ds/symlink/sn75lbc176.pdf" H 3100 900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L agg-kicad:PNP Q3
+L Device:Q_PNP_BEC Q3
 U 1 1 62AE5970
-P 9850 2200
-F 0 "Q3" H 9988 2246 50  0000 L CNN
-F 1 "PNP (B641)" H 9988 2155 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-92S_Wide" H 9880 2120 50  0001 C CNN
-F 3 "" H 9980 2220 50  0001 C CNN
-	1    9850 2200
+P 9750 2200
+F 0 "Q3" H 9888 2246 50  0000 L CNN
+F 1 "PNP (B641)" H 9888 2155 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92S_Wide" H 9780 2120 50  0001 C CNN
+F 3 "" H 9880 2220 50  0001 C CNN
+	1    9750 2200
 	1    0    0    -1  
 $EndComp
 $Comp
-L agg-kicad:NPN Q1
-U 1 1 62AE76D2
-P 9050 7650
-F 0 "Q1" H 9188 7696 50  0000 L CNN
-F 1 "NPN (D637)" H 9188 7605 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-92S_Wide" H 9080 7570 50  0001 C CNN
-F 3 "" H 9180 7670 50  0001 C CNN
-	1    9050 7650
-	-1   0    0    -1  
-$EndComp
-$Comp
-L agg-kicad:NPN Q2
+L Device:Q_NPN_BCE Q2
 U 1 1 62AF157D
 P 2600 8600
 F 0 "Q2" H 2738 8646 50  0000 L CNN
@@ -496,12 +474,8 @@ F 3 "" H 9850 2400 50  0001 C CNN
 	1    9850 2400
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	9550 2200 9650 2200
-Text GLabel 10000 2000 2    50   Input ~ 0
+Text GLabel 9850 2000 2    50   Input ~ 0
 A26
-Wire Wire Line
-	9850 2000 10000 2000
 Wire Wire Line
 	6850 4700 7400 4700
 Wire Wire Line
@@ -767,38 +741,31 @@ Wire Wire Line
 $Comp
 L Connector:DB9_Female J2
 U 1 1 633A56DC
-P 2850 1000
-F 0 "J2" H 3030 1046 50  0000 L CNN
-F 1 "DB9_Female" H 3030 955 50  0000 L CNN
-F 2 "Connector_Dsub:DSUB-9_Female_Horizontal_P2.77x2.84mm_EdgePinOffset7.70mm_Housed_MountingHolesOffset9.12mm" H 2850 1000 50  0001 C CNN
-F 3 " ~" H 2850 1000 50  0001 C CNN
-	1    2850 1000
+P 3650 700
+F 0 "J2" H 3830 746 50  0000 L CNN
+F 1 "DB9_Female" H 3830 655 50  0000 L CNN
+F 2 "Connector_Dsub:DSUB-9_Female_Horizontal_P2.77x2.84mm_EdgePinOffset7.70mm_Housed_MountingHolesOffset9.12mm" H 3650 700 50  0001 C CNN
+F 3 " ~" H 3650 700 50  0001 C CNN
+	1    3650 700 
 	1    0    0    -1  
 $EndComp
-Text GLabel 2400 800  1    50   Input ~ 0
+Text GLabel 2300 500  0    50   Input ~ 0
 S2
 Text GLabel 2300 1200 3    50   Input ~ 0
 S3
 Wire Wire Line
-	2550 900  2200 900 
-Wire Wire Line
-	2200 900  2200 750 
-Wire Wire Line
-	2200 600  2550 600 
+	3350 600  3200 600 
 $Comp
 L power:GND #PWR012
 U 1 1 633AC3E5
-P 2200 750
-F 0 "#PWR012" H 2200 500 50  0001 C CNN
-F 1 "GND" V 2205 622 50  0000 R CNN
-F 2 "" H 2200 750 50  0001 C CNN
-F 3 "" H 2200 750 50  0001 C CNN
-	1    2200 750 
-	0    1    1    0   
+P 2950 1150
+F 0 "#PWR012" H 2950 900 50  0001 C CNN
+F 1 "GND" V 2955 1022 50  0000 R CNN
+F 2 "" H 2950 1150 50  0001 C CNN
+F 3 "" H 2950 1150 50  0001 C CNN
+	1    2950 1150
+	1    0    0    -1  
 $EndComp
-Connection ~ 2200 750 
-Wire Wire Line
-	2200 750  2200 600 
 $Comp
 L agg-kicad:R R8
 U 1 1 633E74A1
@@ -815,12 +782,12 @@ Wire Wire Line
 $Comp
 L power:GND #PWR015
 U 1 1 6340CCA4
-P 2600 8800
-F 0 "#PWR015" H 2600 8550 50  0001 C CNN
-F 1 "GND" H 2605 8627 50  0000 C CNN
-F 2 "" H 2600 8800 50  0001 C CNN
-F 3 "" H 2600 8800 50  0001 C CNN
-	1    2600 8800
+P 2500 8800
+F 0 "#PWR015" H 2500 8550 50  0001 C CNN
+F 1 "GND" H 2505 8627 50  0000 C CNN
+F 2 "" H 2500 8800 50  0001 C CNN
+F 3 "" H 2500 8800 50  0001 C CNN
+	1    2500 8800
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -904,8 +871,6 @@ Wire Wire Line
 	2150 8400 1850 8400
 Wire Wire Line
 	1850 8250 1850 8400
-Wire Wire Line
-	2600 8400 2150 8400
 Text GLabel 1250 8400 0    50   Input ~ 0
 VHD4
 $Comp
@@ -1241,29 +1206,27 @@ Wire Wire Line
 $Comp
 L agg-kicad:R R13
 U 1 1 6358448A
-P 3750 1750
-F 0 "R13" V 3754 1794 50  0000 L CNN
-F 1 "4K7" V 3845 1794 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" H 3750 1750 50  0001 C CNN
-F 3 "" H 3750 1750 50  0001 C CNN
-	1    3750 1750
+P 3150 1700
+F 0 "R13" V 3154 1744 50  0000 L CNN
+F 1 "4K7" V 3245 1744 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" H 3150 1700 50  0001 C CNN
+F 3 "" H 3150 1700 50  0001 C CNN
+	1    3150 1700
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	3750 1850 3750 1900
 $Comp
 L power:+5V #PWR024
 U 1 1 6358C713
-P 3750 1700
-F 0 "#PWR024" H 3750 1550 50  0001 C CNN
-F 1 "+5V" H 3765 1873 50  0000 C CNN
-F 2 "" H 3750 1700 50  0001 C CNN
-F 3 "" H 3750 1700 50  0001 C CNN
-	1    3750 1700
+P 3150 1650
+F 0 "#PWR024" H 3150 1500 50  0001 C CNN
+F 1 "+5V" H 3165 1823 50  0000 C CNN
+F 2 "" H 3150 1650 50  0001 C CNN
+F 3 "" H 3150 1650 50  0001 C CNN
+	1    3150 1650
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3750 1750 3750 1700
+	3150 1700 3150 1650
 $Comp
 L power:GND #PWR02
 U 1 1 635C9CAA
@@ -1487,19 +1450,6 @@ F 3 "" H 3400 9000 50  0001 C CNN
 	1    3400 9000
 	0    -1   -1   0   
 $EndComp
-Text GLabel 9050 7450 0    50   Input ~ 0
-B8
-$Comp
-L power:GND #PWR044
-U 1 1 6387777D
-P 9050 7850
-F 0 "#PWR044" H 9050 7600 50  0001 C CNN
-F 1 "GND" H 9055 7677 50  0000 C CNN
-F 2 "" H 9050 7850 50  0001 C CNN
-F 3 "" H 9050 7850 50  0001 C CNN
-	1    9050 7850
-	1    0    0    -1  
-$EndComp
 $Comp
 L agg-kicad:R R20
 U 1 1 63878845
@@ -1536,15 +1486,9 @@ A23
 Text GLabel 500  1750 0    50   Input ~ 0
 A24
 Wire Wire Line
-	2550 800  2300 800 
-Wire Wire Line
-	2300 800  2300 1000
-Wire Wire Line
 	2300 1000 1900 1000
 Wire Wire Line
-	2550 1000 2400 1000
-Wire Wire Line
-	2400 1000 2400 1200
+	3350 700  3200 700 
 Wire Wire Line
 	2400 1200 1900 1200
 $Comp
@@ -1743,7 +1687,7 @@ Text Notes 5050 5100 2    50   ~ 0
 lOE
 Text Notes 4400 4900 2    50   ~ 0
 LlR
-Text Notes 10250 1950 2    50   ~ 0
+Text Notes 10100 1900 2    50   ~ 0
 BUSCON
 Text Notes 3700 3550 2    50   ~ 0
 A6
@@ -1837,8 +1781,6 @@ Text Notes 7200 6150 2    50   ~ 0
 D6
 Text Notes 7200 6250 2    50   ~ 0
 D7
-Text Notes 9050 7400 2    50   ~ 0
-INT01
 Text Notes 1000 1050 2    50   ~ 0
 TXAI
 Text Notes 1000 1150 2    50   ~ 0
@@ -2000,11 +1942,11 @@ F 3 "" H 8250 400 50  0001 C CNN
 $EndComp
 Text Notes 950  850  0    50   ~ 0
 -12V
-NoConn ~ 2550 700 
-NoConn ~ 2550 1100
-NoConn ~ 2550 1200
-NoConn ~ 2550 1300
-NoConn ~ 2550 1400
+NoConn ~ 3350 400 
+NoConn ~ 3350 800 
+NoConn ~ 3350 900 
+NoConn ~ 3350 1000
+NoConn ~ 3350 1100
 NoConn ~ 4650 700 
 NoConn ~ 4650 900 
 NoConn ~ 4650 1500
@@ -2325,7 +2267,7 @@ F 3 "" H 4300 2200 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	4300 2200 4300 2300
+	4300 2200 4300 2250
 Wire Wire Line
 	4300 2100 4300 2000
 Connection ~ 4300 2000
@@ -2967,7 +2909,7 @@ Wire Wire Line
 	11850 7500 11850 7550
 Wire Wire Line
 	11850 7500 11750 7500
-Text GLabel 3750 1900 0    50   Input ~ 0
+Text GLabel 3150 1800 0    50   Input ~ 0
 VHD7
 $Comp
 L agg-kicad:R #R27
@@ -4247,7 +4189,7 @@ Connection ~ 12700 1400
 Wire Wire Line
 	12700 1400 13300 1400
 $Comp
-L connector2:DIN41612_03x32_ABC J1
+L vhd_if_c9d-rescue:DIN41612_03x32_ABC-connector2 J1
 U 1 1 66FA9DBA
 P 2450 4200
 F 0 "J1" H 2580 4192 50  0000 L CNN
@@ -4351,30 +4293,6 @@ Wire Wire Line
 Connection ~ 2150 8600
 Wire Wire Line
 	2150 8600 2150 8550
-$Comp
-L agg-kicad:L L1
-U 1 1 633458D7
-P 4150 1900
-F 0 "L1" H 4246 1856 50  0000 R CNN
-F 1 "L" H 4200 2000 50  0000 R CNN
-F 2 "Inductor_THT:L_Axial_L5.0mm_D3.6mm_P10.00mm_Horizontal_Murata_BL01RN1A2A2" H 4150 1900 50  0001 C CNN
-F 3 "" H 4150 1900 50  0001 C CNN
-	1    4150 1900
-	-1   0    0    1   
-$EndComp
-$Comp
-L agg-kicad:L L3
-U 1 1 6337E2AB
-P 4550 1700
-F 0 "L3" H 4646 1656 50  0000 R CNN
-F 1 "L" H 4600 1750 50  0000 R CNN
-F 2 "Inductor_THT:L_Axial_L5.0mm_D3.6mm_P10.00mm_Horizontal_Murata_BL01RN1A2A2" H 4550 1700 50  0001 C CNN
-F 3 "" H 4550 1700 50  0001 C CNN
-	1    4550 1700
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	4450 1700 4350 1700
 Wire Wire Line
 	11450 6500 11550 6500
 Connection ~ 11550 6500
@@ -4382,13 +4300,7 @@ Text GLabel 11450 7500 0    50   Input ~ 0
 VHD7
 Wire Wire Line
 	11450 7500 11650 7500
-Wire Wire Line
-	4650 1900 4150 1900
-Wire Wire Line
-	4050 1900 3750 1900
-Wire Wire Line
-	4650 1700 4550 1700
-Text GLabel 4350 1700 0    50   Input ~ 0
+Text GLabel 3750 1400 0    50   Input ~ 0
 VHD6
 Text GLabel 4650 800  0    50   Input ~ 0
 VHD9
@@ -4685,4 +4597,156 @@ Wire Wire Line
 	3300 9600 3400 9600
 Connection ~ 3400 9000
 Connection ~ 3400 9600
+Wire Wire Line
+	2500 8400 2150 8400
+Text Notes 8950 7350 2    50   ~ 0
+INT01
+$Comp
+L power:GND #PWR044
+U 1 1 6387777D
+P 8950 7850
+F 0 "#PWR044" H 8950 7600 50  0001 C CNN
+F 1 "GND" H 8955 7677 50  0000 C CNN
+F 2 "" H 8950 7850 50  0001 C CNN
+F 3 "" H 8950 7850 50  0001 C CNN
+	1    8950 7850
+	1    0    0    -1  
+$EndComp
+Text GLabel 8950 7450 0    50   Input ~ 0
+B8
+$Comp
+L Device:Q_NPN_BCE Q1
+U 1 1 62AE76D2
+P 9050 7650
+F 0 "Q1" H 9188 7696 50  0000 L CNN
+F 1 "NPN (D637)" H 9188 7605 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92S_Wide" H 9080 7570 50  0001 C CNN
+F 3 "" H 9180 7670 50  0001 C CNN
+	1    9050 7650
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Interface:8255A IC2
+U 1 1 62ABC751
+P 8100 5600
+F 0 "IC2" H 8100 7381 50  0000 C CNN
+F 1 "8255A" H 8100 7290 50  0000 C CNN
+F 2 "Package_DIP:DIP-40_W15.24mm_Socket" H 8100 5900 50  0001 C CNN
+F 3 "http://aturing.umcs.maine.edu/~meadow/courses/cos335/Intel8255A.pdf" H 8100 5900 50  0001 C CNN
+	1    8100 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:EMI_Filter_LCL FL6
+U 1 1 63148AE8
+P 4050 1700
+F 0 "FL6" H 4050 2017 50  0000 C CNN
+F 1 "EMI_Filter_LCL" H 4050 1926 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" V 4050 1700 50  0001 C CNN
+F 3 "http://www.murata.com/~/media/webrenewal/support/library/catalog/products/emc/emifil/c31e.ashx?la=en-gb" V 4050 1700 50  0001 C CNN
+	1    4050 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3750 1400 3750 1600
+Wire Wire Line
+	4350 1700 4350 1600
+Wire Wire Line
+	4350 1700 4650 1700
+Wire Wire Line
+	4650 1900 3950 1900
+Wire Wire Line
+	4300 2250 4050 2250
+Wire Wire Line
+	4050 2250 4050 1800
+Connection ~ 4300 2250
+Wire Wire Line
+	4300 2250 4300 2300
+Wire Wire Line
+	4050 2250 3650 2250
+Wire Wire Line
+	3650 2250 3650 2100
+Connection ~ 4050 2250
+Wire Wire Line
+	3350 1900 3150 1900
+Wire Wire Line
+	3150 1800 3150 1900
+$Comp
+L Device:EMI_Filter_LCL FL7
+U 1 1 630F9CFE
+P 3650 2000
+F 0 "FL7" H 3650 2317 50  0000 C CNN
+F 1 "EMI_Filter_LCL" H 3650 2226 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" V 3650 2000 50  0001 C CNN
+F 3 "http://www.murata.com/~/media/webrenewal/support/library/catalog/products/emc/emifil/c31e.ashx?la=en-gb" V 3650 2000 50  0001 C CNN
+	1    3650 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L agg-kicad:L L1
+U 1 1 6360D6ED
+P 3050 600
+F 0 "L1" V 3146 556 50  0000 R CNN
+F 1 "L" V 3055 556 50  0000 R CNN
+F 2 "Inductor_THT:L_Axial_L5.0mm_D3.6mm_P10.00mm_Horizontal_Murata_BL01RN1A2A2" H 3050 600 50  0001 C CNN
+F 3 "" H 3050 600 50  0001 C CNN
+	1    3050 600 
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1650 1550 1650 1450
+$Comp
+L Device:EMI_Filter_LCL FL8
+U 1 1 637787FB
+P 2650 600
+F 0 "FL8" H 2650 917 50  0000 C CNN
+F 1 "EMI_Filter_LCL" H 2650 826 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" V 2650 600 50  0001 C CNN
+F 3 "http://www.murata.com/~/media/webrenewal/support/library/catalog/products/emc/emifil/c31e.ashx?la=en-gb" V 2650 600 50  0001 C CNN
+	1    2650 600 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:EMI_Filter_LCL FL9
+U 1 1 637C8A40
+P 2700 1050
+F 0 "FL9" H 2700 1367 50  0000 C CNN
+F 1 "EMI_Filter_LCL" H 2700 1276 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" V 2700 1050 50  0001 C CNN
+F 3 "http://www.murata.com/~/media/webrenewal/support/library/catalog/products/emc/emifil/c31e.ashx?la=en-gb" V 2700 1050 50  0001 C CNN
+	1    2700 1050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3200 300  3200 600 
+Wire Wire Line
+	3200 300  3350 300 
+Connection ~ 3200 600 
+Wire Wire Line
+	3200 600  3050 600 
+Wire Wire Line
+	2400 500  2350 500 
+Wire Wire Line
+	2300 500  2300 1000
+Wire Wire Line
+	3200 700  3200 950 
+Wire Wire Line
+	3200 950  3000 950 
+Connection ~ 2350 500 
+Wire Wire Line
+	2350 500  2300 500 
+Wire Wire Line
+	2400 950  2400 1200
+Wire Wire Line
+	2650 700  3050 700 
+Wire Wire Line
+	3050 700  3050 1150
+Wire Wire Line
+	2700 1150 2950 1150
+Connection ~ 3050 700 
+Connection ~ 2950 1150
+Wire Wire Line
+	2950 1150 3050 1150
+Wire Wire Line
+	2950 500  3350 500 
 $EndSCHEMATC
