@@ -39,8 +39,8 @@ $Comp
 L 74xx:74HC04 IC12
 U 3 1 629B3029
 P 7000 10500
-F 0 "IC12" H 7000 10817 50  0000 C CNN
-F 1 "74H004P" H 7000 10726 50  0000 C CNN
+F 0 "IC12" H 6950 10800 50  0000 C CNN
+F 1 "74H004P" H 6900 10700 50  0000 C CNN
 F 2 "" H 7000 10500 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 7000 10500 50  0001 C CNN
 	3    7000 10500
@@ -651,7 +651,7 @@ L agg-kicad:R R19
 U 1 1 63355BB2
 P 7000 10250
 F 0 "R19" H 7050 10300 50  0000 C CNN
-F 1 "750K" H 7050 10200 50  0000 C CNN
+F 1 "1M" H 7050 10200 50  0000 C CNN
 F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" H 7000 10250 50  0001 C CNN
 F 3 "" H 7000 10250 50  0001 C CNN
 	1    7000 10250
@@ -706,7 +706,7 @@ U 1 1 63393FAF
 P 4950 1400
 F 0 "J3" H 5104 1446 50  0000 L CNN
 F 1 "DB15_Female" H 5104 1355 50  0000 L CNN
-F 2 "Connector_Dsub:DSUB-15_Female_Horizontal_P2.77x2.84mm_EdgePinOffset4.94mm_Housed_MountingHolesOffset7.48mm" H 4950 1400 50  0001 C CNN
+F 2 "Connector_Dsub:DSUB-15_Female_Horizontal_P2.77x2.84mm_EdgePinOffset7.70mm_Housed_MountingHolesOffset9.12mm" H 4950 1400 50  0001 C CNN
 F 3 " ~" H 4950 1400 50  0001 C CNN
 	1    4950 1400
 	1    0    0    -1  
@@ -1496,7 +1496,7 @@ L agg-kicad:R R4
 U 1 1 638D75FF
 P 1950 1100
 F 0 "R4" H 2000 1150 50  0000 C CNN
-F 1 "10K" H 2000 1050 50  0000 C CNN
+F 1 "27K" H 2000 1050 50  0000 C CNN
 F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" H 1950 1100 50  0001 C CNN
 F 3 "" H 1950 1100 50  0001 C CNN
 	1    1950 1100
@@ -4352,8 +4352,6 @@ Wire Wire Line
 Wire Wire Line
 	5400 8000 5400 7950
 NoConn ~ 8800 6300
-NoConn ~ 6200 8700
-NoConn ~ 6200 8650
 $Comp
 L 4xxx:4013 #IC17
 U 2 1 63A76649
@@ -4528,16 +4526,7 @@ F 3 "" H 10300 1800 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	10350 50   10350 -50 
-Wire Wire Line
 	10300 1800 10300 1700
-Wire Wire Line
-	10000 50   10350 50  
-Connection ~ 10350 50  
-Wire Wire Line
-	10350 50   10700 50  
-Wire Wire Line
-	10000 -250 10700 -250
 Wire Wire Line
 	10300 2000 10300 1900
 Connection ~ 11750 1700
@@ -4718,8 +4707,6 @@ F 3 "http://www.murata.com/~/media/webrenewal/support/library/catalog/products/e
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3000 500  3350 500 
-Wire Wire Line
 	3200 300  3200 600 
 Wire Wire Line
 	3200 300  3350 300 
@@ -4749,4 +4736,50 @@ Connection ~ 3050 700
 Connection ~ 2950 1150
 Wire Wire Line
 	2950 1150 3050 1150
+Wire Wire Line
+	2950 500  3350 500 
+Text Notes 10000 2150 0    50   ~ 0
+3= notch side
+Text Notes 9050 7850 0    50   ~ 0
+3=notch side
+Text Notes 2900 2750 0    50   ~ 0
+R10
+Text Notes 4350 3700 0    50   ~ 0
+R1
+Text Notes 2050 1050 0    50   ~ 0
+R33
+Text Notes 2950 8400 0    50   ~ 0
+R13
+Text Notes 6050 5650 0    50   ~ 0
+R09
+Text Notes 9450 2000 0    50   ~ 0
+R32
+Text Notes 9400 2400 0    50   ~ 0
+R02
+Text Notes 9250 7400 0    50   ~ 0
+R03
+Text Notes 9750 6900 0    50   ~ 0
+R06
+Text Notes 9400 6550 0    50   ~ 0
+R05
+Text Notes 3850 10300 0    50   ~ 0
+R08
+Text Notes 6000 10150 0    50   ~ 0
+R07
+Text Notes 7150 10200 0    50   ~ 0
+R15
+Text Notes 6200 11000 0    50   ~ 0
+R14
+Text Notes 2650 9500 0    50   ~ 0
+R28
+Text Notes 1600 9500 0    50   ~ 0
+R30
+Text Notes 2000 10400 0    50   ~ 0
+R29
+Text Notes 2700 10950 0    50   ~ 0
+R27
+Text Notes 7600 10750 0    50   ~ 0
+C6
+Text Notes 6500 10600 0    50   ~ 0
+C5
 $EndSCHEMATC
