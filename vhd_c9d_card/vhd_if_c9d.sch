@@ -4,11 +4,11 @@ EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
 Sheet 1 1
-Title "Victor VHD IF-C9D"
+Title "Victor VHD IF-C9D by Popolon_"
 Date ""
 Rev ""
 Comp ""
-Comment1 ""
+Comment1 "Copied from original PCB"
 Comment2 ""
 Comment3 ""
 Comment4 ""
@@ -793,28 +793,6 @@ $EndComp
 Wire Wire Line
 	2800 8600 2850 8600
 $Comp
-L agg-kicad:R R3
-U 1 1 634102E4
-P 1850 8150
-F 0 "R3" V 1854 8194 50  0000 L CNN
-F 1 "4K7" V 1945 8194 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" H 1850 8150 50  0001 C CNN
-F 3 "" H 1850 8150 50  0001 C CNN
-	1    1850 8150
-	0    1    1    0   
-$EndComp
-$Comp
-L power:+5V #PWR06
-U 1 1 6341108C
-P 1850 8150
-F 0 "#PWR06" H 1850 8000 50  0001 C CNN
-F 1 "+5V" H 1865 8323 50  0000 C CNN
-F 2 "" H 1850 8150 50  0001 C CNN
-F 3 "" H 1850 8150 50  0001 C CNN
-	1    1850 8150
-	1    0    0    -1  
-$EndComp
-$Comp
 L agg-kicad:D D4
 U 1 1 6341A4BB
 P 2150 8450
@@ -869,8 +847,6 @@ Wire Wire Line
 	2150 8400 2150 8450
 Wire Wire Line
 	2150 8400 1850 8400
-Wire Wire Line
-	1850 8250 1850 8400
 Text GLabel 1250 8400 0    50   Input ~ 0
 VHD4
 $Comp
@@ -940,28 +916,6 @@ Connection ~ 5850 10500
 Wire Wire Line
 	5850 10500 5900 10500
 $Comp
-L agg-kicad:R R1
-U 1 1 634E62E5
-P 1500 9300
-F 0 "R1" V 1500 9150 50  0000 L CNN
-F 1 "4K7" V 1600 9100 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" H 1500 9300 50  0001 C CNN
-F 3 "" H 1500 9300 50  0001 C CNN
-	1    1500 9300
-	0    1    1    0   
-$EndComp
-$Comp
-L power:+5V #PWR03
-U 1 1 634E62EB
-P 1500 9300
-F 0 "#PWR03" H 1500 9150 50  0001 C CNN
-F 1 "+5V" H 1515 9473 50  0000 C CNN
-F 2 "" H 1500 9300 50  0001 C CNN
-F 3 "" H 1500 9300 50  0001 C CNN
-	1    1500 9300
-	1    0    0    -1  
-$EndComp
-$Comp
 L agg-kicad:D D2
 U 1 1 634E62F1
 P 1800 9600
@@ -1016,8 +970,6 @@ Wire Wire Line
 	1800 9550 1800 9600
 Wire Wire Line
 	1800 9550 1700 9550
-Wire Wire Line
-	1500 9400 1500 9550
 Text GLabel 900  9550 0    50   Input ~ 0
 VHD10
 $Comp
@@ -1033,28 +985,6 @@ F 3 "" H 1600 9550 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1600 9550 1500 9550
-$Comp
-L agg-kicad:R R5
-U 1 1 635154C6
-P 2150 9950
-F 0 "R5" V 2154 9994 50  0000 L CNN
-F 1 "4K7" V 2245 9994 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" H 2150 9950 50  0001 C CNN
-F 3 "" H 2150 9950 50  0001 C CNN
-	1    2150 9950
-	0    1    1    0   
-$EndComp
-$Comp
-L power:+5V #PWR011
-U 1 1 635154CC
-P 2150 9950
-F 0 "#PWR011" H 2150 9800 50  0001 C CNN
-F 1 "+5V" H 2165 10123 50  0000 C CNN
-F 2 "" H 2150 9950 50  0001 C CNN
-F 3 "" H 2150 9950 50  0001 C CNN
-	1    2150 9950
-	1    0    0    -1  
-$EndComp
 $Comp
 L agg-kicad:D D6
 U 1 1 635154D2
@@ -1109,33 +1039,9 @@ Connection ~ 2450 10200
 Wire Wire Line
 	2450 10200 2450 10250
 Wire Wire Line
-	2150 10050 2150 10200
-Wire Wire Line
 	2900 10200 2450 10200
 Text GLabel 1550 10200 0    50   Input ~ 0
 VHD12
-$Comp
-L agg-kicad:R R7
-U 1 1 63552C50
-P 2800 9150
-F 0 "R7" V 2804 9194 50  0000 L CNN
-F 1 "4K7" V 2895 9194 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" H 2800 9150 50  0001 C CNN
-F 3 "" H 2800 9150 50  0001 C CNN
-	1    2800 9150
-	0    1    1    0   
-$EndComp
-$Comp
-L power:+5V #PWR016
-U 1 1 63552C56
-P 2800 9150
-F 0 "#PWR016" H 2800 9000 50  0001 C CNN
-F 1 "+5V" H 2815 9323 50  0000 C CNN
-F 2 "" H 2800 9150 50  0001 C CNN
-F 3 "" H 2800 9150 50  0001 C CNN
-	1    2800 9150
-	1    0    0    -1  
-$EndComp
 $Comp
 L agg-kicad:D D8
 U 1 1 63552C5C
@@ -1189,8 +1095,6 @@ $EndComp
 Connection ~ 3100 9400
 Wire Wire Line
 	3100 9400 3100 9450
-Wire Wire Line
-	2800 9250 2800 9300
 Text GLabel 2200 9300 0    50   Input ~ 0
 VHD8
 Wire Wire Line
@@ -1203,30 +1107,6 @@ Wire Wire Line
 	4400 10100 2900 10100
 Wire Wire Line
 	2900 10100 2900 10200
-$Comp
-L agg-kicad:R R13
-U 1 1 6358448A
-P 3150 1700
-F 0 "R13" V 3154 1744 50  0000 L CNN
-F 1 "4K7" V 3245 1744 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" H 3150 1700 50  0001 C CNN
-F 3 "" H 3150 1700 50  0001 C CNN
-	1    3150 1700
-	0    1    1    0   
-$EndComp
-$Comp
-L power:+5V #PWR024
-U 1 1 6358C713
-P 3150 1650
-F 0 "#PWR024" H 3150 1500 50  0001 C CNN
-F 1 "+5V" H 3165 1823 50  0000 C CNN
-F 2 "" H 3150 1650 50  0001 C CNN
-F 3 "" H 3150 1650 50  0001 C CNN
-	1    3150 1650
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3150 1700 3150 1650
 $Comp
 L power:GND #PWR02
 U 1 1 635C9CAA
@@ -1849,32 +1729,6 @@ F 3 "" H 2950 10750 50  0001 C CNN
 	1    2950 10750
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2850 10750 2900 10750
-$Comp
-L agg-kicad:R R10
-U 1 1 63DB3DE0
-P 2900 10500
-F 0 "R10" V 2904 10544 50  0000 L CNN
-F 1 "4K7" V 2995 10544 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" H 2900 10500 50  0001 C CNN
-F 3 "" H 2900 10500 50  0001 C CNN
-	1    2900 10500
-	0    1    1    0   
-$EndComp
-$Comp
-L power:+5V #PWR017
-U 1 1 63DB3DE6
-P 2900 10500
-F 0 "#PWR017" H 2900 10350 50  0001 C CNN
-F 1 "+5V" H 2915 10673 50  0000 C CNN
-F 2 "" H 2900 10500 50  0001 C CNN
-F 3 "" H 2900 10500 50  0001 C CNN
-	1    2900 10500
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2900 10600 2900 10750
 $Comp
 L power:GND #PWR037
 U 1 1 63DD1A95
@@ -2909,7 +2763,7 @@ Wire Wire Line
 	11850 7500 11850 7550
 Wire Wire Line
 	11850 7500 11750 7500
-Text GLabel 3150 1800 0    50   Input ~ 0
+Text GLabel 3150 1900 0    50   Input ~ 0
 VHD7
 $Comp
 L agg-kicad:R #R27
@@ -4228,7 +4082,6 @@ F 3 "http://www.murata.com/~/media/webrenewal/support/library/catalog/products/e
 	1    1850 10300
 	1    0    0    -1  
 $EndComp
-Connection ~ 2150 10200
 Wire Wire Line
 	2450 10450 1850 10450
 Wire Wire Line
@@ -4247,7 +4100,6 @@ F 3 "http://www.murata.com/~/media/webrenewal/support/library/catalog/products/e
 	1    1200 9650
 	1    0    0    -1  
 $EndComp
-Connection ~ 1500 9550
 Wire Wire Line
 	1200 9750 1800 9750
 Connection ~ 1800 9750
@@ -4264,7 +4116,6 @@ F 3 "http://www.murata.com/~/media/webrenewal/support/library/catalog/products/e
 	1    2500 9400
 	1    0    0    -1  
 $EndComp
-Connection ~ 2800 9300
 Wire Wire Line
 	2800 9300 2800 9400
 Wire Wire Line
@@ -4287,7 +4138,6 @@ F 3 "http://www.murata.com/~/media/webrenewal/support/library/catalog/products/e
 	1    1550 8500
 	1    0    0    -1  
 $EndComp
-Connection ~ 1850 8400
 Wire Wire Line
 	1550 8600 2150 8600
 Connection ~ 2150 8600
@@ -4374,9 +4224,6 @@ F 3 "http://www.onsemi.com/pub/Collateral/MC14013B-D.PDF" H 16050 4850 50  0001 
 	1    16050 4850
 	1    0    0    -1  
 $EndComp
-Connection ~ 2900 10750
-Wire Wire Line
-	2900 10750 2950 10750
 Text GLabel 250  700  0    50   Input ~ 0
 C1
 Text GLabel 900  900  1    50   Input ~ 0
@@ -4658,8 +4505,6 @@ Wire Wire Line
 Connection ~ 4050 2250
 Wire Wire Line
 	3350 1900 3150 1900
-Wire Wire Line
-	3150 1800 3150 1900
 $Comp
 L Device:EMI_Filter_LCL FL7
 U 1 1 630F9CFE
@@ -4786,4 +4631,52 @@ Text GLabel 4400 6800 0    50   Input ~ 0
 A6
 Text Notes 4350 6950 2    50   ~ 0
 RESET
+$Comp
+L Device:R_Network08 RN2
+U 1 1 63A5B821
+P 600 8050
+F 0 "RN2" H 988 8096 50  0000 L CNN
+F 1 "8x4K7" H 988 8005 50  0000 L CNN
+F 2 "Resistor_THT:R_Array_SIP9" V 1075 8050 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 600 8050 50  0001 C CNN
+	1    600  8050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 63A5B82F
+P 200 7850
+F 0 "#PWR?" H 200 7700 50  0001 C CNN
+F 1 "+5V" H 215 8023 50  0000 C CNN
+F 2 "" H 200 7850 50  0001 C CNN
+F 3 "" H 200 7850 50  0001 C CNN
+	1    200  7850
+	1    0    0    -1  
+$EndComp
+Text GLabel 200  8250 3    50   Input ~ 0
+VHD3PULLUP
+Text GLabel 300  8250 3    50   Input ~ 0
+VHD4PULLUP
+Text GLabel 500  8250 3    50   Input ~ 0
+VHD8PULLUP
+Text GLabel 600  8250 3    50   Input ~ 0
+VHD10PULLUP
+Text GLabel 700  8250 3    50   Input ~ 0
+VHD12PULLUP
+Text GLabel 400  8250 3    50   Input ~ 0
+VHD7PULLUP
+Text GLabel 2850 10750 1    50   Input ~ 0
+VHD3PULLUP
+Wire Wire Line
+	2850 10750 2950 10750
+Text GLabel 2150 10200 1    50   Input ~ 0
+VHD12PULLUP
+Text GLabel 2800 9300 1    50   Input ~ 0
+VHD8PULLUP
+Text GLabel 1900 8400 1    50   Input ~ 0
+VHD4PULLUP
+Text GLabel 1500 9550 1    50   Input ~ 0
+VHD10PULLUP
+Text GLabel 3250 1900 1    50   Input ~ 0
+VHD7PULLUP
 $EndSCHEMATC
