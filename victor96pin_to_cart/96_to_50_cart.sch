@@ -1,0 +1,282 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Wire Wire Line
+	10000 -250 10700 -250
+Text GLabel 700  2700 0    50   Input ~ 0
+GND
+Text GLabel 700  2800 0    50   Input ~ 0
+JVCREQ
+Text GLabel 700  5800 0    50   Input ~ 0
+GND
+Text GLabel 700  5700 0    50   Input ~ 0
+GND
+Text GLabel 700  5200 0    50   Input ~ 0
+BUSCON
+Text GLabel 700  3600 0    50   Input ~ 0
+E
+Text GLabel 700  3500 0    50   Input ~ 0
+NMI
+Text GLabel 700  3400 0    50   Input ~ 0
+HALT
+Text GLabel 700  3300 0    50   Input ~ 0
+ST
+Text GLabel 700  3200 0    50   Input ~ 0
+RESET
+Text GLabel 700  3100 0    50   Input ~ 0
+BUSACK
+Text GLabel 700  3000 0    50   Input ~ 0
+BUSREQ
+Text GLabel 700  2900 0    50   Input ~ 0
+JVCACK
+Text GLabel 1500 2700 0    50   Input ~ 0
+GND
+Text GLabel 1500 2800 0    50   Input ~ 0
+CS1
+Text GLabel 1500 2900 0    50   Input ~ 0
+CS2
+Text GLabel 1500 3000 0    50   Input ~ 0
+BUSDIR
+Text GLabel 1500 3100 0    50   Input ~ 0
+ME
+Text GLabel 1500 3200 0    50   Input ~ 0
+IOE
+Text GLabel 1500 3300 0    50   Input ~ 0
+LIR
+Text GLabel 1500 3400 0    50   Input ~ 0
+INT01
+Text GLabel 1500 3500 0    50   Input ~ 0
+INT1
+Text GLabel 1500 3600 0    50   Input ~ 0
+INTRET
+Text GLabel 1500 3700 0    50   Input ~ 0
+WAIT
+Text GLabel 1500 3800 0    50   Input ~ 0
+A1
+Text GLabel 1500 3900 0    50   Input ~ 0
+A3
+Text GLabel 1500 4000 0    50   Input ~ 0
+A5
+Text GLabel 1500 4100 0    50   Input ~ 0
+A7
+Text GLabel 1500 4200 0    50   Input ~ 0
+A9
+Text GLabel 1500 4300 0    50   Input ~ 0
+A11
+Text GLabel 1500 4400 0    50   Input ~ 0
+A13
+Text GLabel 1500 4500 0    50   Input ~ 0
+A15
+Text GLabel 1500 4600 0    50   Input ~ 0
+A17
+Text GLabel 1500 4700 0    50   Input ~ 0
+D1
+Text GLabel 1500 4800 0    50   Input ~ 0
+D3
+Text GLabel 1500 4900 0    50   Input ~ 0
+D5
+Text GLabel 1500 5000 0    50   Input ~ 0
+D7
+Text GLabel 1500 5500 0    50   Input ~ 0
+5V
+Text GLabel 1500 5600 0    50   Input ~ 0
+5V
+Text GLabel 1500 5700 0    50   Input ~ 0
+CLK
+Text GLabel 1500 5800 0    50   Input ~ 0
+GND
+Text GLabel 2300 2700 0    50   Input ~ 0
+12V
+Text GLabel 2300 2800 0    50   Input ~ 0
+MINUS12V
+Text GLabel 2300 2900 0    50   Input ~ 0
+SLOT
+Text GLabel 2300 3200 0    50   Input ~ 0
+RD
+Text GLabel 2300 3300 0    50   Input ~ 0
+WR
+Text GLabel 2300 3400 0    50   Input ~ 0
+REF
+Text GLabel 2300 3500 0    50   Input ~ 0
+INT02
+Text GLabel 2300 3600 0    50   Input ~ 0
+INT2
+Text GLabel 2300 3700 0    50   Input ~ 0
+A0
+Text GLabel 2300 3800 0    50   Input ~ 0
+A2
+Text GLabel 2300 3900 0    50   Input ~ 0
+A4
+Text GLabel 2300 4000 0    50   Input ~ 0
+A6
+Text GLabel 2300 4100 0    50   Input ~ 0
+A8
+Text GLabel 2300 4200 0    50   Input ~ 0
+A10
+Text GLabel 2300 4300 0    50   Input ~ 0
+A12
+Text GLabel 2300 4400 0    50   Input ~ 0
+A14
+Text GLabel 2300 4500 0    50   Input ~ 0
+A16
+Text GLabel 2300 4600 0    50   Input ~ 0
+A18
+Text GLabel 2300 4700 0    50   Input ~ 0
+D0
+Text GLabel 2300 4800 0    50   Input ~ 0
+D2
+Text GLabel 2300 4900 0    50   Input ~ 0
+D4
+Text GLabel 2300 5000 0    50   Input ~ 0
+D6
+Text GLabel 2300 5500 0    50   Input ~ 0
+5V
+Text GLabel 2300 5700 0    50   Input ~ 0
+2CLK
+Text GLabel 2300 5800 0    50   Input ~ 0
+GND
+$Comp
+L Connector_Generic:Conn_02x25_Odd_Even J2
+U 1 1 6304BECE
+P 6650 4150
+F 0 "J2" H 6700 5567 50  0000 C CNN
+F 1 "Conn_02x25_Odd_Even" H 6700 5476 50  0000 C CNN
+F 2 "msx cartridge:msx_cartridge" H 6650 4150 50  0001 C CNN
+F 3 "~" H 6650 4150 50  0001 C CNN
+	1    6650 4150
+	1    0    0    -1  
+$EndComp
+Text GLabel 6450 2950 0    50   Input ~ 0
+CS1_
+Text GLabel 6450 3050 0    50   Input ~ 0
+CS12_
+Text GLabel 6450 3250 0    50   Input ~ 0
+WAIT_
+Text GLabel 6450 3550 0    50   Input ~ 0
+WR
+Text GLabel 6450 3650 0    50   Input ~ 0
+RESET
+Text GLabel 6450 3750 0    50   Input ~ 0
+A9
+Text GLabel 6450 3850 0    50   Input ~ 0
+A11
+Text GLabel 6450 3950 0    50   Input ~ 0
+A7
+Text GLabel 6450 4050 0    50   Input ~ 0
+A12
+Text GLabel 6450 4150 0    50   Input ~ 0
+A14
+Text GLabel 6450 4250 0    50   Input ~ 0
+A1
+Text GLabel 6450 4350 0    50   Input ~ 0
+A3
+Text GLabel 6450 4450 0    50   Input ~ 0
+A5
+Text GLabel 6450 4550 0    50   Input ~ 0
+D1
+Text GLabel 6450 4650 0    50   Input ~ 0
+D3
+Text GLabel 6450 4750 0    50   Input ~ 0
+D5
+Text GLabel 6450 4850 0    50   Input ~ 0
+D7
+Text GLabel 6950 2950 2    50   Input ~ 0
+CS2_
+Text GLabel 6950 3150 2    50   Input ~ 0
+RFSH_
+Text GLabel 6950 3450 2    50   Input ~ 0
+MERQ
+Text GLabel 6950 3550 2    50   Input ~ 0
+RD
+Text GLabel 6950 3750 2    50   Input ~ 0
+A15
+Text GLabel 6950 3850 2    50   Input ~ 0
+A10
+Text GLabel 6950 3950 2    50   Input ~ 0
+A6
+Text GLabel 6950 4050 2    50   Input ~ 0
+A8
+Text GLabel 6950 4150 2    50   Input ~ 0
+A13
+Text GLabel 6950 4250 2    50   Input ~ 0
+A0
+Text GLabel 6950 4350 2    50   Input ~ 0
+A2
+Text GLabel 6950 4450 2    50   Input ~ 0
+A4
+Text GLabel 6950 4550 2    50   Input ~ 0
+D0
+Text GLabel 6950 4650 2    50   Input ~ 0
+D2
+Text GLabel 6950 4750 2    50   Input ~ 0
+D4
+Text GLabel 6950 4850 2    50   Input ~ 0
+D6
+Text GLabel 6450 5250 0    50   Input ~ 0
+5V
+Text GLabel 6450 5150 0    50   Input ~ 0
+5V
+Text GLabel 6450 5050 0    50   Input ~ 0
+GND
+Text GLabel 6450 4950 0    50   Input ~ 0
+GND
+Wire Wire Line
+	6950 5050 6950 5150
+NoConn ~ 6450 3150
+NoConn ~ 6450 5350
+NoConn ~ 6950 3650
+$Comp
+L 96_to_50_cart-rescue:DIN41612_03x32_ABC-connector2-vhd_if_c9d-rescue-hc9x_to_cart-rescue J1
+U 1 1 66FA9DBA
+P 2450 4200
+F 0 "J1" H 2580 4192 50  0000 L CNN
+F 1 "DIN41612_03x32_ABC" H 2580 4101 50  0000 L CNN
+F 2 "Connector_DIN:Conn_DIN41612_B096F_mirrored" H 2500 4200 50  0001 C CNN
+F 3 "" H 2500 4200 50  0001 C CNN
+	1    2450 4200
+	1    0    0    -1  
+$EndComp
+Text GLabel 6950 3350 2    50   Input ~ 0
+BUSDIR
+Text GLabel 6450 3450 0    50   Input ~ 0
+IOE
+Text GLabel 6450 3350 0    50   Input ~ 0
+LIR
+Text GLabel 6950 3050 2    50   Input ~ 0
+SLOT
+Text GLabel 6950 3250 2    50   Input ~ 0
+INT01
+Text GLabel 6950 4950 2    50   Input ~ 0
+CLK
+Text GLabel 3300 3500 0    50   Input ~ 0
+5V
+Text GLabel 3750 3500 2    50   Input ~ 0
+JVCREQ
+$Comp
+L agg-kicad:R R1
+U 1 1 63AB4CCD
+P 3500 3500
+F 0 "R1" H 3550 3681 50  0000 C CNN
+F 1 "4k7" H 3550 3590 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0411_L9.9mm_D3.6mm_P12.70mm_Horizontal" H 3500 3500 50  0001 C CNN
+F 3 "" H 3500 3500 50  0001 C CNN
+	1    3500 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3750 3500 3600 3500
+Wire Wire Line
+	3500 3500 3300 3500
+$EndSCHEMATC

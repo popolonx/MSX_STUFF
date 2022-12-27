@@ -1,0 +1,5 @@
+(sym_lib_table
+  (lib (name hx_f101_cart-rescue)(type Legacy)(uri ${KIPRJMOD}/hx_f101_cart-rescue.lib)(options "")(descr ""))
+  (lib (name hc9x_to_cart-rescue)(type Legacy)(uri E:/msx/hc9x_slot_to_cart/hc9x_to_cart-rescue.lib)(options "")(descr ""))
+  (lib (name 96_to_50_cart-rescue)(type Legacy)(uri ${KIPRJMOD}/96_to_50_cart-rescue.lib)(options "")(descr ""))
+)
