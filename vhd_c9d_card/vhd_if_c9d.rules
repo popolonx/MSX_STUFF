@@ -11,7 +11,7 @@
     (via_costs 50)
     (plane_via_costs 5)
     (start_ripup_costs 100)
-    (start_pass_no 11615)
+    (start_pass_no 11860)
     (layer_rule F.Cu
       (active on)
       (preferred_direction horizontal)
@@ -44,6 +44,15 @@
     )
     (attach off)
   )
+  (padstack "Via[0-1]_1000:600_um"
+    (shape
+      (circle F.Cu 1000.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 1000.0 0.0 0.0)
+    )
+    (attach off)
+  )
   (padstack "Via[0-1]_1600:1000_um"
     (shape
       (circle F.Cu 1600.0 0.0 0.0)
@@ -52,6 +61,24 @@
       (circle B.Cu 1600.0 0.0 0.0)
     )
     (attach off)
+  )
+  (via 
+    "Via[0-1]_1000:600_um" "Via[0-1]_1000:600_um" default
+  )
+  (via 
+    "Via[0-1]_1000:600_um-kicad_default" "Via[0-1]_1000:600_um" "kicad_default"
+  )
+  (via 
+    "Via[0-1]_800:400_um-CLK" "Via[0-1]_800:400_um" CLK
+  )
+  (via 
+    "Via[0-1]_1000:600_um-CLK" "Via[0-1]_1000:600_um" CLK
+  )
+  (via 
+    "Via[0-1]_1600:1000_um-CLK" "Via[0-1]_1600:1000_um" CLK
+  )
+  (via 
+    "Via[0-1]_1000:600_um-Power" "Via[0-1]_1000:600_um" Power
   )
   (via 
     "Via[0-1]_800:400_um" "Via[0-1]_800:400_um" default
@@ -70,6 +97,9 @@
   )
   (via 
     "Via[0-1]_1600:1000_um-Power" "Via[0-1]_1600:1000_um" Power
+  )
+  (via_rule
+    CLK "Via[0-1]_1000:600_um-CLK"
   )
   (via_rule
     default "Via[0-1]_800:400_um"
@@ -91,24 +121,34 @@
     )
   )
   (class "kicad_default"
-    "Net-(D10-Pad1)" "RESET_" CLK A2 C14 "T1_PC7" "Net-(D5-Pad2)" "Net-(D1-Pad2)"
-    "Net-(D7-Pad2)" "Net-(IC10-Pad4)" "WR_PC4" "RD_PC6" "P2.1_PC1" "P2.0_PC0" "T0_PC5" C16
-    B17 B16 C15 C17 "Net-(IC5-Pad8)" "Net-(IC6-Pad5)" C12 B13
-    C13 B14 "Net-(IC6-Pad8)" B15 C6 "Net-(IC7-Pad10)" B19 A5
-    "Net-(IC10-Pad6)" C3 "Net-(IC9-Pad10)" "Net-(IC9-Pad1)" C21 B21 C22 B22
-    C23 B23 C11 C24 B12 B24 C18 "Net-(Q1-Pad1)"
-    VHD4 "Net-(Q2-Pad1)" "Net-(Q3-Pad1)" VHD10 VHD12 VHD8 "Net-(IC1-Pad6)" VHD3
-    B4 B7 B6 C7 B18 B8 A23 A24
-    A26 "Net-(D3-Pad2)" "Net-(FL1-Pad3)" "Net-(FL3-Pad3)" "Net-(FL4-Pad3)" "Net-(FL5-Pad3)" VHD7 "Net-(J3-Pad14)"
-    "Net-(IC1-Pad19)" "Net-(IC1-Pad18)" "Net-(IC1-Pad17)" "Net-(IC1-Pad16)" "Net-(IC1-Pad35)" "Net-(IC1-Pad15)" "Net-(IC1-Pad14)" "Net-(IC1-Pad13)"
-    "Net-(IC1-Pad12)" "Net-(IC1-Pad25)" "Net-(IC1-Pad5)" "Net-(IC2-Pad17)" "Net-(IC2-Pad36)" "Net-(IC12-Pad8)" "Net-(IC2-Pad6)" "Net-(IC2-Pad5)"
-    "Net-(IC3-Pad20)" "Net-(IC7-Pad6)" "Net-(IC7-Pad12)" "Net-(IC7-Pad8)" "Net-(IC10-Pad11)" "Net-(IC10-Pad12)" "Net-(IC12-Pad12)" "Net-(C122-Pad1)"
-    "Net-(C121-Pad1)" S2 "Net-(IC11-Pad6)" S3 "Net-(FL6-Pad3)" "Net-(FL7-Pad3)" "Net-(FL8-Pad3)" "Net-(FL9-Pad3)"
-    "Net-(J2-Pad1)"
+    "Net-(D10-Pad1)" CLK A2 C14 "T1_PC7" "Net-(D5-Pad2)" "Net-(D1-Pad2)" "Net-(D7-Pad2)"
+    "Net-(IC10-Pad4)" "WR_PC4" "RD_PC6" "P2.1_PC1" "P2.0_PC0" "T0_PC5" C16 B17
+    B16 C15 C17 "Net-(IC5-Pad8)" "Net-(IC6-Pad5)" C12 B13 C13
+    B14 "Net-(IC6-Pad8)" B15 C6 "Net-(IC7-Pad10)" B19 A5 "Net-(IC10-Pad6)"
+    C3 "Net-(IC9-Pad10)" "Net-(IC9-Pad1)" C21 B21 C22 B22 C23
+    B23 C11 C24 B12 B24 C18 "Net-(Q1-Pad1)" VHD4
+    "Net-(Q2-Pad1)" "Net-(Q3-Pad1)" VHD10 VHD12 VHD8 "Net-(IC1-Pad6)" VHD3 B4
+    B7 B6 C7 B18 B8 A23 A24 A26
+    VHD7 "Net-(J3-Pad14)" "Net-(IC1-Pad19)" "Net-(IC1-Pad18)" "Net-(IC1-Pad17)" "Net-(IC1-Pad16)" "Net-(IC1-Pad35)" "Net-(IC1-Pad15)"
+    "Net-(IC1-Pad14)" "Net-(IC1-Pad13)" "Net-(IC1-Pad12)" "Net-(IC1-Pad25)" "Net-(IC1-Pad5)" "Net-(IC2-Pad17)" "Net-(IC2-Pad36)" "Net-(IC12-Pad8)"
+    "Net-(IC2-Pad6)" "Net-(IC2-Pad5)" "Net-(IC3-Pad20)" "Net-(IC7-Pad6)" "Net-(IC7-Pad12)" "Net-(IC7-Pad8)" "Net-(IC10-Pad11)" "Net-(IC10-Pad12)"
+    "Net-(IC12-Pad12)" "Net-(C122-Pad1)" "Net-(C121-Pad1)" S2 "Net-(IC11-Pad6)" S3 "Net-(FL6-Pad3)" "Net-(FL7-Pad3)"
+    "Net-(FL8-Pad3)" "Net-(FL9-Pad3)" "Net-(J2-Pad1)" VHD4PULLUP VHD10PULLUP VHD12PULLUP VHD8PULLUP VHD3PULLUP
+    A6
     (clearance_class "kicad_default")
     (via_rule kicad_default)
     (rule
       (width 250.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class CLK
+    (clearance_class CLK)
+    (via_rule CLK)
+    (rule
+      (width 750.0)
     )
     (circuit 
       (use_layer F.Cu B.Cu)
