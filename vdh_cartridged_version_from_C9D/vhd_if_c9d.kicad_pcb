@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.6)
-    (drawings 15)
+    (drawings 16)
     (tracks 1229)
     (zones 0)
     (modules 58)
@@ -3427,6 +3427,9 @@
     )
   )
 
+  (gr_text "VHD Card by Popolon_" (at 85.4075 25.019) (layer F.SilkS)
+    (effects (font (size 1.5 1.5) (thickness 0.3)))
+  )
   (gr_line (start 71.6915 104.8385) (end 170.561 104.8385) (layer F.SilkS) (width 0.12))
   (gr_line (start 81.915 149.5425) (end 70.994 149.5425) (layer Edge.Cuts) (width 0.15))
   (gr_line (start 81.915 158.0515) (end 81.915 149.5425) (layer Edge.Cuts) (width 0.15))
