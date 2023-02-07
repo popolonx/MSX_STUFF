@@ -11,7 +11,7 @@
     (via_costs 50)
     (plane_via_costs 5)
     (start_ripup_costs 100)
-    (start_pass_no 5282)
+    (start_pass_no 6942)
     (layer_rule F.Cu
       (active on)
       (preferred_direction vertical)
@@ -98,10 +98,10 @@
     "Net-(IC1-Pad35)" "Net-(IC1-Pad15)" "Net-(IC1-Pad14)" "Net-(IC1-Pad13)" "Net-(IC1-Pad12)" "WR_PC4" "RD_PC6" "Net-(IC1-Pad6)"
     "Net-(IC1-Pad25)" "Net-(IC1-Pad5)" "P2.1_PC1" "P2.0_PC0" "T0_PC5" "Net-(IC2-Pad17)" "Net-(IC2-Pad36)" "Net-(IC12-Pad8)"
     "Net-(IC2-Pad6)" "Net-(IC2-Pad5)" "Net-(IC3-Pad20)" "Net-(IC6-Pad5)" "Net-(IC10-Pad6)" "IOE_" "Net-(IC10-Pad4)" "RD_"
-    "Net-(IC8-Pad10)" "WR_" "Net-(IC10-Pad11)" "LIR_" "Net-(IC12-Pad12)" "Net-(J1-Pad44)" "Net-(J3-Pad14)" "Net-(Q1-Pad1)"
-    "Net-(Q2-Pad1)" "RESET_" D0 D1 D2 D3 D4 D5
-    A0 D6 A1 D7 A14 A13 A8 A9
-    A11 "SLOT_" A10 A12 A15 "INT01_"
+    "Net-(IC8-Pad10)" "WR_" "Net-(IC10-Pad11)" "LIR_" "Net-(IC12-Pad12)" "Net-(J1-Pad44)" "Net-(Q1-Pad1)" "Net-(Q2-Pad1)"
+    "RESET_" D0 D1 D2 D3 D4 D5 A0
+    D6 A1 D7 A14 A13 A8 A9 A11
+    "SLOT_" A10 A12 A15 "INT01_" "Net-(IC4-Pad10)" "Net-(IC4-Pad9)"
     (clearance_class "kicad_default")
     (via_rule kicad_default)
     (rule
@@ -112,7 +112,7 @@
     )
   )
   (class Power
-    5V GND
+    5V GND "Net-(J3-Pad14)"
     (clearance_class Power)
     (via_rule Power)
     (rule
