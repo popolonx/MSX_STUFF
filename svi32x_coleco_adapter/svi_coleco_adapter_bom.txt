@@ -5,8 +5,8 @@ Reference, Value, Footprint, Datasheet
 "U7","74LS138","Package_DIP:DIP-16_W7.62mm_LongPads",""
 "U6","74LS138","Package_DIP:DIP-16_W7.62mm_LongPads",""
 "U10","27C256","Package_DIP:DIP-28_W15.24mm","http://ww1.microchip.com/downloads/en/DeviceDoc/11107M.pdf"
-"J4","SVI external bus connector","Connector:SVI_50PIN",""
-"J3","COLECO cartridge slot","Connector:COLECO_30_PIN",""
+"J4","SVI external bus connector","Connector:SVI_50PIN","" 5.08mm row spacing
+"J3","COLECO cartridge slot","Connector:COLECO_30_PIN"," 2.54mm row spacing
 "J2","Conn_01x09","Connector_Dsub:DSUB-9_Male_Horizontal_P2.77x2.84mm_EdgePinOffset7.70mm_Housed_MountingHolesOffset9.12mm","~"
 "J1","Conn_01x09","Connector_Dsub:DSUB-9_Male_Horizontal_P2.77x2.84mm_EdgePinOffset7.70mm_Housed_MountingHolesOffset9.12mm","~"
 "R16","3K3","Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal",""
@@ -60,7 +60,7 @@ Reference, Value, Footprint, Datasheet
 "C4","10nF","Capacitor_THT:C_Disc_D7.0mm_W2.5mm_P5.00mm",""
 "C9","1nF","Capacitor_THT:C_Disc_D7.0mm_W2.5mm_P5.00mm",""
 "C3","1nF","Capacitor_THT:C_Disc_D7.0mm_W2.5mm_P5.00mm",""
-"D3","1N4401","Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal","http://www.vishay.com/docs/88503/1n4001.pdf"
+"D3","1N4401","Zener Diode 7.5v_THT:D_DO-41_SOD81_P10.16mm_Horizontal","http://www.vishay.com/docs/88503/1n4001.pdf"
 "C30","100nf","Capacitor_THT:C_Disc_D7.0mm_W2.5mm_P5.00mm",""
 "C31","100nf","Capacitor_THT:C_Disc_D7.0mm_W2.5mm_P5.00mm",""
 "C32","100nf","Capacitor_THT:C_Disc_D7.0mm_W2.5mm_P5.00mm",""
