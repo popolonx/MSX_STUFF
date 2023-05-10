@@ -2469,10 +2469,10 @@ F 3 "https://assets.nexperia.com/documents/data-sheet/HEF4538B.pdf" H 11750 4550
 	1    0    0    -1  
 $EndComp
 $Comp
-L 4xxx:4538 #IC12
+L 4xxx:4538 #IC18
 U 2 1 63ACCA7B
 P 13900 3050
-F 0 "#IC12" H 13900 3517 50  0000 C CNN
+F 0 "#IC18" H 13900 3517 50  0000 C CNN
 F 1 "4538" H 13900 3426 50  0000 C CNN
 F 2 "Package_DIP:DIP-16_W7.62mm_Socket" H 13900 3050 50  0001 C CNN
 F 3 "https://assets.nexperia.com/documents/data-sheet/HEF4538B.pdf" H 13900 3050 50  0001 C CNN
