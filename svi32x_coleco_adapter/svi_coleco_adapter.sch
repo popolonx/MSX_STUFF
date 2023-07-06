@@ -1134,21 +1134,21 @@ F 3 "" H 9050 10450 50  0001 C CNN
 	1    9050 10450
 	1    0    0    -1  
 $EndComp
-Text GLabel 8650 10250 0    50   Input ~ 0
-D0
-Text GLabel 8650 10050 0    50   Input ~ 0
-D2
-Text GLabel 8650 10150 0    50   Input ~ 0
-D1
 Text GLabel 9450 10550 2    50   Input ~ 0
-D7
-Text GLabel 9450 10450 2    50   Input ~ 0
-D6
+D0
 Text GLabel 9450 10350 2    50   Input ~ 0
+D2
+Text GLabel 9450 10450 2    50   Input ~ 0
+D1
+Text GLabel 8650 10250 0    50   Input ~ 0
+D7
+Text GLabel 8650 10150 0    50   Input ~ 0
+D6
+Text GLabel 8650 10050 0    50   Input ~ 0
 D5
-Text GLabel 9450 10250 2    50   Input ~ 0
-D4
 Text GLabel 9450 10050 2    50   Input ~ 0
+D4
+Text GLabel 9450 10250 2    50   Input ~ 0
 D3
 Text GLabel 9450 10150 2    50   Input ~ 0
 CLK

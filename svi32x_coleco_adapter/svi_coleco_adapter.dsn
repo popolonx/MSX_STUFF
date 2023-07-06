@@ -68,7 +68,7 @@
       (place C32 209931 -91757.5 front 0 (PN 100nf))
       (place C31 196469 -35941 front 0 (PN 100nf))
       (place C30 174562 -36131.5 front 0 (PN 100nf))
-      (place C21 207074 -123572 front 270 (PN 2.2uf))
+      (place C21 207074 -125095 front 270 (PN 2.2uf))
       (place C19 130175 -46736 front 90 (PN 100nf))
       (place C16 242062 -41021 front 270 (PN 10nF))
       (place C15 85026.5 -61722 front 90 (PN 2.2uf))
@@ -120,7 +120,7 @@
       (place RN1 265239 -108648 front 90 (PN 22Kx7))
     )
     (component Inductor_THT:L_Axial_L7.0mm_D3.3mm_P10.16mm_Horizontal_Fastron_MICC
-      (place L1 192596 -124142 front 0 (PN L))
+      (place L1 192214 -125412 front 0 (PN L))
       (place L2 70485 -61341 front 0 (PN L))
     )
     (component "Connector_Dsub:DSUB-9_Male_Horizontal_P2.77x2.84mm_EdgePinOffset7.70mm_Housed_MountingHolesOffset9.12mm"
@@ -1346,40 +1346,40 @@
       (pins J3-14 J4-13 U10-23)
     )
     (net D7
-      (pins J3-12 J4-40 U10-19 U9-10 U2-3 U1-3)
+      (pins J3-12 J4-40 U10-19 U9-3 U2-3 U1-3)
     )
     (net A2
       (pins J3-11 J4-22 U10-8)
     )
     (net D6
-      (pins J3-10 J4-39 U10-18 U9-11 U2-5 U1-5)
+      (pins J3-10 J4-39 U10-18 U9-2 U2-5 U1-5)
     )
     (net A1
       (pins J3-9 J4-23 U10-9 U5-2 U3-1)
     )
     (net D5
-      (pins J3-8 J4-38 U10-17 U9-12 U2-7 U1-7)
+      (pins J3-8 J4-38 U10-17 U9-1 U2-7 U1-7)
     )
     (net A0
       (pins J3-7 J4-24 U10-10)
     )
     (net D4
-      (pins J3-6 J4-37 U10-16 U9-13 U2-9 U1-9)
+      (pins J3-6 J4-37 U10-16 U9-15 U2-9 U1-9)
     )
     (net D0
-      (pins J3-5 J4-33 U10-11 U9-3 U2-18 U1-18)
+      (pins J3-5 J4-33 U10-11 U9-10 U2-18 U1-18)
     )
     (net D3
-      (pins J3-4 J4-36 U10-15 U9-15 U2-12 U1-12)
+      (pins J3-4 J4-36 U10-15 U9-13 U2-12 U1-12)
     )
     (net D1
-      (pins J3-3 J4-34 U10-12 U9-2 U2-16 U1-16)
+      (pins J3-3 J4-34 U10-12 U9-11 U2-16 U1-16)
     )
     (net CS_C000
       (pins J3-2 U6-13)
     )
     (net D2
-      (pins J3-1 J4-35 U10-13 U9-1 U2-14 U1-14)
+      (pins J3-1 J4-35 U10-13 U9-12 U2-14 U1-14)
     )
     (net _RAMDIS
       (pins J4-43 U10-22 U10-20 U6-11)
