@@ -1,12 +1,13 @@
-PC1 signal goes low 4.5 packets after VHD data packet stream already started...
+PC1 signal goes low after 4.5 packets have been already read...
 22531.80ms - 22609.10ms = 
 so first 4 or 5 packets are discarded?
 
-PC1 signal goes up 6.5 packets before (so disable) ?
+PC1 signal goes up 6.5 packets before last packet end?
 26563.23ms - 26669.30ms = 
-
 so 7 packet from the end are discarded?
 or 6 packets from the end are discarded?
+
+or cannot use PC1 signal at all to see if data transfer is enabled or not?
 
 ---------------------------------------------------------
 CODE
@@ -27,11 +28,18 @@ old VHD9=1
 old VHD7=0
 packet_index=7
 
-check if there is data to be read,
-if packet_index = 0 
+check if there is data to be write to bus
+if (packet_index = 0)
 {
-   write bytes to CPU1, set P1.4 and P1.5...
+for (int i=0; i< vhd_packet_bytes ; i++)
+{
+   write transfer_place[packet_index] to CPU1 BUS
+   set P1.4 = 0
+   wait for P1.5 to be as 0
+   set P1.4 = 1
+   wait for P1.5 to be as 1
    packet_index = packet_index + 1
+}
 }
 
 
@@ -160,17 +168,18 @@ if read_ongoing=1
            z = z + 1;
            if z >= tmp_data_size and data_transfer_enabled=1
            {
-               /* complete 7 byte packet read, now copying the data to other mem and init counters */
-               for (int a=0; a++; a < vhd_packet_bytes)
+               /* complete 7 byte packet, copy those to transfer buf, 
+               and init counters */
+               for (int i=0; i < vhd_packet_bytes; i++)
                {
-                  transfer_place[a] = vhd_packet[a]
+                  transfer_place[i] = vhd_packet[i]
                }
                packet_index = 0
+               bit_counter=0
+               find_vsync=1
+               find_start=0
+               read_ongoing=0
            }
-           bit_counter=0
-	   find_vsync=1
-           find_start=0
-           read_ongoing=0
        }
    }
 }
