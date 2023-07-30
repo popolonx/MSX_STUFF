@@ -1,0 +1,199 @@
+PC1 signal goes low 4.5 packets after VHD data packet stream already started...
+22531.80ms - 22609.10ms = 
+so first 4 or 5 packets are discarded?
+
+PC1 signal goes up 6.5 packets before (so disable) ?
+26563.23ms - 26669.30ms = 
+
+so 7 packet from the end are discarded?
+or 6 packets from the end are discarded?
+
+---------------------------------------------------------
+CODE
+---------------------------------------------------------
+const vhd_packet_bytes = 7
+byte vhd_packet[vhd_packet_bytes]
+const tmp_data_size = vhd_packet_bytes *2;
+byte tmp_data[tmp_data_size ]
+
+invalid_packet=0
+z=0;
+bit_counter=0;
+read_ongoing=0;
+find_start=0;
+find_vsync=1
+data_transfer_enabled=1
+old VHD9=1
+old VHD7=0
+packet_index=7
+
+check if there is data to be read,
+if packet_index = 0 
+{
+   write bytes to CPU1, set P1.4 and P1.5...
+   packet_index = packet_index + 1
+}
+
+
+function is_vsync_period()
+{
+   /* two consecutive bits are same, so V-period detected */
+   if current VHD9=0 and current VHD7=1 and
+      old VHD9=0 and old VHD7=1
+   {
+      return 1
+   }
+   old VHD9 = current VHD9
+   old VHD7 = current VHD7
+   return 0
+}
+
+
+interrupt occured, interrupt handling function:
+----------------
+read_bits()
+----------------
+/* check data transfer bit */
+if (PC1 = 0 )
+{
+   data_transfer_enabled=1
+}
+else
+{
+   data_transfer_enabled=0
+}
+
+/* check V-sync interval */
+if (find_vsync=1 and is_vsync_period())
+{
+   bit_counter = 0
+   find_start=1
+   find_vsync=0
+   read_ongoing = 0
+   return
+}
+
+if find_start = 1
+{
+  readBit=one bit read
+  tmp_byte = tmp_byte OR readBit;
+  if tmp_byte = 0b11100101
+  {
+     /* found start byte, then starting to fetch the actual bits */
+     bit_counter = 0
+     find_start = 0
+     read_ongoing = 1
+     z=0
+  }
+  else
+  {
+    tmp_byte = tmp_byte << 1;
+    bit_counter = bit_counter + 1
+    if bit_counter > 18
+    {
+       /* not found from the first 18 bits, so giving up */
+       bit_counter = 0
+       find_start = 0
+       read_ongoing = 0
+       find_vsync = 1
+    }
+  } 
+  return
+}
+
+if read_ongoing=1
+{
+    readBit=one bit read
+
+    y=bit_counter / tmp_data_size
+    x=bit_counter mod tmp_data_size 
+    bit_counter = bit_counter + 1
+
+   if y = 0
+   {
+       tmp_data[x] = 0
+   }
+
+   /* set read bit to least significant bit */
+   tmp_data[x] = tmp_data[x] OR readBit;
+     
+   if y < 7
+   { 
+       /* shift bit to left */
+       tmp_data[x] = tmp_data[x] << 1
+   }
+   else
+   {
+       /* all bits read for one byte, 
+       now checking if its value is valid, based on validation_table */
+       if validation_table[ tmp_data[x]] = 0
+       {
+            /* invalid byte, discard whole packet */
+            read_ongoing=0
+            find_start=0
+            find_vsync=1
+            bit_counter=0
+            return;
+       }
+       else
+       {
+          /* parse real packet out from two consecutive bytes:
+           tmp_data[0]:    tmp_data[1]:
+           0100xxxx        1011xxxx
+           ->
+           vhd packet byte: 01001011 */
+
+           byte_index = z / 2;
+           byte_lower_bits = z mod 2;
+           if byte_lower_bits = 0
+           {
+               /* storing read byte most significant bits 4-7 to vhd packet 
+                  and setting bits 0-3 as 0 */
+               vhd_packet[byte_index] = tmp_data[x] AND 0b11110000
+           }
+           else
+           {
+               /* is lower part, so need to shift data[] to right 4 bits,
+                  before adding to vhd packet byte */
+              vhd_packet[byte_index] = vhd_packet[byte_index] OR (tmp_data[x] >> 4 )
+           }
+           z = z + 1;
+           if z >= tmp_data_size and data_transfer_enabled=1
+           {
+               /* complete 7 byte packet read, now copying the data to other mem and init counters */
+               for (int a=0; a++; a < vhd_packet_bytes)
+               {
+                  transfer_place[a] = vhd_packet[a]
+               }
+               packet_index = 0
+           }
+           bit_counter=0
+	   find_vsync=1
+           find_start=0
+           read_ongoing=0
+       }
+   }
+}
+
+validation_table [   ] is inited with all zeros, except indexis: 
+table index
+binary      hex   init value
+00001110  = 0E    FF
+00010011  = 13    FF
+00100101  = 25    FF
+00111000  = 38    FF
+01001001  = 49    FF
+01010100  = 54    FF
+01100010  = 62    FF
+01111111  = 7F    FF
+10000000  = 80    FF
+10011101  = 9D    FF
+10101011  = AB    FF
+10110110  = B6    FF
+11000111  = C7    FF
+11011010  = DA    FF
+11101100  = EC    FF
+11110001  = F1    FF
+
+FF in table means valid value
+
