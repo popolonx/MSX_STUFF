@@ -22,7 +22,6 @@ volatile int linecount;
 const int FIND_IDLE = 0;
 const int FIND_START_BYTE = 1;
 const int READ_PACKET_BITS = 2;
-const int READ_PACKET_BITS_V_START_PENDING = 3;
 
 volatile int current_frame_phase;
 volatile int long_time;
@@ -56,8 +55,14 @@ byte tmp_data[ tmp_data_size_c ]; // table to store all read bits in bytes
 
 const byte bit_table_size_c = tmp_data_size_c * 8;
 byte tmp_bit_table [ bit_table_size_c ];
-const int validation_table_size_c = 256;
-byte validation_table [ validation_table_size_c ];
+const int vhd_byte_validation_table_size_c = 256;
+byte vhd_byte_validation_table [ vhd_byte_validation_table_size_c ];
+
+const int value_table_size_c = 21;
+byte vhd_byte_value_table [ value_table_size_c ];
+
+const int start_byte_validation_table_size_c = 256;
+byte start_byte_validation_table [ start_byte_validation_table_size_c ];
 
 byte tmp_byte = 0;  // for start byte search
 const byte STARTBYTE = 0b11100101;  // start byte to search
@@ -158,63 +163,10 @@ void handle_vhd_bit(byte vhd_data_bit )
     if (current_frame_phase == FIND_START_BYTE)
     {
       tmp_byte = tmp_byte | vhd_data_bit;
-      byte found_start_byte = 0;
-      byte bit_index = 0;
-      byte xor_value;
-      while ( found_start_byte == 0 and bit_index < 9 )
-      {
-        // check alternative bits value
-        // it is assumed that only one bit could be corrupted, so 
-        // trying alternative value for every bit position using XOR
-        switch (bit_index)
-        {
-          case 0:
-            xor_value = 0b0;
-            break;
-          case 1:
-            xor_value = 0b1;
-            break;
-          case 2:
-            xor_value = 0b10;
-            break;
-          case 3:
-            xor_value = 0b100;
-            break;
-          case 4:
-            xor_value = 0b1000;
-            break;
-          case 5:
-            xor_value = 0b10000;
-            break;
-          case 6:
-            xor_value = 0b100000;
-            break;
-          case 7:
-            xor_value = 0b1000000;
-            break;
-          case 8:
-            xor_value = 0b10000000;
-            break;
-          default:
-            xor_value = 0;
-            break;
-        }
-        
-        byte tmp_byte_2 = tmp_byte ^ xor_value;
-        if ( tmp_byte_2 == STARTBYTE )
-        {
-          found_start_byte = 1;
-          if (bit_index > 0)
-          {
-            corrected_bit_count++;
-          }
-        }
-        else
-        {
-          bit_index++;
-        }
-      }
-      if (found_start_byte == 1)
+      // checking if current tmp_byte is valid for start byte,
+      // byte can have one bit corruption
+
+      if ( start_byte_validation_table[ tmp_byte ] == 1 )
       {
         /* found start byte, then starting to fetch the actual bits */
         bit_count = 0;
@@ -270,74 +222,22 @@ void handle_vhd_bit(byte vhd_data_bit )
       else   // bit_index >= 7
       {
         /* all bits read for one byte, 
-           now checking if its value is valid, based on validation_table */
-        // check also alternative bit value
-        // it is assumed that only one bit could be corrupted, so 
-        // trying alternative value for every bit position using XOR
-
-        byte corrupt_bit_corrected = 0;
-        byte corrupt_bit_index = 0;
-        byte xor_value;
+           now checking if its value is valid, based on vhd_byte_validation_table.
+           byte can have one bit corruption */
         byte corrected_packet_byte;
-        if ( invalid_packet == 0)
+        byte tmp_value_index = vhd_byte_validation_table[ tmp_data[byte_index] ];
+        if (tmp_value_index < 16 )
         {
-          invalid_packet = 1;
-          while ( corrupt_bit_corrected == 0 and corrupt_bit_index < 9 )
-          {
-            // check alternative bits value
-            // it is assumed that only one bit could be corrupted, so 
-            // trying alternative value for every bit position using XOR
-            switch (corrupt_bit_index)
-            {
-              case 0:
-                xor_value = 0b0;
-                break;
-              case 1:
-                xor_value = 0b1;
-                break;
-              case 2:
-                xor_value = 0b10;
-                break;
-              case 3:
-                xor_value = 0b100;
-                break;
-              case 4:
-                xor_value = 0b1000;
-                break;
-              case 5:
-                xor_value = 0b10000;
-                break;
-              case 6:
-                xor_value = 0b100000;
-                break;
-              case 7:
-                xor_value = 0b1000000;
-                break;
-              case 8:
-                xor_value = 0b10000000;
-                break;
-              default:
-                xor_value = 0;
-                break;
-            }
-            byte tmp_byte = tmp_data[byte_index];
-            corrected_packet_byte = tmp_byte ^ xor_value;
-            if ( validation_table[ corrected_packet_byte ] == 0xFF )
-            {
-              corrupt_bit_corrected = 1;
-              invalid_packet = 0;
-              if (corrupt_bit_index > 0)
-              {
-                corrected_bit_count++;
-              }
-            }
-            else
-            {
-              corrupt_bit_index++;
-            }
-          }
+           // valid packet
+           // read actual corrected byte value
+           corrected_packet_byte = vhd_byte_value_table[ tmp_value_index ];
         }
- 
+        else
+        {
+          // invalid packet
+          invalid_packet = 1;
+          Serial.print("IV");
+        }
         if (invalid_packet == 0 )
         { // START 1
             /* parse real packet out from two consecutive bytes:
@@ -365,14 +265,7 @@ void handle_vhd_bit(byte vhd_data_bit )
               /* complete 7 byte packet, dump bytes to serial
                  and init packet start */
               noInterrupts();
-              //if (current_frame_phase == READ_PACKET_BITS_V_START_PENDING )
-              //{
-                current_frame_phase = FIND_START_BYTE;
-              //}
-              //else
-              //{
-              //  current_frame_phase = FIND_IDLE;
-              //}
+              current_frame_phase = FIND_START_BYTE;
               unsigned long tmp_last1BitTriggerTime = last1BitTriggerTime;
               interrupts();
 
@@ -493,14 +386,7 @@ void handle_vhd_bit(byte vhd_data_bit )
           invalid_packet = 0;
           packet_count++;
           noInterrupts();
-          //if (current_frame_phase == READ_PACKET_BITS_V_START_PENDING )
-          //{
-            current_frame_phase = FIND_START_BYTE;
-          //}
-          //else
-          //{
-          //  current_frame_phase = FIND_IDLE;
-          //}          
+          current_frame_phase = FIND_START_BYTE;
           interrupts();
           Serial.write("F");
           for (int i=0; i < bit_table_size_c; i++)
@@ -514,28 +400,69 @@ void handle_vhd_bit(byte vhd_data_bit )
     return;
 }
 
-void init_validation_table()
+void set_one_valid_vhd_value(byte valid_byte_value)
 {
-  for (int i=0; i < validation_table_size_c; i++ )
+  byte xor_value = 1;
+  byte one_bit_error_value;
+  byte index_value = valid_byte_value >> 4;
+  vhd_byte_value_table[ index_value ] = valid_byte_value;
+  one_bit_error_value = valid_byte_value;
+  for (int i = 0; i < 9 ; i++)
   {
-    validation_table[i] = 0;
+    vhd_byte_validation_table[ one_bit_error_value ] = index_value;
+    one_bit_error_value = valid_byte_value ^ xor_value;
+    xor_value = xor_value << 1;
   }
-  validation_table[ 0b00001110 ] = 0xFF;
-  validation_table[ 0b00010011 ] = 0xFF;
-  validation_table[ 0b00100101 ] = 0xFF;
-  validation_table[ 0b00111000 ] = 0xFF;
-  validation_table[ 0b01001001 ] = 0xFF;
-  validation_table[ 0b01010100 ] = 0xFF;
-  validation_table[ 0b01100010 ] = 0xFF;
-  validation_table[ 0b01111111 ] = 0xFF;
-  validation_table[ 0b10000000 ] = 0xFF;
-  validation_table[ 0b10011101 ] = 0xFF;
-  validation_table[ 0b10101011 ] = 0xFF;
-  validation_table[ 0b10110110 ] = 0xFF;
-  validation_table[ 0b11000111 ] = 0xFF;
-  validation_table[ 0b11011010 ] = 0xFF;
-  validation_table[ 0b11101100 ] = 0xFF;
-  validation_table[ 0b11110001 ] = 0xFF;
+}
+
+void set_one_valid_start_value(byte valid_byte_value)
+{
+  byte xor_value = 1;
+  byte one_bit_error_value = valid_byte_value;
+  for (int i = 0; i < 9 ; i++)
+  {
+    start_byte_validation_table[ one_bit_error_value ] = 1;
+    one_bit_error_value = valid_byte_value ^ xor_value;
+    xor_value = xor_value << 1;
+  }
+}
+
+
+void init_start_byte_validation_table()
+{
+  for (int i=0; i < start_byte_validation_table_size_c; i++ )
+  {
+    start_byte_validation_table[i] = 0;
+  }
+  // set start byte value as valid, and also 1 bit error values from it as valid also
+  set_one_valid_start_value( STARTBYTE );
+}
+
+void init_vhd_byte_validation_table()
+{
+  for (int i=0; i < vhd_byte_validation_table_size_c; i++ )
+  {
+    vhd_byte_validation_table[i] = 0xFF;
+  }
+
+  // set valid vhd byte values and also 1 bit error values from it as valid also  
+  set_one_valid_vhd_value( 0b00001110 );
+  set_one_valid_vhd_value( 0b00010011 );
+  set_one_valid_vhd_value( 0b00100101 );
+  set_one_valid_vhd_value( 0b00111000 );
+  set_one_valid_vhd_value( 0b01001001 );
+  set_one_valid_vhd_value( 0b01010100 );
+  set_one_valid_vhd_value( 0b01100010 );
+  set_one_valid_vhd_value( 0b01111111 );
+  set_one_valid_vhd_value( 0b10000000 );
+  set_one_valid_vhd_value( 0b10011101 );
+  set_one_valid_vhd_value( 0b10101011 );
+  set_one_valid_vhd_value( 0b10110110 );
+  set_one_valid_vhd_value( 0b11000111 );
+  set_one_valid_vhd_value( 0b11011010 );
+  set_one_valid_vhd_value( 0b11101100 );
+  set_one_valid_vhd_value( 0b11110001 );
+
 }
 
 void setup(void)
@@ -556,8 +483,11 @@ void setup(void)
 
     attachInterrupt(0,handle_interrupt_for_synch_change,CHANGE);
     attachInterrupt(1,handle_interrupt_for_vhd_bit,RISING);
-
-    init_validation_table();
+    
+    Serial.begin(115200);
+    init_start_byte_validation_table();
+    init_vhd_byte_validation_table();
+    
     for (int i=0; i < bit_table_size_c ; i++ )
     {
       tmp_bit_table[i] = 0;
@@ -587,10 +517,6 @@ void setup(void)
     current_synch_phase = FIND_VSYNCH_START;
     lastHSynchTriggerTime = last1BitTriggerTime;
     lastVsynchStartTime = last1BitTriggerTime;
-    
-    Serial.begin(115200);
- 
-
 
 }
 
