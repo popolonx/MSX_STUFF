@@ -1,0 +1,33 @@
+VHD pins (din-13pin)
+VHD-1. GND
+VHD-2. ?
+VHD-3. Clock pulse (TTL) from VHD player
+VHD-4. Commands towards VHD player (TTL), synch with clock signal
+VHD-5. ?
+VHD-6. audio signal containing the VHD data (BMC encoded)
+VHD-7. H-synch+V-synch signal
+VHD-8. data (Page data)?
+VHD-9. H-synch signal to trigger VHD data reading correctly
+VHD-10. data (Time data)?
+VHD-11. ?
+VHD-12. data (Chapter data)?
+VHD-13. 66.7ms pulses? for 3D ?
+
+
+IF-C9C/C9D card 
+DB15 connector  <-> VHD-din-13pin
+1. -
+2. -
+3. <-> VHD-3
+4. <-> VHD-4
+5. -
+6. <-> VHD-6
+7. <-> VHD-7
+8. <-> VHD-8
+9. <-> VHD-9
+10. <-> VHD-10
+11. 
+12. <-> VHD-12
+13. -
+14. <-> VHD-1
+15. <-> VHD-1
