@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name din41612_03x32_abc)(type Legacy)(uri ${KIPRJMOD}/din41612_03x32_abc.lib)(options "")(descr ""))
+  (lib (name vhd_if_c9d-rescue)(type Legacy)(uri ${KIPRJMOD}/vhd_if_c9d-rescue.lib)(options "")(descr ""))
+)
