@@ -15,19 +15,19 @@ VHD-13. 66.7ms pulses? for 3D ?
 
 
 IF-C9C/C9D card 
-DB15 connector  <-> VHD-din-13pin
-1. -
-2. -
-3. <-> VHD-3
-4. <-> VHD-4
-5. -
-6. <-> VHD-6
-7. <-> VHD-7
-8. <-> VHD-8
-9. <-> VHD-9
-10. <-> VHD-10
-11. 
-12. <-> VHD-12
-13. -
-14. <-> VHD-1
-15. <-> VHD-1
+DB15 connector  <-> VHD-din-13pin (NC = not connected)
+DB15-pin-1. - NC
+DB15-pin-2. - NC
+DB15-pin-3. <-> DIN13-pin-3
+DB15-pin-4. <-> DIN13-pin-4
+DB15-pin-5. - NC
+DB15-pin-6. <-> DIN13-pin-6
+DB15-pin-7. <-> DIN13-pin-7
+DB15-pin-8. <-> DIN13-pin-8
+DB15-pin-9. <-> DIN13-pin-9
+DB15-pin-10. <-> DIN13-pin-10
+DB15-pin-11. - NC
+DB15-pin-12. <-> DIN13-pin-12
+DB15-pin-13. - NC
+DB15-pin-14. <-> DIN13-pin-1
+DB15-pin-15. <-> DIN13-pin-1
