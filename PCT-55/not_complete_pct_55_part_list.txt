@@ -49,6 +49,30 @@ IC1: TA7607AP (Video IF)
 IC2: NEC uPC1382C (Audio IF)
 FL1: F1021S T4F 2    RF transistor?
 
+RF box (CJ-316M):
+-------
+Q51: K103 AF (S,D,G2 marks for pins on pcb)
+Q02: C1906
+
+MSX mainboard:
+--------------
+TR1,TR2: A733
+IC1,IC3,IC9,IC10: 74LS157
+IC2,IC4,IC28,IC29: TMS4416-15NL dram
+IC5: TMS23256 rom
+IC6: D780C-I  Z80 cpu
+IC7: AY-3-8910
+IC8: HD7417P
+IC12: 74LS32
+IC13: 74LS156
+IC14: 74LS145
+IC15: TMS9928ANL
+IC16,IC17,IC18,IC19,IC20,IC21,IC22,IC23: MB8118-12  Vram
+IC24: 74LS374
+IC25: TC74HC14P
+IC27: HD61J209F
+HIC-1 (12 pins, small pcb, that is inside black covered mold)
+
 -------------------------------------------------------------------------------
 Electrolytic Capacitors:
 -------------------------------------------------------------------------------
