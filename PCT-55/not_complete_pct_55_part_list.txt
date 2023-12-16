@@ -1,3 +1,5 @@
+This part list shuold now contain all transistor, ICs, and electrolytic capacitors inside PCT-55 msx tv computer.
+Resistors, coils, diodes, ceramic capacitors are not listed here!
 -------------------------------------------------------------------------------
 Transistors and ICs
 -------------------------------------------------------------------------------
