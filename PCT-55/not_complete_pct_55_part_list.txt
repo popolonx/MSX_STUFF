@@ -17,7 +17,7 @@ Q352: D1425 NPN
 Q504: 2SC2122A NPN
 Q551: A733 PNP
 IC301: HA11423 (h and v drive ic)
-IC302,IC501: NEC UPC574  (for 33V tuner stuff?)
+IC502,IC501: NEC UPC574  (for 33V tuner stuff?)
 IC201: HA11431
 IC202: TA7676A
 
@@ -42,6 +42,12 @@ Q903: A733
 AV PCB (MSX video signals (and audio?) comes from MSX mainboard to here)
 --------------
 IC901, IC902: TC4052BP
+
+AV IF box:
+----------
+IC1: TA7607AP (Video IF)
+IC2: NEC uPC1382C (Audio IF)
+FL1: F1021S T4F 2    RF transistor?
 
 -------------------------------------------------------------------------------
 Electrolytic Capacitors:
@@ -99,4 +105,11 @@ MSX mainboard:
 C5,C7: 10uf/16v
 C1,C6: 47uf/16v
 
-
+AV IF box:
+----------
+C12,C27: 4.7uf/50v 105c
+C14: 100uf/16v 85c
+C15,C16: 0.47uf/50v 105c
+C21: 47uf/16v 105c
+C26: 1uf/50v 105c
+C23,C32: 10uf/25v 105c
