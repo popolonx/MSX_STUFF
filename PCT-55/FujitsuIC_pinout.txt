@@ -1,7 +1,7 @@
 
 Fujitsu general HD61J209F0
 1. GND
-2. to IC3(LS157) pin 13, 4B
+2. to IC3(LS157) pin 13,  DEAM A7 line
 3. A14
 4. A7
 5. A15
@@ -31,21 +31,32 @@ Fujitsu general HD61J209F0
 31-32. CS1_
 33-34. CS2_
 35-36. SLTSL_
-37. IC12 (LS153) pin 9, Zb mux output
-38. IC12 (LS153) pin 7, Za mux output
+37. Signal from IC12 (LS153) pin 9, Zb mux output (selected from 8255 PA1,PA3,PA5,PA7 using A15+A14)
+38. Signal from IC12 (LS153) pin 7, Za mux output  (selected from 8255 PA0,PA2,PA4,PA6 using A15+A14)
 39. ROM CE_
 40. AY-3-8910A pin 22, clk
 41. RAS_
 42. CAS_ (to first pair of 4416 drams)
 43. CAS_ (to other pair of 4416 drams )
-44. to IC1 (LS157) pin 1, A/B select
-45. IC12 (LS153) pin 15, enable B
+44. to IC1+IC3 (LS157) pin 1, A/B select, select DRAM address line source. 
+       A/B= 0 / 1
+   address lines selected:
+   DRAM A0: GND / A0
+   DRAM A1: A8 / A1
+   DRAM A2: A9 / A2
+   DRAM A3: A10 / A3
+   DRAM A4: A11 / A4
+   DRAM A5: A12 / A5
+   DRAM A6: A13 / A6
+   DRAM A7: GND / Fujitsu IC pin 2 value
+
+45. IC12 (LS153) pin 15, enable A+B, reading 8255 port A two bits based on A15+A14. One bit goes to Fujitsu IC pins 37 and one to pin 38.
 46. to slot INT_
 47. to conn9, pin 3, goes to Parallel port
-48. IC24(LS374) pin 11, clock to 8 flip-flops.
+48. IC24(LS374) pin 11, clock to 8 flip-flops for parallel port.
 49. VDP CSW_
 50. VDP CSR_
 51. AY-3-8910A  BCI
 52. AY-3-8910A BDIR
-53. to IC26(LS32) pin 2+4 (input to two OR gates)
+53. to IC26(LS32), enables (= 0) or disables (= 1) RD_/WR_ signals towards 8255
 54. +5V
