@@ -1,0 +1,51 @@
+
+Fujitsu general HD61J209F0
+1. GND
+2. to IC3(LS157) pin 13, 4B
+3. A14
+4. A7
+5. A15
+6. A6
+7. CLK
+8. A5
+9. A4
+10. A3
+11. A1
+12. A0
+13. REFSH_
+14. D0
+15. M1_
+16. D1
+17. RESET_
+18-19. WAIT_
+20. MREQ_
+21. WR_
+22. IORQ_
+23. RD_
+24. to conn9, pin 10, goes to Parallel port
+25. ?
+26. ?
+27. +5V
+28. GND
+29-30. CS12_
+31-32. CS1_
+33-34. CS2_
+35-36. SLTSL_
+37. IC12 (LS153) pin 9, Zb mux output
+38. IC12 (LS153) pin 7, Za mux output
+39. ROM CE_
+40. AY-3-8910A pin 22, clk
+41. RAS_
+42. CAS_ (to first pair of 4416 drams)
+43. CAS_ (to other pair of 4416 drams )
+44. to IC1 (LS157) pin 1, A/B select
+45. IC12 (LS153) pin 15, enable B
+46. to slot INT_
+47. to conn9, pin 3, goes to Parallel port
+48. IC24(LS374) pin 11, clock to 8 flip-flops.
+49. VDP CSW_
+50. VDP CSR_
+51. AY-3-8910A  BCI
+52. AY-3-8910A BDIR
+53. to IC26(LS32) pin 2+4 (input to two OR gates)
+54. +5V
