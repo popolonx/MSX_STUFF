@@ -11079,6 +11079,4 @@ F 3 "" H 17610 5800 50  0001 C CNN
 	1    17610 5800
 	-1   0    0    -1  
 $EndComp
-Text Notes 17480 5130 0    59   ~ 0
-to Volume pot
 $EndSCHEMATC
