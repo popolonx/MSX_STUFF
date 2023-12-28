@@ -21,7 +21,7 @@ Q551: A733 PNP
 IC301: HA11423 (h and v drive ic)
 IC502,IC501: NEC UPC574  (for 33V tuner stuff?)
 IC201: HA11431
-IC202: TA7676A
+IC202: TA7676AP (NTSC)
 
 Tube neck pcb:
 --------------
