@@ -1,4 +1,4 @@
-update=22/05/2015 07:44:53
+update=30.12.2023 0:22:17
 version=1
 last_client=kicad
 [general]
@@ -31,3 +31,13 @@ NetIExt=net
 version=1
 LibDir=
 [eeschema/libraries]
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=E:/msx/paxon_pct_55/
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=
+SpiceAjustPassiveValues=0
+LabSize=50
+ERC_TestSimilarLabels=1
