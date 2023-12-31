@@ -1945,7 +1945,7 @@ L agg-kicad:L L504
 U 1 1 66724235
 P 2220 6810
 F 0 "L504" H 2250 6870 50  0000 C CNN
-F 1 "L" H 2270 6770 50  0000 C CNN
+F 1 "ferrite bead" H 2270 6770 50  0000 C CNN
 F 2 "" H 2220 6810 50  0001 C CNN
 F 3 "" H 2220 6810 50  0001 C CNN
 	1    2220 6810
@@ -4887,7 +4887,7 @@ L agg-kicad:L L352
 U 1 1 65F3AAF4
 P 11710 15180
 F 0 "L352" V 11714 15224 50  0000 L CNN
-F 1 "L" V 11805 15224 50  0000 L CNN
+F 1 "ferrite bead" V 11770 14940 50  0000 L CNN
 F 2 "" H 11710 15180 50  0001 C CNN
 F 3 "" H 11710 15180 50  0001 C CNN
 	1    11710 15180
@@ -5019,10 +5019,10 @@ IC202_FieldBlanking
 Text GLabel 9890 14720 2    50   Input ~ 0
 FLYBACK_pin_3
 $Comp
-L agg-kicad:R R2001
+L agg-kicad:R R355
 U 1 1 67119F47
 P 9650 14540
-F 0 "R2001" H 9680 14600 50  0000 C CNN
+F 0 "R355" H 9680 14600 50  0000 C CNN
 F 1 "6K8" H 9710 14480 50  0000 C CNN
 F 2 "" H 9650 14540 50  0001 C CNN
 F 3 "" H 9650 14540 50  0001 C CNN
@@ -5032,10 +5032,10 @@ $EndComp
 Text Notes 9530 14420 0    50   ~ 0
 2W-5W?
 $Comp
-L agg-kicad:R R2002
+L agg-kicad:R R363
 U 1 1 6725E3CA
 P 9890 14870
-F 0 "R2002" V 9920 14720 50  0000 C CNN
+F 0 "R363" V 9920 14720 50  0000 C CNN
 F 1 "5K6" V 9990 14730 50  0000 C CNN
 F 2 "" H 9890 14870 50  0001 C CNN
 F 3 "" H 9890 14870 50  0001 C CNN
@@ -6711,12 +6711,10 @@ Text Notes 11810 14770 0    50   ~ 0
 H-drive
 Text GLabel 10350 11300 0    50   Input ~ 0
 P301_pin_3
-Text GLabel 11390 12380 2    50   Input ~ 0
+Text GLabel 10860 12250 2    50   Input ~ 0
 FLYBACK_pin_3
 Wire Notes Line
 	8660 8890 7030 8890
-Wire Wire Line
-	10860 11950 10860 11960
 $Comp
 L agg-kicad:R R373
 U 1 1 7DC5003A
@@ -6869,7 +6867,7 @@ L agg-kicad:L L353
 U 1 1 7F7D3FD2
 P 14950 14440
 F 0 "L353" H 15000 14520 50  0000 C CNN
-F 1 "L" H 15010 14380 50  0000 C CNN
+F 1 "ferrite bead" H 15010 14380 50  0000 C CNN
 F 2 "" H 14950 14440 50  0001 C CNN
 F 3 "" H 14950 14440 50  0001 C CNN
 	1    14950 14440
@@ -7218,27 +7216,21 @@ Wire Wire Line
 Connection ~ 15010 15830
 Wire Wire Line
 	15010 15830 15360 15830
-Wire Wire Line
-	10930 11110 11430 11110
-Text Notes 11030 10950 0    157  ~ 31
+Text Notes 10780 10590 0    157  ~ 31
 4CEE PCB
-Wire Notes Line
-	12300 12160 12300 10710
 $Comp
 L power:GND #PWR0191
 U 1 1 7D3BFBDB
-P 10860 11960
-F 0 "#PWR0191" H 10860 11710 50  0001 C CNN
-F 1 "GND" H 10865 11787 50  0000 C CNN
-F 2 "" H 10860 11960 50  0001 C CNN
-F 3 "" H 10860 11960 50  0001 C CNN
-	1    10860 11960
+P 10850 11890
+F 0 "#PWR0191" H 10850 11640 50  0001 C CNN
+F 1 "GND" H 10855 11717 50  0000 C CNN
+F 2 "" H 10850 11890 50  0001 C CNN
+F 3 "" H 10850 11890 50  0001 C CNN
+	1    10850 11890
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	11430 11110 11430 11950
-Wire Wire Line
-	10860 11950 11430 11950
+	11250 10750 11250 11590
 Wire Wire Line
 	13520 14570 13520 14840
 Wire Wire Line
@@ -7265,127 +7257,125 @@ Wire Wire Line
 Wire Wire Line
 	13090 14980 13090 15080
 Connection ~ 13090 15080
-Text Notes 10930 11930 0    50   ~ 0
+Text Notes 10810 11570 0    50   ~ 0
 pin 1
-Text Notes 10940 11580 0    50   ~ 0
+Text Notes 10800 11240 0    50   ~ 0
 pin 2
-Text Notes 10940 11280 0    50   ~ 0
+Text Notes 10800 10930 0    50   ~ 0
 pin 3
-Text Notes 10930 11090 0    50   ~ 0
+Text Notes 10800 10730 0    50   ~ 0
 pin 4
 $Comp
 L agg-kicad:L L389
 U 1 1 88DF0688
-P 11220 11610
-F 0 "L389" H 11270 11700 50  0000 C CNN
-F 1 "4.7mH" H 11270 11540 50  0000 C CNN
-F 2 "" H 11220 11610 50  0001 C CNN
-F 3 "" H 11220 11610 50  0001 C CNN
-	1    11220 11610
+P 11040 11250
+F 0 "L389" H 11120 11320 50  0000 C CNN
+F 1 "4.7mH" H 11100 11200 50  0000 C CNN
+F 2 "" H 11040 11250 50  0001 C CNN
+F 3 "" H 11040 11250 50  0001 C CNN
+	1    11040 11250
 	1    0    0    -1  
 $EndComp
 $Comp
 L agg-kicad:R R389
 U 1 1 88DF2FE0
-P 11550 11610
-F 0 "R389" H 11580 11670 50  0000 C CNN
-F 1 "220R" H 11610 11550 50  0000 C CNN
-F 2 "" H 11550 11610 50  0001 C CNN
-F 3 "" H 11550 11610 50  0001 C CNN
-	1    11550 11610
+P 11370 11250
+F 0 "R389" H 11400 11310 50  0000 C CNN
+F 1 "220R" H 11430 11190 50  0000 C CNN
+F 2 "" H 11370 11250 50  0001 C CNN
+F 3 "" H 11370 11250 50  0001 C CNN
+	1    11370 11250
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	11550 11610 11320 11610
+	11370 11250 11140 11250
 $Comp
 L agg-kicad:C C389
 U 1 1 88F5CAC1
-P 11790 11610
-F 0 "C389" H 11840 11680 50  0000 C CNN
-F 1 "330nF" H 11840 11530 50  0000 C CNN
-F 2 "" H 11790 11610 50  0001 C CNN
-F 3 "" H 11790 11610 50  0001 C CNN
-	1    11790 11610
+P 11610 11250
+F 0 "C389" H 11660 11320 50  0000 C CNN
+F 1 "330nF" H 11660 11170 50  0000 C CNN
+F 2 "" H 11610 11250 50  0001 C CNN
+F 3 "" H 11610 11250 50  0001 C CNN
+	1    11610 11250
 	1    0    0    -1  
 $EndComp
 $Comp
 L agg-kicad:C C365
 U 1 1 890C47AC
-P 12020 11870
-F 0 "C365" V 12110 11740 50  0000 C CNN
-F 1 "330nF" V 12010 11720 50  0000 C CNN
-F 2 "" H 12020 11870 50  0001 C CNN
-F 3 "" H 12020 11870 50  0001 C CNN
-	1    12020 11870
+P 11840 11510
+F 0 "C365" V 11930 11660 50  0000 C CNN
+F 1 "330nF" V 11820 11660 50  0000 C CNN
+F 2 "" H 11840 11510 50  0001 C CNN
+F 3 "" H 11840 11510 50  0001 C CNN
+	1    11840 11510
 	0    -1   -1   0   
 $EndComp
 $Comp
 L agg-kicad:C C378
 U 1 1 8922D6AF
-P 670 15810
-F 0 "C378" V 810 15650 50  0000 C CNN
-F 1 "56nF" V 710 15660 50  0000 C CNN
-F 2 "" H 670 15810 50  0001 C CNN
-F 3 "" H 670 15810 50  0001 C CNN
-	1    670  15810
+P 12160 11880
+F 0 "C378" V 12210 12060 50  0000 C CNN
+F 1 "56nF/200v" V 12290 11880 50  0000 C CNN
+F 2 "" H 12160 11880 50  0001 C CNN
+F 3 "" H 12160 11880 50  0001 C CNN
+	1    12160 11880
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	11890 11610 12020 11610
+	11710 11250 11840 11250
 Wire Wire Line
-	670  15520 670  15710
+	11840 11510 11840 11590
 Wire Wire Line
-	12020 11870 12020 11950
+	11840 11590 11250 11590
+Connection ~ 11250 11590
 Wire Wire Line
-	12020 11950 11430 11950
-Connection ~ 11430 11950
+	11610 11250 11470 11250
 Wire Wire Line
-	11790 11610 11650 11610
+	11840 11250 11840 10950
 Wire Wire Line
-	12020 11610 12020 11310
-Wire Wire Line
-	12020 11310 11910 11310
-Connection ~ 12020 11610
+	11840 10950 11730 10950
+Connection ~ 11840 11250
 $Comp
 L agg-kicad:L L388
 U 1 1 89C21EDD
-P 11640 11170
-F 0 "L388" H 11690 11230 50  0000 C CNN
-F 1 "00257" H 11990 11230 50  0000 C CNN
-F 2 "" H 11640 11170 50  0001 C CNN
-F 3 "" H 11640 11170 50  0001 C CNN
-	1    11640 11170
+P 11460 10810
+F 0 "L388" H 11510 10870 50  0000 C CNN
+F 1 "00257" H 11810 10870 50  0000 C CNN
+F 2 "" H 11460 10810 50  0001 C CNN
+F 3 "" H 11460 10810 50  0001 C CNN
+	1    11460 10810
 	1    0    0    -1  
 $EndComp
 $Comp
 L agg-kicad:R R4000
 U 1 1 89D8FC81
-P 11650 11390
-F 0 "R4000" H 11680 11450 50  0000 C CNN
-F 1 "100R" H 11710 11330 50  0000 C CNN
-F 2 "" H 11650 11390 50  0001 C CNN
-F 3 "" H 11650 11390 50  0001 C CNN
-	1    11650 11390
+P 11470 11030
+F 0 "R4000" H 11500 11090 50  0000 C CNN
+F 1 "100R" H 11530 10970 50  0000 C CNN
+F 2 "" H 11470 11030 50  0001 C CNN
+F 3 "" H 11470 11030 50  0001 C CNN
+	1    11470 11030
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	11750 11390 11910 11390
+	11570 11030 11730 11030
 Wire Wire Line
-	11910 11390 11910 11310
+	11730 11030 11730 10950
 Wire Wire Line
-	11910 11310 11910 11170
+	11730 10950 11730 10810
 Wire Wire Line
-	11910 11170 11740 11170
-Connection ~ 11910 11310
+	11730 10810 11560 10810
+Connection ~ 11730 10950
 Wire Wire Line
-	11640 11170 11550 11170
+	11460 10810 11370 10810
 Wire Wire Line
-	11550 11170 11550 11300
+	11370 10810 11370 10940
 Wire Wire Line
-	11550 11390 11650 11390
-Connection ~ 11550 11300
+	11370 11030 11470 11030
+Connection ~ 11370 10940
 Wire Wire Line
-	11550 11300 11550 11390
+	11370 10940 11370 11030
 Text GLabel 13940 13120 0    50   Input ~ 0
 GREEN_wire_I
 $Comp
@@ -10602,12 +10592,12 @@ Wire Wire Line
 	10890 14260 11710 14260
 Wire Wire Line
 	11710 14260 11710 14680
-Text GLabel 12020 11670 2    59   Input ~ 0
+Text GLabel 11840 11170 2    59   Input ~ 0
 ThinBlackWire
-Text GLabel 670  15570 2    59   Input ~ 0
+Text GLabel 12110 11540 2    59   Input ~ 0
 ThinBlackWire
 Wire Wire Line
-	12020 11610 12020 11770
+	11840 11250 11840 11410
 Wire Wire Line
 	8920 11460 8920 10930
 Wire Wire Line
@@ -10618,25 +10608,15 @@ Wire Wire Line
 	9880 12500 9730 12500
 Wire Wire Line
 	9730 12500 9730 13000
-Wire Notes Line
-	12300 12160 10980 12160
-Wire Notes Line
-	12290 10710 10980 10710
-Wire Notes Line
-	10980 10710 10980 12170
 Text GLabel 9880 11880 2    50   Input ~ 0
 P301_pin_2
 NoConn ~ 9800 11880
 Wire Wire Line
 	9890 11880 9800 11880
 Wire Wire Line
-	10350 11300 11550 11300
+	10170 10940 11370 10940
 Wire Wire Line
-	11390 12380 10710 12380
-Wire Wire Line
-	10710 12380 10710 11610
-Wire Wire Line
-	10710 11610 11220 11610
+	10530 12020 10530 11250
 Wire Wire Line
 	8730 15860 8730 15950
 Wire Wire Line
@@ -13220,16 +13200,6 @@ Text Notes 5740 2000 0    50   ~ 0
 hold memory
 Text Notes 12180 5700 0    50   ~ 0
 to AFC_FB -->
-Text Notes 2110 7030 0    50   ~ 0
-wire with magnet\ncoated around it
-Text Notes 11530 15710 0    50   ~ 0
-wire with magnet\ncoated around it
-Wire Notes Line
-	11860 15570 11860 15220
-Text Notes 14780 14150 0    50   ~ 0
-wire with magnet\ncoated around it
-Wire Notes Line
-	14980 14320 14980 14140
 Wire Wire Line
 	-980 5820 -980 5840
 Wire Wire Line
@@ -13394,78 +13364,10 @@ Wire Wire Line
 	2920 10280 3350 10280
 Text GLabel 3510 11230 2    50   Input ~ 0
 FLYBACK_pin_1
-Text Notes 2290 9750 0    50   ~ 0
+Text Notes 2240 10050 0    50   ~ 0
 FLYBACK transformer\nfrom solder side
-Text Notes 3070 10050 0    50   ~ 0
-PINS 1, 2/8, 4,5 and 9 are connected together someway
-Text Notes 3120 10160 0    50   ~ 0
-PINS 3,5,10 are connected together someway
-$Comp
-L agg-kicad:L L?
-U 1 1 79D02844
-P 3590 9360
-F 0 "L?" V 3594 9404 50  0000 L CNN
-F 1 "L" V 3685 9404 50  0000 L CNN
-F 2 "" H 3590 9360 50  0001 C CNN
-F 3 "" H 3590 9360 50  0001 C CNN
-	1    3590 9360
-	0    1    1    0   
-$EndComp
-$Comp
-L agg-kicad:L L?
-U 1 1 79D044F8
-P 3590 9540
-F 0 "L?" V 3594 9584 50  0000 L CNN
-F 1 "L" V 3685 9584 50  0000 L CNN
-F 2 "" H 3590 9540 50  0001 C CNN
-F 3 "" H 3590 9540 50  0001 C CNN
-	1    3590 9540
-	0    1    1    0   
-$EndComp
-$Comp
-L agg-kicad:L L?
-U 1 1 7A15F7C9
-P 3590 9700
-F 0 "L?" V 3594 9744 50  0000 L CNN
-F 1 "L" V 3685 9744 50  0000 L CNN
-F 2 "" H 3590 9700 50  0001 C CNN
-F 3 "" H 3590 9700 50  0001 C CNN
-	1    3590 9700
-	0    1    1    0   
-$EndComp
-$Comp
-L agg-kicad:L L?
-U 1 1 7A5BC233
-P 3950 9360
-F 0 "L?" V 3954 9404 50  0000 L CNN
-F 1 "L" V 4045 9404 50  0000 L CNN
-F 2 "" H 3950 9360 50  0001 C CNN
-F 3 "" H 3950 9360 50  0001 C CNN
-	1    3950 9360
-	0    1    1    0   
-$EndComp
-$Comp
-L agg-kicad:L L?
-U 1 1 7A5BC239
-P 3950 9530
-F 0 "L?" V 3954 9574 50  0000 L CNN
-F 1 "L" V 4045 9574 50  0000 L CNN
-F 2 "" H 3950 9530 50  0001 C CNN
-F 3 "" H 3950 9530 50  0001 C CNN
-	1    3950 9530
-	0    1    1    0   
-$EndComp
-$Comp
-L agg-kicad:L L?
-U 1 1 7BB933EF
-P 3590 9180
-F 0 "L?" V 3594 9224 50  0000 L CNN
-F 1 "L" V 3685 9224 50  0000 L CNN
-F 2 "" H 3590 9180 50  0001 C CNN
-F 3 "" H 3590 9180 50  0001 C CNN
-	1    3590 9180
-	0    1    1    0   
-$EndComp
+Text Notes 3210 9970 0    50   ~ 0
+When measuring resistance between transformer pins:\n-1,2,4,5,8,9 have about zero ohms between themselfs\n-3,5,10 have about zero ohms between themselfs
 Text Notes 18850 3970 0    50   ~ 0
 G\nR\nB
 Wire Wire Line
@@ -13550,4 +13452,73 @@ Text Notes 20890 1170 0    50   ~ 0
 Separate black thick ground wires towards:\n-tube ground\n-tuner box metal\n-digital RGB board\n\nThere is also thick black wire from \ndigital RGB pcb to tuner box metal
 Text Notes 20340 730  0    118  ~ 24
 NOTE!
+Text Notes 3430 10960 0    50   ~ 0
+From flyback transformer, there comes also\n-big red wire (to tube Anode)\n-thick red wire (to tube neck pcb), \n  to tube pin 8 ( >100V)\n-thick black wire (to tube neck pcb), \n  into white plastic case,\n  goes to tube pin 1/2 (Focus/kV )?\n
+Text Notes 4540 4630 0    50   ~ 0
+When measuring resistance between transformer pins:\n-1,2 have about zero ohms between themselfs\n-3,4,5 have about zero ohms between themselfs\n-6,7,8,9,10,11 have about zero ohms between themselfs\n-9,10,11 are connected to ground\n-3,5,10 have about zero ohms between themselfs
+Text Notes 9320 14860 0    47   ~ 0
+R363 pin loose --|
+Text Notes 9880 14900 0    51   ~ 0
+<--
+NoConn ~ 12520 11970
+$Comp
+L power:GND #PWR?
+U 1 1 67D0CA3C
+P 12160 12120
+F 0 "#PWR?" H 12160 11870 50  0001 C CNN
+F 1 "GND" H 12270 12020 50  0000 C CNN
+F 2 "" H 12160 12120 50  0001 C CNN
+F 3 "" H 12160 12120 50  0001 C CNN
+	1    12160 12120
+	1    0    0    -1  
+$EndComp
+Text Notes 11480 11960 0    51   ~ 0
+Horizontal\nAmplitude\n(wire set to S )
+Text Notes 11940 12150 0    51   ~ 0
+( S )
+Text Notes 12550 11970 0    51   ~ 0
+( W )
+Wire Wire Line
+	10350 11300 10590 11300
+Wire Wire Line
+	10590 11300 10590 10750
+Wire Wire Line
+	10590 10750 11250 10750
+Wire Wire Line
+	10750 11590 10750 11890
+Wire Wire Line
+	10750 11890 10850 11890
+Wire Wire Line
+	10750 11590 11250 11590
+Wire Wire Line
+	10670 11250 10670 12250
+Wire Wire Line
+	10670 12250 10860 12250
+Wire Wire Line
+	10670 11250 11040 11250
+Wire Wire Line
+	12110 11610 12160 11610
+Wire Wire Line
+	12110 11540 12110 11610
+Wire Wire Line
+	12160 11610 12160 11780
+Wire Notes Line
+	10800 11660 12000 11660
+Wire Notes Line
+	12000 11660 12000 10350
+Wire Notes Line
+	10800 10350 12000 10350
+Wire Notes Line
+	10800 10360 10800 11660
+Wire Wire Line
+	12160 11880 12160 11960
+Wire Wire Line
+	12160 12120 12160 11960
+Wire Wire Line
+	12160 11960 12150 11960
+Connection ~ 12160 11960
+Text Notes 11820 12050 0    51   ~ 0
+wire-->
+Wire Notes Line
+	12180 11960 12480 11960
 $EndSCHEMATC
