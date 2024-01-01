@@ -15221,4 +15221,14 @@ Wire Wire Line
 	10940 4910 10940 5370
 Text Notes 10480 5260 0    51   ~ 0
 P801 pins:
+Wire Notes Line
+	23870 340  29870 340 
+Wire Notes Line
+	29870 340  29870 6320
+Wire Notes Line
+	29870 6320 23860 6320
+Wire Notes Line
+	23860 6320 23860 340 
+Text Notes 23930 590  0    157  ~ 31
+IF BOX PCB
 $EndSCHEMATC
