@@ -304,17 +304,7 @@ Connection ~ 670  1000
 Wire Wire Line
 	670  1000 670  1040
 Wire Wire Line
-	2830 -200 2740 -200
-Wire Wire Line
 	4190 2070 4190 2140
-Wire Wire Line
-	3430 -30  2740 -30 
-Wire Wire Line
-	2740 -30  2740 -200
-Wire Wire Line
-	3430 -200 3430 -30 
-Wire Wire Line
-	2740 -190 2390 -190
 $Comp
 L agg-kicad:R R959
 U 1 1 65947B04
@@ -407,8 +397,8 @@ $Comp
 L agg-kicad:CONN_01x04 J919
 U 1 1 65951945
 P 3550 600
-F 0 "J919" V 3490 890 50  0000 R CNN
-F 1 "CONN_01x04" V 3540 250 50  0000 R CNN
+F 0 "J919" V 3530 870 50  0000 R CNN
+F 1 "CONN_01x04" V 3480 1410 50  0000 R CNN
 F 2 "" H 3550 600 50  0001 C CNN
 F 3 "" H 3550 600 50  0001 C CNN
 	1    3550 600 
@@ -653,13 +643,13 @@ Wire Wire Line
 Wire Wire Line
 	2150 2530 2200 2530
 Text Notes 8910 840  0    50   ~ 0
-+5V\n
++5V , white wire\n
 Text Notes 8920 940  0    50   ~ 0
 GND\n
 Text Notes 8910 1050 0    50   ~ 0
-+15V ?
++15V
 Text Notes 8910 1160 0    50   ~ 0
--15V ?\n
+-15V\n
 $Comp
 L agg-kicad:CONN_01x04 P914
 U 1 1 65B5DFD7
@@ -683,7 +673,7 @@ $Comp
 L agg-kicad:CONN_01x02 J918
 U 1 1 65B62084
 P 5580 710
-F 0 "J918" V 5460 740 50  0000 R CNN
+F 0 "J918" V 5550 520 50  0000 R CNN
 F 1 "CONN_01x02" V 5620 1280 50  0000 R CNN
 F 2 "" H 5580 710 50  0001 C CNN
 F 3 "" H 5580 710 50  0001 C CNN
@@ -692,8 +682,6 @@ F 3 "" H 5580 710 50  0001 C CNN
 $EndComp
 Text Notes 5600 650  1    50   ~ 0
 \n
-Text Notes 6310 550  2    50   ~ 0
-switch 5V power off from main pcb
 Connection ~ 3550 760 
 $Comp
 L agg-kicad:R R987
@@ -2811,9 +2799,9 @@ F 3 "" H 9730 8780 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Text Notes 9830 9080 0    50   ~ 0
-(JJJ) marked to wires\nto front PCB\n (where channel/msx/av switches are)\n-> P903 connector
+(JJJ) wires\nto P903 in front PCB\n (where channel/msx/av switches are)
 Text Notes 9790 8390 0    50   ~ 0
-(MMM) marked to wires\nto digital RGB input PCB:\n-> J918 connector
+(MMM) wires to J918\nin AV+ParallelPort input PCB
 Wire Wire Line
 	9630 8310 9630 8680
 Wire Notes Line
@@ -2893,19 +2881,19 @@ Wire Wire Line
 Wire Wire Line
 	10250 870  11380 870 
 Text Notes 11550 960  0    79   ~ 0
-to MSX PCB, CONN-6\n(UUU) marked to wires
+(UUU) wires to CONN-6\nin MSX PCB
 Text Notes 9720 520  0    157  ~ 31
 Front panel PCB:\n(channel switches+tuner pots+msx reset/load/run buttons)
-Text Notes 3450 550  0    50   ~ 0
-(OOO) wires
-Text Notes 5020 680  0    50   ~ 0
-(MMM) wires
+Text Notes 3910 650  0    50   ~ 0
+(OOO) wires to P919\nin 4CEC PCB
+Text Notes 5140 710  0    50   ~ 0
+(MMM) wires to P918\nin 4CEC
 Text Notes 8710 1510 0    50   ~ 0
-(WWW) wires,\nto MSX pcb,CONN-1
-Text Notes 8640 660  0    50   ~ 0
-(CCC) wires,\nto main pcb, J503\nwhite=5V
+(WWW) wires to CONN-1\nin MSX PCB
+Text Notes 8610 620  0    50   ~ 0
+(CCC) wires to J503\nin main pcb
 Text Notes 7380 480  0    50   ~ 0
-(RRR) wires,\nto MSX pcb, CONN-10
+(RRR) wires to CONN-10\nin MSX PCB
 $Comp
 L agg-kicad:CONN_01x09 P901
 U 1 1 658EB700
@@ -3405,7 +3393,7 @@ L power:GND #PWR0141
 U 1 1 67544489
 P 15000 2560
 F 0 "#PWR0141" H 15000 2310 50  0001 C CNN
-F 1 "GND" H 15005 2387 50  0000 C CNN
+F 1 "GND" H 15100 2570 50  0000 C CNN
 F 2 "" H 15000 2560 50  0001 C CNN
 F 3 "" H 15000 2560 50  0001 C CNN
 	1    15000 2560
@@ -3662,16 +3650,16 @@ Text GLabel 16280 2600 3    50   Input ~ 0
 WIREHACK_2
 Text GLabel 16060 3460 1    50   Input ~ 0
 WIREHACK_2
-Text Notes 17420 4000 0    50   ~ 0
-(JJJ) wires\nto 5v enable \nin main pcb\n( J903 )\n
-Text Notes 17160 3900 0    50   ~ 0
-white
-Text Notes 11190 760  0    50   ~ 0
-white\n
-Text Notes 14370 2420 0    50   ~ 0
-white\n
-Text Notes 14400 2660 0    50   ~ 0
-(FFF) wires\nto main PCB
+Text Notes 16970 4040 0    50   ~ 0
+(JJJ) wires to J903\nin 4CEC PCB
+Text Notes 17440 3840 0    50   ~ 0
+1. = white wire
+Text Notes 10770 760  0    50   ~ 0
+1. = white wire\n
+Text Notes 14410 2380 0    50   ~ 0
+1. = white wire\n
+Text Notes 14390 2840 0    50   ~ 0
+(FFF) wires to P504\nin main PCB
 Text GLabel 13810 1680 0    50   Input ~ 0
 V
 Text GLabel 13810 1810 0    50   Input ~ 0
@@ -3728,13 +3716,13 @@ L agg-kicad:CONN_01x03 P402
 U 1 1 690D0289
 P 11710 8090
 F 0 "P402" H 11780 8200 50  0000 R CNN
-F 1 "CONN_01x03" H 11760 7610 50  0000 R CNN
+F 1 "CONN_01x03" H 11760 7740 50  0000 R CNN
 F 2 "" H 11710 8090 50  0001 C CNN
 F 3 "" H 11710 8090 50  0001 C CNN
 	1    11710 8090
 	-1   0    0    -1  
 $EndComp
-Text Notes 11660 8520 0    50   ~ 0
+Text Notes 11930 8350 0    50   ~ 0
 (KKK) wires,\nto tube neck pcb
 Text Notes 1920 6330 0    50   ~ 0
 20W
@@ -3903,8 +3891,8 @@ $Comp
 L agg-kicad:CONN_01x05 H1
 U 1 1 69C33920
 P 19000 2720
-F 0 "H1" H 19030 2860 50  0000 C CNN
-F 1 "CONN_01x05" H 18970 2190 50  0000 C CNN
+F 0 "H1" H 18910 2180 50  0000 C CNN
+F 1 "CONN_01x05" H 18760 2040 50  0000 C CNN
 F 2 "" H 19000 2720 50  0001 C CNN
 F 3 "" H 19000 2720 50  0001 C CNN
 	1    19000 2720
@@ -4786,9 +4774,9 @@ Wire Wire Line
 Text Notes 8400 6970 0    50   ~ 0
 =wire
 Text Notes 18250 3900 0    50   ~ 0
-(KKK) wires,\nfrom main PCB
-Text Notes 18350 2630 0    50   ~ 0
-(HHH) wires,\nfrom main PCB
+(KKK) wires,\nfrom 4CEC PCB
+Text Notes 18280 2620 0    50   ~ 0
+(HHH) wires,\nfrom P301 in main PCB
 Wire Notes Line
 	18100 530  22660 530 
 Wire Notes Line
@@ -7564,7 +7552,7 @@ Wire Wire Line
 Wire Wire Line
 	7390 12190 7390 12180
 Text Notes 5620 2290 0    50   ~ 0
-(ZZZ) wires,\nto main PCB, P927
+(ZZZ) wires to P927\nin main PCB
 Text Notes 5740 1900 0    50   ~ 0
 white wire\n
 $Comp
@@ -7578,10 +7566,10 @@ F 3 "" H 5680 1870 50  0001 C CNN
 	1    5680 1870
 	-1   0    0    -1  
 $EndComp
-Text Notes 13610 5790 0    50   ~ 0
-(ZZZ) wires
-Text Notes 13460 5500 0    50   ~ 0
-white wire is pin 1\n
+Text Notes 12970 5510 0    50   ~ 0
+(ZZZ) wires to J927\nin AV+ParallelPort input PCB
+Text Notes 13580 5700 0    50   ~ 0
+1. = white wire\n
 $Comp
 L agg-kicad:CONN_01x03 P927
 U 1 1 8F00C6C4
@@ -7883,17 +7871,15 @@ Wire Wire Line
 Connection ~ 16430 5620
 Wire Wire Line
 	16430 5620 16250 5620
-Wire Wire Line
-	16430 5760 16430 5880
 $Comp
 L power:GND #PWR0198
 U 1 1 952E16D5
-P 16430 5880
-F 0 "#PWR0198" H 16430 5630 50  0001 C CNN
-F 1 "GND" H 16435 5707 50  0000 C CNN
-F 2 "" H 16430 5880 50  0001 C CNN
-F 3 "" H 16430 5880 50  0001 C CNN
-	1    16430 5880
+P 16430 6050
+F 0 "#PWR0198" H 16430 5800 50  0001 C CNN
+F 1 "GND" H 16435 5877 50  0000 C CNN
+F 2 "" H 16430 6050 50  0001 C CNN
+F 3 "" H 16430 6050 50  0001 C CNN
+	1    16430 6050
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -8100,7 +8086,7 @@ L agg-kicad:CONN_01x02 IC502
 U 1 1 9993A228
 P 13390 6790
 F 0 "IC502" H 13370 6890 50  0000 C CNN
-F 1 "_" H 13370 6950 50  0000 C CNN
+F 1 "NEC uPC574" H 13410 7000 50  0000 C CNN
 F 2 "" H 13390 6790 50  0001 C CNN
 F 3 "" H 13390 6790 50  0001 C CNN
 	1    13390 6790
@@ -8435,8 +8421,8 @@ Wire Wire Line
 	7800 11310 7800 11450
 Text Notes 16920 13340 0    50   ~ 0
 (HHH) wires,\nto tube neck pcb
-Text Notes 16850 13160 0    50   ~ 0
-white wire\n
+Text Notes 16920 13120 0    50   ~ 0
+1 = white wire\n
 Text GLabel 16690 13130 0    50   Input ~ 0
 15V_
 Wire Wire Line
@@ -8623,7 +8609,7 @@ L agg-kicad:CONN_01x04 P919
 U 1 1 68F4D999
 P 10030 7380
 F 0 "P919" H 10020 7500 50  0000 C CNN
-F 1 "CONN_01x04" H 10050 7680 50  0000 C CNN
+F 1 "CONN_01x04" H 10430 7460 50  0000 C CNN
 F 2 "" H 10030 7380 50  0001 C CNN
 F 3 "" H 10030 7380 50  0001 C CNN
 	1    10030 7380
@@ -9243,13 +9229,13 @@ L agg-kicad:CONN_01x05 P913
 U 1 1 7BB4D231
 P 15370 11480
 F 0 "P913" V 15360 10860 50  0000 C CNN
-F 1 "CONN_01x05" V 15390 11800 50  0000 C CNN
+F 1 "CONN_01x05" V 15280 11270 50  0000 C CNN
 F 2 "" H 15370 11480 50  0001 C CNN
 F 3 "" H 15370 11480 50  0001 C CNN
 	1    15370 11480
 	0    1    -1   0   
 $EndComp
-Text Notes 12660 10810 0    59   ~ 0
+Text Notes 12570 10760 0    59   ~ 0
 (VVV)\nwires
 $Comp
 L 4xxx:4052 IC901
@@ -9906,9 +9892,9 @@ F 3 "" H 22920 8650 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 Text Notes 22980 8690 0    59   ~ 0
-white wire
+1. = white wire
 Text Notes 23090 8580 0    59   ~ 0
-J505 goes to P912
+J505 goes to P912 in 4CEB PCB
 $Comp
 L power:GND #PWR0217
 U 1 1 BB7E4D77
@@ -9930,8 +9916,8 @@ Wire Notes Line
 	17990 7880 13160 7880
 Wire Notes Line
 	13160 7880 13160 12430
-Text Notes 14420 6370 0    59   ~ 0
-(FFF) wires
+Text Notes 14440 6430 0    59   ~ 0
+(FFF) wires to P901\nin front PCB
 Wire Notes Line
 	9480 2340 3620 2340
 Wire Notes Line
@@ -10083,7 +10069,7 @@ Wire Wire Line
 Wire Wire Line
 	8760 5100 9000 5100
 Text GLabel 9400 5100 2    50   Input ~ 0
-IF-BOX-pin_11
+IF_BOX_pin_11
 $Comp
 L agg-kicad:R R807
 U 1 1 6840F9BD
@@ -10154,7 +10140,7 @@ F 3 "~" H 8330 4850 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Text GLabel 9390 4360 2    50   Input ~ 0
-IF-BOX-pin_10
+IF_BOX_pin_10
 Wire Wire Line
 	9160 4360 9160 4440
 Connection ~ 9160 4360
@@ -10462,8 +10448,8 @@ Wire Wire Line
 	16490 13330 16690 13330
 Wire Wire Line
 	16350 13330 16390 13330
-Text Notes 12690 10600 0    59   ~ 0
-MSX
+Text Notes 12580 10570 0    59   ~ 0
+from\nMSX PCB
 Text Notes 12900 10930 0    59   ~ 0
 audio
 Text Notes 12930 10830 0    59   ~ 0
@@ -10476,8 +10462,8 @@ Text Notes 11320 9960 0    59   ~ 0
 video from\nIF box
 Text Notes 12110 9710 0    59   ~ 0
 audio from \nIF box
-Text Notes 2960 2900 0    59   ~ 0
-(LLL) wires
+Text Notes 2940 3000 0    59   ~ 0
+(LLL) wires to P913\nin 4CEB PCB
 Text Notes 15380 11340 0    59   ~ 0
 rca audio
 Text Notes 15280 11190 0    59   ~ 0
@@ -10649,7 +10635,7 @@ Wire Wire Line
 Text GLabel 9170 6370 0    50   Input ~ 0
 15V_
 Text Notes 17480 5130 0    59   ~ 0
-to Volume pot
+to Volume pot\n(AAA) wires
 Connection ~ 14620 8190
 Wire Wire Line
 	14720 8190 14720 7780
@@ -10917,10 +10903,10 @@ Text GLabel 20310 9210 0    50   Input ~ 0
 IC202_B_DATA_IN
 Text GLabel 20310 8410 0    50   Input ~ 0
 IC202_R_DATA_IN
-Text Notes 9900 7210 0    50   ~ 0
-(OOO) wires
+Text Notes 9710 7220 0    50   ~ 0
+(OOO) wires\nto AV+ParallelPort input PCB
 Text Notes 11800 8280 0    50   ~ 0
-G = white wire\nR\nB
+G  1. white wire\nR\nB
 Connection ~ 16470 15300
 Wire Wire Line
 	16470 15300 16800 15300
@@ -10932,8 +10918,8 @@ Wire Wire Line
 	16980 15310 16980 15400
 Wire Wire Line
 	16980 15500 16980 15620
-Text Notes 17280 14920 0    50   ~ 0
-to Digital RGB PCB,\nRGB input conversion applitude?
+Text Notes 17020 14850 0    50   ~ 0
+to AV+ParallelPort input PCB,\nDigital RGB to analog conversion applitude?
 $Comp
 L power:GND #PWR0229
 U 1 1 7C57FC93
@@ -12735,8 +12721,6 @@ Text Notes 15150 10880 0    50   ~ 0
 Yellow wire A
 Text GLabel 13030 9340 0    50   Input ~ 0
 RED_wire_B_SelectAB
-Text Notes 14490 6470 0    50   ~ 0
-to front PCB
 Wire Wire Line
 	12530 6200 12810 6200
 Text GLabel 8370 15060 2    50   Input ~ 0
@@ -12747,8 +12731,8 @@ Wire Wire Line
 	8310 15280 8310 15060
 Wire Wire Line
 	8310 15060 8370 15060
-Text Notes 15430 11580 0    59   ~ 0
-(LLL) wires
+Text Notes 15430 11590 0    59   ~ 0
+(LLL) wires to J913\nin AV+ParallelPort input PCB
 Text Notes 20120 10830 0    50   ~ 0
 L207 coil color code:\nBlack-Black-Brown-Gold
 Wire Wire Line
@@ -13105,8 +13089,8 @@ Text Notes 15980 2050 0    50   ~ 0
 SelectB
 Text Notes 16760 1980 0    50   ~ 0
 SelectB
-Text Notes 9650 6230 0    50   ~ 0
-(CCC) wires,\nto Digital RGB input pcb ->J503
+Text Notes 9550 6120 0    50   ~ 0
+(CCC) wires to J503\nin AV+ParallelPort input PCB
 Text Notes 13790 1810 0    50   ~ 0
 <-blue wire->
 Wire Wire Line
@@ -13326,10 +13310,10 @@ Wire Wire Line
 	2850 10430 2850 11430
 Connection ~ 2870 11430
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0257
 U 1 1 7648580F
 P 3130 11630
-F 0 "#PWR?" H 3130 11380 50  0001 C CNN
+F 0 "#PWR0257" H 3130 11380 50  0001 C CNN
 F 1 "GND" H 3135 11457 50  0000 C CNN
 F 2 "" H 3130 11630 50  0001 C CNN
 F 3 "" H 3130 11630 50  0001 C CNN
@@ -13383,10 +13367,10 @@ FLYBACK pin-5
 Text Notes 18350 3160 0    50   ~ 0
 FLYBACK pin-3
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0258
 U 1 1 7E7A6574
 P 19190 2820
-F 0 "#PWR?" H 19190 2570 50  0001 C CNN
+F 0 "#PWR0258" H 19190 2570 50  0001 C CNN
 F 1 "GND" V 19195 2692 50  0000 R CNN
 F 2 "" H 19190 2820 50  0001 C CNN
 F 3 "" H 19190 2820 50  0001 C CNN
@@ -13449,7 +13433,7 @@ H_pin_5
 Wire Wire Line
 	19100 2820 19190 2820
 Text Notes 20890 1170 0    50   ~ 0
-Separate black thick ground wires towards:\n-tube ground\n-tuner box metal\n-digital RGB board\n\nThere is also thick black wire from \ndigital RGB pcb to tuner box metal
+Separate black thick ground wires towards:\n-tube ground\n-tuner box metal\n-AV+ParallelPort input PCB\n\nThere is also thick black wire from \ndigital RGB pcb to tuner box metal
 Text Notes 20340 730  0    118  ~ 24
 NOTE!
 Text Notes 3430 10960 0    50   ~ 0
@@ -13462,10 +13446,10 @@ Text Notes 9880 14900 0    51   ~ 0
 <--
 NoConn ~ 12520 11970
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0259
 U 1 1 67D0CA3C
 P 12160 12120
-F 0 "#PWR?" H 12160 11870 50  0001 C CNN
+F 0 "#PWR0259" H 12160 11870 50  0001 C CNN
 F 1 "GND" H 12270 12020 50  0000 C CNN
 F 2 "" H 12160 12120 50  0001 C CNN
 F 3 "" H 12160 12120 50  0001 C CNN
@@ -13544,27 +13528,27 @@ F 3 "philips/tda8702.pdf" H 27600 3940 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text GLabel 24480 1920 0    51   Input ~ 0
-TUNER_BOX_pin_11
+IF_BOX_pin_11
 Text GLabel 24500 2980 0    51   Input ~ 0
-TUNER_BOX_pin_7
+IF_BOX_pin_7
 Text GLabel 24490 2190 0    51   Input ~ 0
-TUNER_BOX_pin_10
+IF_BOX_pin_10
 Text GLabel 24490 2450 0    51   Input ~ 0
-TUNER_BOX_pin_9
+IF_BOX_pin_9
 Text GLabel 24480 2700 0    51   Input ~ 0
-TUNER_BOX_pin_8
+IF_BOX_pin_8
 Text GLabel 24490 3240 0    51   Input ~ 0
-TUNER_BOX_pin_6
+IF_BOX_pin_6
 Text GLabel 24490 3570 0    51   Input ~ 0
-TUNER_BOX_pin_5
+IF_BOX_pin_5
 Text GLabel 24490 3840 0    51   Input ~ 0
-TUNER_BOX_pin_4
+IF_BOX_pin_4
 Text GLabel 24510 4090 0    51   Input ~ 0
-TUNER_BOX_pin_3
+IF_BOX_pin_3
 Text GLabel 24530 4380 0    51   Input ~ 0
-TUNER_BOX_pin_2
+IF_BOX_pin_2
 Text GLabel 24490 4610 0    51   Input ~ 0
-TUNER_BOX_pin_1
+IF_BOX_pin_1
 Wire Wire Line
 	25200 1920 25200 1240
 Wire Wire Line
@@ -13581,10 +13565,10 @@ F 3 "" H 26810 1090 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0260
 U 1 1 6A9C62CF
 P 26580 1090
-F 0 "#PWR?" H 26580 840 50  0001 C CNN
+F 0 "#PWR0260" H 26580 840 50  0001 C CNN
 F 1 "GND" V 26585 962 50  0000 R CNN
 F 2 "" H 26580 1090 50  0001 C CNN
 F 3 "" H 26580 1090 50  0001 C CNN
@@ -13616,7 +13600,7 @@ L Device:CP1_Small C21
 U 1 1 6CD86951
 P 26530 1980
 F 0 "C21" H 26250 2050 50  0000 L CNN
-F 1 "10uf/25v" H 26070 1970 50  0000 L CNN
+F 1 "47uf/16v" H 26070 1970 50  0000 L CNN
 F 2 "" H 26530 1980 50  0001 C CNN
 F 3 "~" H 26530 1980 50  0001 C CNN
 	1    26530 1980
@@ -13627,10 +13611,10 @@ Wire Wire Line
 Wire Wire Line
 	26530 2110 26660 2110
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0261
 U 1 1 6DF71F70
 P 26660 2110
-F 0 "#PWR?" H 26660 1860 50  0001 C CNN
+F 0 "#PWR0261" H 26660 1860 50  0001 C CNN
 F 1 "GND" H 26590 2050 50  0000 R CNN
 F 2 "" H 26660 2110 50  0001 C CNN
 F 3 "" H 26660 2110 50  0001 C CNN
@@ -13640,17 +13624,15 @@ $EndComp
 Wire Wire Line
 	26920 1390 25360 1390
 Wire Wire Line
-	25360 1390 25360 2190
+	25360 1390 25360 1700
 Wire Wire Line
 	25550 2450 25550 1540
-Wire Wire Line
-	25550 1540 25690 1540
 $Comp
 L Device:CP1_Small C23
 U 1 1 6F171A4B
 P 25790 1540
-F 0 "C23" V 25680 1600 50  0000 L CNN
-F 1 "???" V 25660 1360 50  0000 L CNN
+F 0 "C23" V 25880 1580 50  0000 L CNN
+F 1 "10uf/25v" V 25680 1410 50  0000 L CNN
 F 2 "" H 25790 1540 50  0001 C CNN
 F 3 "~" H 25790 1540 50  0001 C CNN
 	1    25790 1540
@@ -13738,10 +13720,10 @@ F 3 "" H 26260 3070 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0262
 U 1 1 75E7B849
 P 26260 3230
-F 0 "#PWR?" H 26260 2980 50  0001 C CNN
+F 0 "#PWR0262" H 26260 2980 50  0001 C CNN
 F 1 "GND" H 26190 3170 50  0000 R CNN
 F 2 "" H 26260 3230 50  0001 C CNN
 F 3 "" H 26260 3230 50  0001 C CNN
@@ -13757,7 +13739,7 @@ L Device:CP1_Small C26
 U 1 1 782EEDAF
 P 25960 3100
 F 0 "C26" H 25680 3170 50  0000 L CNN
-F 1 "???" H 25660 3090 50  0000 L CNN
+F 1 "1uf/50v" H 25520 3100 50  0000 L CNN
 F 2 "" H 25960 3100 50  0001 C CNN
 F 3 "~" H 25960 3100 50  0001 C CNN
 	1    25960 3100
@@ -13769,10 +13751,10 @@ Connection ~ 25960 2980
 Wire Wire Line
 	25960 3200 25960 3230
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0263
 U 1 1 7953A8AF
 P 25420 4390
-F 0 "#PWR?" H 25420 4140 50  0001 C CNN
+F 0 "#PWR0263" H 25420 4140 50  0001 C CNN
 F 1 "GND" H 25350 4330 50  0000 R CNN
 F 2 "" H 25420 4390 50  0001 C CNN
 F 3 "" H 25420 4390 50  0001 C CNN
@@ -13809,10 +13791,10 @@ Wire Wire Line
 Wire Wire Line
 	25170 4020 25170 4080
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0264
 U 1 1 7C7B3710
 P 25170 4080
-F 0 "#PWR?" H 25170 3830 50  0001 C CNN
+F 0 "#PWR0264" H 25170 3830 50  0001 C CNN
 F 1 "GND" H 25390 4020 50  0000 R CNN
 F 2 "" H 25170 4080 50  0001 C CNN
 F 3 "" H 25170 4080 50  0001 C CNN
@@ -13869,7 +13851,7 @@ L Device:CP1_Small C12
 U 1 1 7F5E985C
 P 26240 3590
 F 0 "C12" H 26020 3680 50  0000 L CNN
-F 1 "???" H 26020 3560 50  0000 L CNN
+F 1 "4.7uf/50v" H 25840 3520 50  0000 L CNN
 F 2 "" H 26240 3590 50  0001 C CNN
 F 3 "~" H 26240 3590 50  0001 C CNN
 	1    26240 3590
@@ -13888,10 +13870,10 @@ Wire Wire Line
 Wire Wire Line
 	26240 3790 26240 3690
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0265
 U 1 1 811B7117
 P 26240 3790
-F 0 "#PWR?" H 26240 3540 50  0001 C CNN
+F 0 "#PWR0265" H 26240 3540 50  0001 C CNN
 F 1 "GND" H 26400 3830 50  0000 R CNN
 F 2 "" H 26240 3790 50  0001 C CNN
 F 3 "" H 26240 3790 50  0001 C CNN
@@ -14010,26 +13992,20 @@ Wire Wire Line
 	28370 2810 28370 3640
 Wire Wire Line
 	28190 3130 28670 3130
-Text Notes 26980 5060 0    51   ~ 0
-B
 Wire Wire Line
 	26800 3010 26800 2670
 Wire Wire Line
 	26800 2670 28540 2670
 Connection ~ 26800 3010
-Text Notes 26710 5040 0    51   ~ 0
-A
-Wire Wire Line
-	26820 5320 26670 5320
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0266
 U 1 1 88BFE844
-P 26670 5320
-F 0 "#PWR?" H 26670 5070 50  0001 C CNN
-F 1 "GND" H 26830 5360 50  0000 R CNN
-F 2 "" H 26670 5320 50  0001 C CNN
-F 3 "" H 26670 5320 50  0001 C CNN
-	1    26670 5320
+P 26680 5450
+F 0 "#PWR0266" H 26680 5200 50  0001 C CNN
+F 1 "GND" H 26610 5420 50  0000 R CNN
+F 2 "" H 26680 5450 50  0001 C CNN
+F 3 "" H 26680 5450 50  0001 C CNN
+	1    26680 5450
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -14062,10 +14038,10 @@ Wire Wire Line
 	25020 4610 25110 4610
 Connection ~ 25020 4610
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0267
 U 1 1 8C069BD0
 P 25020 4850
-F 0 "#PWR?" H 25020 4600 50  0001 C CNN
+F 0 "#PWR0267" H 25020 4600 50  0001 C CNN
 F 1 "GND" H 24950 4790 50  0000 R CNN
 F 2 "" H 25020 4850 50  0001 C CNN
 F 3 "" H 25020 4850 50  0001 C CNN
@@ -14086,10 +14062,10 @@ F 3 "" H 25440 4730 50  0001 C CNN
 	0    1    -1   0   
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0268
 U 1 1 8D37CD98
 P 25440 4820
-F 0 "#PWR?" H 25440 4570 50  0001 C CNN
+F 0 "#PWR0268" H 25440 4570 50  0001 C CNN
 F 1 "GND" H 25370 4760 50  0000 R CNN
 F 2 "" H 25440 4820 50  0001 C CNN
 F 3 "" H 25440 4820 50  0001 C CNN
@@ -14145,18 +14121,18 @@ $Comp
 L Device:CP1_Small C14
 U 1 1 9036AE31
 P 25360 3280
-F 0 "C14" H 25100 3370 50  0000 L CNN
-F 1 "???" H 25060 3270 50  0000 L CNN
+F 0 "C14" H 25100 3300 50  0000 L CNN
+F 1 "100uf/16v" H 24930 3200 50  0000 L CNN
 F 2 "" H 25360 3280 50  0001 C CNN
 F 3 "~" H 25360 3280 50  0001 C CNN
 	1    25360 3280
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0269
 U 1 1 9036AE38
 P 25360 3380
-F 0 "#PWR?" H 25360 3130 50  0001 C CNN
+F 0 "#PWR0269" H 25360 3130 50  0001 C CNN
 F 1 "GND" H 25520 3420 50  0000 R CNN
 F 2 "" H 25360 3380 50  0001 C CNN
 F 3 "" H 25360 3380 50  0001 C CNN
@@ -14202,10 +14178,10 @@ F 3 "" H 26030 5120 50  0001 C CNN
 	0    1    -1   0   
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0270
 U 1 1 94767C00
 P 26030 5210
-F 0 "#PWR?" H 26030 4960 50  0001 C CNN
+F 0 "#PWR0270" H 26030 4960 50  0001 C CNN
 F 1 "GND" H 25960 5150 50  0000 R CNN
 F 2 "" H 26030 5210 50  0001 C CNN
 F 3 "" H 26030 5210 50  0001 C CNN
@@ -14282,10 +14258,10 @@ Wire Wire Line
 Wire Wire Line
 	25800 4590 26030 4590
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0271
 U 1 1 9B279EA9
 P 26310 4420
-F 0 "#PWR?" H 26310 4170 50  0001 C CNN
+F 0 "#PWR0271" H 26310 4170 50  0001 C CNN
 F 1 "GND" H 26510 4360 50  0000 R CNN
 F 2 "" H 26310 4420 50  0001 C CNN
 F 3 "" H 26310 4420 50  0001 C CNN
@@ -14297,27 +14273,11 @@ Wire Wire Line
 Wire Wire Line
 	26310 4860 26470 4860
 Wire Wire Line
-	26470 4860 26470 5470
-Wire Wire Line
-	26470 5470 26900 5470
-Wire Wire Line
-	26900 5470 26900 5240
-Wire Wire Line
-	26820 5180 26990 5180
-Wire Wire Line
-	26990 5180 26990 5250
-Wire Wire Line
-	26820 5180 26820 5320
-Wire Wire Line
 	28540 2670 28540 4960
-Wire Wire Line
-	28540 4960 26810 4960
-Wire Wire Line
-	26810 4960 26810 5060
 Wire Wire Line
 	28670 3130 28670 5070
 Wire Wire Line
-	28670 5070 26940 5070
+	28670 5070 27400 5070
 Text GLabel 28930 3790 2    51   Input ~ 0
 TP_14
 $Comp
@@ -14332,10 +14292,10 @@ F 3 "" H 28930 3950 50  0001 C CNN
 	0    1    -1   0   
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0272
 U 1 1 A0FA5EA4
 P 28930 4040
-F 0 "#PWR?" H 28930 3790 50  0001 C CNN
+F 0 "#PWR0272" H 28930 3790 50  0001 C CNN
 F 1 "GND" H 28860 3980 50  0000 R CNN
 F 2 "" H 28930 4040 50  0001 C CNN
 F 3 "" H 28930 4040 50  0001 C CNN
@@ -14358,7 +14318,7 @@ L Device:CP1_Small C16
 U 1 1 A2838FD0
 P 28890 3280
 F 0 "C16" H 28670 3370 50  0000 L CNN
-F 1 "???" H 28670 3250 50  0000 L CNN
+F 1 "0.47uf/50v" H 28360 3270 50  0000 L CNN
 F 2 "" H 28890 3280 50  0001 C CNN
 F 3 "~" H 28890 3280 50  0001 C CNN
 	1    28890 3280
@@ -14369,7 +14329,7 @@ L Device:CP1_Small C15
 U 1 1 A2D241DD
 P 28890 3560
 F 0 "C15" H 28670 3650 50  0000 L CNN
-F 1 "???" H 28670 3530 50  0000 L CNN
+F 1 "0.47uf/50v" H 28360 3530 50  0000 L CNN
 F 2 "" H 28890 3560 50  0001 C CNN
 F 3 "~" H 28890 3560 50  0001 C CNN
 	1    28890 3560
@@ -14424,10 +14384,10 @@ $EndComp
 Wire Wire Line
 	26570 4680 26570 4740
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0273
 U 1 1 A724EB65
 P 26570 4740
-F 0 "#PWR?" H 26570 4490 50  0001 C CNN
+F 0 "#PWR0273" H 26570 4490 50  0001 C CNN
 F 1 "GND" H 26790 4680 50  0000 R CNN
 F 2 "" H 26570 4740 50  0001 C CNN
 F 3 "" H 26570 4740 50  0001 C CNN
@@ -14445,10 +14405,10 @@ Wire Wire Line
 Wire Wire Line
 	28200 4540 28200 4730
 $Comp
-L agg-kicad:C C19
+L agg-kicad:C C41
 U 1 1 A9016992
 P 27600 4840
-F 0 "C19" H 27660 4770 50  0000 C CNN
+F 0 "C41" H 27660 4770 50  0000 C CNN
 F 1 "12pF" H 27650 4920 50  0000 C CNN
 F 2 "" H 27600 4840 50  0001 C CNN
 F 3 "" H 27600 4840 50  0001 C CNN
@@ -14502,10 +14462,10 @@ Wire Wire Line
 Wire Wire Line
 	28380 3940 28380 4240
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0274
 U 1 1 AC6FC0B4
 P 28380 3940
-F 0 "#PWR?" H 28380 3690 50  0001 C CNN
+F 0 "#PWR0274" H 28380 3690 50  0001 C CNN
 F 1 "GND" V 28410 4020 50  0000 R CNN
 F 2 "" H 28380 3940 50  0001 C CNN
 F 3 "" H 28380 3940 50  0001 C CNN
@@ -14515,7 +14475,7 @@ $EndComp
 Wire Wire Line
 	28200 4090 28450 4090
 Wire Wire Line
-	28450 4090 28450 5170
+	28450 4090 28450 4510
 $Comp
 L agg-kicad:R R16
 U 1 1 AD107C3A
@@ -14545,7 +14505,7 @@ L agg-kicad:L L5
 U 1 1 AEA21DB9
 P 28350 5430
 F 0 "L5" H 28410 5390 50  0000 C CNN
-F 1 "???" H 28400 5490 50  0000 C CNN
+F 1 "20uH" H 28400 5480 50  0000 C CNN
 F 2 "" H 28350 5430 50  0001 C CNN
 F 3 "" H 28350 5430 50  0001 C CNN
 	1    28350 5430
@@ -14553,13 +14513,8 @@ F 3 "" H 28350 5430 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	28350 5430 28450 5430
-Connection ~ 28450 5430
 Wire Wire Line
 	28450 5430 28450 5390
-Wire Wire Line
-	28450 5580 28350 5580
-Wire Wire Line
-	28450 5430 28450 5580
 Wire Wire Line
 	28250 5430 28120 5430
 $Comp
@@ -14575,24 +14530,15 @@ F 3 "~" H 27890 5560 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	28120 5560 28090 5560
-Wire Wire Line
-	28120 5430 28120 5560
-Wire Wire Line
-	28120 5560 28120 5580
-Wire Wire Line
-	28120 5580 28200 5580
-Connection ~ 28120 5560
-Text Notes 28190 5670 0    51   ~ 0
-CF1\nT4.5B
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0275
 U 1 1 B2184AD9
-P 28300 5780
-F 0 "#PWR?" H 28300 5530 50  0001 C CNN
-F 1 "GND" H 28530 5730 50  0000 R CNN
-F 2 "" H 28300 5780 50  0001 C CNN
-F 3 "" H 28300 5780 50  0001 C CNN
-	1    28300 5780
+P 28300 6080
+F 0 "#PWR0275" H 28300 5830 50  0001 C CNN
+F 1 "GND" H 28530 6030 50  0000 R CNN
+F 2 "" H 28300 6080 50  0001 C CNN
+F 3 "" H 28300 6080 50  0001 C CNN
+	1    28300 6080
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -14609,10 +14555,10 @@ F 3 "" H 27370 5510 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0276
 U 1 1 B30B07DD
 P 27370 5560
-F 0 "#PWR?" H 27370 5310 50  0001 C CNN
+F 0 "#PWR0276" H 27370 5310 50  0001 C CNN
 F 1 "GND" H 27330 5540 50  0000 R CNN
 F 2 "" H 27370 5560 50  0001 C CNN
 F 3 "" H 27370 5560 50  0001 C CNN
@@ -14657,10 +14603,10 @@ $EndComp
 Wire Wire Line
 	27790 5800 27790 5780
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0277
 U 1 1 B637D6CF
 P 27790 5980
-F 0 "#PWR?" H 27790 5730 50  0001 C CNN
+F 0 "#PWR0277" H 27790 5730 50  0001 C CNN
 F 1 "GND" H 28020 5930 50  0000 R CNN
 F 2 "" H 27790 5980 50  0001 C CNN
 F 3 "" H 27790 5980 50  0001 C CNN
@@ -14713,7 +14659,7 @@ L agg-kicad:R R36
 U 1 1 C25A8135
 P 28790 5280
 F 0 "R36" H 28830 5230 50  0000 C CNN
-F 1 "???" H 28820 5350 50  0000 C CNN
+F 1 "1K" H 28820 5350 50  0000 C CNN
 F 2 "" H 28790 5280 50  0001 C CNN
 F 3 "" H 28790 5280 50  0001 C CNN
 	1    28790 5280
@@ -14724,7 +14670,7 @@ L agg-kicad:L L10
 U 1 1 C2AC448B
 P 29050 5280
 F 0 "L10" H 29080 5340 50  0000 C CNN
-F 1 "???" H 29090 5230 50  0000 C CNN
+F 1 "80uH" H 29090 5230 50  0000 C CNN
 F 2 "" H 29050 5280 50  0001 C CNN
 F 3 "" H 29050 5280 50  0001 C CNN
 	1    29050 5280
@@ -14777,10 +14723,10 @@ Wire Wire Line
 	28770 1240 28770 1250
 Connection ~ 28480 1240
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0278
 U 1 1 C5DF6CEC
 P 28770 1390
-F 0 "#PWR?" H 28770 1140 50  0001 C CNN
+F 0 "#PWR0278" H 28770 1140 50  0001 C CNN
 F 1 "GND" H 28980 1310 50  0000 R CNN
 F 2 "" H 28770 1390 50  0001 C CNN
 F 3 "" H 28770 1390 50  0001 C CNN
@@ -14809,29 +14755,13 @@ Wire Wire Line
 Connection ~ 28770 1390
 Text GLabel 28360 1090 1    51   Input ~ 0
 TP_2
-Wire Wire Line
-	28480 1090 28480 980 
-Wire Wire Line
-	28480 980  28630 980 
 Connection ~ 28480 1090
 Wire Wire Line
-	28710 1040 28710 1160
-Wire Wire Line
-	28710 1160 29010 1160
-Wire Wire Line
-	29010 1160 29010 1390
-Wire Wire Line
 	29010 1390 28780 1390
-Wire Wire Line
-	28790 980  29100 980 
-Text Notes 28630 1050 0    51   ~ 0
-CF2 \nSF5\n4.5MB
 Wire Wire Line
 	29100 2850 29490 2850
 Wire Wire Line
 	29490 2850 29490 5280
-Wire Wire Line
-	29100 980  29100 2850
 Wire Wire Line
 	29390 5280 29490 5280
 Wire Wire Line
@@ -14851,10 +14781,10 @@ Wire Wire Line
 Wire Wire Line
 	28770 4260 28960 4260
 $Comp
-L agg-kicad:C C21
+L agg-kicad:C C40
 U 1 1 CC579B85
 P 28750 4580
-F 0 "C21" V 28850 4470 50  0000 C CNN
+F 0 "C40" V 28850 4470 50  0000 C CNN
 F 1 "12pF" V 28790 4440 50  0000 C CNN
 F 2 "" H 28750 4580 50  0001 C CNN
 F 3 "" H 28750 4580 50  0001 C CNN
@@ -14877,7 +14807,7 @@ L agg-kicad:C C10
 U 1 1 CCFEB4E2
 P 28960 4360
 F 0 "C10" V 29060 4250 50  0000 C CNN
-F 1 "???" V 28960 4220 50  0000 C CNN
+F 1 "<5pF" V 28960 4220 50  0000 C CNN
 F 2 "" H 28960 4360 50  0001 C CNN
 F 3 "" H 28960 4360 50  0001 C CNN
 	1    28960 4360
@@ -14907,7 +14837,7 @@ F 3 "" H 29020 4890 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Text Notes 29060 4520 0    51   ~ 0
-L9
+L6
 Wire Wire Line
 	28960 4360 28960 4440
 Wire Wire Line
@@ -14925,10 +14855,10 @@ Wire Wire Line
 Wire Wire Line
 	29130 4610 29380 4610
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0279
 U 1 1 D193F5B0
 P 29380 4670
-F 0 "#PWR?" H 29380 4420 50  0001 C CNN
+F 0 "#PWR0279" H 29380 4420 50  0001 C CNN
 F 1 "GND" H 29450 4540 50  0000 R CNN
 F 2 "" H 29380 4670 50  0001 C CNN
 F 3 "" H 29380 4670 50  0001 C CNN
@@ -14947,8 +14877,6 @@ Wire Wire Line
 	28320 1540 28660 1540
 Wire Wire Line
 	28660 1540 28660 1580
-Wire Wire Line
-	28320 1840 28610 1840
 $Comp
 L agg-kicad:R R33
 U 1 1 D4372EF4
@@ -14978,7 +14906,7 @@ L Device:CP1_Small C27
 U 1 1 D5DDACDF
 P 29000 1690
 F 0 "C27" H 28720 1760 50  0000 L CNN
-F 1 "???" H 28540 1680 50  0000 L CNN
+F 1 "4.7uf/50v" H 28480 1680 50  0000 L CNN
 F 2 "" H 29000 1690 50  0001 C CNN
 F 3 "~" H 29000 1690 50  0001 C CNN
 	1    29000 1690
@@ -15001,10 +14929,10 @@ Wire Wire Line
 Wire Wire Line
 	28740 1840 28870 1840
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0280
 U 1 1 D82DE044
 P 28870 1840
-F 0 "#PWR?" H 28870 1590 50  0001 C CNN
+F 0 "#PWR0280" H 28870 1590 50  0001 C CNN
 F 1 "GND" H 29080 1760 50  0000 R CNN
 F 2 "" H 28870 1840 50  0001 C CNN
 F 3 "" H 28870 1840 50  0001 C CNN
@@ -15013,26 +14941,6 @@ F 3 "" H 28870 1840 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	28320 1690 28510 1690
-Wire Wire Line
-	28510 1690 28510 2210
-Wire Wire Line
-	28510 2210 28690 2210
-Wire Wire Line
-	28690 2100 28870 2100
-Wire Wire Line
-	28870 2100 28870 1890
-Wire Wire Line
-	28690 1990 28610 1990
-Wire Wire Line
-	28610 1990 28610 1840
-Connection ~ 28610 1840
-Wire Wire Line
-	28610 1840 28660 1840
-Text Notes 28540 2160 0    51   ~ 0
-CF3\nCDA\n4.5MB
-Connection ~ 25690 1540
-Wire Wire Line
-	25690 1540 25700 1540
 Connection ~ 26240 3790
 Connection ~ 26660 2110
 Wire Wire Line
@@ -15043,5 +14951,274 @@ Wire Wire Line
 	28660 1580 28660 1590
 Connection ~ 28870 1840
 Wire Wire Line
-	28870 1840 29000 1840
+	28870 1840 28990 1840
+Wire Wire Line
+	28300 5970 28300 6080
+Text Notes 28700 5110 0    51   ~ 0
+C40 and C41 are under pcb \nwithout any Cxx marks on pcb
+$Comp
+L power:GND #PWR?
+U 1 1 66984339
+P 28380 4740
+F 0 "#PWR?" H 28380 4490 50  0001 C CNN
+F 1 "GND" H 28610 4690 50  0000 R CNN
+F 2 "" H 28380 4740 50  0001 C CNN
+F 3 "" H 28380 4740 50  0001 C CNN
+	1    28380 4740
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	28380 4740 28380 4660
+Wire Wire Line
+	28380 4560 28380 4510
+Wire Wire Line
+	28380 4510 28450 4510
+Connection ~ 28450 4510
+Wire Wire Line
+	28450 4510 28450 5170
+$Comp
+L agg-kicad:R R15
+U 1 1 66984333
+P 28380 4660
+F 0 "R15" V 28450 4770 50  0000 C CNN
+F 1 "1K8" V 28350 4750 50  0000 C CNN
+F 2 "" H 28380 4660 50  0001 C CNN
+F 3 "" H 28380 4660 50  0001 C CNN
+	1    28380 4660
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:CP1_Small C32
+U 1 1 67EFCF44
+P 25440 2190
+F 0 "C32" H 25160 2260 50  0000 L CNN
+F 1 "10uf/25v" H 25000 2130 50  0000 L CNN
+F 2 "" H 25440 2190 50  0001 C CNN
+F 3 "~" H 25440 2190 50  0001 C CNN
+	1    25440 2190
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 68458DD5
+P 25440 2290
+F 0 "#PWR?" H 25440 2040 50  0001 C CNN
+F 1 "GND" H 25370 2230 50  0000 R CNN
+F 2 "" H 25440 2290 50  0001 C CNN
+F 3 "" H 25440 2290 50  0001 C CNN
+	1    25440 2290
+	1    0    0    -1  
+$EndComp
+$Comp
+L agg-kicad:R R38
+U 1 1 68F17B92
+P 25440 1910
+F 0 "R38" V 25490 2060 50  0000 C CNN
+F 1 "560R" V 25410 2040 50  0000 C CNN
+F 2 "" H 25440 1910 50  0001 C CNN
+F 3 "" H 25440 1910 50  0001 C CNN
+	1    25440 1910
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	25440 1810 25440 1700
+Wire Wire Line
+	25440 1700 25360 1700
+Connection ~ 25360 1700
+Wire Wire Line
+	25440 1910 25440 2090
+Wire Wire Line
+	25360 1700 25360 2190
+Wire Wire Line
+	25550 1540 25690 1540
+$Comp
+L RF_Filter:CF_filter CF2
+U 1 1 6AF7CD70
+P 28550 1000
+F 0 "CF2" H 28710 1230 50  0000 L CNN
+F 1 "SFE 4.5MB" H 28630 1320 50  0000 L CNN
+F 2 "" H 28550 1000 50  0001 C CNN
+F 3 "~" H 28550 1000 50  0001 C CNN
+	1    28550 1000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	28480 750  28650 750 
+Wire Wire Line
+	28480 750  28480 1090
+Wire Wire Line
+	28950 750  29100 750 
+Wire Wire Line
+	29100 750  29100 2850
+Wire Wire Line
+	28800 1150 29010 1150
+Wire Wire Line
+	29010 1150 29010 1390
+$Comp
+L RF_Filter:CF_filter CF3
+U 1 1 6DA811A7
+P 28840 2460
+F 0 "CF3" V 29110 2600 50  0000 L CNN
+F 1 "CDA 4.5MB" V 28820 2320 50  0000 L CNN
+F 2 "" H 28840 2460 50  0001 C CNN
+F 3 "~" H 28840 2460 50  0001 C CNN
+	1    28840 2460
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	28320 1840 28590 1840
+Wire Wire Line
+	28590 2060 28590 1840
+Connection ~ 28590 1840
+Wire Wire Line
+	28590 1840 28660 1840
+Wire Wire Line
+	28990 2210 28990 1840
+Connection ~ 28990 1840
+Wire Wire Line
+	28990 1840 29000 1840
+Wire Wire Line
+	28590 2360 28510 2360
+Wire Wire Line
+	28510 1690 28510 2360
+$Comp
+L RF_Filter:CF_filter CF1
+U 1 1 6F0004F8
+P 28050 5820
+F 0 "CF1" H 28210 6030 50  0000 L CNN
+F 1 "T4.5MB" H 28410 5730 50  0000 L CNN
+F 2 "" H 28050 5820 50  0001 C CNN
+F 3 "~" H 28050 5820 50  0001 C CNN
+	1    28050 5820
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	28120 5430 28120 5560
+Wire Wire Line
+	28120 5560 28150 5560
+Wire Wire Line
+	28150 5560 28150 5570
+Connection ~ 28120 5560
+Wire Wire Line
+	28450 5570 28450 5430
+Connection ~ 28450 5430
+$Comp
+L RF_Amplifier:F1021S FL1
+U 1 1 71AF5A1A
+P 26930 5150
+F 0 "FL1" H 26920 4730 51  0000 C CNN
+F 1 "F1021S" H 26950 4640 51  0000 C CNN
+F 2 "" H 27030 5400 51  0001 C CNN
+F 3 "" H 27030 5400 51  0001 C CNN
+	1    26930 5150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	27180 5400 27180 5280
+Wire Wire Line
+	27180 5280 26780 5280
+Wire Wire Line
+	26780 5280 26780 5400
+Wire Wire Line
+	26680 5400 26780 5400
+Wire Wire Line
+	27130 5150 27400 5150
+Wire Wire Line
+	27400 5070 27400 5150
+Wire Wire Line
+	26730 4960 26730 5150
+Wire Wire Line
+	26730 4960 28540 4960
+Wire Wire Line
+	26470 5610 26930 5610
+Wire Wire Line
+	26930 5610 26930 5500
+Wire Wire Line
+	26470 4860 26470 5610
+Connection ~ 26930 5500
+Wire Wire Line
+	26930 5500 26930 5490
+Wire Wire Line
+	26680 5450 26680 5400
+Connection ~ 26680 5400
+Text Notes 25820 6030 0    51   ~ 0
+FL1 pinout numbers not known, so not correct!\nJust illustrating from \nunder the pcb the pin locations
+Text Notes 24820 4090 0    51   ~ 0
+15V
+Text GLabel 16660 6040 2    50   Input ~ 0
+IF_BOX_pin_2
+Wire Wire Line
+	16660 6040 16430 6040
+Wire Wire Line
+	16430 5760 16430 6040
+Wire Wire Line
+	16430 6040 16430 6050
+Connection ~ 16430 6040
+Text Notes 10450 5690 0    51   ~ 0
+(SSS) wires to \nmono speaker\nand mono headphone socket
+$Comp
+L Device:Speaker LS1
+U 1 1 7C15DB60
+P 12080 5010
+F 0 "LS1" H 12250 5006 50  0000 L CNN
+F 1 "Speaker" H 12250 4915 50  0000 L CNN
+F 2 "" H 12080 4810 50  0001 C CNN
+F 3 "~" H 12070 4960 50  0001 C CNN
+	1    12080 5010
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:AudioJack2 J1
+U 1 1 7C162E21
+P 10650 4910
+F 0 "J1" H 10682 5235 50  0000 C CNN
+F 1 "Audiojack with switch" H 10682 5144 50  0000 C CNN
+F 2 "" H 10650 4910 50  0001 C CNN
+F 3 "~" H 10650 4910 50  0001 C CNN
+	1    10650 4910
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10940 4910 10850 4910
+Wire Wire Line
+	10850 4810 11040 4810
+Text Notes 11790 5360 0    51   ~ 0
+1
+Text Notes 11320 5340 0    51   ~ 0
+2
+Text Notes 10790 4620 0    51   ~ 0
+mono 3.5mm audiojack:\n-when headphones connected, connect ground to head phones ground\n-when no headphones connected, connect ground to speaker
+$Comp
+L Switch:SW_DPDT_x2 Audiojackswitch1
+U 2 1 7F7FC1E7
+P 11480 5040
+F 0 "Audiojackswitch1" H 11480 5325 50  0000 C CNN
+F 1 "SW_DPDT_x2" H 11480 5234 50  0000 C CNN
+F 2 "" H 11480 5040 50  0001 C CNN
+F 3 "~" H 11480 5040 50  0001 C CNN
+	2    11480 5040
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11040 4810 11040 5220
+Wire Wire Line
+	11880 5110 11780 5110
+Wire Wire Line
+	11780 5110 11780 5330
+Wire Wire Line
+	11880 5010 11680 5010
+Wire Wire Line
+	11680 4940 11680 5010
+Wire Wire Line
+	11280 5040 11280 5380
+Wire Wire Line
+	11680 5140 11680 5220
+Wire Wire Line
+	11680 5220 11040 5220
+Text Notes 10840 5360 0    51   ~ 0
+3
+Wire Wire Line
+	10940 4910 10940 5370
+Text Notes 10480 5260 0    51   ~ 0
+P801 pins:
 $EndSCHEMATC
