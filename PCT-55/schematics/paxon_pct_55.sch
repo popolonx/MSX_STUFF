@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A2 23386 16535
 encoding utf-8
-Sheet 1 1
+Sheet 1 2
 Title ""
 Date ""
 Rev ""
@@ -7548,7 +7548,7 @@ Wire Wire Line
 Text Notes 5620 2290 0    50   ~ 0
 (ZZZ) wires to P927\nin main PCB
 Text Notes 5740 1900 0    50   ~ 0
-white wire\n
+1. =white wire\n
 $Comp
 L agg-kicad:CONN_01x03 J927
 U 1 1 6594FE21
@@ -15340,4 +15340,10 @@ Wire Wire Line
 	1420 3200 3420 3200
 Wire Wire Line
 	3310 3570 3490 3570
+$Sheet
+S 24750 7580 3540 2220
+U 65EF74FD
+F0 "MSX pacb" 51
+F1 "msx_pcb.sch" 51
+$EndSheet
 $EndSCHEMATC
