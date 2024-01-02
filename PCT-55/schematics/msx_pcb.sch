@@ -2125,8 +2125,8 @@ $Comp
 L agg-kicad:CONN_01x11 CONN-9
 U 1 1 66E82009
 P -240 9820
-F 0 "CONN-9" H -550 9690 50  0000 C CNN
-F 1 "CONN_01x11" V -454 9315 50  0000 C CNN
+F 0 "CONN-9" H -290 8670 50  0000 C CNN
+F 1 "CONN_01x11" H -400 8510 50  0000 C CNN
 F 2 "" H -240 9820 50  0001 C CNN
 F 3 "" H -240 9820 50  0001 C CNN
 	1    -240 9820
@@ -2149,7 +2149,7 @@ Text GLabel 1030 6900 2    51   Input ~ 0
 SW2
 Text Notes 660  7270 0    51   ~ 0
 (RRR) wires to P917\nin AV input PCB (+slot switch)
-Text Notes -500 8460 3    51   ~ 0
+Text Notes -1240 10080 0    51   ~ 0
 (XXX) wires to AV input PCB\n(Printer port)
 Text Notes 4420 11100 0    51   ~ 0
 (WWW) wires to P914\nin AV input PCB
@@ -3094,32 +3094,72 @@ Text GLabel 6060 4530 1    51   Input ~ 0
 PrinterPortClk
 Text GLabel 2030 9930 2    51   Input ~ 0
 PrinterPortClk
-Text GLabel 2030 9030 2    51   Input ~ 0
-D0
 Text GLabel 2030 9130 2    51   Input ~ 0
-D1
-Text GLabel 2030 9230 2    51   Input ~ 0
-D2
-Text GLabel 2030 9330 2    51   Input ~ 0
-D3
-Text GLabel 2030 9430 2    51   Input ~ 0
-D4
-Text GLabel 2030 9530 2    51   Input ~ 0
-D5
+D0
 Text GLabel 2030 9630 2    51   Input ~ 0
+D1
+Text GLabel 2030 9530 2    51   Input ~ 0
+D2
+Text GLabel 2030 9230 2    51   Input ~ 0
+D3
+Text GLabel 2030 9330 2    51   Input ~ 0
+D4
+Text GLabel 2030 9430 2    51   Input ~ 0
+D5
+Text GLabel 2030 9030 2    51   Input ~ 0
 D6
 Text GLabel 2030 9730 2    51   Input ~ 0
 D7
 Text GLabel 6160 4530 1    51   Input ~ 0
-PrinterPortPin3
+PrinterPort_~PSTB
 Text GLabel -80  9620 3    51   Input ~ 0
-PrinterPortPin3
+PrinterPort_~PSTB
 Wire Wire Line
 	-140 9620 -80  9620
 Text GLabel 7960 6380 2    51   Input ~ 0
-PrinterPortPin10
+PrinterPort_BUSY
 Text GLabel -80  8920 1    51   Input ~ 0
-PrinterPortPin10
+PrinterPort_BUSY
 Wire Wire Line
 	-140 8920 -80  8920
+Text Notes -700 8820 0    51   ~ 0
+PPort-14
+Text Notes -700 8930 0    51   ~ 0
+PPort-11
+Text Notes -700 9030 0    51   ~ 0
+PPort-7
+Text Notes -700 9130 0    51   ~ 0
+PPort-6
+Text Notes -700 9230 0    51   ~ 0
+PPort-5
+Text Notes -700 9320 0    51   ~ 0
+PPort-4
+Text Notes -700 9420 0    51   ~ 0
+PPort-3
+Text Notes -700 9520 0    51   ~ 0
+PPort-2
+Text Notes -700 9620 0    51   ~ 0
+PPort-1
+Text Notes -700 9720 0    51   ~ 0
+PPort-9
+Text Notes -700 9830 0    51   ~ 0
+PPort-8
+Text Notes -980 9520 0    51   ~ 0
+PDB0
+Text Notes -970 9620 0    51   ~ 0
+~PSTB
+Text Notes -970 9730 0    51   ~ 0
+PDB7
+Text Notes -980 9830 0    51   ~ 0
+PDB6
+Text Notes -990 9410 0    51   ~ 0
+PDB1
+Text Notes -990 9310 0    51   ~ 0
+PDB2
+Text Notes -970 9230 0    51   ~ 0
+PDB3
+Text Notes -1000 9140 0    51   ~ 0
+PDB4
+Text Notes -990 9040 0    51   ~ 0
+PDB5
 $EndSCHEMATC

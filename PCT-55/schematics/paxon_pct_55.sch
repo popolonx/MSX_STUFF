@@ -2795,13 +2795,13 @@ $EndComp
 Text Notes 9830 9080 0    50   ~ 0
 (JJJ) wires\nto P903 in front PCB\n (where channel/msx/av switches are)
 Text Notes 9790 8390 0    50   ~ 0
-(MMM) wires to J918\nin AV+ParallelPort input PCB
+(MMM) wires to J918\nin AV input+PrinterPort PCB
 Wire Wire Line
 	9630 8310 9630 8680
 Wire Notes Line
 	-340 4780 -340 170 
 Text Notes 130  380  0    157  ~ 31
-AV input + ParallelPort PCB:\n-rca video + audio input\n-RGB digital input\n-MSX parallel port
+AV input + Printer Port PCB:\n-rca video + audio input\n-RGB digital input\n-MSX printer port
 $Comp
 L agg-kicad:CONN_01x06 P902
 U 1 1 69420121
@@ -7561,7 +7561,7 @@ F 3 "" H 5680 1870 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 Text Notes 12970 5510 0    50   ~ 0
-(ZZZ) wires to J927\nin AV+ParallelPort input PCB
+(ZZZ) wires to J927\nin AV input+PrinterPort PCB
 Text Notes 13580 5700 0    50   ~ 0
 1. = white wire\n
 $Comp
@@ -10898,7 +10898,7 @@ IC202_B_DATA_IN
 Text GLabel 20310 8410 0    50   Input ~ 0
 IC202_R_DATA_IN
 Text Notes 9710 7220 0    50   ~ 0
-(OOO) wires\nto AV+ParallelPort input PCB
+(OOO) wires\nto AV input+PrinterPort PCB
 Text Notes 11800 8280 0    50   ~ 0
 G  1. white wire\nR\nB
 Connection ~ 16470 15300
@@ -10913,7 +10913,7 @@ Wire Wire Line
 Wire Wire Line
 	16980 15500 16980 15620
 Text Notes 17020 14850 0    50   ~ 0
-to AV+ParallelPort input PCB,\nDigital RGB to analog conversion applitude?
+to AV input+Printer Port PCB,\nDigital RGB to analog conversion applitude?
 $Comp
 L power:GND #PWR0229
 U 1 1 7C57FC93
@@ -12726,7 +12726,7 @@ Wire Wire Line
 Wire Wire Line
 	8310 15060 8370 15060
 Text Notes 15430 11590 0    59   ~ 0
-(LLL) wires to J913\nin AV+ParallelPort input PCB
+(LLL) wires to J913\nin AV input+PrinterPort PCB
 Text Notes 20120 10830 0    50   ~ 0
 L207 coil color code:\nBlack-Black-Brown-Gold
 Wire Wire Line
@@ -13084,7 +13084,7 @@ SelectB
 Text Notes 16760 1980 0    50   ~ 0
 SelectB
 Text Notes 9550 6120 0    50   ~ 0
-(CCC) wires to J503\nin AV+ParallelPort input PCB
+(CCC) wires to J503\nin AV input+PrinterPort PCB
 Text Notes 13790 1810 0    50   ~ 0
 <-blue wire->
 Wire Wire Line
@@ -13427,7 +13427,7 @@ H_pin_5
 Wire Wire Line
 	19100 2820 19190 2820
 Text Notes 20890 1170 0    50   ~ 0
-Separate black thick ground wires towards:\n-tube ground\n-tuner box metal\n-AV+ParallelPort input PCB\n\nThere is also thick black wire from \ndigital RGB pcb to tuner box metal
+Separate black thick ground wires towards:\n-tube ground\n-tuner box metal\n-AV input+PrinterPort PCB\n\nThere is also thick black wire from \ndigital RGB pcb to tuner box metal
 Text Notes 20340 730  0    118  ~ 24
 NOTE!
 Text Notes 3430 10960 0    50   ~ 0
