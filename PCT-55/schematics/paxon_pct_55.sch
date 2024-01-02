@@ -4,11 +4,11 @@ EELAYER END
 $Descr A2 23386 16535
 encoding utf-8
 Sheet 1 2
-Title ""
+Title "Paxon PCT-55 schematics by Popolon_"
 Date ""
 Rev ""
 Comp ""
-Comment1 ""
+Comment1 "RF box schematics is not drawn"
 Comment2 ""
 Comment3 ""
 Comment4 ""
@@ -14951,10 +14951,10 @@ Wire Wire Line
 Text Notes 28700 5110 0    51   ~ 0
 C40 and C41 are under pcb \nwithout any Cxx marks on pcb
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0281
 U 1 1 66984339
 P 28380 4740
-F 0 "#PWR?" H 28380 4490 50  0001 C CNN
+F 0 "#PWR0281" H 28380 4490 50  0001 C CNN
 F 1 "GND" H 28610 4690 50  0000 R CNN
 F 2 "" H 28380 4740 50  0001 C CNN
 F 3 "" H 28380 4740 50  0001 C CNN
@@ -14993,10 +14993,10 @@ F 3 "~" H 25440 2190 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0282
 U 1 1 68458DD5
 P 25440 2290
-F 0 "#PWR?" H 25440 2040 50  0001 C CNN
+F 0 "#PWR0282" H 25440 2040 50  0001 C CNN
 F 1 "GND" H 25370 2230 50  0000 R CNN
 F 2 "" H 25440 2290 50  0001 C CNN
 F 3 "" H 25440 2290 50  0001 C CNN
@@ -15343,7 +15343,7 @@ Wire Wire Line
 $Sheet
 S 24750 7580 3540 2220
 U 65EF74FD
-F0 "MSX pacb" 51
+F0 "MSX PCB" 51
 F1 "msx_pcb.sch" 51
 $EndSheet
 $EndSCHEMATC
