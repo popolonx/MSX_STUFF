@@ -145,12 +145,12 @@ $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 6652777F
-P 9260 340
-F 0 "#PWR?" H 9260 90  50  0001 C CNN
-F 1 "GND" H 9265 167 50  0000 C CNN
-F 2 "" H 9260 340 50  0001 C CNN
-F 3 "" H 9260 340 50  0001 C CNN
-	1    9260 340 
+P 10250 -300
+F 0 "#PWR?" H 10250 -550 50  0001 C CNN
+F 1 "GND" H 10255 -473 50  0000 C CNN
+F 2 "" H 10250 -300 50  0001 C CNN
+F 3 "" H 10250 -300 50  0001 C CNN
+	1    10250 -300
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -629,7 +629,7 @@ L agg-kicad:CP C101
 U 1 1 667910DA
 P 10860 10020
 F 0 "C101" V 10956 9963 50  0000 R CNN
-F 1 "1000uf/6.3v" V 10865 9963 50  0000 R CNN
+F 1 "4700uf/6.3v" V 10865 9963 50  0000 R CNN
 F 2 "" H 10860 10020 50  0001 C CNN
 F 3 "" H 10860 10020 50  0001 C CNN
 	1    10860 10020
@@ -640,7 +640,7 @@ L agg-kicad:CP C100
 U 1 1 66792057
 P 11360 10020
 F 0 "C100" V 11456 9963 50  0000 R CNN
-F 1 "470uf/10v" V 11290 10030 50  0000 R CNN
+F 1 "470uf/6.3v" V 11290 10030 50  0000 R CNN
 F 2 "" H 11360 10020 50  0001 C CNN
 F 3 "" H 11360 10020 50  0001 C CNN
 	1    11360 10020
@@ -715,22 +715,20 @@ Wire Wire Line
 Connection ~ 9950 9600
 Wire Wire Line
 	9950 9600 9950 9660
-Text GLabel 9450 7560 0    51   Input ~ 0
+Text GLabel 9330 7420 0    51   Input ~ 0
 ~CS2
-Text GLabel 9450 7660 0    51   Input ~ 0
+Text GLabel 9330 7610 0    51   Input ~ 0
 ~SLTSL
 Text GLabel 9450 7760 0    51   Input ~ 0
 ~RFSH
-Text GLabel 9450 7860 0    51   Input ~ 0
+Text GLabel 9170 7860 0    51   Input ~ 0
 ~SLOT_INT
-Text GLabel 9450 7960 0    51   Input ~ 0
+Text GLabel 9140 8020 0    51   Input ~ 0
 ~BUSDIR
-Text GLabel 9450 8060 0    51   Input ~ 0
-~MERQ
+Text GLabel 9130 8170 0    51   Input ~ 0
+~MREQ
 Text GLabel 9450 8160 0    51   Input ~ 0
 ~RD
-Text GLabel 9450 8260 0    51   Input ~ 0
-NC
 Text GLabel 9450 8360 0    51   Input ~ 0
 A15
 Text GLabel 9450 8460 0    51   Input ~ 0
@@ -765,19 +763,19 @@ Text GLabel 9450 9860 0    51   Input ~ 0
 12V
 Text GLabel 9450 9960 0    51   Input ~ 0
 MINUS12V
-Text GLabel 9950 7560 2    51   Input ~ 0
+Text GLabel 10040 7430 2    51   Input ~ 0
 ~CS1
-Text GLabel 9950 7660 2    51   Input ~ 0
+Text GLabel 10060 7610 2    51   Input ~ 0
 ~CS12
 Text GLabel 9950 7760 2    51   Input ~ 0
 ~WAIT
-Text GLabel 9950 7960 2    51   Input ~ 0
+Text GLabel 10080 7920 2    51   Input ~ 0
 ~M1
 Text GLabel 9950 8060 2    51   Input ~ 0
 ~IORQ~
-Text GLabel 9950 8160 2    51   Input ~ 0
+Text GLabel 10020 8200 2    51   Input ~ 0
 ~WR
-Text GLabel 9950 8260 2    51   Input ~ 0
+Text GLabel 10170 8320 2    51   Input ~ 0
 ~RESET
 Text GLabel 9950 8360 2    51   Input ~ 0
 A9
@@ -876,11 +874,11 @@ Connection ~ 8360 10160
 Wire Wire Line
 	8330 10330 8330 10350
 $Comp
-L agg-kicad:CONN_01x05 J?
+L agg-kicad:CONN_01x05 CONN-8
 U 1 1 6690F2F9
 P 8010 10820
-F 0 "J?" V 8089 10898 50  0000 L CNN
-F 1 "CONN_01x05" V 7998 10898 50  0000 L CNN
+F 0 "CONN-8" V 7900 10460 50  0000 L CNN
+F 1 "CONN_01x05" V 7780 10480 50  0000 L CNN
 F 2 "" H 8010 10820 50  0001 C CNN
 F 3 "" H 8010 10820 50  0001 C CNN
 	1    8010 10820
@@ -909,12 +907,12 @@ $EndComp
 $Comp
 L agg-kicad:R R12
 U 1 1 66942A25
-P 8090 10060
-F 0 "R12" V 8210 10160 50  0000 C CNN
-F 1 "3K3" V 8130 10170 50  0000 C CNN
-F 2 "" H 8090 10060 50  0001 C CNN
-F 3 "" H 8090 10060 50  0001 C CNN
-	1    8090 10060
+P 8070 9500
+F 0 "R12" V 8190 9600 50  0000 C CNN
+F 1 "3K3" V 8110 9610 50  0000 C CNN
+F 2 "" H 8070 9500 50  0001 C CNN
+F 3 "" H 8070 9500 50  0001 C CNN
+	1    8070 9500
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
@@ -946,21 +944,21 @@ Text GLabel 4150 8780 2    51   Input ~ 0
 D6
 Text GLabel 4150 8880 2    51   Input ~ 0
 D7
-Text GLabel 9960 -660 2    51   Input ~ 0
+Text GLabel 10950 -1300 2    51   Input ~ 0
 D0
-Text GLabel 9960 -560 2    51   Input ~ 0
+Text GLabel 10950 -1200 2    51   Input ~ 0
 D1
-Text GLabel 9960 -460 2    51   Input ~ 0
+Text GLabel 10950 -1100 2    51   Input ~ 0
 D2
-Text GLabel 9960 -360 2    51   Input ~ 0
+Text GLabel 10950 -1000 2    51   Input ~ 0
 D3
-Text GLabel 9960 -260 2    51   Input ~ 0
+Text GLabel 10950 -900 2    51   Input ~ 0
 D4
-Text GLabel 9960 -160 2    51   Input ~ 0
+Text GLabel 10950 -800 2    51   Input ~ 0
 D5
-Text GLabel 9960 -60  2    51   Input ~ 0
+Text GLabel 10950 -700 2    51   Input ~ 0
 D6
-Text GLabel 9960 40   2    51   Input ~ 0
+Text GLabel 10950 -600 2    51   Input ~ 0
 D7
 Wire Wire Line
 	9990 9860 10860 9860
@@ -987,91 +985,14 @@ F 3 "" H 4140 7720 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Memory_RAM:DRAM_8118 IC20
-U 1 1 66B1DCCF
-P 1780 5540
-F 0 "IC20" H 1655 6821 50  0000 C CNN
-F 1 "DRAM_8118" H 1655 6730 50  0000 C CNN
-F 2 "Package_DIP:DIP-16_W7.62mm" H 1780 5240 50  0001 C CNN
-F 3 "https://www.alliancememory.com/wp-content/uploads/pdf/AS6C4008.pdf" H 1780 5640 50  0001 C CNN
-	1    1780 5540
-	1    0    0    -1  
-$EndComp
-$Comp
-L Memory_RAM:DRAM_8118 IC21
-U 1 1 66B6E29C
-P 3040 5530
-F 0 "IC21" H 2915 6811 50  0000 C CNN
-F 1 "DRAM_8118" H 2915 6720 50  0000 C CNN
-F 2 "Package_DIP:DIP-16_W7.62mm" H 3040 5230 50  0001 C CNN
-F 3 "https://www.alliancememory.com/wp-content/uploads/pdf/AS6C4008.pdf" H 3040 5630 50  0001 C CNN
-	1    3040 5530
-	1    0    0    -1  
-$EndComp
-$Comp
-L Memory_RAM:DRAM_8118 IC22
-U 1 1 66B7DCDA
-P 1780 6860
-F 0 "IC22" H 1655 8141 50  0000 C CNN
-F 1 "DRAM_8118" H 1655 8050 50  0000 C CNN
-F 2 "Package_DIP:DIP-16_W7.62mm" H 1780 6560 50  0001 C CNN
-F 3 "https://www.alliancememory.com/wp-content/uploads/pdf/AS6C4008.pdf" H 1780 6960 50  0001 C CNN
-	1    1780 6860
-	1    0    0    -1  
-$EndComp
-$Comp
-L Memory_RAM:DRAM_8118 IC23
-U 1 1 66B8D4D0
-P 3030 6900
-F 0 "IC23" H 2905 8181 50  0000 C CNN
-F 1 "DRAM_8118" H 2905 8090 50  0000 C CNN
-F 2 "Package_DIP:DIP-16_W7.62mm" H 3030 6600 50  0001 C CNN
-F 3 "https://www.alliancememory.com/wp-content/uploads/pdf/AS6C4008.pdf" H 3030 7000 50  0001 C CNN
-	1    3030 6900
-	1    0    0    -1  
-$EndComp
-$Comp
 L Memory_RAM:DRAM_8118 IC16
 U 1 1 66B9FC58
-P 1780 2670
-F 0 "IC16" H 1655 3951 50  0000 C CNN
-F 1 "DRAM_8118" H 1655 3860 50  0000 C CNN
-F 2 "Package_DIP:DIP-16_W7.62mm" H 1780 2370 50  0001 C CNN
-F 3 "https://www.alliancememory.com/wp-content/uploads/pdf/AS6C4008.pdf" H 1780 2770 50  0001 C CNN
-	1    1780 2670
-	1    0    0    -1  
-$EndComp
-$Comp
-L Memory_RAM:DRAM_8118 IC17
-U 1 1 66B9FC5E
-P 3040 2660
-F 0 "IC17" H 2915 3941 50  0000 C CNN
-F 1 "DRAM_8118" H 2915 3850 50  0000 C CNN
-F 2 "Package_DIP:DIP-16_W7.62mm" H 3040 2360 50  0001 C CNN
-F 3 "https://www.alliancememory.com/wp-content/uploads/pdf/AS6C4008.pdf" H 3040 2760 50  0001 C CNN
-	1    3040 2660
-	1    0    0    -1  
-$EndComp
-$Comp
-L Memory_RAM:DRAM_8118 IC18
-U 1 1 66B9FC64
-P 1780 3990
-F 0 "IC18" H 1655 5271 50  0000 C CNN
-F 1 "DRAM_8118" H 1655 5180 50  0000 C CNN
-F 2 "Package_DIP:DIP-16_W7.62mm" H 1780 3690 50  0001 C CNN
-F 3 "https://www.alliancememory.com/wp-content/uploads/pdf/AS6C4008.pdf" H 1780 4090 50  0001 C CNN
-	1    1780 3990
-	1    0    0    -1  
-$EndComp
-$Comp
-L Memory_RAM:DRAM_8118 IC19
-U 1 1 66B9FC6A
-P 3030 4030
-F 0 "IC19" H 2905 5311 50  0000 C CNN
-F 1 "DRAM_8118" H 2905 5220 50  0000 C CNN
-F 2 "Package_DIP:DIP-16_W7.62mm" H 3030 3730 50  0001 C CNN
-F 3 "https://www.alliancememory.com/wp-content/uploads/pdf/AS6C4008.pdf" H 3030 4130 50  0001 C CNN
-	1    3030 4030
+P 1390 2330
+F 0 "IC16" H 1265 3611 50  0000 C CNN
+F 1 "DRAM_8118" H 1265 3520 50  0000 C CNN
+F 2 "Package_DIP:DIP-16_W7.62mm" H 1390 2030 50  0001 C CNN
+F 3 "https://www.alliancememory.com/wp-content/uploads/pdf/AS6C4008.pdf" H 1390 2430 50  0001 C CNN
+	1    1390 2330
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1106,10 +1027,6 @@ Wire Wire Line
 	2750 7670 2750 7880
 Wire Wire Line
 	5470 2920 5600 2920
-Wire Wire Line
-	4070 3320 3810 3320
-Wire Wire Line
-	4850 9790 4850 9780
 $Comp
 L power:+5V #PWR?
 U 1 1 66C7308F
@@ -1119,17 +1036,6 @@ F 1 "+5V" V 5550 3080 50  0000 C CNN
 F 2 "" H 5600 2920 50  0001 C CNN
 F 3 "" H 5600 2920 50  0001 C CNN
 	1    5600 2920
-	0    1    1    0   
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 66C84C9B
-P 4850 9790
-F 0 "#PWR?" H 4850 9540 50  0001 C CNN
-F 1 "GND" H 4855 9617 50  0000 C CNN
-F 2 "" H 4850 9790 50  0001 C CNN
-F 3 "" H 4850 9790 50  0001 C CNN
-	1    4850 9790
 	0    1    1    0   
 $EndComp
 $Comp
@@ -1293,44 +1199,44 @@ Text GLabel 5560 6380 0    51   Input ~ 0
 A7
 Text GLabel 5560 6480 0    51   Input ~ 0
 A15
-Text GLabel 8260 -350 0    51   Input ~ 0
+Text GLabel 9250 -990 0    51   Input ~ 0
 ~IORQ
-Text GLabel 8190 -620 0    51   Input ~ 0
+Text GLabel 9180 -1260 0    51   Input ~ 0
 ~WR
-Text GLabel 8260 -490 0    51   Input ~ 0
+Text GLabel 9250 -1130 0    51   Input ~ 0
 ~MREQ
-Text GLabel 8400 -1130 0    51   Input ~ 0
+Text GLabel 9390 -1770 0    51   Input ~ 0
 ~WAIT
-Text GLabel 8560 -2360 0    51   Input ~ 0
+Text GLabel 9550 -3000 0    51   Input ~ 0
 ~RESET
-Text GLabel 8380 -1260 0    51   Input ~ 0
+Text GLabel 9370 -1900 0    51   Input ~ 0
 ~REFESH
-Text GLabel 8560 -2060 0    51   Input ~ 0
+Text GLabel 9550 -2700 0    51   Input ~ 0
 CLOCK
-Text GLabel 8560 -1360 0    51   Input ~ 0
+Text GLabel 9550 -2000 0    51   Input ~ 0
 ~M1
 Wire Wire Line
-	8240 -630 8190 -630
+	9230 -1270 9180 -1270
 Wire Wire Line
-	8190 -630 8190 -620
+	9180 -1270 9180 -1260
 Wire Wire Line
-	8560 -1260 8380 -1260
+	9550 -1900 9370 -1900
 Wire Wire Line
-	8560 -1160 8400 -1160
+	9550 -1800 9390 -1800
 Wire Wire Line
-	8400 -1160 8400 -1130
+	9390 -1800 9390 -1770
 Wire Wire Line
-	8560 -360 8260 -360
+	9550 -1000 9250 -1000
 Wire Wire Line
-	8260 -360 8260 -350
+	9250 -1000 9250 -990
 Wire Wire Line
-	8560 -460 8260 -460
+	9550 -1100 9250 -1100
 Wire Wire Line
-	8260 -460 8260 -490
+	9250 -1100 9250 -1130
 Wire Wire Line
-	8560 -560 8240 -560
+	9550 -1200 9230 -1200
 Wire Wire Line
-	8240 -560 8240 -630
+	9230 -1200 9230 -1270
 Wire Wire Line
 	4160 9080 4480 9080
 Wire Wire Line
@@ -1398,191 +1304,114 @@ Wire Wire Line
 	9450 9560 9220 9560
 Wire Wire Line
 	9120 9560 9110 9560
-Wire Wire Line
-	9450 7860 8780 7860
-Wire Wire Line
-	8780 7860 8780 7730
 $Comp
-L agg-kicad:R R?
+L agg-kicad:R R19
 U 1 1 6791633A
-P 8780 7730
-F 0 "R?" V 8880 7850 50  0000 C CNN
-F 1 "10K" V 8790 7800 50  0000 C CNN
-F 2 "" H 8780 7730 50  0001 C CNN
-F 3 "" H 8780 7730 50  0001 C CNN
-	1    8780 7730
+P 6810 -2810
+F 0 "R19" V 6870 -2720 50  0000 C CNN
+F 1 "10K" V 6850 -2910 50  0000 C CNN
+F 2 "" H 6810 -2810 50  0001 C CNN
+F 3 "" H 6810 -2810 50  0001 C CNN
+	1    6810 -2810
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	8780 7630 8780 7490
+	6810 -2910 6810 -3040
 $Comp
 L power:+5V #PWR?
 U 1 1 6792FCFB
-P 8780 7500
-F 0 "#PWR?" H 8780 7350 50  0001 C CNN
-F 1 "+5V" H 8795 7673 50  0000 C CNN
-F 2 "" H 8780 7500 50  0001 C CNN
-F 3 "" H 8780 7500 50  0001 C CNN
-	1    8780 7500
+P 6810 -3040
+F 0 "#PWR?" H 6810 -3190 50  0001 C CNN
+F 1 "+5V" H 6930 -3000 50  0000 C CNN
+F 2 "" H 6810 -3040 50  0001 C CNN
+F 3 "" H 6810 -3040 50  0001 C CNN
+	1    6810 -3040
 	1    0    0    -1  
 $EndComp
 $Comp
 L agg-kicad:R R?
 U 1 1 6794BAB7
-P 6510 4340
-F 0 "R?" H 6570 4280 50  0000 C CNN
-F 1 "27R" H 6560 4420 50  0000 C CNN
-F 2 "" H 6510 4340 50  0001 C CNN
-F 3 "" H 6510 4340 50  0001 C CNN
-	1    6510 4340
-	-1   0    0    1   
+P 6500 4200
+F 0 "R?" V 6560 4300 50  0000 C CNN
+F 1 "27R" V 6480 4310 50  0000 C CNN
+F 2 "" H 6500 4200 50  0001 C CNN
+F 3 "" H 6500 4200 50  0001 C CNN
+	1    6500 4200
+	0    -1   -1   0   
 $EndComp
 $Comp
 L agg-kicad:R R?
 U 1 1 67964BC1
-P 6640 4220
-F 0 "R?" H 6700 4160 50  0000 C CNN
-F 1 "27R" H 6690 4300 50  0000 C CNN
-F 2 "" H 6640 4220 50  0001 C CNN
-F 3 "" H 6640 4220 50  0001 C CNN
-	1    6640 4220
-	-1   0    0    1   
+P 6650 4140
+F 0 "R?" V 6700 4070 50  0000 C CNN
+F 1 "27R" V 6620 4170 50  0000 C CNN
+F 2 "" H 6650 4140 50  0001 C CNN
+F 3 "" H 6650 4140 50  0001 C CNN
+	1    6650 4140
+	0    -1   -1   0   
 $EndComp
 $Comp
 L agg-kicad:R R?
 U 1 1 67A15142
-P 6770 4110
-F 0 "R?" H 6830 4050 50  0000 C CNN
-F 1 "27R" H 6820 4190 50  0000 C CNN
-F 2 "" H 6770 4110 50  0001 C CNN
-F 3 "" H 6770 4110 50  0001 C CNN
-	1    6770 4110
-	-1   0    0    1   
+P 6820 4170
+F 0 "R?" V 6880 4090 50  0000 C CNN
+F 1 "27R" V 6790 4080 50  0000 C CNN
+F 2 "" H 6820 4170 50  0001 C CNN
+F 3 "" H 6820 4170 50  0001 C CNN
+	1    6820 4170
+	0    -1   -1   0   
 $EndComp
 Wire Wire Line
 	6760 4530 6760 4250
 Wire Wire Line
-	6760 4250 6780 4250
-Wire Wire Line
-	6780 4250 6780 4110
-Wire Wire Line
-	6780 4110 6770 4110
-Wire Wire Line
-	6640 4220 6640 4530
-Wire Wire Line
-	6640 4530 6660 4530
-Wire Wire Line
 	6560 4530 6560 4340
-Wire Wire Line
-	6560 4340 6510 4340
-$Comp
-L Memory_EPROM:27C128 IC5
-U 1 1 67A7A3B0
-P 6880 1540
-F 0 "IC5" H 6880 2821 50  0000 C CNN
-F 1 "27C128" H 6880 2730 50  0000 C CNN
-F 2 "Package_DIP:DIP-28_W15.24mm" H 6880 1540 50  0001 C CNN
-F 3 "http://ww1.microchip.com/downloads/en/devicedoc/11003L.pdf" H 6880 1540 50  0001 C CNN
-	1    6880 1540
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6960 4530 6960 2850
-Wire Wire Line
-	6960 2850 6370 2850
-Wire Wire Line
-	6370 2850 6370 2340
-Wire Wire Line
-	6370 2340 6480 2340
-Text GLabel 6480 2440 0    51   Input ~ 0
-A15
-Text GLabel 7280 640  2    51   Input ~ 0
+Text GLabel 7350 30   2    51   Input ~ 0
 D0
-Text GLabel 7280 740  2    51   Input ~ 0
-D1
-Text GLabel 7280 840  2    51   Input ~ 0
-D2
-Text GLabel 7280 940  2    51   Input ~ 0
-D3
-Text GLabel 7280 1040 2    51   Input ~ 0
-D4
-Text GLabel 7280 1140 2    51   Input ~ 0
-D5
-Text GLabel 7280 1240 2    51   Input ~ 0
-D6
-Text GLabel 7280 1340 2    51   Input ~ 0
-D7
-Text GLabel 9960 -860 2    51   Input ~ 0
+Text GLabel 10950 -1500 2    51   Input ~ 0
 A15
-Text GLabel 9960 -960 2    51   Input ~ 0
+Text GLabel 10950 -1600 2    51   Input ~ 0
 A14
 $Comp
 L CPU:Z80CPU IC6
 U 1 1 664D7D46
-P 9260 -1160
-F 0 "IC6" H 9260 521 50  0000 C CNN
-F 1 "Z80CPU" H 9260 430 50  0000 C CNN
-F 2 "" H 9260 -760 50  0001 C CNN
-F 3 "www.zilog.com/manage_directlink.php?filepath=docs/z80/um0080" H 9260 -760 50  0001 C CNN
-	1    9260 -1160
+P 10250 -1800
+F 0 "IC6" H 10250 -119 50  0000 C CNN
+F 1 "Z80CPU" H 10250 -210 50  0000 C CNN
+F 2 "" H 10250 -1400 50  0001 C CNN
+F 3 "www.zilog.com/manage_directlink.php?filepath=docs/z80/um0080" H 10250 -1400 50  0001 C CNN
+	1    10250 -1800
 	1    0    0    -1  
 $EndComp
-Text GLabel 9960 -1760 2    51   Input ~ 0
+Text GLabel 10950 -2400 2    51   Input ~ 0
 A6
-Text GLabel 9960 -1860 2    51   Input ~ 0
+Text GLabel 10950 -2500 2    51   Input ~ 0
 A5
-Text GLabel 9960 -1960 2    51   Input ~ 0
+Text GLabel 10950 -2600 2    51   Input ~ 0
 A4
-Text GLabel 9960 -2160 2    51   Input ~ 0
+Text GLabel 10950 -2800 2    51   Input ~ 0
 A2
-Text GLabel 9960 -2260 2    51   Input ~ 0
+Text GLabel 10950 -2900 2    51   Input ~ 0
 A1
-Text GLabel 9960 -1660 2    51   Input ~ 0
+Text GLabel 10950 -2300 2    51   Input ~ 0
 A7
-Text GLabel 9960 -1560 2    51   Input ~ 0
+Text GLabel 10950 -2200 2    51   Input ~ 0
 A8
-Text GLabel 9960 -1460 2    51   Input ~ 0
+Text GLabel 10950 -2100 2    51   Input ~ 0
 A9
-Text GLabel 9960 -1360 2    51   Input ~ 0
+Text GLabel 10950 -2000 2    51   Input ~ 0
 A10
-Text GLabel 9960 -1260 2    51   Input ~ 0
+Text GLabel 10950 -1900 2    51   Input ~ 0
 A11
-Text GLabel 9960 -1160 2    51   Input ~ 0
+Text GLabel 10950 -1800 2    51   Input ~ 0
 A12
-Text GLabel 9960 -1060 2    51   Input ~ 0
+Text GLabel 10950 -1700 2    51   Input ~ 0
 A13
-Text GLabel 9960 -2060 2    51   Input ~ 0
+Text GLabel 10950 -2700 2    51   Input ~ 0
 A3
-Text GLabel 9960 -2360 2    51   Input ~ 0
+Text GLabel 10950 -3000 2    51   Input ~ 0
 A0
-Text GLabel 6480 1240 0    51   Input ~ 0
-A6
-Text GLabel 6480 1140 0    51   Input ~ 0
-A5
-Text GLabel 6480 1040 0    51   Input ~ 0
-A4
-Text GLabel 6480 840  0    51   Input ~ 0
-A2
-Text GLabel 6480 740  0    51   Input ~ 0
-A1
-Text GLabel 6480 1340 0    51   Input ~ 0
-A7
-Text GLabel 6480 1440 0    51   Input ~ 0
-A8
-Text GLabel 6480 1540 0    51   Input ~ 0
-A9
-Text GLabel 6480 1640 0    51   Input ~ 0
-A10
-Text GLabel 6480 1740 0    51   Input ~ 0
-A11
-Text GLabel 6480 940  0    51   Input ~ 0
-A3
-Text GLabel 6480 640  0    51   Input ~ 0
+Text GLabel 6550 30   0    51   Input ~ 0
 A0
-Text GLabel 6480 1840 0    51   Input ~ 0
-A12
-Text GLabel 6480 1940 0    51   Input ~ 0
-A13
 $Comp
 L Memory_RAM:DRAM_4416 IC28
 U 1 1 67BB9601
@@ -1662,276 +1491,1635 @@ D3
 $Comp
 L 74xx:74LS157 IC3
 U 1 1 67E73EF1
-P 6230 -3200
-F 0 "IC3" H 6230 -2119 50  0000 C CNN
-F 1 "74LS157" H 6230 -2210 50  0000 C CNN
-F 2 "" H 6230 -3200 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS157" H 6230 -3200 50  0001 C CNN
-	1    6230 -3200
+P 5350 -3200
+F 0 "IC3" H 5350 -2119 50  0000 C CNN
+F 1 "74LS157" H 5350 -2210 50  0000 C CNN
+F 2 "" H 5350 -3200 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS157" H 5350 -3200 50  0001 C CNN
+	1    5350 -3200
 	1    0    0    -1  
 $EndComp
 $Comp
 L 74xx:74LS153 IC12
 U 1 1 67E7CCD2
-P 9270 -4580
-F 0 "IC12" H 9270 -3399 50  0000 C CNN
-F 1 "74LS153" H 9270 -3490 50  0000 C CNN
-F 2 "" H 9270 -4580 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS153" H 9270 -4580 50  0001 C CNN
-	1    9270 -4580
+P 16620 -4390
+F 0 "IC12" H 16620 -3209 50  0000 C CNN
+F 1 "74LS153" H 16620 -3300 50  0000 C CNN
+F 2 "" H 16620 -4390 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS153" H 16620 -4390 50  0001 C CNN
+	1    16620 -4390
 	1    0    0    -1  
 $EndComp
 $Comp
 L 74xx:74LS145 IC14
 U 1 1 67E7E84D
-P 7170 -5520
-F 0 "IC14" H 7170 -4639 50  0000 C CNN
-F 1 "74LS145" H 7170 -4730 50  0000 C CNN
-F 2 "" H 7170 -5520 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS145" H 7170 -5520 50  0001 C CNN
-	1    7170 -5520
+P 6450 -6340
+F 0 "IC14" H 6450 -5459 50  0000 C CNN
+F 1 "74LS145" H 6450 -5550 50  0000 C CNN
+F 2 "" H 6450 -6340 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS145" H 6450 -6340 50  0001 C CNN
+	1    6450 -6340
 	1    0    0    -1  
 $EndComp
 $Comp
 L 74xx:74LS156 IC13
 U 1 1 67E7F518
-P 4950 -5380
-F 0 "IC13" H 4950 -4499 50  0000 C CNN
-F 1 "74LS156" H 4950 -4590 50  0000 C CNN
-F 2 "" H 4950 -5380 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS156" H 4950 -5380 50  0001 C CNN
-	1    4950 -5380
+P 4230 -6200
+F 0 "IC13" H 4230 -5319 50  0000 C CNN
+F 1 "74LS156" H 4230 -5410 50  0000 C CNN
+F 2 "" H 4230 -6200 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS156" H 4230 -6200 50  0001 C CNN
+	1    4230 -6200
 	1    0    0    -1  
 $EndComp
 $Comp
 L 74xx:74LS32 IC26
 U 1 1 67E80229
-P 10630 -6390
-F 0 "IC26" H 10630 -6065 50  0000 C CNN
-F 1 "74LS32" H 10630 -6156 50  0000 C CNN
-F 2 "" H 10630 -6390 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS32" H 10630 -6390 50  0001 C CNN
-	1    10630 -6390
-	1    0    0    -1  
+P 9300 440
+F 0 "IC26" H 9300 765 50  0000 C CNN
+F 1 "74LS32" H 9300 674 50  0000 C CNN
+F 2 "" H 9300 440 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS32" H 9300 440 50  0001 C CNN
+	1    9300 440 
+	-1   0    0    1   
 $EndComp
 $Comp
 L 74xx:74LS32 IC26
 U 2 1 67E82B9A
-P 11520 -6470
-F 0 "IC26" H 11520 -6145 50  0000 C CNN
-F 1 "74LS32" H 11520 -6236 50  0000 C CNN
-F 2 "" H 11520 -6470 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS32" H 11520 -6470 50  0001 C CNN
-	2    11520 -6470
-	1    0    0    -1  
+P 8460 200
+F 0 "IC26" H 8460 525 50  0000 C CNN
+F 1 "74LS32" H 8460 434 50  0000 C CNN
+F 2 "" H 8460 200 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS32" H 8460 200 50  0001 C CNN
+	2    8460 200 
+	-1   0    0    1   
 $EndComp
 $Comp
 L 74xx:74LS32 IC26
 U 3 1 67E85502
-P 11390 -5910
-F 0 "IC26" H 11390 -5585 50  0000 C CNN
-F 1 "74LS32" H 11390 -5676 50  0000 C CNN
-F 2 "" H 11390 -5910 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS32" H 11390 -5910 50  0001 C CNN
-	3    11390 -5910
+P 8000 -2300
+F 0 "IC26" H 7850 -2090 50  0000 C CNN
+F 1 "74LS32" H 8130 -2130 50  0000 C CNN
+F 2 "" H 8000 -2300 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS32" H 8000 -2300 50  0001 C CNN
+	3    8000 -2300
 	1    0    0    -1  
 $EndComp
 $Comp
 L 74xx:74LS32 IC26
 U 4 1 67E86727
-P 12420 -5950
-F 0 "IC26" H 12420 -5625 50  0000 C CNN
-F 1 "74LS32" H 12420 -5716 50  0000 C CNN
-F 2 "" H 12420 -5950 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS32" H 12420 -5950 50  0001 C CNN
-	4    12420 -5950
+P 23530 -9690
+F 0 "IC26" H 23530 -9365 50  0000 C CNN
+F 1 "74LS32" H 23530 -9456 50  0000 C CNN
+F 2 "" H 23530 -9690 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS32" H 23530 -9690 50  0001 C CNN
+	4    23530 -9690
 	1    0    0    -1  
 $EndComp
 $Comp
 L 74xx:74LS32 IC26
 U 5 1 67E882C5
-P 12000 -5250
-F 0 "IC26" H 12230 -5204 50  0000 L CNN
-F 1 "74LS32" H 12230 -5295 50  0000 L CNN
-F 2 "" H 12000 -5250 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS32" H 12000 -5250 50  0001 C CNN
-	5    12000 -5250
+P 23070 -8190
+F 0 "IC26" H 23300 -8144 50  0000 L CNN
+F 1 "74LS32" H 23300 -8235 50  0000 L CNN
+F 2 "" H 23070 -8190 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS32" H 23070 -8190 50  0001 C CNN
+	5    23070 -8190
 	1    0    0    -1  
 $EndComp
 $Comp
 L 74xx:74LS374 IC24
 U 1 1 67E8C607
-P 13550 1680
-F 0 "IC24" H 13550 2661 50  0000 C CNN
-F 1 "74LS374" H 13550 2570 50  0000 C CNN
-F 2 "" H 13550 1680 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS374" H 13550 1680 50  0001 C CNN
-	1    13550 1680
-	1    0    0    -1  
+P 1530 9530
+F 0 "IC24" H 1530 10511 50  0000 C CNN
+F 1 "74LS374" H 1530 10420 50  0000 C CNN
+F 2 "" H 1530 9530 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS374" H 1530 9530 50  0001 C CNN
+	1    1530 9530
+	-1   0    0    -1  
 $EndComp
 $Comp
 L 74xx:74HC14 IC25
 U 1 1 67F203FD
-P 13740 -6290
-F 0 "IC25" H 13740 -5973 50  0000 C CNN
-F 1 "74HC14" H 13740 -6064 50  0000 C CNN
-F 2 "" H 13740 -6290 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74HC14" H 13740 -6290 50  0001 C CNN
-	1    13740 -6290
+P 7400 -2200
+F 0 "IC25" H 7400 -1883 50  0000 C CNN
+F 1 "74HC14" H 7400 -1974 50  0000 C CNN
+F 2 "" H 7400 -2200 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74HC14" H 7400 -2200 50  0001 C CNN
+	1    7400 -2200
 	1    0    0    -1  
 $EndComp
 $Comp
 L 74xx:74HC14 IC25
 U 2 1 67F22841
-P 14290 -6760
-F 0 "IC25" H 14290 -6443 50  0000 C CNN
-F 1 "74HC14" H 14290 -6534 50  0000 C CNN
-F 2 "" H 14290 -6760 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74HC14" H 14290 -6760 50  0001 C CNN
-	2    14290 -6760
+P 8600 -2300
+F 0 "IC25" H 8600 -1983 50  0000 C CNN
+F 1 "74HC14" H 8600 -2074 50  0000 C CNN
+F 2 "" H 8600 -2300 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74HC14" H 8600 -2300 50  0001 C CNN
+	2    8600 -2300
 	1    0    0    -1  
 $EndComp
 $Comp
 L 74xx:74HC14 IC25
 U 3 1 67F23971
-P 15580 -5410
-F 0 "IC25" H 15580 -5093 50  0000 C CNN
-F 1 "74HC14" H 15580 -5184 50  0000 C CNN
-F 2 "" H 15580 -5410 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74HC14" H 15580 -5410 50  0001 C CNN
-	3    15580 -5410
+P 11470 900
+F 0 "IC25" H 11470 1217 50  0000 C CNN
+F 1 "74HC14" H 11470 1126 50  0000 C CNN
+F 2 "" H 11470 900 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74HC14" H 11470 900 50  0001 C CNN
+	3    11470 900 
 	1    0    0    -1  
 $EndComp
 $Comp
 L 74xx:74HC14 IC25
 U 4 1 67F248BD
-P 14530 -5240
-F 0 "IC25" H 14530 -4923 50  0000 C CNN
-F 1 "74HC14" H 14530 -5014 50  0000 C CNN
-F 2 "" H 14530 -5240 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74HC14" H 14530 -5240 50  0001 C CNN
-	4    14530 -5240
+P 8200 -4100
+F 0 "IC25" H 8200 -3783 50  0000 C CNN
+F 1 "74HC14" H 8200 -3874 50  0000 C CNN
+F 2 "" H 8200 -4100 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74HC14" H 8200 -4100 50  0001 C CNN
+	4    8200 -4100
 	1    0    0    -1  
 $EndComp
 $Comp
 L 74xx:74HC14 IC25
 U 5 1 67F25C39
-P 14540 -4730
-F 0 "IC25" H 14540 -4413 50  0000 C CNN
-F 1 "74HC14" H 14540 -4504 50  0000 C CNN
-F 2 "" H 14540 -4730 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74HC14" H 14540 -4730 50  0001 C CNN
-	5    14540 -4730
+P 7560 -4290
+F 0 "IC25" H 7560 -4540 50  0000 C CNN
+F 1 "74HC14" H 7570 -4440 50  0000 C CNN
+F 2 "" H 7560 -4290 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74HC14" H 7560 -4290 50  0001 C CNN
+	5    7560 -4290
 	1    0    0    -1  
 $EndComp
 $Comp
 L 74xx:74HC14 IC25
 U 6 1 67F26E72
-P 15660 -4830
-F 0 "IC25" H 15660 -4513 50  0000 C CNN
-F 1 "74HC14" H 15660 -4604 50  0000 C CNN
-F 2 "" H 15660 -4830 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74HC14" H 15660 -4830 50  0001 C CNN
-	6    15660 -4830
+P 7400 -2700
+F 0 "IC25" H 7400 -2383 50  0000 C CNN
+F 1 "74HC14" H 7400 -2474 50  0000 C CNN
+F 2 "" H 7400 -2700 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74HC14" H 7400 -2700 50  0001 C CNN
+	6    7400 -2700
 	1    0    0    -1  
 $EndComp
 $Comp
 L 74xx:74HC14 IC25
 U 7 1 67F282DA
-P 15660 -6350
-F 0 "IC25" H 15890 -6304 50  0000 L CNN
-F 1 "74HC14" H 15890 -6395 50  0000 L CNN
-F 2 "" H 15660 -6350 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74HC14" H 15660 -6350 50  0001 C CNN
-	7    15660 -6350
+P 23830 -8200
+F 0 "IC25" H 24060 -8154 50  0000 L CNN
+F 1 "74HC14" H 24060 -8245 50  0000 L CNN
+F 2 "" H 23830 -8200 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74HC14" H 23830 -8200 50  0001 C CNN
+	7    23830 -8200
 	1    0    0    -1  
 $EndComp
 $Comp
 L 74xx:74LS157 IC1
 U 1 1 67FC7122
-P 4800 -3170
-F 0 "IC1" H 4800 -2089 50  0000 C CNN
-F 1 "74LS157" H 4800 -2180 50  0000 C CNN
-F 2 "" H 4800 -3170 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS157" H 4800 -3170 50  0001 C CNN
-	1    4800 -3170
+P 4180 -3190
+F 0 "IC1" H 4180 -2109 50  0000 C CNN
+F 1 "74LS157" H 4180 -2200 50  0000 C CNN
+F 2 "" H 4180 -3190 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS157" H 4180 -3190 50  0001 C CNN
+	1    4180 -3190
 	1    0    0    -1  
 $EndComp
+Text GLabel 4070 2420 0    51   Input ~ 0
+AD7
+Text GLabel 4070 2520 0    51   Input ~ 0
+AD6
+Text GLabel 4070 2620 0    51   Input ~ 0
+AD5
+Text GLabel 4070 2720 0    51   Input ~ 0
+AD4
+Text GLabel 4070 2820 0    51   Input ~ 0
+AD3
+Text GLabel 4070 2920 0    51   Input ~ 0
+AD2
+Text GLabel 4070 3020 0    51   Input ~ 0
+AD1
+Text GLabel 4070 3120 0    51   Input ~ 0
+AD0
+Text GLabel 1640 1630 2    51   Input ~ 0
+AD7
+Text GLabel 1640 1930 2    51   Input ~ 0
+AD6
+Text GLabel 1640 1830 2    51   Input ~ 0
+AD5
+Text GLabel 1640 1730 2    51   Input ~ 0
+AD4
+$Comp
+L agg-kicad:R R10
+U 1 1 660B7C68
+P 3820 1930
+F 0 "R10" V 3810 1980 50  0000 L CNN
+F 1 "27R" V 3915 1974 50  0000 L CNN
+F 2 "" H 3820 1930 50  0001 C CNN
+F 3 "" H 3820 1930 50  0001 C CNN
+	1    3820 1930
+	0    1    1    0   
+$EndComp
+$Comp
+L agg-kicad:R R11
+U 1 1 660B9B9A
+P 3700 2970
+F 0 "R11" H 3750 2789 50  0000 C CNN
+F 1 "27R" H 3750 2880 50  0000 C CNN
+F 2 "" H 3700 2970 50  0001 C CNN
+F 3 "" H 3700 2970 50  0001 C CNN
+	1    3700 2970
+	-1   0    0    1   
+$EndComp
+$Comp
+L agg-kicad:R R9
+U 1 1 660D3F0A
+P 4070 1940
+F 0 "R9" V 4020 2100 50  0000 C CNN
+F 1 "27R" V 4130 2130 50  0000 C CNN
+F 2 "" H 4070 1940 50  0001 C CNN
+F 3 "" H 4070 1940 50  0001 C CNN
+	1    4070 1940
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4070 2220 4070 2040
+Wire Wire Line
+	4070 2320 3820 2320
+Wire Wire Line
+	3820 2320 3820 2030
+Text GLabel 3820 1930 1    51   Input ~ 0
+V_CAS_
+Text GLabel 4070 1940 1    51   Input ~ 0
+V_RAS_
+Text GLabel 1640 1430 2    51   Input ~ 0
+V_CAS_
+Text GLabel 890  1730 0    51   Input ~ 0
+V_RAS_
+Wire Wire Line
+	4070 3220 3700 3220
+Wire Wire Line
+	3700 3220 3700 2970
+Text GLabel 3600 2970 0    51   Input ~ 0
+V_RW_
+Text GLabel 890  1630 0    51   Input ~ 0
+V_RW_
+$Comp
+L agg-kicad:R R16
+U 1 1 6622038B
+P 5580 2030
+F 0 "R16" V 5570 2080 50  0000 L CNN
+F 1 "1K" V 5675 2074 50  0000 L CNN
+F 2 "" H 5580 2030 50  0001 C CNN
+F 3 "" H 5580 2030 50  0001 C CNN
+	1    5580 2030
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5580 2420 5580 2130
+$Comp
+L agg-kicad:R R15
+U 1 1 6623B090
+P 5800 2030
+F 0 "R15" V 5790 2080 50  0000 L CNN
+F 1 "1K" V 5895 2074 50  0000 L CNN
+F 2 "" H 5800 2030 50  0001 C CNN
+F 3 "" H 5800 2030 50  0001 C CNN
+	1    5800 2030
+	0    1    1    0   
+$EndComp
+$Comp
+L agg-kicad:R R17
+U 1 1 66255CFC
+P 5950 2240
+F 0 "R17" V 5940 2290 50  0000 L CNN
+F 1 "1K" V 6045 2284 50  0000 L CNN
+F 2 "" H 5950 2240 50  0001 C CNN
+F 3 "" H 5950 2240 50  0001 C CNN
+	1    5950 2240
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5950 2240 5950 1950
+Wire Wire Line
+	5950 1950 5800 1950
+Wire Wire Line
+	5800 1950 5800 2030
+Wire Wire Line
+	5580 2030 5580 1950
+Wire Wire Line
+	5580 1950 5700 1950
+Connection ~ 5800 1950
+Wire Wire Line
+	5580 2420 5470 2420
+Wire Wire Line
+	5470 2620 5800 2620
+Wire Wire Line
+	5800 2130 5800 2620
+Wire Wire Line
+	5950 2720 5470 2720
+Wire Wire Line
+	5950 2340 5950 2720
+$Comp
+L power:+5V #PWR?
+U 1 1 663002FC
+P 5700 1950
+F 0 "#PWR?" H 5700 1800 50  0001 C CNN
+F 1 "+5V" H 5650 2110 50  0000 C CNN
+F 2 "" H 5700 1950 50  0001 C CNN
+F 3 "" H 5700 1950 50  0001 C CNN
+	1    5700 1950
+	1    0    0    -1  
+$EndComp
+Connection ~ 5700 1950
+Wire Wire Line
+	5700 1950 5800 1950
 $Comp
 L Device:Crystal CY-1
-U 1 1 67FE9E72
-P 13600 -3900
-F 0 "CY-1" H 13600 -3632 50  0000 C CNN
-F 1 "10.73864Mhz" H 13600 -3723 50  0000 C CNN
-F 2 "" H 13600 -3900 50  0001 C CNN
-F 3 "~" H 13600 -3900 50  0001 C CNN
-	1    13600 -3900
+U 1 1 663419AF
+P 5180 1760
+F 0 "CY-1" H 5200 1920 50  0000 C CNN
+F 1 "10.73864Mhz" H 5200 1630 50  0000 C CNN
+F 2 "" H 5180 1760 50  0001 C CNN
+F 3 "~" H 5180 1760 50  0001 C CNN
+	1    5180 1760
 	1    0    0    -1  
 $EndComp
+$Comp
+L agg-kicad:C C3
+U 1 1 66345F93
+P 5470 1570
+F 0 "C3" V 5474 1628 50  0000 L CNN
+F 1 "33pF" V 5565 1628 50  0000 L CNN
+F 2 "" H 5470 1570 50  0001 C CNN
+F 3 "" H 5470 1570 50  0001 C CNN
+	1    5470 1570
+	0    1    1    0   
+$EndComp
+$Comp
+L agg-kicad:C C2
+U 1 1 663487DB
+P 4870 1640
+F 0 "C2" V 4966 1582 50  0000 R CNN
+F 1 "33pF" V 4875 1582 50  0000 R CNN
+F 2 "" H 4870 1640 50  0001 C CNN
+F 3 "" H 4870 1640 50  0001 C CNN
+	1    4870 1640
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 66349C0A
+P 5420 1470
+F 0 "#PWR?" H 5420 1220 50  0001 C CNN
+F 1 "GND" H 5425 1297 50  0000 C CNN
+F 2 "" H 5420 1470 50  0001 C CNN
+F 3 "" H 5420 1470 50  0001 C CNN
+	1    5420 1470
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4870 1760 4870 1640
+Wire Wire Line
+	4870 1540 4870 1470
+Wire Wire Line
+	4870 1470 5420 1470
+Wire Wire Line
+	5420 1470 5470 1470
+Wire Wire Line
+	5470 1470 5470 1570
+Connection ~ 5420 1470
+Wire Wire Line
+	5470 1670 5470 1760
+Wire Wire Line
+	5470 1760 5330 1760
+Wire Wire Line
+	5470 1760 5530 1760
+Wire Wire Line
+	5530 1760 5530 2320
+Wire Wire Line
+	5530 2320 5470 2320
+Connection ~ 5470 1760
+Wire Wire Line
+	4930 1920 4930 1760
+Connection ~ 4930 1760
+Wire Wire Line
+	4930 1760 4870 1760
+Wire Wire Line
+	4930 1760 5030 1760
 $Comp
 L Device:Crystal CY-2
-U 1 1 67FEB305
-P 13700 -2870
-F 0 "CY-2" H 13700 -2602 50  0000 C CNN
-F 1 "3.579545Mhz" H 13700 -2693 50  0000 C CNN
-F 2 "" H 13700 -2870 50  0001 C CNN
-F 3 "~" H 13700 -2870 50  0001 C CNN
-	1    13700 -2870
+U 1 1 66429452
+P 7580 -3630
+F 0 "CY-2" H 7600 -3470 50  0000 C CNN
+F 1 "3.579545Mhz" H 7600 -3770 50  0000 C CNN
+F 2 "" H 7580 -3630 50  0001 C CNN
+F 3 "~" H 7580 -3630 50  0001 C CNN
+	1    7580 -3630
 	1    0    0    -1  
 $EndComp
 $Comp
-L agg-kicad:C C?
-U 1 1 67FEC84F
-P 13960 -2730
-F 0 "C?" V 13964 -2672 50  0000 L CNN
-F 1 "15pF" V 14055 -2672 50  0000 L CNN
-F 2 "" H 13960 -2730 50  0001 C CNN
-F 3 "" H 13960 -2730 50  0001 C CNN
-	1    13960 -2730
+L agg-kicad:C C9
+U 1 1 664535A7
+P 7860 -3440
+F 0 "C9" V 7870 -3410 50  0000 L CNN
+F 1 "15pF" V 7950 -3420 50  0000 L CNN
+F 2 "" H 7860 -3440 50  0001 C CNN
+F 3 "" H 7860 -3440 50  0001 C CNN
+	1    7860 -3440
 	0    1    1    0   
 $EndComp
 $Comp
-L agg-kicad:C C?
-U 1 1 67FED211
-P 13510 -2710
-F 0 "C?" V 13514 -2652 50  0000 L CNN
-F 1 "15pF" V 13605 -2652 50  0000 L CNN
-F 2 "" H 13510 -2710 50  0001 C CNN
-F 3 "" H 13510 -2710 50  0001 C CNN
-	1    13510 -2710
-	0    1    1    0   
+L agg-kicad:C C8
+U 1 1 664535AD
+P 7260 -3350
+F 0 "C8" V 7360 -3230 50  0000 R CNN
+F 1 "15pF" V 7260 -3170 50  0000 R CNN
+F 2 "" H 7260 -3350 50  0001 C CNN
+F 3 "" H 7260 -3350 50  0001 C CNN
+	1    7260 -3350
+	0    -1   -1   0   
 $EndComp
 $Comp
-L agg-kicad:C C?
-U 1 1 67FED983
-P 13820 -3650
-F 0 "C?" V 13824 -3592 50  0000 L CNN
-F 1 "33pF" V 13915 -3592 50  0000 L CNN
-F 2 "" H 13820 -3650 50  0001 C CNN
-F 3 "" H 13820 -3650 50  0001 C CNN
-	1    13820 -3650
-	0    1    1    0   
-$EndComp
-$Comp
-L agg-kicad:C C?
-U 1 1 67FEE0F0
-P 13370 -3670
-F 0 "C?" V 13374 -3612 50  0000 L CNN
-F 1 "33pF" V 13465 -3612 50  0000 L CNN
-F 2 "" H 13370 -3670 50  0001 C CNN
-F 3 "" H 13370 -3670 50  0001 C CNN
-	1    13370 -3670
-	0    1    1    0   
-$EndComp
-$Comp
-L agg-kicad:R R?
-U 1 1 67FF4DF2
-P 14350 -2880
-F 0 "R?" H 14400 -2699 50  0000 C CNN
-F 1 "1M" H 14400 -2790 50  0000 C CNN
-F 2 "" H 14350 -2880 50  0001 C CNN
-F 3 "" H 14350 -2880 50  0001 C CNN
-	1    14350 -2880
+L power:GND #PWR?
+U 1 1 664535B3
+P 7740 -3340
+F 0 "#PWR?" H 7740 -3590 50  0001 C CNN
+F 1 "GND" H 7745 -3513 50  0000 C CNN
+F 2 "" H 7740 -3340 50  0001 C CNN
+F 3 "" H 7740 -3340 50  0001 C CNN
+	1    7740 -3340
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	7730 -3630 7860 -3630
+Wire Wire Line
+	7860 -3630 7860 -3440
+Connection ~ 7860 -3630
+$Comp
+L agg-kicad:R R14
+U 1 1 665CF240
+P 7510 -3870
+F 0 "R14" H 7460 -3800 50  0000 C CNN
+F 1 "1M" H 7660 -3810 50  0000 C CNN
+F 2 "" H 7510 -3870 50  0001 C CNN
+F 3 "" H 7510 -3870 50  0001 C CNN
+	1    7510 -3870
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7430 -3630 7260 -3630
+Wire Wire Line
+	7260 -3340 7260 -3350
+Connection ~ 7260 -3630
+Connection ~ 7740 -3340
+Wire Wire Line
+	7740 -3340 7860 -3340
+Wire Wire Line
+	7260 -3870 7510 -3870
+Wire Wire Line
+	7610 -3870 7860 -3870
+Wire Wire Line
+	7260 -3340 7740 -3340
+Wire Wire Line
+	7260 -3450 7260 -3630
+Wire Wire Line
+	7260 -3870 7260 -3630
+Wire Wire Line
+	7860 -3870 7860 -3630
+Text GLabel 5630 2720 2    51   Input ~ 0
+B-Y_OUT
+Text GLabel 5480 2420 2    51   Input ~ 0
+R-Y_OUT
+Text GLabel 5530 2620 2    51   Input ~ 0
+Y_OUT
+Text GLabel 7810 10720 1    51   Input ~ 0
+B-Y_OUT
+Text GLabel 7440 10600 0    51   Input ~ 0
+R-Y_OUT
+Text GLabel 8180 10600 2    51   Input ~ 0
+Y_OUT
+$Comp
+L power:GND #PWR?
+U 1 1 668FB12F
+P 7910 10720
+F 0 "#PWR?" H 7910 10470 50  0001 C CNN
+F 1 "GND" V 7910 10530 50  0000 C CNN
+F 2 "" H 7910 10720 50  0001 C CNN
+F 3 "" H 7910 10720 50  0001 C CNN
+	1    7910 10720
+	1    0    0    1   
+$EndComp
+$Comp
+L agg-kicad:CP C6
+U 1 1 66920284
+P 8080 10600
+F 0 "C6" H 8170 10690 50  0000 R CNN
+F 1 "47uf/16v" H 8420 10490 50  0000 R CNN
+F 2 "" H 8080 10600 50  0001 C CNN
+F 3 "" H 8080 10600 50  0001 C CNN
+	1    8080 10600
+	1    0    0    -1  
+$EndComp
+$Comp
+L agg-kicad:CP C5
+U 1 1 6694214D
+P 7540 10600
+F 0 "C5" H 7630 10520 50  0000 R CNN
+F 1 "CP" H 7640 10700 50  0000 R CNN
+F 2 "" H 7540 10600 50  0001 C CNN
+F 3 "" H 7540 10600 50  0001 C CNN
+	1    7540 10600
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7540 10600 7710 10600
+Wire Wire Line
+	7710 10600 7710 10720
+Wire Wire Line
+	8010 10720 8010 10600
+Wire Wire Line
+	8010 10600 8080 10600
+$Comp
+L agg-kicad:CP C1
+U 1 1 66C10196
+P 5890 10950
+F 0 "C1" V 5970 11110 50  0000 R CNN
+F 1 "47uf/16v" V 5930 10900 50  0000 R CNN
+F 2 "" H 5890 10950 50  0001 C CNN
+F 3 "" H 5890 10950 50  0001 C CNN
+	1    5890 10950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L agg-kicad:CONN_01x04 CONN-1
+U 1 1 66C3456F
+P 5640 10970
+F 0 "CONN-1" V 5530 10670 50  0000 L CNN
+F 1 "CONN_01x04" V 5450 10620 50  0000 L CNN
+F 2 "" H 5640 10970 50  0001 C CNN
+F 3 "" H 5640 10970 50  0001 C CNN
+	1    5640 10970
+	0    1    -1   0   
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 66C7B5B4
+P 5640 10760
+F 0 "#PWR?" H 5640 10610 50  0001 C CNN
+F 1 "+5V" H 5655 10933 50  0000 C CNN
+F 2 "" H 5640 10760 50  0001 C CNN
+F 3 "" H 5640 10760 50  0001 C CNN
+	1    5640 10760
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5640 10870 5640 10800
+Wire Wire Line
+	5540 10870 5540 10610
+Wire Wire Line
+	5540 10610 5450 10610
+Wire Wire Line
+	5440 10870 5440 10720
+Wire Wire Line
+	5440 10720 5290 10720
+Wire Wire Line
+	5340 10870 5340 10810
+Wire Wire Line
+	5340 10810 5260 10810
+Text GLabel 5290 10720 0    51   Input ~ 0
+12V
+Text GLabel 5260 10810 0    51   Input ~ 0
+MINUS12V
+$Comp
+L power:GND #PWR?
+U 1 1 66D76F35
+P 5450 10610
+F 0 "#PWR?" H 5450 10360 50  0001 C CNN
+F 1 "GND" V 5455 10482 50  0000 R CNN
+F 2 "" H 5450 10610 50  0001 C CNN
+F 3 "" H 5450 10610 50  0001 C CNN
+	1    5450 10610
+	0    1    1    0   
+$EndComp
+Connection ~ 5640 10800
+Wire Wire Line
+	5640 10800 5640 10760
+$Comp
+L power:GND #PWR?
+U 1 1 66DC36F2
+P 5890 10950
+F 0 "#PWR?" H 5890 10700 50  0001 C CNN
+F 1 "GND" H 6110 10870 50  0000 R CNN
+F 2 "" H 5890 10950 50  0001 C CNN
+F 3 "" H 5890 10950 50  0001 C CNN
+	1    5890 10950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5890 10800 5890 10850
+Wire Wire Line
+	5640 10800 5890 10800
+$Comp
+L agg-kicad:CONN_01x11 CONN-9
+U 1 1 66E82009
+P -240 9820
+F 0 "CONN-9" H -550 9690 50  0000 C CNN
+F 1 "CONN_01x11" V -454 9315 50  0000 C CNN
+F 2 "" H -240 9820 50  0001 C CNN
+F 3 "" H -240 9820 50  0001 C CNN
+	1    -240 9820
+	1    0    0    1   
+$EndComp
+$Comp
+L agg-kicad:CONN_01x02 CONN-10
+U 1 1 66E83964
+P 930 6900
+F 0 "CONN-10" H 963 7115 50  0000 C CNN
+F 1 "CONN_01x02" H 963 7024 50  0000 C CNN
+F 2 "" H 930 6900 50  0001 C CNN
+F 3 "" H 930 6900 50  0001 C CNN
+	1    930  6900
+	1    0    0    -1  
+$EndComp
+Text GLabel 1030 7000 2    51   Input ~ 0
+SW1
+Text GLabel 1030 6900 2    51   Input ~ 0
+SW2
+Text Notes 660  7270 0    51   ~ 0
+(RRR) wires to P917\nin AV input PCB (+slot switch)
+Text Notes -500 8460 3    51   ~ 0
+(XXX) wires to AV input PCB\n(Printer port)
+Text Notes 4420 11100 0    51   ~ 0
+(WWW) wires to P914\nin AV input PCB
+Text Notes 6780 11090 0    51   ~ 0
+(LLL) wires to P913\nin 4CEC PCB
+$Comp
+L agg-kicad:CONN_01x06 CONN-6
+U 1 1 66EEA462
+P 15120 1960
+F 0 "CONN-6" H 15390 1330 50  0000 R CNN
+F 1 "CONN_01x06" H 15210 2070 50  0000 R CNN
+F 2 "" H 15120 1960 50  0001 C CNN
+F 3 "" H 15120 1960 50  0001 C CNN
+	1    15120 1960
+	-1   0    0    1   
+$EndComp
+Text Notes 15210 1380 0    51   ~ 0
+(UUU) wires to P902\nin front PCB
+Text Notes 15170 1940 0    51   ~ 0
+RESET BUTTON
+Text Notes 15170 1740 0    51   ~ 0
+LOAD BUTTON
+Text Notes 15170 1550 0    51   ~ 0
+RUN BUTTON
+Wire Wire Line
+	7860 -3870 7860 -4100
+Wire Wire Line
+	7860 -4100 7900 -4100
+Connection ~ 7860 -3870
+$Comp
+L agg-kicad:R R3
+U 1 1 675F3568
+P 9120 -2580
+F 0 "R3" V 9200 -2470 50  0000 C CNN
+F 1 "3K3" V 9130 -2480 50  0000 C CNN
+F 2 "" H 9120 -2580 50  0001 C CNN
+F 3 "" H 9120 -2580 50  0001 C CNN
+	1    9120 -2580
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 675F356F
+P 9120 -2680
+F 0 "#PWR?" H 9120 -2830 50  0001 C CNN
+F 1 "+5V" H 9135 -2507 50  0000 C CNN
+F 2 "" H 9120 -2680 50  0001 C CNN
+F 3 "" H 9120 -2680 50  0001 C CNN
+	1    9120 -2680
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9550 -2400 9120 -2400
+Wire Wire Line
+	9120 -2580 9120 -2400
+Text GLabel 9550 -1300 0    51   Input ~ 0
+~RD
+Wire Wire Line
+	9450 8060 9190 8060
+Wire Wire Line
+	9190 8060 9190 8170
+Wire Wire Line
+	9190 8170 9130 8170
+NoConn ~ 9450 8260
+Wire Wire Line
+	9450 7960 9140 7960
+Wire Wire Line
+	9140 7960 9140 8020
+Wire Wire Line
+	9330 7610 9360 7610
+Wire Wire Line
+	9360 7610 9360 7660
+Wire Wire Line
+	9360 7660 9450 7660
+Wire Wire Line
+	9450 7560 9370 7560
+Wire Wire Line
+	9370 7560 9370 7420
+Wire Wire Line
+	9370 7420 9330 7420
+Wire Wire Line
+	10040 7430 9950 7430
+Wire Wire Line
+	9950 7430 9950 7560
+Wire Wire Line
+	9950 7660 9980 7660
+Wire Wire Line
+	9980 7660 9980 7610
+Wire Wire Line
+	9980 7610 10060 7610
+Wire Wire Line
+	9950 8260 9950 8300
+Wire Wire Line
+	9950 8300 10120 8300
+Wire Wire Line
+	10120 8300 10120 8320
+Wire Wire Line
+	10120 8320 10170 8320
+Wire Wire Line
+	10020 8200 9950 8200
+Wire Wire Line
+	9950 8200 9950 8160
+Wire Wire Line
+	10020 7960 10020 7920
+Wire Wire Line
+	10020 7920 10080 7920
+Wire Wire Line
+	9950 7960 10020 7960
+Text GLabel 6500 4100 1    51   Input ~ 0
+~CAS1
+Text GLabel 6650 4040 1    51   Input ~ 0
+~CAS0
+Text GLabel 6820 4070 1    51   Input ~ 0
+~RAS
+Wire Wire Line
+	6500 4340 6500 4200
+Wire Wire Line
+	6500 4340 6560 4340
+Wire Wire Line
+	6650 4140 6650 4170
+Wire Wire Line
+	6650 4170 6660 4170
+Wire Wire Line
+	6660 4170 6660 4530
+Wire Wire Line
+	6820 4250 6820 4170
+Wire Wire Line
+	6760 4250 6820 4250
+Text GLabel 5470 3920 2    51   Input ~ 0
+D6
+$Comp
+L power:GND #PWR?
+U 1 1 67AC800D
+P 3730 3330
+F 0 "#PWR?" H 3730 3080 50  0001 C CNN
+F 1 "GND" H 3735 3157 50  0000 C CNN
+F 2 "" H 3730 3330 50  0001 C CNN
+F 3 "" H 3730 3330 50  0001 C CNN
+	1    3730 3330
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3730 3320 3730 3330
+Wire Wire Line
+	3730 3320 4070 3320
+Wire Wire Line
+	5560 5530 3880 5530
+Wire Wire Line
+	3880 5530 3880 3620
+Wire Wire Line
+	3880 3620 4070 3620
+Wire Wire Line
+	4070 3520 3800 3520
+Wire Wire Line
+	3800 3520 3800 4530
+Wire Wire Line
+	3800 4530 5960 4530
+Wire Wire Line
+	4070 3720 3680 3720
+Wire Wire Line
+	9550 -2300 8900 -2300
+Text GLabel 7100 -2200 0    51   Input ~ 0
+~VDP_INT
+Text GLabel 3760 3720 0    51   Input ~ 0
+~VDP_INT
+Text GLabel 6810 -2730 0    51   Input ~ 0
+~SLOT_INT
+Connection ~ 6810 -3040
+Wire Wire Line
+	6810 -3040 6810 -3050
+Wire Wire Line
+	9450 7860 9170 7860
+Wire Wire Line
+	7860 -4290 7860 -4100
+Wire Wire Line
+	7860 -4100 7870 -4100
+Connection ~ 7860 -4100
+Wire Wire Line
+	7260 -4290 7260 -3870
+Wire Wire Line
+	7260 -3870 7250 -3870
+Connection ~ 7260 -3870
+Text GLabel 8500 -4100 2    51   Input ~ 0
+CLOCK
+Wire Wire Line
+	23230 -9590 23230 -9790
+$Comp
+L power:GND #PWR?
+U 1 1 6822FB75
+P 23230 -9590
+F 0 "#PWR?" H 23230 -9840 50  0001 C CNN
+F 1 "GND" H 23235 -9763 50  0000 C CNN
+F 2 "" H 23230 -9590 50  0001 C CNN
+F 3 "" H 23230 -9590 50  0001 C CNN
+	1    23230 -9590
+	1    0    0    -1  
+$EndComp
+Connection ~ 23230 -9590
+Wire Wire Line
+	6550 1580 6550 1530
+Connection ~ 6550 1580
+$Comp
+L power:+5V #PWR?
+U 1 1 678E2903
+P 6550 1580
+F 0 "#PWR?" H 6550 1430 50  0001 C CNN
+F 1 "+5V" V 6565 1708 50  0000 L CNN
+F 2 "" H 6550 1580 50  0001 C CNN
+F 3 "" H 6550 1580 50  0001 C CNN
+	1    6550 1580
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6550 1630 6550 1580
+Text GLabel 6550 1330 0    51   Input ~ 0
+A13
+Text GLabel 6550 1230 0    51   Input ~ 0
+A12
+Text GLabel 6550 330  0    51   Input ~ 0
+A3
+Text GLabel 6550 1130 0    51   Input ~ 0
+A11
+Text GLabel 6550 1030 0    51   Input ~ 0
+A10
+Text GLabel 6550 930  0    51   Input ~ 0
+A9
+Text GLabel 6550 830  0    51   Input ~ 0
+A8
+Text GLabel 6550 730  0    51   Input ~ 0
+A7
+Text GLabel 6550 130  0    51   Input ~ 0
+A1
+Text GLabel 6550 230  0    51   Input ~ 0
+A2
+Text GLabel 6550 430  0    51   Input ~ 0
+A4
+Text GLabel 6550 530  0    51   Input ~ 0
+A5
+Text GLabel 6550 630  0    51   Input ~ 0
+A6
+Text GLabel 7350 730  2    51   Input ~ 0
+D7
+Text GLabel 7350 630  2    51   Input ~ 0
+D6
+Text GLabel 7350 530  2    51   Input ~ 0
+D5
+Text GLabel 7350 430  2    51   Input ~ 0
+D4
+Text GLabel 7350 330  2    51   Input ~ 0
+D3
+Text GLabel 7350 230  2    51   Input ~ 0
+D2
+Text GLabel 7350 130  2    51   Input ~ 0
+D1
+Text GLabel 6550 1830 0    51   Input ~ 0
+A15
+Wire Wire Line
+	6440 1730 6550 1730
+Wire Wire Line
+	6440 2240 6440 1730
+Wire Wire Line
+	7030 2240 6440 2240
+$Comp
+L Memory_EPROM:27C128 IC5
+U 1 1 67A7A3B0
+P 6950 930
+F 0 "IC5" H 6950 2211 50  0000 C CNN
+F 1 "27C128" H 6950 2120 50  0000 C CNN
+F 2 "Package_DIP:DIP-28_W15.24mm" H 6950 930 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/devicedoc/11003L.pdf" H 6950 930 50  0001 C CNN
+	1    6950 930 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9000 440  7970 440 
+Wire Wire Line
+	7970 440  7970 1710
+Wire Wire Line
+	7970 1710 8200 1710
+Wire Wire Line
+	8210 1810 8200 1810
+Wire Wire Line
+	7840 1810 7840 200 
+Wire Wire Line
+	7840 200  8160 200 
+Connection ~ 8200 1810
+Wire Wire Line
+	8200 1810 7840 1810
+Text GLabel 8760 100  2    51   Input ~ 0
+~WR
+Text GLabel 9600 540  2    51   Input ~ 0
+~RD
+Wire Wire Line
+	8760 300  9120 300 
+Wire Wire Line
+	9120 300  9120 150 
+Wire Wire Line
+	9120 150  9600 150 
+Wire Wire Line
+	9600 150  9600 340 
+Text GLabel 5250 5830 0    51   Input ~ 0
+~8255_ENABLE
+Wire Wire Line
+	5560 5830 5250 5830
+Text GLabel 9600 260  2    51   Input ~ 0
+~8255_ENABLE
+Wire Wire Line
+	7700 -2400 7700 -2700
+Wire Wire Line
+	7100 -2700 6810 -2700
+Wire Wire Line
+	6810 -2700 6810 -2810
+Wire Wire Line
+	23070 -7690 23550 -7690
+Wire Wire Line
+	23830 -8700 23600 -8700
+Wire Wire Line
+	23070 -8700 23070 -8690
+Wire Wire Line
+	23830 -7690 23830 -7700
+$Comp
+L power:GND #PWR?
+U 1 1 6890F6D4
+P 23550 -7690
+F 0 "#PWR?" H 23550 -7940 50  0001 C CNN
+F 1 "GND" H 23555 -7863 50  0000 C CNN
+F 2 "" H 23550 -7690 50  0001 C CNN
+F 3 "" H 23550 -7690 50  0001 C CNN
+	1    23550 -7690
+	1    0    0    -1  
+$EndComp
+Connection ~ 23550 -7690
+Wire Wire Line
+	23550 -7690 23830 -7690
+$Comp
+L power:+5V #PWR?
+U 1 1 689102CA
+P 23600 -8700
+F 0 "#PWR?" H 23600 -8850 50  0001 C CNN
+F 1 "+5V" H 23615 -8527 50  0000 C CNN
+F 2 "" H 23600 -8700 50  0001 C CNN
+F 3 "" H 23600 -8700 50  0001 C CNN
+	1    23600 -8700
+	1    0    0    -1  
+$EndComp
+Connection ~ 23600 -8700
+Wire Wire Line
+	23600 -8700 23070 -8700
+Wire Wire Line
+	9600 3310 11170 3310
+Wire Wire Line
+	11170 3310 11170 900 
+Text GLabel 16120 -3890 0    51   Input ~ 0
+IC12_Eb
+Text GLabel 11770 900  2    51   Input ~ 0
+IC12_Eb
+Text GLabel 890  1930 0    51   Input ~ 0
+AD3
+Text GLabel 890  2030 0    51   Input ~ 0
+AD2
+Text GLabel 890  1830 0    51   Input ~ 0
+AD1
+$Comp
+L power:+5V #PWR?
+U 1 1 68E6730A
+P 1240 1230
+F 0 "#PWR?" H 1240 1080 50  0001 C CNN
+F 1 "+5V" V 1255 1358 50  0000 L CNN
+F 2 "" H 1240 1230 50  0001 C CNN
+F 3 "" H 1240 1230 50  0001 C CNN
+	1    1240 1230
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 68E680C0
+P 1240 2230
+F 0 "#PWR?" H 1240 1980 50  0001 C CNN
+F 1 "GND" V 1245 2102 50  0000 R CNN
+F 2 "" H 1240 2230 50  0001 C CNN
+F 3 "" H 1240 2230 50  0001 C CNN
+	1    1240 2230
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Memory_RAM:DRAM_8118 IC17
+U 1 1 68EA39F2
+P 2890 2330
+F 0 "IC17" H 2765 3611 50  0000 C CNN
+F 1 "DRAM_8118" H 2765 3520 50  0000 C CNN
+F 2 "Package_DIP:DIP-16_W7.62mm" H 2890 2030 50  0001 C CNN
+F 3 "https://www.alliancememory.com/wp-content/uploads/pdf/AS6C4008.pdf" H 2890 2430 50  0001 C CNN
+	1    2890 2330
+	1    0    0    -1  
+$EndComp
+Text GLabel 3140 1630 2    51   Input ~ 0
+AD7
+Text GLabel 3140 1930 2    51   Input ~ 0
+AD6
+Text GLabel 3140 1830 2    51   Input ~ 0
+AD5
+Text GLabel 3140 1730 2    51   Input ~ 0
+AD4
+Text GLabel 3140 1430 2    51   Input ~ 0
+V_CAS_
+Text GLabel 2390 1730 0    51   Input ~ 0
+V_RAS_
+Text GLabel 2390 1630 0    51   Input ~ 0
+V_RW_
+Text GLabel 2390 1930 0    51   Input ~ 0
+AD3
+Text GLabel 2390 2030 0    51   Input ~ 0
+AD2
+Text GLabel 2390 1830 0    51   Input ~ 0
+AD1
+$Comp
+L power:+5V #PWR?
+U 1 1 68EA3A02
+P 2740 1230
+F 0 "#PWR?" H 2740 1080 50  0001 C CNN
+F 1 "+5V" V 2755 1358 50  0000 L CNN
+F 2 "" H 2740 1230 50  0001 C CNN
+F 3 "" H 2740 1230 50  0001 C CNN
+	1    2740 1230
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 68EA3A08
+P 2740 2230
+F 0 "#PWR?" H 2740 1980 50  0001 C CNN
+F 1 "GND" V 2745 2102 50  0000 R CNN
+F 2 "" H 2740 2230 50  0001 C CNN
+F 3 "" H 2740 2230 50  0001 C CNN
+	1    2740 2230
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Memory_RAM:DRAM_8118 IC18
+U 1 1 68F830D0
+P 1380 3630
+F 0 "IC18" H 1255 4911 50  0000 C CNN
+F 1 "DRAM_8118" H 1255 4820 50  0000 C CNN
+F 2 "Package_DIP:DIP-16_W7.62mm" H 1380 3330 50  0001 C CNN
+F 3 "https://www.alliancememory.com/wp-content/uploads/pdf/AS6C4008.pdf" H 1380 3730 50  0001 C CNN
+	1    1380 3630
+	1    0    0    -1  
+$EndComp
+Text GLabel 1630 2930 2    51   Input ~ 0
+AD7
+Text GLabel 1630 3230 2    51   Input ~ 0
+AD6
+Text GLabel 1630 3130 2    51   Input ~ 0
+AD5
+Text GLabel 1630 3030 2    51   Input ~ 0
+AD4
+Text GLabel 1630 2730 2    51   Input ~ 0
+V_CAS_
+Text GLabel 880  3030 0    51   Input ~ 0
+V_RAS_
+Text GLabel 880  2930 0    51   Input ~ 0
+V_RW_
+Text GLabel 880  3230 0    51   Input ~ 0
+AD3
+Text GLabel 880  3330 0    51   Input ~ 0
+AD2
+Text GLabel 880  3130 0    51   Input ~ 0
+AD1
+$Comp
+L power:+5V #PWR?
+U 1 1 68F830E0
+P 1230 2530
+F 0 "#PWR?" H 1230 2380 50  0001 C CNN
+F 1 "+5V" V 1245 2658 50  0000 L CNN
+F 2 "" H 1230 2530 50  0001 C CNN
+F 3 "" H 1230 2530 50  0001 C CNN
+	1    1230 2530
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 68F830E6
+P 1230 3530
+F 0 "#PWR?" H 1230 3280 50  0001 C CNN
+F 1 "GND" V 1235 3402 50  0000 R CNN
+F 2 "" H 1230 3530 50  0001 C CNN
+F 3 "" H 1230 3530 50  0001 C CNN
+	1    1230 3530
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Memory_RAM:DRAM_8118 IC19
+U 1 1 68FF0BDC
+P 2840 3630
+F 0 "IC19" H 2715 4911 50  0000 C CNN
+F 1 "DRAM_8118" H 2715 4820 50  0000 C CNN
+F 2 "Package_DIP:DIP-16_W7.62mm" H 2840 3330 50  0001 C CNN
+F 3 "https://www.alliancememory.com/wp-content/uploads/pdf/AS6C4008.pdf" H 2840 3730 50  0001 C CNN
+	1    2840 3630
+	1    0    0    -1  
+$EndComp
+Text GLabel 3090 2930 2    51   Input ~ 0
+AD7
+Text GLabel 3090 3230 2    51   Input ~ 0
+AD6
+Text GLabel 3090 3130 2    51   Input ~ 0
+AD5
+Text GLabel 3090 3030 2    51   Input ~ 0
+AD4
+Text GLabel 3090 2730 2    51   Input ~ 0
+V_CAS_
+Text GLabel 2340 3030 0    51   Input ~ 0
+V_RAS_
+Text GLabel 2340 2930 0    51   Input ~ 0
+V_RW_
+Text GLabel 2340 3230 0    51   Input ~ 0
+AD3
+Text GLabel 2340 3330 0    51   Input ~ 0
+AD2
+Text GLabel 2340 3130 0    51   Input ~ 0
+AD1
+$Comp
+L power:+5V #PWR?
+U 1 1 68FF0BEC
+P 2690 2530
+F 0 "#PWR?" H 2690 2380 50  0001 C CNN
+F 1 "+5V" V 2705 2658 50  0000 L CNN
+F 2 "" H 2690 2530 50  0001 C CNN
+F 3 "" H 2690 2530 50  0001 C CNN
+	1    2690 2530
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 68FF0BF2
+P 2690 3530
+F 0 "#PWR?" H 2690 3280 50  0001 C CNN
+F 1 "GND" V 2695 3402 50  0000 R CNN
+F 2 "" H 2690 3530 50  0001 C CNN
+F 3 "" H 2690 3530 50  0001 C CNN
+	1    2690 3530
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Memory_RAM:DRAM_8118 IC20
+U 1 1 6905FD1F
+P 1370 4940
+F 0 "IC20" H 1245 6221 50  0000 C CNN
+F 1 "DRAM_8118" H 1245 6130 50  0000 C CNN
+F 2 "Package_DIP:DIP-16_W7.62mm" H 1370 4640 50  0001 C CNN
+F 3 "https://www.alliancememory.com/wp-content/uploads/pdf/AS6C4008.pdf" H 1370 5040 50  0001 C CNN
+	1    1370 4940
+	1    0    0    -1  
+$EndComp
+Text GLabel 1620 4240 2    51   Input ~ 0
+AD7
+Text GLabel 1620 4540 2    51   Input ~ 0
+AD6
+Text GLabel 1620 4440 2    51   Input ~ 0
+AD5
+Text GLabel 1620 4340 2    51   Input ~ 0
+AD4
+Text GLabel 1620 4040 2    51   Input ~ 0
+V_CAS_
+Text GLabel 870  4340 0    51   Input ~ 0
+V_RAS_
+Text GLabel 870  4240 0    51   Input ~ 0
+V_RW_
+Text GLabel 870  4540 0    51   Input ~ 0
+AD3
+Text GLabel 870  4640 0    51   Input ~ 0
+AD2
+Text GLabel 870  4440 0    51   Input ~ 0
+AD1
+$Comp
+L power:+5V #PWR?
+U 1 1 6905FD2F
+P 1220 3840
+F 0 "#PWR?" H 1220 3690 50  0001 C CNN
+F 1 "+5V" V 1235 3968 50  0000 L CNN
+F 2 "" H 1220 3840 50  0001 C CNN
+F 3 "" H 1220 3840 50  0001 C CNN
+	1    1220 3840
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 6905FD35
+P 1220 4840
+F 0 "#PWR?" H 1220 4590 50  0001 C CNN
+F 1 "GND" V 1225 4712 50  0000 R CNN
+F 2 "" H 1220 4840 50  0001 C CNN
+F 3 "" H 1220 4840 50  0001 C CNN
+	1    1220 4840
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Memory_RAM:DRAM_8118 IC21
+U 1 1 69093C70
+P 2840 4960
+F 0 "IC21" H 2715 6241 50  0000 C CNN
+F 1 "DRAM_8118" H 2715 6150 50  0000 C CNN
+F 2 "Package_DIP:DIP-16_W7.62mm" H 2840 4660 50  0001 C CNN
+F 3 "https://www.alliancememory.com/wp-content/uploads/pdf/AS6C4008.pdf" H 2840 5060 50  0001 C CNN
+	1    2840 4960
+	1    0    0    -1  
+$EndComp
+Text GLabel 3090 4260 2    51   Input ~ 0
+AD7
+Text GLabel 3090 4560 2    51   Input ~ 0
+AD6
+Text GLabel 3090 4460 2    51   Input ~ 0
+AD5
+Text GLabel 3090 4360 2    51   Input ~ 0
+AD4
+Text GLabel 3090 4060 2    51   Input ~ 0
+V_CAS_
+Text GLabel 2340 4360 0    51   Input ~ 0
+V_RAS_
+Text GLabel 2340 4260 0    51   Input ~ 0
+V_RW_
+Text GLabel 2340 4560 0    51   Input ~ 0
+AD3
+Text GLabel 2340 4660 0    51   Input ~ 0
+AD2
+Text GLabel 2340 4460 0    51   Input ~ 0
+AD1
+$Comp
+L power:+5V #PWR?
+U 1 1 69093C80
+P 2690 3860
+F 0 "#PWR?" H 2690 3710 50  0001 C CNN
+F 1 "+5V" V 2705 3988 50  0000 L CNN
+F 2 "" H 2690 3860 50  0001 C CNN
+F 3 "" H 2690 3860 50  0001 C CNN
+	1    2690 3860
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 69093C86
+P 2690 4860
+F 0 "#PWR?" H 2690 4610 50  0001 C CNN
+F 1 "GND" V 2695 4732 50  0000 R CNN
+F 2 "" H 2690 4860 50  0001 C CNN
+F 3 "" H 2690 4860 50  0001 C CNN
+	1    2690 4860
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Memory_RAM:DRAM_8118 IC22
+U 1 1 690C8EA9
+P 1350 6260
+F 0 "IC22" H 1225 7541 50  0000 C CNN
+F 1 "DRAM_8118" H 1225 7450 50  0000 C CNN
+F 2 "Package_DIP:DIP-16_W7.62mm" H 1350 5960 50  0001 C CNN
+F 3 "https://www.alliancememory.com/wp-content/uploads/pdf/AS6C4008.pdf" H 1350 6360 50  0001 C CNN
+	1    1350 6260
+	1    0    0    -1  
+$EndComp
+Text GLabel 1600 5560 2    51   Input ~ 0
+AD7
+Text GLabel 1600 5860 2    51   Input ~ 0
+AD6
+Text GLabel 1600 5760 2    51   Input ~ 0
+AD5
+Text GLabel 1600 5660 2    51   Input ~ 0
+AD4
+Text GLabel 1600 5360 2    51   Input ~ 0
+V_CAS_
+Text GLabel 850  5660 0    51   Input ~ 0
+V_RAS_
+Text GLabel 850  5560 0    51   Input ~ 0
+V_RW_
+Text GLabel 850  5860 0    51   Input ~ 0
+AD3
+Text GLabel 850  5960 0    51   Input ~ 0
+AD2
+Text GLabel 850  5760 0    51   Input ~ 0
+AD1
+$Comp
+L power:+5V #PWR?
+U 1 1 690C8EB9
+P 1200 5160
+F 0 "#PWR?" H 1200 5010 50  0001 C CNN
+F 1 "+5V" V 1215 5288 50  0000 L CNN
+F 2 "" H 1200 5160 50  0001 C CNN
+F 3 "" H 1200 5160 50  0001 C CNN
+	1    1200 5160
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 690C8EBF
+P 1200 6160
+F 0 "#PWR?" H 1200 5910 50  0001 C CNN
+F 1 "GND" V 1205 6032 50  0000 R CNN
+F 2 "" H 1200 6160 50  0001 C CNN
+F 3 "" H 1200 6160 50  0001 C CNN
+	1    1200 6160
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Memory_RAM:DRAM_8118 IC23
+U 1 1 690FCAF4
+P 2820 6270
+F 0 "IC23" H 2695 7551 50  0000 C CNN
+F 1 "DRAM_8118" H 2695 7460 50  0000 C CNN
+F 2 "Package_DIP:DIP-16_W7.62mm" H 2820 5970 50  0001 C CNN
+F 3 "https://www.alliancememory.com/wp-content/uploads/pdf/AS6C4008.pdf" H 2820 6370 50  0001 C CNN
+	1    2820 6270
+	1    0    0    -1  
+$EndComp
+Text GLabel 3070 5570 2    51   Input ~ 0
+AD7
+Text GLabel 3070 5870 2    51   Input ~ 0
+AD6
+Text GLabel 3070 5770 2    51   Input ~ 0
+AD5
+Text GLabel 3070 5670 2    51   Input ~ 0
+AD4
+Text GLabel 3070 5370 2    51   Input ~ 0
+V_CAS_
+Text GLabel 2320 5670 0    51   Input ~ 0
+V_RAS_
+Text GLabel 2320 5570 0    51   Input ~ 0
+V_RW_
+Text GLabel 2320 5870 0    51   Input ~ 0
+AD3
+Text GLabel 2320 5970 0    51   Input ~ 0
+AD2
+Text GLabel 2320 5770 0    51   Input ~ 0
+AD1
+$Comp
+L power:+5V #PWR?
+U 1 1 690FCB04
+P 2670 5170
+F 0 "#PWR?" H 2670 5020 50  0001 C CNN
+F 1 "+5V" V 2685 5298 50  0000 L CNN
+F 2 "" H 2670 5170 50  0001 C CNN
+F 3 "" H 2670 5170 50  0001 C CNN
+	1    2670 5170
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 690FCB0A
+P 2670 6170
+F 0 "#PWR?" H 2670 5920 50  0001 C CNN
+F 1 "GND" V 2675 6042 50  0000 R CNN
+F 2 "" H 2670 6170 50  0001 C CNN
+F 3 "" H 2670 6170 50  0001 C CNN
+	1    2670 6170
+	0    -1   -1   0   
+$EndComp
+Text GLabel 4070 3420 0    51   Input ~ 0
+A0
+Text GLabel 4070 3820 0    51   Input ~ 0
+D0
+Text GLabel 4070 3920 0    51   Input ~ 0
+D1
+Text GLabel 4070 4020 0    51   Input ~ 0
+D2
+Text GLabel 4070 4120 0    51   Input ~ 0
+D3
+Text GLabel 5470 4120 2    51   Input ~ 0
+D4
+Text GLabel 5470 4020 2    51   Input ~ 0
+D5
+Text GLabel 5470 3820 2    51   Input ~ 0
+D7
+Wire Wire Line
+	6960 4530 6960 4260
+Wire Wire Line
+	6960 4260 7030 4260
+Wire Wire Line
+	7030 2240 7030 4260
+Text GLabel 5470 3020 2    51   Input ~ 0
+RD0
+Text GLabel 5470 3120 2    51   Input ~ 0
+RD1
+Text GLabel 5470 3220 2    51   Input ~ 0
+RD2
+Text GLabel 5470 3320 2    51   Input ~ 0
+RD3
+Text GLabel 5470 3420 2    51   Input ~ 0
+RD4
+Text GLabel 5470 3520 2    51   Input ~ 0
+RD5
+Text GLabel 5470 3620 2    51   Input ~ 0
+RD6
+Text GLabel 5470 3720 2    51   Input ~ 0
+RD7
+Text GLabel 3070 5470 2    51   Input ~ 0
+RD0
+Text GLabel 1600 5460 2    51   Input ~ 0
+RD1
+Text GLabel 3090 4160 2    51   Input ~ 0
+RD2
+Text GLabel 1620 4140 2    51   Input ~ 0
+RD3
+Text GLabel 3090 2830 2    51   Input ~ 0
+RD4
+Text GLabel 1630 2830 2    51   Input ~ 0
+RD5
+Text GLabel 3140 1530 2    51   Input ~ 0
+RD6
+Text GLabel 1640 1530 2    51   Input ~ 0
+RD7
+Wire Wire Line
+	5470 2220 5470 1920
+Wire Wire Line
+	4930 1920 5470 1920
+NoConn ~ 5470 2520
+Text GLabel 890  1530 0    51   Input ~ 0
+AD7
+Text GLabel 2390 1530 0    51   Input ~ 0
+AD6
+Text GLabel 880  2830 0    51   Input ~ 0
+AD5
+Text GLabel 2340 2830 0    51   Input ~ 0
+AD4
+Text GLabel 870  4140 0    51   Input ~ 0
+AD3
+Text GLabel 2340 4160 0    51   Input ~ 0
+AD2
+Text GLabel 850  5460 0    51   Input ~ 0
+AD1
+Text GLabel 2320 5470 0    51   Input ~ 0
+AD0
+$Comp
+L agg-kicad:R R6
+U 1 1 6992CD95
+P 14220 2890
+F 0 "R6" H 14270 3071 50  0000 C CNN
+F 1 "330R" H 14270 2980 50  0000 C CNN
+F 2 "" H 14220 2890 50  0001 C CNN
+F 3 "" H 14220 2890 50  0001 C CNN
+	1    14220 2890
+	1    0    0    -1  
+$EndComp
+$Comp
+L agg-kicad:R R7
+U 1 1 69931482
+P 14620 2880
+F 0 "R7" H 14670 3061 50  0000 C CNN
+F 1 "330R" H 14670 2970 50  0000 C CNN
+F 2 "" H 14620 2880 50  0001 C CNN
+F 3 "" H 14620 2880 50  0001 C CNN
+	1    14620 2880
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 69B157E2
+P 1530 10330
+F 0 "#PWR?" H 1530 10080 50  0001 C CNN
+F 1 "GND" H 1535 10157 50  0000 C CNN
+F 2 "" H 1530 10330 50  0001 C CNN
+F 3 "" H 1530 10330 50  0001 C CNN
+	1    1530 10330
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	-140 8820 -10  8820
+Wire Wire Line
+	-10  8820 -10  8730
+$Comp
+L power:GND #PWR?
+U 1 1 69B85044
+P -10 8730
+F 0 "#PWR?" H -10 8480 50  0001 C CNN
+F 1 "GND" V -5  8602 50  0000 R CNN
+F 2 "" H -10 8730 50  0001 C CNN
+F 3 "" H -10 8730 50  0001 C CNN
+	1    -10  8730
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	-140 9020 290  9020
+Wire Wire Line
+	-140 9120 380  9120
+Wire Wire Line
+	-140 9220 1030 9220
+Wire Wire Line
+	1030 9220 1030 9230
+Wire Wire Line
+	-140 9320 210  9320
+Wire Wire Line
+	-140 9420 30   9420
+Wire Wire Line
+	-150 9520 -140 9520
+Wire Wire Line
+	730  8930 730  9130
+Wire Wire Line
+	730  9130 1030 9130
+Connection ~ -140 9520
+Wire Wire Line
+	-140 9520 120  9520
+Connection ~ 1030 9130
+Wire Wire Line
+	1030 9130 1040 9130
+Wire Wire Line
+	-140 9720 1030 9720
+Wire Wire Line
+	1030 9720 1030 9730
+Wire Wire Line
+	-140 9820 920  9820
+Wire Wire Line
+	920  9820 920  9030
+Wire Wire Line
+	920  9030 1030 9030
+Connection ~ 1030 9030
+Wire Wire Line
+	1030 9030 1040 9030
+Wire Wire Line
+	30   9630 30   9420
+Wire Wire Line
+	30   9630 1030 9630
+Wire Wire Line
+	120  9520 120  8930
+Wire Wire Line
+	120  8930 730  8930
+Wire Wire Line
+	210  9530 210  9320
+Wire Wire Line
+	210  9530 1030 9530
+Wire Wire Line
+	290  9430 290  9020
+Wire Wire Line
+	290  9430 1030 9430
+Wire Wire Line
+	380  9330 380  9120
+Wire Wire Line
+	380  9330 1030 9330
+Wire Wire Line
+	2030 10030 2030 10330
+Wire Wire Line
+	2030 10330 1530 10330
+Connection ~ 1530 10330
+Text GLabel 6060 4530 1    51   Input ~ 0
+PrinterPortClk
+Text GLabel 2030 9930 2    51   Input ~ 0
+PrinterPortClk
+Text GLabel 2030 9030 2    51   Input ~ 0
+D0
+Text GLabel 2030 9130 2    51   Input ~ 0
+D1
+Text GLabel 2030 9230 2    51   Input ~ 0
+D2
+Text GLabel 2030 9330 2    51   Input ~ 0
+D3
+Text GLabel 2030 9430 2    51   Input ~ 0
+D4
+Text GLabel 2030 9530 2    51   Input ~ 0
+D5
+Text GLabel 2030 9630 2    51   Input ~ 0
+D6
+Text GLabel 2030 9730 2    51   Input ~ 0
+D7
+Text GLabel 6160 4530 1    51   Input ~ 0
+PrinterPortPin3
+Text GLabel -80  9620 3    51   Input ~ 0
+PrinterPortPin3
+Wire Wire Line
+	-140 9620 -80  9620
+Text GLabel 7960 6380 2    51   Input ~ 0
+PrinterPortPin10
+Text GLabel -80  8920 1    51   Input ~ 0
+PrinterPortPin10
+Wire Wire Line
+	-140 8920 -80  8920
 $EndSCHEMATC
