@@ -2875,7 +2875,7 @@ Wire Wire Line
 Wire Wire Line
 	10250 870  11380 870 
 Text Notes 11550 960  0    79   ~ 0
-(UUU) wires to CONN-6\nin MSX PCB
+(UUU) wires to CON-6\nin MSX PCB
 Text Notes 9720 520  0    157  ~ 31
 Front panel PCB:\n(channel switches+tuner pots+msx reset/load/run buttons)
 Text Notes 3910 650  0    50   ~ 0
@@ -2883,11 +2883,11 @@ Text Notes 3910 650  0    50   ~ 0
 Text Notes 5140 710  0    50   ~ 0
 (MMM) wires to P918\nin 4CEC
 Text Notes 8710 1510 0    50   ~ 0
-(WWW) wires to CONN-1\nin MSX PCB
+(WWW) wires to CON-1\nin MSX PCB
 Text Notes 8610 620  0    50   ~ 0
 (CCC) wires to J503\nin main pcb
 Text Notes 7380 480  0    50   ~ 0
-(RRR) wires to CONN-10\nin MSX PCB
+(RRR) wires to CON-10\nin MSX PCB
 $Comp
 L agg-kicad:CONN_01x09 P901
 U 1 1 658EB700
@@ -15237,7 +15237,7 @@ F 3 "" H 300 4780 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Text Notes 400  4530 0    51   ~ 0
-(XXX) wires to\nCONN-9 in MSX PCB
+(XXX) wires to\nCON-9 in MSX PCB
 $Comp
 L Connector_Generic:Conn_02x07_Top_Bottom J924
 U 1 1 65EC35DE

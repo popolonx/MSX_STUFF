@@ -1736,83 +1736,83 @@ Wire Wire Line
 $Comp
 L agg-kicad:CP C1
 U 1 1 66C10196
-P 3010 15570
-F 0 "C1" V 3090 15730 50  0000 R CNN
-F 1 "47uf/16v" V 3050 15520 50  0000 R CNN
-F 2 "" H 3010 15570 50  0001 C CNN
-F 3 "" H 3010 15570 50  0001 C CNN
-	1    3010 15570
+P 2610 15170
+F 0 "C1" V 2690 15330 50  0000 R CNN
+F 1 "47uf/16v" V 2650 15120 50  0000 R CNN
+F 2 "" H 2610 15170 50  0001 C CNN
+F 3 "" H 2610 15170 50  0001 C CNN
+	1    2610 15170
 	0    -1   -1   0   
 $EndComp
 $Comp
-L agg-kicad:CONN_01x04 CONN-1
+L agg-kicad:CONN_01x04 CON-1
 U 1 1 66C3456F
-P 2760 15590
-F 0 "CONN-1" V 2650 15290 50  0000 L CNN
-F 1 "CONN_01x04" V 2570 15240 50  0000 L CNN
-F 2 "" H 2760 15590 50  0001 C CNN
-F 3 "" H 2760 15590 50  0001 C CNN
-	1    2760 15590
+P 2360 15190
+F 0 "CON-1" V 2250 14890 50  0000 L CNN
+F 1 "CONN_01x04" V 2170 14840 50  0000 L CNN
+F 2 "" H 2360 15190 50  0001 C CNN
+F 3 "" H 2360 15190 50  0001 C CNN
+	1    2360 15190
 	0    1    -1   0   
 $EndComp
 $Comp
 L power:+5V #PWR0305
 U 1 1 66C7B5B4
-P 2760 15380
-F 0 "#PWR0305" H 2760 15230 50  0001 C CNN
-F 1 "+5V" H 2775 15553 50  0000 C CNN
-F 2 "" H 2760 15380 50  0001 C CNN
-F 3 "" H 2760 15380 50  0001 C CNN
-	1    2760 15380
+P 2360 14980
+F 0 "#PWR0305" H 2360 14830 50  0001 C CNN
+F 1 "+5V" H 2375 15153 50  0000 C CNN
+F 2 "" H 2360 14980 50  0001 C CNN
+F 3 "" H 2360 14980 50  0001 C CNN
+	1    2360 14980
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2760 15490 2760 15420
+	2360 15090 2360 15020
 Wire Wire Line
-	2660 15490 2660 15230
+	2260 15090 2260 14830
 Wire Wire Line
-	2660 15230 2570 15230
+	2260 14830 2170 14830
 Wire Wire Line
-	2560 15490 2560 15340
+	2160 15090 2160 14940
 Wire Wire Line
-	2560 15340 2410 15340
+	2160 14940 2010 14940
 Wire Wire Line
-	2460 15490 2460 15430
+	2060 15090 2060 15030
 Wire Wire Line
-	2460 15430 2380 15430
-Text GLabel 2410 15340 0    51   Input ~ 0
+	2060 15030 1980 15030
+Text GLabel 2010 14940 0    51   Input ~ 0
 12V
-Text GLabel 2380 15430 0    51   Input ~ 0
+Text GLabel 1980 15030 0    51   Input ~ 0
 MINUS12V
 $Comp
 L power:GND #PWR0306
 U 1 1 66D76F35
-P 2570 15230
-F 0 "#PWR0306" H 2570 14980 50  0001 C CNN
-F 1 "GND" V 2575 15102 50  0000 R CNN
-F 2 "" H 2570 15230 50  0001 C CNN
-F 3 "" H 2570 15230 50  0001 C CNN
-	1    2570 15230
+P 2170 14830
+F 0 "#PWR0306" H 2170 14580 50  0001 C CNN
+F 1 "GND" V 2175 14702 50  0000 R CNN
+F 2 "" H 2170 14830 50  0001 C CNN
+F 3 "" H 2170 14830 50  0001 C CNN
+	1    2170 14830
 	0    1    1    0   
 $EndComp
-Connection ~ 2760 15420
+Connection ~ 2360 15020
 Wire Wire Line
-	2760 15420 2760 15380
+	2360 15020 2360 14980
 $Comp
 L power:GND #PWR0307
 U 1 1 66DC36F2
-P 3010 15570
-F 0 "#PWR0307" H 3010 15320 50  0001 C CNN
-F 1 "GND" H 3230 15490 50  0000 R CNN
-F 2 "" H 3010 15570 50  0001 C CNN
-F 3 "" H 3010 15570 50  0001 C CNN
-	1    3010 15570
+P 2610 15170
+F 0 "#PWR0307" H 2610 14920 50  0001 C CNN
+F 1 "GND" H 2830 15090 50  0000 R CNN
+F 2 "" H 2610 15170 50  0001 C CNN
+F 3 "" H 2610 15170 50  0001 C CNN
+	1    2610 15170
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3010 15420 3010 15470
+	2610 15020 2610 15070
 Wire Wire Line
-	2760 15420 3010 15420
+	2360 15020 2610 15020
 $Comp
 L agg-kicad:CONN_01x02 CONN-10
 U 1 1 66E83964
@@ -1832,15 +1832,15 @@ Text Notes 1430 7810 0    51   ~ 0
 (RRR) wires to P917\nin AV input PCB (+slot switch)
 Text Notes 360  10900 0    51   ~ 0
 (XXX) wires to AV input PCB\n(Printer port)
-Text Notes 1540 15720 0    51   ~ 0
+Text Notes 1140 15320 0    51   ~ 0
 (WWW) wires to P914\nin AV input PCB
 Text Notes 7680 11920 0    51   ~ 0
 (LLL) wires to P913\nin 4CEC PCB
 $Comp
-L agg-kicad:CONN_01x06 CONN-6
+L agg-kicad:CONN_01x06 CON-6
 U 1 1 66EEA462
 P 14050 11500
-F 0 "CONN-6" H 14320 10870 50  0000 R CNN
+F 0 "CON-6" H 14320 10870 50  0000 R CNN
 F 1 "CONN_01x06" H 14140 11610 50  0000 R CNN
 F 2 "" H 14050 11500 50  0001 C CNN
 F 3 "" H 14050 11500 50  0001 C CNN
@@ -2749,10 +2749,10 @@ Wire Wire Line
 Wire Wire Line
 	5750 9900 5810 9900
 $Comp
-L Connector_Generic:Conn_02x11_Top_Bottom CONN-1/CONN-5
+L Connector_Generic:Conn_02x11_Top_Bottom CON-1/CON-5
 U 1 1 65FCD5A2
 P 15820 2890
-F 0 "CONN-1/CONN-5" H 15870 2260 50  0000 C CNN
+F 0 "CON-1/CON-5" H 15870 2260 50  0000 C CNN
 F 1 "Conn_02x11_Top_Bottom" H 15920 3690 50  0000 C CNN
 F 2 "" H 15820 2890 50  0001 C CNN
 F 3 "~" H 15820 2890 50  0001 C CNN
@@ -2760,7 +2760,7 @@ F 3 "~" H 15820 2890 50  0001 C CNN
 	1    0    0    1   
 $EndComp
 Text Notes 15550 3620 0    51   ~ 0
-CONN-11\n          CONN-5
+CON-11\n          CON-5
 Text Notes 15430 2200 0    51   ~ 0
 pin header in pcb,\nviewed from component side,\nwires to \nkeyboard connector
 Wire Wire Line
@@ -3795,10 +3795,10 @@ Wire Wire Line
 Wire Wire Line
 	1460 9640 1590 9640
 $Comp
-L agg-kicad:CONN_01x11 CONN-9
+L agg-kicad:CONN_01x11 CON-9
 U 1 1 66E82009
 P 1360 10640
-F 0 "CONN-9" H 1310 9490 50  0000 C CNN
+F 0 "CON-9" H 1310 9490 50  0000 C CNN
 F 1 "CONN_01x11" H 1200 9330 50  0000 C CNN
 F 2 "" H 1360 10640 50  0001 C CNN
 F 3 "" H 1360 10640 50  0001 C CNN
@@ -4009,19 +4009,19 @@ $EndComp
 $Comp
 L power:GND #PWR0368
 U 1 1 6C328C00
-P 13360 9580
-F 0 "#PWR0368" H 13360 9330 50  0001 C CNN
-F 1 "GND" H 13490 9520 50  0000 C CNN
-F 2 "" H 13360 9580 50  0001 C CNN
-F 3 "" H 13360 9580 50  0001 C CNN
-	1    13360 9580
+P 13410 9570
+F 0 "#PWR0368" H 13410 9320 50  0001 C CNN
+F 1 "GND" H 13560 9530 50  0000 C CNN
+F 2 "" H 13410 9570 50  0001 C CNN
+F 3 "" H 13410 9570 50  0001 C CNN
+	1    13410 9570
 	1    0    0    -1  
 $EndComp
 $Comp
-L agg-kicad:CONN_01x05 CONN-7
+L agg-kicad:CONN_01x05 CON-7
 U 1 1 6C3ECD50
 P 13650 8610
-F 0 "CONN-7" V 13637 8122 50  0000 R CNN
+F 0 "CON-7" V 13637 8122 50  0000 R CNN
 F 1 "CONN_01x05" V 13728 8122 50  0000 R CNN
 F 2 "" H 13650 8610 50  0001 C CNN
 F 3 "" H 13650 8610 50  0001 C CNN
@@ -4039,7 +4039,7 @@ F 3 "" H 13850 8700 50  0001 C CNN
 	1    13850 8700
 	1    0    0    -1  
 $EndComp
-Text Notes 13580 8520 0    51   ~ 0
+Text Notes 14660 8690 0    51   ~ 0
 to Cassette port
 Wire Wire Line
 	13270 12850 13010 12850
@@ -4427,28 +4427,8 @@ Wire Wire Line
 	14130 10110 14320 10110
 Wire Wire Line
 	14320 10110 14320 10350
-Wire Notes Line
-	13310 9250 13830 9250
-Wire Notes Line
-	13830 9250 13830 9510
-Wire Notes Line
-	13830 9510 13310 9510
-Wire Notes Line
-	13310 9510 13310 9250
 Wire Wire Line
-	13760 9460 13960 9460
-Wire Wire Line
-	13450 9460 13450 9590
-Wire Wire Line
-	13360 9300 13360 9180
-Wire Wire Line
-	13750 8710 13750 9160
-Wire Wire Line
-	13750 9160 13960 9160
-Wire Wire Line
-	13960 9160 13960 9460
-Wire Wire Line
-	13930 9590 13450 9590
+	13750 8710 13750 8800
 Wire Wire Line
 	13830 10170 13830 9960
 Wire Wire Line
@@ -4466,11 +4446,7 @@ Wire Wire Line
 Wire Wire Line
 	13950 8980 13950 8710
 Wire Wire Line
-	13440 8910 14050 8910
-Wire Wire Line
 	14050 8910 14050 8710
-Wire Wire Line
-	13440 8910 13440 9300
 Wire Wire Line
 	14030 10170 14030 10050
 Wire Wire Line
@@ -4504,12 +4480,8 @@ Wire Wire Line
 	13330 10430 13330 10170
 Text GLabel 9100 2140 0    51   Input ~ 0
 8255_RESET
-Text GLabel 13080 9830 1    51   Input ~ 0
+Text GLabel 13080 9980 0    51   Input ~ 0
 8255_RESET
-Wire Wire Line
-	13360 9460 13360 9580
-Text Notes 13310 9450 0    51   ~ 0
-relay pins \nfrom solder side
 Text GLabel 13230 10170 1    51   Input ~ 0
 ~RESET
 Wire Wire Line
@@ -4520,18 +4492,596 @@ Text GLabel 4350 10000 0    51   Input ~ 0
 PSG_IOA7
 Text GLabel 13630 10170 1    51   Input ~ 0
 PSG_IOA7
-Connection ~ 13360 9580
-Wire Wire Line
-	13360 9580 13360 9590
-Wire Wire Line
-	13930 9590 13940 9590
-Wire Wire Line
-	13930 9590 13930 10170
-Connection ~ 13930 9590
 Wire Wire Line
 	14080 9070 14080 9960
 Wire Wire Line
 	14170 8980 14170 10030
+Wire Notes Line
+	11420 10450 12120 10450
+Wire Notes Line
+	12120 10450 12120 10650
+Wire Notes Line
+	12120 10650 12410 10650
+Wire Notes Line
+	12410 10650 12410 11270
+Wire Notes Line
+	12410 11270 11200 11270
+Wire Notes Line
+	11200 11270 11200 10450
+Wire Notes Line
+	11200 10450 11410 10450
+Text Notes 10510 11430 0    51   ~ 0
+Original PCB had direct 5v line to cartridge port,\nbut now there is this two caps+ coil added between
+Text Notes 1310 15850 0    51   ~ 0
+There is also black thick wire soldered to 5V line \nat the solder side of this MSX PCB.\nThis wire comes directly from the 5V source\nin main PCB ( from Q505 leg).
+Text Notes 680  14720 0    118  ~ 24
+POWER INPUT
+Text Notes 14400 9360 0    51   ~ 0
+CON-7 <->  Cassette port DIN-8\n3                  1,2,3,8    GND\n1                  4         CMT OUT\n4                  5         CMT IN\n2                  6         REM+\n5                  7         REM-
+$Comp
+L agg-kicad:C C10
+U 1 1 6680F6B2
+P 1130 1030
+F 0 "C10" V 1134 1088 50  0000 L CNN
+F 1 "10nF" V 1225 1088 50  0000 L CNN
+F 2 "" H 1130 1030 50  0001 C CNN
+F 3 "" H 1130 1030 50  0001 C CNN
+	1    1130 1030
+	0    1    1    0   
+$EndComp
+$Comp
+L agg-kicad:C C12
+U 1 1 668F340D
+P 1430 1030
+F 0 "C12" V 1434 1088 50  0000 L CNN
+F 1 "10nF" V 1525 1088 50  0000 L CNN
+F 2 "" H 1430 1030 50  0001 C CNN
+F 3 "" H 1430 1030 50  0001 C CNN
+	1    1430 1030
+	0    1    1    0   
+$EndComp
+$Comp
+L agg-kicad:C C14
+U 1 1 66960F2F
+P 1720 1030
+F 0 "C14" V 1724 1088 50  0000 L CNN
+F 1 "10nF" V 1815 1088 50  0000 L CNN
+F 2 "" H 1720 1030 50  0001 C CNN
+F 3 "" H 1720 1030 50  0001 C CNN
+	1    1720 1030
+	0    1    1    0   
+$EndComp
+$Comp
+L agg-kicad:C C15
+U 1 1 669CEB65
+P 2000 1030
+F 0 "C15" V 2004 1088 50  0000 L CNN
+F 1 "10nF" V 2095 1088 50  0000 L CNN
+F 2 "" H 2000 1030 50  0001 C CNN
+F 3 "" H 2000 1030 50  0001 C CNN
+	1    2000 1030
+	0    1    1    0   
+$EndComp
+$Comp
+L agg-kicad:C C16
+U 1 1 66A3C7EF
+P 2310 1030
+F 0 "C16" V 2314 1088 50  0000 L CNN
+F 1 "10nF" V 2405 1088 50  0000 L CNN
+F 2 "" H 2310 1030 50  0001 C CNN
+F 3 "" H 2310 1030 50  0001 C CNN
+	1    2310 1030
+	0    1    1    0   
+$EndComp
+$Comp
+L agg-kicad:C C17
+U 1 1 66AAA490
+P 2600 1030
+F 0 "C17" V 2604 1088 50  0000 L CNN
+F 1 "10nF" V 2695 1088 50  0000 L CNN
+F 2 "" H 2600 1030 50  0001 C CNN
+F 3 "" H 2600 1030 50  0001 C CNN
+	1    2600 1030
+	0    1    1    0   
+$EndComp
+$Comp
+L agg-kicad:C C18
+U 1 1 66B1909F
+P 2880 1030
+F 0 "C18" V 2884 1088 50  0000 L CNN
+F 1 "10nF" V 2975 1088 50  0000 L CNN
+F 2 "" H 2880 1030 50  0001 C CNN
+F 3 "" H 2880 1030 50  0001 C CNN
+	1    2880 1030
+	0    1    1    0   
+$EndComp
+$Comp
+L agg-kicad:C C19
+U 1 1 66B86C51
+P 3170 1020
+F 0 "C19" V 3174 1078 50  0000 L CNN
+F 1 "10nF" V 3265 1078 50  0000 L CNN
+F 2 "" H 3170 1020 50  0001 C CNN
+F 3 "" H 3170 1020 50  0001 C CNN
+	1    3170 1020
+	0    1    1    0   
+$EndComp
+$Comp
+L agg-kicad:C C20
+U 1 1 66BF4834
+P 3450 1020
+F 0 "C20" V 3454 1078 50  0000 L CNN
+F 1 "10nF" V 3545 1078 50  0000 L CNN
+F 2 "" H 3450 1020 50  0001 C CNN
+F 3 "" H 3450 1020 50  0001 C CNN
+	1    3450 1020
+	0    1    1    0   
+$EndComp
+$Comp
+L agg-kicad:C C21
+U 1 1 66C623E3
+P 3740 1030
+F 0 "C21" V 3744 1088 50  0000 L CNN
+F 1 "10nF" V 3835 1088 50  0000 L CNN
+F 2 "" H 3740 1030 50  0001 C CNN
+F 3 "" H 3740 1030 50  0001 C CNN
+	1    3740 1030
+	0    1    1    0   
+$EndComp
+$Comp
+L agg-kicad:C C22
+U 1 1 66CCFF7A
+P 4030 1040
+F 0 "C22" V 4034 1098 50  0000 L CNN
+F 1 "10nF" V 4125 1098 50  0000 L CNN
+F 2 "" H 4030 1040 50  0001 C CNN
+F 3 "" H 4030 1040 50  0001 C CNN
+	1    4030 1040
+	0    1    1    0   
+$EndComp
+$Comp
+L agg-kicad:C C23
+U 1 1 66D3DC4C
+P 4310 1040
+F 0 "C23" V 4314 1098 50  0000 L CNN
+F 1 "10nF" V 4405 1098 50  0000 L CNN
+F 2 "" H 4310 1040 50  0001 C CNN
+F 3 "" H 4310 1040 50  0001 C CNN
+	1    4310 1040
+	0    1    1    0   
+$EndComp
+$Comp
+L agg-kicad:C C25
+U 1 1 66DABBE6
+P 1400 1330
+F 0 "C25" V 1404 1388 50  0000 L CNN
+F 1 "10nF" V 1495 1388 50  0000 L CNN
+F 2 "" H 1400 1330 50  0001 C CNN
+F 3 "" H 1400 1330 50  0001 C CNN
+	1    1400 1330
+	0    1    1    0   
+$EndComp
+$Comp
+L agg-kicad:C C26
+U 1 1 66E1980B
+P 1700 1340
+F 0 "C26" V 1704 1398 50  0000 L CNN
+F 1 "10nF" V 1795 1398 50  0000 L CNN
+F 2 "" H 1700 1340 50  0001 C CNN
+F 3 "" H 1700 1340 50  0001 C CNN
+	1    1700 1340
+	0    1    1    0   
+$EndComp
+$Comp
+L agg-kicad:C C27
+U 1 1 66E87398
+P 1980 1340
+F 0 "C27" V 1984 1398 50  0000 L CNN
+F 1 "10nF" V 2075 1398 50  0000 L CNN
+F 2 "" H 1980 1340 50  0001 C CNN
+F 3 "" H 1980 1340 50  0001 C CNN
+	1    1980 1340
+	0    1    1    0   
+$EndComp
+$Comp
+L agg-kicad:C C28
+U 1 1 66EF503A
+P 2270 1340
+F 0 "C28" V 2274 1398 50  0000 L CNN
+F 1 "10nF" V 2365 1398 50  0000 L CNN
+F 2 "" H 2270 1340 50  0001 C CNN
+F 3 "" H 2270 1340 50  0001 C CNN
+	1    2270 1340
+	0    1    1    0   
+$EndComp
+$Comp
+L agg-kicad:C C29
+U 1 1 66F63EEA
+P 2550 1340
+F 0 "C29" V 2554 1398 50  0000 L CNN
+F 1 "10nF" V 2645 1398 50  0000 L CNN
+F 2 "" H 2550 1340 50  0001 C CNN
+F 3 "" H 2550 1340 50  0001 C CNN
+	1    2550 1340
+	0    1    1    0   
+$EndComp
+$Comp
+L agg-kicad:C C30
+U 1 1 66FD1C73
+P 2830 1340
+F 0 "C30" V 2834 1398 50  0000 L CNN
+F 1 "10nF" V 2925 1398 50  0000 L CNN
+F 2 "" H 2830 1340 50  0001 C CNN
+F 3 "" H 2830 1340 50  0001 C CNN
+	1    2830 1340
+	0    1    1    0   
+$EndComp
+$Comp
+L agg-kicad:C C31
+U 1 1 6703F953
+P 3100 1340
+F 0 "C31" V 3104 1398 50  0000 L CNN
+F 1 "10nF" V 3195 1398 50  0000 L CNN
+F 2 "" H 3100 1340 50  0001 C CNN
+F 3 "" H 3100 1340 50  0001 C CNN
+	1    3100 1340
+	0    1    1    0   
+$EndComp
+$Comp
+L agg-kicad:C C32
+U 1 1 670AD6DF
+P 3370 1340
+F 0 "C32" V 3374 1398 50  0000 L CNN
+F 1 "10nF" V 3465 1398 50  0000 L CNN
+F 2 "" H 3370 1340 50  0001 C CNN
+F 3 "" H 3370 1340 50  0001 C CNN
+	1    3370 1340
+	0    1    1    0   
+$EndComp
+$Comp
+L agg-kicad:C C33
+U 1 1 6711B443
+P 3650 1340
+F 0 "C33" V 3654 1398 50  0000 L CNN
+F 1 "10nF" V 3745 1398 50  0000 L CNN
+F 2 "" H 3650 1340 50  0001 C CNN
+F 3 "" H 3650 1340 50  0001 C CNN
+	1    3650 1340
+	0    1    1    0   
+$EndComp
+$Comp
+L agg-kicad:C C34
+U 1 1 671890F9
+P 3920 1340
+F 0 "C34" V 3924 1398 50  0000 L CNN
+F 1 "10nF" V 4015 1398 50  0000 L CNN
+F 2 "" H 3920 1340 50  0001 C CNN
+F 3 "" H 3920 1340 50  0001 C CNN
+	1    3920 1340
+	0    1    1    0   
+$EndComp
+$Comp
+L agg-kicad:C C35
+U 1 1 671F6E1B
+P 4200 1340
+F 0 "C35" V 4204 1398 50  0000 L CNN
+F 1 "10nF" V 4295 1398 50  0000 L CNN
+F 2 "" H 4200 1340 50  0001 C CNN
+F 3 "" H 4200 1340 50  0001 C CNN
+	1    4200 1340
+	0    1    1    0   
+$EndComp
+$Comp
+L agg-kicad:C C24
+U 1 1 6734083D
+P 1140 1330
+F 0 "C24" V 1144 1388 50  0000 L CNN
+F 1 "10nF" V 1235 1388 50  0000 L CNN
+F 2 "" H 1140 1330 50  0001 C CNN
+F 3 "" H 1140 1330 50  0001 C CNN
+	1    1140 1330
+	0    1    1    0   
+$EndComp
 Wire Wire Line
-	13080 10100 13080 9830
+	1130 1030 1130 940 
+Wire Wire Line
+	1130 940  1430 940 
+Wire Wire Line
+	4310 940  4310 1040
+Wire Wire Line
+	4310 1140 4310 1200
+Wire Wire Line
+	4310 1200 4030 1200
+Wire Wire Line
+	1130 1200 1130 1130
+Wire Wire Line
+	4030 1200 4030 1140
+Connection ~ 4030 1200
+Wire Wire Line
+	3740 1130 3740 1200
+Connection ~ 3740 1200
+Wire Wire Line
+	3740 1200 4030 1200
+Wire Wire Line
+	3450 1120 3450 1200
+Wire Wire Line
+	1130 1200 1430 1200
+Connection ~ 3450 1200
+Wire Wire Line
+	3450 1200 3740 1200
+Wire Wire Line
+	3170 1120 3170 1200
+Connection ~ 3170 1200
+Wire Wire Line
+	3170 1200 3450 1200
+Wire Wire Line
+	2880 1130 2880 1200
+Connection ~ 2880 1200
+Wire Wire Line
+	2880 1200 3170 1200
+Wire Wire Line
+	2600 1130 2600 1200
+Connection ~ 2600 1200
+Wire Wire Line
+	2600 1200 2880 1200
+Wire Wire Line
+	2310 1130 2310 1200
+Connection ~ 2310 1200
+Wire Wire Line
+	2310 1200 2600 1200
+Wire Wire Line
+	2000 1130 2000 1200
+Connection ~ 2000 1200
+Wire Wire Line
+	2000 1200 2310 1200
+Wire Wire Line
+	2000 1030 2000 940 
+Connection ~ 2000 940 
+Wire Wire Line
+	2000 940  2310 940 
+Wire Wire Line
+	2310 940  2310 1030
+Connection ~ 2310 940 
+Wire Wire Line
+	2600 1030 2600 940 
+Wire Wire Line
+	2310 940  2600 940 
+Connection ~ 2600 940 
+Wire Wire Line
+	2600 940  2880 940 
+Wire Wire Line
+	2880 1030 2880 940 
+Connection ~ 2880 940 
+Wire Wire Line
+	2880 940  3170 940 
+Wire Wire Line
+	3170 1020 3170 940 
+Connection ~ 3170 940 
+Wire Wire Line
+	3170 940  3450 940 
+Wire Wire Line
+	3450 1030 3450 1020
+Connection ~ 3450 940 
+Wire Wire Line
+	3450 940  3740 940 
+Connection ~ 3450 1020
+Wire Wire Line
+	3450 1020 3450 940 
+Wire Wire Line
+	3740 1030 3740 940 
+Connection ~ 3740 940 
+Wire Wire Line
+	3740 940  4030 940 
+Wire Wire Line
+	4030 1040 4030 940 
+Connection ~ 4030 940 
+Wire Wire Line
+	4030 940  4310 940 
+Wire Wire Line
+	1720 1130 1720 1200
+Connection ~ 1720 1200
+Wire Wire Line
+	1720 1200 2000 1200
+Wire Wire Line
+	1430 1130 1430 1200
+Connection ~ 1430 1200
+Wire Wire Line
+	1430 1200 1720 1200
+Wire Wire Line
+	1430 1030 1430 940 
+Connection ~ 1430 940 
+Wire Wire Line
+	1430 940  1720 940 
+Wire Wire Line
+	1720 1030 1720 940 
+Connection ~ 1720 940 
+Wire Wire Line
+	1720 940  2000 940 
+Wire Wire Line
+	1140 1330 1140 1270
+Wire Wire Line
+	1140 1270 1400 1270
+Wire Wire Line
+	4200 1270 4200 1340
+Wire Wire Line
+	3920 1340 3920 1270
+Connection ~ 3920 1270
+Wire Wire Line
+	3920 1270 4200 1270
+Wire Wire Line
+	3650 1340 3650 1270
+Connection ~ 3650 1270
+Wire Wire Line
+	3650 1270 3920 1270
+Wire Wire Line
+	3370 1340 3370 1270
+Connection ~ 3370 1270
+Wire Wire Line
+	3370 1270 3650 1270
+Wire Wire Line
+	3100 1340 3100 1270
+Connection ~ 3100 1270
+Wire Wire Line
+	3100 1270 3370 1270
+Wire Wire Line
+	2830 1340 2830 1270
+Connection ~ 2830 1270
+Wire Wire Line
+	2830 1270 3100 1270
+Wire Wire Line
+	2550 1340 2550 1270
+Connection ~ 2550 1270
+Wire Wire Line
+	2550 1270 2830 1270
+Wire Wire Line
+	2270 1340 2270 1270
+Connection ~ 2270 1270
+Wire Wire Line
+	2270 1270 2550 1270
+Wire Wire Line
+	1980 1340 1980 1270
+Connection ~ 1980 1270
+Wire Wire Line
+	1980 1270 2270 1270
+Wire Wire Line
+	1700 1340 1700 1270
+Connection ~ 1700 1270
+Wire Wire Line
+	1700 1270 1980 1270
+Wire Wire Line
+	1400 1330 1400 1270
+Connection ~ 1400 1270
+Wire Wire Line
+	1400 1270 1700 1270
+Wire Wire Line
+	1140 1430 1140 1510
+Wire Wire Line
+	1140 1510 1400 1510
+Wire Wire Line
+	4200 1510 4200 1440
+Wire Wire Line
+	3920 1440 3920 1510
+Connection ~ 3920 1510
+Wire Wire Line
+	3920 1510 4200 1510
+Wire Wire Line
+	3650 1440 3650 1510
+Connection ~ 3650 1510
+Wire Wire Line
+	3650 1510 3920 1510
+Wire Wire Line
+	3370 1440 3370 1510
+Connection ~ 3370 1510
+Wire Wire Line
+	3370 1510 3650 1510
+Wire Wire Line
+	3100 1440 3100 1510
+Connection ~ 3100 1510
+Wire Wire Line
+	3100 1510 3370 1510
+Wire Wire Line
+	2830 1440 2830 1510
+Connection ~ 2830 1510
+Wire Wire Line
+	2830 1510 3100 1510
+Wire Wire Line
+	2550 1440 2550 1510
+Connection ~ 2550 1510
+Wire Wire Line
+	2550 1510 2830 1510
+Wire Wire Line
+	2270 1440 2270 1510
+Connection ~ 2270 1510
+Wire Wire Line
+	2270 1510 2550 1510
+Wire Wire Line
+	1980 1440 1980 1510
+Connection ~ 1980 1510
+Wire Wire Line
+	1980 1510 2270 1510
+Wire Wire Line
+	1700 1440 1700 1510
+Connection ~ 1700 1510
+Wire Wire Line
+	1700 1510 1980 1510
+Wire Wire Line
+	1400 1430 1400 1510
+Connection ~ 1400 1510
+Wire Wire Line
+	1400 1510 1700 1510
+Text Notes 1090 850  0    118  ~ 0
+Filter caps in pcb:
+$Comp
+L agg-kicad:C C36
+U 1 1 689FEE3C
+P 4470 1340
+F 0 "C36" V 4474 1398 50  0000 L CNN
+F 1 "10nF" V 4565 1398 50  0000 L CNN
+F 2 "" H 4470 1340 50  0001 C CNN
+F 3 "" H 4470 1340 50  0001 C CNN
+	1    4470 1340
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4470 1510 4470 1440
+Wire Wire Line
+	4200 1510 4470 1510
+Connection ~ 4200 1510
+Wire Wire Line
+	4470 1340 4470 1270
+Wire Wire Line
+	4470 1270 4200 1270
+Connection ~ 4200 1270
+Text Notes 11920 9530 0    51   ~ 0
+markins on relay:\nMZ\nTAKAMISAWA\nELECTRIC CO. LTD.
+Text Notes 15920 9770 0    51   ~ 0
+o
+Text Notes 16090 9630 0    51   ~ 0
+o
+Text Notes 16160 9630 0    51   ~ 0
+o
+Text Notes 16090 9770 0    51   ~ 0
+o
+Text Notes 16160 9770 0    51   ~ 0
+o
+Text Notes 15920 9840 0    51   ~ 0
+1
+Text Notes 16090 9840 0    51   ~ 0
+2
+Text Notes 16160 9840 0    51   ~ 0
+3
+Text Notes 16160 9580 0    51   ~ 0
+4
+Text Notes 16090 9580 0    51   ~ 0
+5
+$Comp
+L Relay:MZ_TAKAMISAWA RL-1
+U 1 1 696647CA
+P 13110 9270
+F 0 "RL-1" H 13540 9316 50  0000 L CNN
+F 1 "MZ_TAKAMISAWA" H 13540 9225 50  0000 L CNN
+F 2 "Relay_THT:Relay_SPDT_HsinDa_Y14" H 12860 9620 50  0001 L CNN
+F 3 "http://www.hsinda.com.cn/en/imgdown.asp?FileName=UploadFiles/201431310240386.pdf" V 13010 9270 50  0001 C CNN
+	1    13110 9270
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13080 9980 13080 10100
+Wire Wire Line
+	13930 9750 13210 9750
+Wire Wire Line
+	13210 9750 13210 9570
+Wire Wire Line
+	13930 9750 13930 10170
+Wire Wire Line
+	13750 8800 12650 8800
+Wire Wire Line
+	12650 8800 12650 9570
+Wire Wire Line
+	12650 9570 12810 9570
+Wire Wire Line
+	13410 8910 13410 8970
+Wire Wire Line
+	13410 8910 14050 8910
+NoConn ~ 13210 8970
 $EndSCHEMATC
