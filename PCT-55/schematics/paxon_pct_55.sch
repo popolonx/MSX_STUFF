@@ -2785,7 +2785,7 @@ Wire Wire Line
 Wire Notes Line
 	-340 4780 -340 170 
 Text Notes 130  380  0    157  ~ 31
-AV input + Printer Port PCB:\n-rca video + audio input\n-RGB digital input\n-MSX printer port
+CEA PCB (AV input + Printer Port)\n-rca video + audio input\n-RGB digital input\n-MSX printer port
 $Comp
 L agg-kicad:CONN_01x06 P902
 U 1 1 69420121
@@ -2861,7 +2861,7 @@ Wire Wire Line
 Text Notes 11550 960  0    79   ~ 0
 (UUU) wires to CON-6\nin MSX PCB
 Text Notes 9720 520  0    157  ~ 31
-Front panel PCB:\n(channel switches+tuner pots+msx reset/load/run buttons)
+DMB PCB (Front panel)\n-channel switches+tuner pots+msx reset/load/run buttons
 Text Notes 3910 650  0    50   ~ 0
 (OOO) wires to P919\nin 4CEC PCB
 Text Notes 5140 710  0    50   ~ 0
@@ -4766,7 +4766,7 @@ Wire Notes Line
 Wire Notes Line
 	18080 530  18090 530 
 Text Notes 18140 830  0    157  ~ 31
-Tube neck PCB
+DNF PCB (Tube neck)
 Text GLabel 20980 1450 2    50   Input ~ 0
 TUBE_pin_1_2?
 Text Notes 19910 1420 0    50   ~ 0
@@ -13227,9 +13227,9 @@ Text GLabel 19100 3120 2    50   Input ~ 0
 H_pin_5
 Wire Wire Line
 	19100 2820 19190 2820
-Text Notes 20890 1170 0    50   ~ 0
+Text Notes 20920 1360 0    50   ~ 0
 Separate black thick ground wires towards:\n-tube ground\n-tuner box metal\n-AV input+PrinterPort PCB\n\nThere is also thick black wire from \ndigital RGB pcb to tuner box metal
-Text Notes 20340 730  0    118  ~ 24
+Text Notes 21040 780  0    118  ~ 24
 NOTE!
 Text Notes 3430 10960 0    50   ~ 0
 From flyback transformer, there comes also\n-big red wire (to tube Anode)\n-thick red wire (to tube neck pcb), \n  to tube pin 8 ( >100V)\n-thick black wire (to tube neck pcb), \n  into white plastic case,\n  goes to tube pin 1/2 (Focus/kV )?\n
@@ -15136,9 +15136,9 @@ Wire Wire Line
 Wire Wire Line
 	3310 3570 3490 3570
 $Sheet
-S 24750 7580 3540 2220
+S 24750 7580 2900 2150
 U 65EF74FD
-F0 "MSX PCB" 51
+F0 "MSX PCB" 118
 F1 "msx_pcb.sch" 51
 $EndSheet
 Text Notes 29170 4580 0    51   ~ 0
@@ -15490,4 +15490,8 @@ Connection ~ 11720 11250
 Connection ~ 11720 11590
 Wire Wire Line
 	11720 11590 11960 11590
+Text Notes 5980 12230 0    51   ~ 0
+to generate 32V <---
+Text Notes 24760 7390 0    118  ~ 24
+MSX PCB
 $EndSCHEMATC
