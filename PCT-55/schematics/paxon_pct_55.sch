@@ -4982,7 +4982,7 @@ Wire Wire Line
 	12530 13430 12530 13410
 Text GLabel 12620 13630 2    50   Input ~ 0
 IC202_FieldBlanking
-Text GLabel 9890 14720 2    50   Input ~ 0
+Text GLabel 9980 14680 2    50   Input ~ 0
 FLYBACK_pin_3
 $Comp
 L agg-kicad:R R355
@@ -5193,8 +5193,6 @@ F 3 "~" H 8900 14290 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	9130 14290 9130 14540
-Wire Wire Line
-	9130 14290 9130 14170
 Connection ~ 9130 14290
 Wire Wire Line
 	9000 14290 9130 14290
@@ -5218,16 +5216,6 @@ F 3 "~" H 9660 13490 50  0001 C CNN
 	1    9660 13490
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	9230 14170 9230 14180
-Connection ~ 9130 14170
-Wire Wire Line
-	9130 14170 9130 14030
-Wire Wire Line
-	9130 14170 9230 14170
-Connection ~ 9230 14170
-Wire Wire Line
-	9230 14170 9470 14170
 Wire Wire Line
 	8750 14290 8750 14130
 Wire Wire Line
@@ -5263,8 +5251,6 @@ Wire Wire Line
 	10030 14310 9630 14310
 Wire Wire Line
 	9470 13490 9510 13490
-Wire Wire Line
-	9470 13490 9470 14170
 Wire Wire Line
 	9660 13630 9660 13640
 Wire Wire Line
@@ -5370,7 +5356,7 @@ F 3 "" H 9890 15280 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9890 14540 9890 14870
+	9890 14540 9890 14680
 Wire Wire Line
 	9890 14970 9890 15000
 Connection ~ 8520 14830
@@ -8191,18 +8177,6 @@ Wire Wire Line
 	7050 14460 7840 14460
 Wire Wire Line
 	7840 15280 8100 15280
-Wire Wire Line
-	9140 14030 9130 14030
-Wire Wire Line
-	7930 14030 7930 14050
-Wire Wire Line
-	7930 14050 7050 14050
-Connection ~ 9130 14030
-Wire Wire Line
-	9130 14030 7930 14030
-Connection ~ 7050 14050
-Wire Wire Line
-	7050 14050 7040 14050
 Text GLabel 3870 13160 2    50   Input ~ 0
 J920_pin_2
 Connection ~ 3560 14310
@@ -8256,18 +8230,12 @@ F 3 "~" H 4960 14460 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	6060 14600 6050 14600
-Connection ~ 6050 14600
-Wire Wire Line
 	4070 14420 4070 14460
 Wire Wire Line
 	5060 14460 5170 14460
 Wire Wire Line
 	4860 14460 4800 14460
 Connection ~ 4800 14460
-Wire Wire Line
-	6060 14050 6050 14050
-Connection ~ 6050 14050
 Wire Wire Line
 	2310 14240 2310 14820
 Wire Wire Line
@@ -8298,8 +8266,6 @@ Wire Wire Line
 	5680 14460 6050 14460
 Wire Wire Line
 	5680 14460 5680 14780
-Wire Wire Line
-	7060 14600 7230 14600
 Wire Wire Line
 	7230 14600 7230 15880
 Wire Wire Line
@@ -10473,8 +10439,6 @@ Wire Wire Line
 Wire Wire Line
 	8920 10930 9160 10930
 Wire Wire Line
-	9360 10930 9410 10930
-Wire Wire Line
 	9880 12500 9730 12500
 Wire Wire Line
 	9730 12500 9730 13000
@@ -10485,8 +10449,6 @@ Wire Wire Line
 	9890 11880 9800 11880
 Wire Wire Line
 	10170 10940 11370 10940
-Wire Wire Line
-	10530 12020 10530 11250
 Wire Wire Line
 	8730 15860 8730 15950
 Wire Wire Line
@@ -10504,18 +10466,13 @@ Wire Notes Line
 Text Notes 9840 10120 0    59   ~ 0
 P301
 Connection ~ 9410 10380
-Connection ~ 9410 10930
 Wire Wire Line
 	9410 10380 9670 10380
-Wire Wire Line
-	9410 10930 9860 10930
 Wire Wire Line
 	9670 10450 9670 10380
 Connection ~ 9670 10380
 Wire Wire Line
 	9670 10380 9850 10380
-Wire Wire Line
-	9410 10650 9410 10930
 Text GLabel 9170 6370 0    50   Input ~ 0
 15V_
 Text Notes 17480 5130 0    59   ~ 0
@@ -13219,7 +13176,7 @@ FLYBACK_pin_1
 Text Notes 2240 10050 0    50   ~ 0
 FLYBACK transformer\nfrom solder side
 Text Notes 3210 9970 0    50   ~ 0
-When measuring resistance between transformer pins:\n-1,2,4,5,8,9 have about zero ohms between themselfs\n-3,5,10 have about zero ohms between themselfs
+When measuring resistance between transformer pins:\n-1,2,4,5,8,9 have about zero ohms between themselfs\n-3,6,10 have about zero ohms between themselfs
 Text Notes 18850 3970 0    50   ~ 0
 G\nR\nB
 Wire Wire Line
@@ -15354,11 +15311,7 @@ Wire Wire Line
 Wire Wire Line
 	5090 14820 2310 14820
 Wire Wire Line
-	5090 14050 6050 14050
-Wire Wire Line
 	5170 14600 5170 14460
-Wire Wire Line
-	5170 14600 6050 14600
 Wire Wire Line
 	5420 14460 5260 14460
 Wire Wire Line
@@ -15493,4 +15446,33 @@ Wire Notes Line
 	7620 11990 7620 12320
 Wire Notes Line
 	7620 12320 8070 12320
+NoConn ~ 2070 10880
+Text Notes 460  10970 0    51   ~ 0
+pin 6 is not connected
+Wire Wire Line
+	9360 10930 9410 10930
+Wire Wire Line
+	9410 10660 9410 10930
+Connection ~ 9410 10930
+Wire Wire Line
+	9410 10930 9860 10930
+Wire Wire Line
+	9890 14680 9980 14680
+Connection ~ 9890 14680
+Wire Wire Line
+	9890 14680 9890 14870
+Wire Wire Line
+	9130 14290 9470 14290
+Wire Wire Line
+	9130 14050 9130 14290
+Wire Wire Line
+	9470 13490 9470 14290
+Wire Wire Line
+	7050 14050 9130 14050
+Wire Wire Line
+	7050 14600 7230 14600
+Wire Wire Line
+	6050 14600 5170 14600
+Wire Wire Line
+	6050 14050 5090 14050
 $EndSCHEMATC
