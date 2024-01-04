@@ -1,10 +1,10 @@
 This part list shuold now contain all transistor, ICs, and electrolytic capacitors inside PCT-55 msx tv computer.
-Resistors, coils, diodes, ceramic capacitors are not listed here!
+Resistors, coils, diodes, ceramic capacitors are not listed here. See schematics directory!
 -------------------------------------------------------------------------------
 Transistors and ICs
 -------------------------------------------------------------------------------
 Main board:
---------------
+-----------
 D506: P2M 47  (Silicon Controlled Rectifier, could be replaced with XL0840?)
 Q202: A854 PNP
 Q802: A950 PNP
@@ -23,26 +23,26 @@ IC502,IC501: NEC UPC574  (for 33V tuner stuff?)
 IC201: HA11431
 IC202: TA7676AP (NTSC)
 
-Tube neck pcb:
---------------
+Tube neck pcb (DMB)
+-------------------
 Q454,Q455,Q456: C1815
 Q451,Q452,Q453: D758
 
-Digital RGB input PCB:
---------------
+AV input+PrinterPort PCB (4CEA):
+--------------------------------
 IC950 HD7407P
 Q950,Q953,Q954,Q955: C1815
 Q951: A950
 Q952: C2120
 
-Front switch pcb (where msx switch is, and tuner pots and channel switch buttons):
---------------
+Front switch pcb (DNF), where msx switch is, and tuner pots and channel switch buttons:
+---------------------------------------------------------------------------------------
 Q901: A952
 Q902: C1815
 Q903: A733
 
-AV PCB (MSX video signals (and audio?) comes from MSX mainboard to here)
---------------
+4CEB PCB (Video/audio source selection ICs)
+-------------------------------------------
 IC901, IC902: TC4052BP
 
 AV IF box:
@@ -79,55 +79,48 @@ HIC-1 (12 pins, small pcb, that is inside black covered mold)
 Electrolytic Capacitors:
 -------------------------------------------------------------------------------
 Main board:
---------------
+-----------
 C518: 1000uf/6.3v
-
 C205,C514: 100uf/16v 105c
 C704: 220uf/16v
 C265: 330uf/16v
 C819: 470uf/16v
 C301,C516,C818: 1000uf/16v
-
 C257: 0.47uf/25v
 C227: 4.7uf/25v 
 C207,C208,C223,C224,C556,C814,C815: 10uf/25v 105c
 C203,C352,C354: 47uf/25v 105c
 C119,C202,C559: 330uf/25v
 C701: 1000uf/25v
-
 C231,C233,C234,C303,C368,C558: 0.47uf/50v 105c
 C225,C226,C229,C263,C351,C380,C385,C705: 1uf/50v
 C262: 2.2uf/50v 105c
 C218,C308,C315,C510,C?(over the pcb with wires near IC201): 4.7uf/50v 105c
-
 C310: 10uf/100v
 C509: 100uf/100v Nichicon (M) SE 85c H8420
-
 C311: 2.2uf/160v Nichicon CE 85c  48(S)|V| (R)
 C313,C512,C513: 47uf/160v  Nichicon 85c H8424
 C506: 470uf/160v ELNA CEW(85c) 48(F)|V|
 
-Tube neck PCB:
---------------
+Tube neck PCB (DMB):
+--------------------
 10uf/160V  Nichicon CE 85c H8424
 
-AV PCB:
+4CEB PCB:
+---------
 C902,C903: 33uf/16v
 
-Digital RGB input PCB:
+AV input+PrinterPort PCB (3CEA):
 --------------
 C950,C951: 22uf/16v
 C956,C957,C960: 33uf/16v
-
 C952,C953,C959,C954,C962,C963:  10uf/25v  105c
-
 C955: 1uf/50v
 
 MSX mainboard:
 --------------
 470uf/6.3v at the backside
 4700uf/6.3v at the backside
-
 C5,C7: 10uf/16v
 C1,C6: 47uf/16v
 
