@@ -5229,8 +5229,8 @@ $Comp
 L Device:R_POT VR351
 U 1 1 6951C434
 P 13410 15760
-F 0 "VR351" H 13330 15700 50  0000 R CNN
-F 1 "103" H 13280 15790 50  0000 R CNN
+F 0 "VR351" H 13360 15630 50  0000 R CNN
+F 1 "103" H 13350 15710 50  0000 R CNN
 F 2 "" H 13410 15760 50  0001 C CNN
 F 3 "~" H 13410 15760 50  0001 C CNN
 	1    13410 15760
@@ -8631,10 +8631,10 @@ Text Notes 5860 9190 0    50   ~ 0
 253\nohm
 Text Notes 6200 9230 0    50   ~ 0
 592\nohm
-Text Notes 13480 15900 0    50   ~ 0
-Horizontal position
-Text Notes 7740 13770 0    50   ~ 0
-Vertical amplitude
+Text Notes 13470 15890 0    50   ~ 0
+Horizontal position\n-at back
+Text Notes 7680 13620 0    50   ~ 0
+Vertical amplitude\n-at back
 Text Notes 5210 2890 0    50   ~ 0
 BLUE\nlevel
 Wire Wire Line
@@ -10699,7 +10699,7 @@ Wire Wire Line
 Wire Wire Line
 	20210 16950 20210 17070
 Text Notes 20250 16300 0    50   ~ 0
-to AV input+Printer Port PCB,\nDigital RGB to analog conversion applitude?
+to AV input+Printer Port PCB,\nDigital RGB to analog conversion, brightness
 $Comp
 L power:GND #PWR0229
 U 1 1 7C57FC93
@@ -12522,8 +12522,6 @@ Wire Wire Line
 Wire Wire Line
 	22650 14650 22650 14840
 Text GLabel 18550 16540 2    50   Input ~ 0
-IC202_ColorContrast
-Text GLabel 22650 14690 2    50   Input ~ 0
 IC202_ColorContrast
 Connection ~ 23770 14470
 Wire Wire Line
@@ -15572,4 +15570,12 @@ Wire Wire Line
 	18050 9140 18050 9640
 Wire Wire Line
 	17130 8840 19540 8840
+Text Notes 25930 9090 0    51   ~ 0
+Color\n-at front
+Text Notes 22430 14530 0    51   ~ 0
+Contrast\n-at front
+Text Notes 21090 15140 0    51   ~ 0
+Tint\n-at front
+Text Notes 7040 16950 0    51   ~ 0
+Vertical position\n-at back
 $EndSCHEMATC
