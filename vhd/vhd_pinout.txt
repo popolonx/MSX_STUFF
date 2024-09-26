@@ -5,12 +5,14 @@ VHD-3. Clock pulse (TTL) from VHD player
 VHD-4. Commands towards VHD player (TTL), synch with clock signal
 VHD-5. ?
 VHD-6. audio signal containing the VHD data (BMC encoded)
-VHD-7. H-synch+V-synch signal
-VHD-8. data (Page data)?
-VHD-9. H-synch signal to trigger VHD data reading correctly
-VHD-10. data (Time data)?
+VHD-7. Composite synch (H-synch+V-synch signals, TTL level)
+VHD-8. Page/Time/Chapter data
+VHD-9. synch signal to trigger VHD data reading correctly.
+-in victor players it is same as composite synch
+-in national players it is h-synch signal (even during v-synch period), 63.5us period
+VHD-10. Status data
 VHD-11. ?
-VHD-12. data (Chapter data)?
+VHD-12. Status data
 VHD-13. 66.7ms pulses? for 3D ?
 
 
