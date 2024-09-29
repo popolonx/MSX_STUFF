@@ -411,6 +411,11 @@ def main(argv):
     set_one_valid_vhd_value( 0b11101100 )
     set_one_valid_vhd_value( 0b11110001 )
 
+    orig_stdout = sys.stdout
+    if outputfile != '':
+        f = open(outputfile, 'w')
+        sys.stdout = f
+
     print(" Next parsing the bit stream and vhd packet...")
     calc_max_min_from_wav(wf)
     change_bit_stream = decode_wav_stream_based_on_sums(wf)
@@ -430,6 +435,6 @@ def main(argv):
             str(one_data["packet_count"]),
             str(one_data["erroneous_packets_count"]) ))
         index += 1
-
+    sys.stdout = orig_stdout
 if __name__ == "__main__":
    main(sys.argv[1:])
