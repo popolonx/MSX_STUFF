@@ -18,6 +18,7 @@ VHD-13. 66.7ms pulses? for 3D ?
 
 IF-C9C/C9D card 
 DB15 connector  <-> VHD-din-13pin (NC = not connected)
+DB15 shield <-> DIN13 shield
 DB15-pin-1. - NC
 DB15-pin-2. - NC
 DB15-pin-3. <-> DIN13-pin-3
