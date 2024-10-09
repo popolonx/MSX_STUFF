@@ -32,5 +32,5 @@ DB15-pin-10. <-> DIN13-pin-10
 DB15-pin-11. - NC
 DB15-pin-12. <-> DIN13-pin-12
 DB15-pin-13. - NC
-DB15-pin-14. <-> DIN13-pin-1
-DB15-pin-15. <-> DIN13-pin-1
+DB15-pin-14. <-> DIN13-shield
+DB15-pin-15. <-> DIN13-shield
