@@ -1,3 +1,7 @@
+Victor HD 7500 player electrolytic capacitors
+
+NOTE! Do not yet know if front panel in player would have also electrolytic capacitors.
+
 -------------------------------------------------
 Main PCB
 -------------------------------------------------
