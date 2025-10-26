@@ -73,7 +73,7 @@ Cxx1 10/16v (top of pcb)
 Cxx2 10/16v (under pcb)
 C221 10/16v (on PCB 90degree from main PCB)
 C222 10/16v (on PCB 90degree from main PCB)
-C227 4.7/25v (on PCB 90degree from main PCB)
+C227  v (on PCB 90degree from main PCB)
 C228 4.7/25v (on PCB 90degree from main PCB)
 
 -------------------------------------------------
@@ -82,16 +82,18 @@ RCA out/DIN-8 PCB
 C102 4.7/35v
 C103 10/16v
 C109 1/50v
-near O127 marking 220/16v
+near O127 marking 220/16v (see polarity from wires going to + and -)
 
 -------------------------------------------------
-M31483 PCB:
+M31483 PCB (spindle motor):
 -------------------------------------------------
 C1 33/16v BP
 C2 22/25v
 C5 0.47/50v BP
 C14 22/25v BP
 C15 22/25v BP
+Cxx1 47/16v, between IC1 VC4055 pins 4 (-) and 6 (+)
+Cxx2 47/16v, between IC1 VC4055 pins 16 (-) and 17 (+)
 
 -------------------------------------------------
 M31673 PCB
