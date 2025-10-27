@@ -1,7 +1,5 @@
 Victor HD 7500 player electrolytic capacitors
 
-NOTE! Do not yet know if front panel in player would have also electrolytic capacitors.
-
 -------------------------------------------------
 Main PCB
 -------------------------------------------------
@@ -138,4 +136,5 @@ C203 47/25v small size
 Solenoid:
 -------------------------------------------------
 C00 22/50v (between solenoid legs, minus is upper pin)
+
 
