@@ -122,7 +122,20 @@ C212 33/16v (Stylus assy RF box)
 C303 10/25v
 C304 0.47/50v
 
+
+-------------------------------------------------
+Front panel
+-------------------------------------------------
+C101 47/16v
+C102 470/16v
+C205 47/16v
+under IR box metal cover:
+C201 10/16v small size(height 7/diameter 4mm)
+C202 10/16v small size
+C203 47/25v small size
+
 -------------------------------------------------
 Solenoid:
 -------------------------------------------------
 C00 22/50v (between solenoid legs, minus is upper pin)
+
