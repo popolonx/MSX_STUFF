@@ -1,5 +1,7 @@
 Victor HD 7500 player electrolytic capacitors
 
+All original caps were 85 o C 
+
 -------------------------------------------------
 Main PCB
 -------------------------------------------------
@@ -57,12 +59,12 @@ C719 33/16v BP
 C720 4.7/25v BP
 C726 1/50v BP
 C732 4.7/25v BP
-C801 4700/10v (20/18mm)
-C802 3300/25v (25/18mm)
-C803 3300/25v (25/18mm)
-C804 3300/25v (25/18mm)
-C807 10000/6.3v (25/18mm)
-C808 10000/6.3v (25/18mm)
+C801 4700/10v (H=20mm, Diameter 18mm pitch 7.5mm)
+C802 3300/25v (H=25mm, Diameter 18mm pitch 7.5mm)
+C803 3300/25v (H=25mm, Diameter 18mm, pitch 7.5mm)
+C804 3300/25v (H=25mm, Diameter 18mm, pitch 7.5mm)
+C807 10000/6.3v (H=25mm, Diameter 18mm, pitch 7.5mm)
+C808 10000/6.3v (H=25mm, Diameter 18mm, pitch 7.5mm)
 C809 220/16v (low profile)
 C810 220/16v
 C812 220/16v
@@ -84,7 +86,7 @@ RCA out/DIN-8 PCB
 C102 4.7/35v
 C103 10/16v
 C109 1/50v
-near O127 marking 220/16v (see polarity from wires going to + and -)
+near O127 marking 220/16v (see polarity from wires going to + and - in pcb)
 
 -------------------------------------------------
 M31483 PCB (spindle motor):
@@ -115,11 +117,14 @@ C51 33/16v
 -------------------------------------------------
 Stylus assy PCB
 -------------------------------------------------
-C110 33/16v (Stylus assy RF box)
-C212 33/16v (Stylus assy RF box)
 C303 10/25v
 C304 0.47/50v
 
+-------------------------------------------------
+Stylus assy RF box PCB
+-------------------------------------------------
+C110 33/16v
+C212 33/16v
 
 -------------------------------------------------
 Front panel
@@ -128,13 +133,12 @@ C101 47/16v
 C102 470/16v
 C205 47/16v
 under IR box metal cover:
-C201 10/16v small size(height 7/diameter 4mm)
-C202 10/16v small size
-C203 47/25v small size
+C201 10/16v (H=7-8mm, Diameter 4mm)
+C202 10/16v (H=7-8mm, Diameter 4mm)
+C203 47/25v (H=7-8mm, Diameter 4mm)
 
 -------------------------------------------------
 Solenoid:
 -------------------------------------------------
 C00 22/50v (between solenoid legs, minus is upper pin)
-
 
