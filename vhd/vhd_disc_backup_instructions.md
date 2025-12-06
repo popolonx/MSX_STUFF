@@ -9,12 +9,13 @@ HW needed for backup:
 - Hauppauge multimedia VC500 USB card would not be recommended due to AGC issues
 
 SW needed (example is for windows 11). 
-  1. HufYUV codec
+  1. Capture card drivers installed
+  2. HufYUV codec
   - download it from https://github.com/hofmand/video-codec-installers/releases (64-bit or 32-bit depending on your OS)
   - run CMD prompt as administrator and then go to folder that you downloaded that msi file
   - then run that msi file
   
-  2. download Virtual dub 1.9.11
+  3. download Virtual dub 1.9.11
 
 check the instructions for Vdub here [vdub](./vdub_instructions.md)
 
