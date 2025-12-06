@@ -10,9 +10,8 @@ SW needed (example is for windows 11).
   
   2. download Virtual dub 1.9.11
 
-check the instructions from
-Vdub instructions here [vdub](./vdub_instructions.md)
+check the instructions for Vdub here [vdub](./vdub_instructions.md)
 
 start recording and then press play from VHD player.
-make own recording from both sides of the disc. 
-NOTE! it may require at least 20gigabytes of disk space for one side recording!
+Make own recording from both sides of the disc. 
+NOTE! it may require at least 20 gigabytes of disk space for one side recording!
