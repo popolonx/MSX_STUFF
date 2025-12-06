@@ -1,4 +1,4 @@
-![Startup](vdub_start_capture.png)
+![Startup](vdub_startup_1.png)
 
 ![Select device and input](vdub_select_device_and_input.png)
 
