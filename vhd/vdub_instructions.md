@@ -5,3 +5,4 @@
 ![Settings in vdub](setting_vdub1.png)
 
 ![Start the capture](vdub_start_capture.png)
+
