@@ -6,11 +6,11 @@ would be played at what exact time as the page codes cannot be get accurately fr
 
 HW needed for backup:
 - USB grabber card  IO-DATA GV-USB2
-- Hauppauge multimedia VC500 USB casd would not be recommended due to AGC issues
+- Hauppauge multimedia VC500 USB card would not be recommended due to AGC issues
 
 SW needed (example is for windows 11). 
   1. HufYUV codec
-  - download it from https://github.com/hofmand/video-codec-installers/releases
+  - download it from https://github.com/hofmand/video-codec-installers/releases (64-bit or 32-bit depending on your OS)
   - run CMD prompt as administrator and then go to folder that you downloaded that msi file
   - then run that msi file
   
