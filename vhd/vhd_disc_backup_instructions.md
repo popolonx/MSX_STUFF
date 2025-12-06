@@ -10,7 +10,7 @@ SW needed (example is for windows 11).
   2. download Virtual dub 1.9.11
 
 check the instructions from
-[vdub instructions][vdub_instrcutons.md]
+[vdub instructions](dub_instructions.md)
 
 start recording and then press play from VHD player.
 make own recording from both sides of the disc. 
