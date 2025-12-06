@@ -1,3 +1,9 @@
+Instructions to make backup from VHD game disc (Road Blaster, Thunder Storm, Time Gal, Birdie Try like games).
+NOTE! These instructions are not valid for Vroom and maybe other Vhdpc games that have game code in disc.
+For example Vroom has three lanes parallel in disc, and game play switches those lanes on the fly. 
+We could record those lanes separately, but for the emulation it would be quite impossible to see what video
+would be played at what exact time as the page codes cannot be get accurately from the disc for the specific lanes.
+
 HW needed for backup:
 - USB grabber card  IO-DATA GV-USB2
 - Hauppauge multimedia VC500 USB casd would not be recommended due to AGC issues
