@@ -1,10 +1,11 @@
 HW needed for backup:
 - USB grabber card  IO-DATA GV-USB2
+- Hauppauge multimedia VC500 USB casd would not be recommended due to AGC issues
 
 SW needed (example is for windows 11). 
   1. HufYUV codec
   - download it from https://github.com/hofmand/video-codec-installers/releases
-  - run CMD prompt as administrator and then go to folder that you downloeaded that msi file
+  - run CMD prompt as administrator and then go to folder that you downloaded that msi file
   - then run that msi file
   
   2. download Virtual dub 1.9.11
