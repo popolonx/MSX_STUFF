@@ -5,14 +5,14 @@ All original caps were 85 o C
 ----------------------------------------------------
 Spindle motor PCB M31794A
 ----------------------------------------------------
-C1 47/16v
+C1 47/16v BP
 C2 33/16v
 C5 0.47/50v BP
-C9 47/16v
+C7 47/16v
 C14 22/25v BP
 C15 22/25v BP
 C16 47/16v
-C18 1/50v
+C18 1/50v BP
 C19 22/25v
 
 ----------------------------------------------------
@@ -106,36 +106,38 @@ C253 220/16v
 C254 220/16v
 C269 33/16v
 C270 33/16v
+C271 100/16v
 C272 100/16v
 C273 10/50v
 C274 4.7/25v
 C275 47/25v
-Cxxx 220/16v near C273
 C277 47/16v
-C277 100/16v
+C278 220/16v
+C279 100/16v
 C287 4.7/25v
 C351 1/50v
+C358 10/16v
 C360 33/16v
 C362 33/16v
 C363 1/50v BP
 C404 4.7/50v
+C409 1/50v 
 C413 1/50v
 C414 470/16v
 C417 100/16v
 C418 100/16v
 C454 1/50v
 C461 1/50v 
-C464 10/16v
 C474 100/16v
 C475 100/16v
 C476 10/16v
 C477 10/16v BP
-C??? 1/50v 
-Cxxx 100/16v
-C614 3.3/50v
+C501 4.7/25v
+C614 3.3/50v BP
 C658 1/50v BP
 C702 1/50v
 C703 10/16v
+C704 33/16v
 C705 47/16v
 C718 4.7/50
 C719 33/16v BP
@@ -146,11 +148,11 @@ C801 4700/10v (H=20mm, Diameter 18mm, pitch 7.5mm)
 C802 3300/25v (H=25mm, Diameter 18mm, pitch 7.5mm)
 C803 3300/25v (H=25mm, Diameter 18mm, pitch 7.5mm)
 C804 3300/25v (H=25mm, Diameter 18mm, pitch 7.5mm)
-Cxxx 100/6.3v near C803/C804
+100/6.3v near C803/C804, instead of R819, + towards PCB edge
 C807 10000/6.3v (H=25mm, Diameter 18mm, pitch 7.5mm)
 C808 10000/6.3v (H=25mm, Diameter 18mm, pitch 7.5mm)
-C809 220/16v
-C812 220/16v
+C809 220/16v (H=10mm, Diameter 10mm, pitch 5mm)
+C812 220/16v (H=10mm, Diameter 10mm, pitch 5mm)
 C813 1/50v
 C815 100/16v
 C816 100/16v
@@ -158,26 +160,25 @@ C901 100/25v
 C903 47/50v
 
 ----------------------------------------------------
-Small PCB 90 degree from main pcb:
+Small PCB 90 degree from main pcb: CK30235
 ----------------------------------------------------
-C106 10/16v
+C106 10/16v (H=12mm, Diameter=5.5mm)
 
 ----------------------------------------------------
-Middle size PCB 90 degree from main pcb:
-----------------------------------------------------
-C101 10/16v
-C105 4.7/25v
-
-----------------------------------------------------
-Biggest size PCB 90 degree from main pcb:
+PCB 90 degree from main pcb: VE 9032
 ----------------------------------------------------
 C101 10/16v (H=8mm, Diameter=4-4.5mm)
-C105 1/50v 
-C109 1/50 BP
+C105 4.7/25v (H=8mm, Diameter=4-4.5mm)
+
+----------------------------------------------------
+PCB 90 degree from main pcb: VE 9102B
+----------------------------------------------------
+C101 10/16v (H=8mm, Diameter=4-4.5mm)
+C105 1/50v (H=8mm, Diameter=4-4.5mm)
+C109 1/50 BP (H=12mm, Diameter=5.5mm)
 C111 10/16v (H=8mm, Diameter=4-4.5mm)
 C201 10/16v (H=8mm, Diameter=4-4.5mm)
-C202 1/50v
-C204 1/50v BP
+C205 1/50v (H=8mm, Diameter=4-4.5mm)
+C209 1/50v BP (H=12mm, Diameter=5.5mm)
 C211 10/16v (H=8mm, Diameter=4-4.5mm)
-
 
