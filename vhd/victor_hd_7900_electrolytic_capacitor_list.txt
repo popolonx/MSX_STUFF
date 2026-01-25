@@ -1,6 +1,6 @@
 Victor HD 7900 VHD player electrolytic capacitor list:
 
-All original caps were 85 o C 
+All original caps were 85 o C, and pitch 5mm
 
 ----------------------------------------------------
 Spindle motor PCB M31794A
@@ -181,4 +181,5 @@ C201 10/16v (H=8mm, Diameter=4-4.5mm)
 C205 1/50v (H=8mm, Diameter=4-4.5mm)
 C209 1/50v BP (H=12mm, Diameter=5.5mm)
 C211 10/16v (H=8mm, Diameter=4-4.5mm)
+
 
